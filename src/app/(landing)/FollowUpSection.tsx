@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function FollowUpSection() {
   return (
-    <section className="relative pt-16 pb-44 bg-gradient-to-b from-[#1488FF] to-[#015DE3] overflow-hidden">
+    <section className="relative pt-16 pb-40 bg-gradient-to-b from-[#1488FF] to-[#015DE3] overflow-hidden">
       <div
         className="absolute top-0 left-0 w-full h-full"
         style={{

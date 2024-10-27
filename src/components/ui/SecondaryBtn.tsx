@@ -14,7 +14,7 @@ export default function SecondaryBtn({ customClasses, children }: IProps) {
             {children}
           </span>
 
-          <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-white/25 to-white/5 opacity-0 group-hover:opacity-100 duration-200"></div>
+          <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-accent/25 to-accent/5 opacity-0 group-hover:opacity-100 duration-200"></div>
         </button>
       </div>
     </div>
