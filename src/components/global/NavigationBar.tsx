@@ -7,8 +7,8 @@ export default function NavigationBar() {
   return (
     <nav className="fixed z-[1000] top-0 left-0 w-full bg-white border-b border-dark-white">
       <div className="mx-auto container max-w-[1320px] h-[70px] flex justify-between items-center">
-        <Link href={"/"}>
-          <Image src={logoImg} alt="" className="w-[130px]" />
+        <Link href={"/"} aria-label="logo">
+          <Image src={logoImg} alt="logo" className="w-[130px]" />
         </Link>
 
         <ul className="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 flex items-center gap-10">

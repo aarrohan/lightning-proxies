@@ -1,0 +1,20 @@
+<svg width="1321" height="483" viewBox="0 0 1321 483" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path opacity="0.2" d="M5 0.5V128.429C5 129.755 5.52678 131.027 6.46447 131.964L63.5355 189.036C64.4732 189.973 65 191.245 65 192.571V281.5C65 284.261 67.2386 286.5 70 286.5H549" stroke="white" stroke-linecap="round"/>
+<path opacity="0.2" d="M1320 0.5V128.429C1320 129.755 1319.47 131.027 1318.54 131.964L1261.46 189.036C1260.53 189.973 1260 191.245 1260 192.571V281.5C1260 284.261 1257.76 286.5 1255 286.5H776" stroke="white" stroke-linecap="round"/>
+<path opacity="0.2" d="M610 317V338.5C610 341.261 607.761 343.5 605 343.5H494C491.239 343.5 489 345.739 489 348.5V399.929C489 401.255 488.473 402.527 487.536 403.464L429.464 461.536C428.527 462.473 428 463.745 428 465.071V481.5" stroke="white" stroke-linecap="round"/>
+<path opacity="0.2" d="M715 317V338.5C715 341.261 717.239 343.5 720 343.5H831C833.761 343.5 836 345.739 836 348.5V399.929C836 401.255 836.527 402.527 837.464 403.464L895.536 461.536C896.473 462.473 897 463.745 897 465.071V481.5" stroke="white" stroke-linecap="round"/>
+<circle cx="1297" cy="154" r="8" fill="#0F78EE"/>
+<circle cx="1297" cy="154" r="7.5" stroke="white" stroke-opacity="0.25"/>
+<path d="M789 344L800 336L800 352L789 344Z" fill="#0D6CEA"/>
+<path d="M799.5 351.018L789.85 344L799.5 336.982L799.5 351.018Z" stroke="white" stroke-opacity="0.25"/>
+<rect y="75" width="10" height="10" rx="2" fill="#107CF2"/>
+<rect x="0.5" y="75.5" width="9" height="9" rx="1.5" stroke="white" stroke-opacity="0.25"/>
+<rect x="578" y="339" width="10" height="10" rx="2" fill="#0D6CEA"/>
+<rect x="578.5" y="339.5" width="9" height="9" rx="1.5" stroke="white" stroke-opacity="0.25"/>
+<path opacity="0.2" d="M65 482V415.071C65 413.745 65.5268 412.473 66.4645 411.536L124.536 353.464C125.473 352.527 126 351.255 126 349.929V286.5" stroke="white" stroke-linecap="round"/>
+<path opacity="0.2" d="M1259 482V415.071C1259 413.745 1258.47 412.473 1257.54 411.536L1199.46 353.464C1198.53 352.527 1198 351.255 1198 349.929V286.5" stroke="white" stroke-linecap="round"/>
+<path opacity="0.25" d="M549 344V425C549 427.761 551.239 430 554 430H648.5C651.261 430 653.5 432.239 653.5 435V454.5" stroke="white" stroke-linecap="round"/>
+<path opacity="0.25" d="M774.5 344V425C774.5 427.761 772.261 430 769.5 430H675C672.239 430 670 432.239 670 435V454.5" stroke="white" stroke-linecap="round"/>
+<path d="M604 430L615 422L615 438L604 430Z" fill="#045FDF"/>
+<path d="M614.5 437.018L604.85 430L614.5 422.982L614.5 437.018Z" stroke="white" stroke-opacity="0.25"/>
+</svg>
