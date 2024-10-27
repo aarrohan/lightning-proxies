@@ -74,6 +74,7 @@ export default function Footer() {
               <div className="flex gap-3">
                 <Link
                   href={"/"}
+                  aria-label="twitter"
                   target="_blank"
                   className="w-[38px] h-[38px] bg-white/10 hover:bg-white/15 rounded-md flex justify-center items-center duration-200"
                 >
@@ -105,6 +106,7 @@ export default function Footer() {
 
                 <Link
                   href={"/"}
+                  aria-label="instagram"
                   target="_blank"
                   className="w-[38px] h-[38px] bg-white/10 hover:bg-white/15 rounded-md flex justify-center items-center duration-200"
                 >
@@ -148,6 +150,7 @@ export default function Footer() {
 
                 <Link
                   href={"/"}
+                  aria-label="discord"
                   target="_blank"
                   className="w-[38px] h-[38px] bg-white/10 hover:bg-white/15 rounded-md flex justify-center items-center duration-200"
                 >
@@ -179,6 +182,7 @@ export default function Footer() {
 
                 <Link
                   href={"/"}
+                  aria-label="telegram"
                   target="_blank"
                   className="w-[38px] h-[38px] bg-white/10 hover:bg-white/15 rounded-md flex justify-center items-center duration-200"
                 >
