@@ -244,10 +244,9 @@ export default function UseCasesSection() {
         </h2>
 
         <div className="mb-6 flex justify-between">
-          <button
+          <div
             onClick={handlePrev}
-            aria-labelledby="prev button"
-            className="active:scale-95 w-[35px] h-[35px] border border-dark-white bg-off-white rounded-full flex justify-center items-center duration-200"
+            className="active:scale-95 w-[35px] h-[35px] border border-dark-white bg-off-white rounded-full flex justify-center items-center duration-200 cursor-pointer"
           >
             <svg
               width="9"
@@ -262,12 +261,11 @@ export default function UseCasesSection() {
                 strokeWidth="2.02597"
               />
             </svg>
-          </button>
+          </div>
 
-          <button
+          <div
             onClick={handleNext}
-            aria-labelledby="next button"
-            className="active:scale-95 w-[35px] h-[35px] border border-dark-white bg-off-white rounded-full flex justify-center items-center duration-200"
+            className="active:scale-95 w-[35px] h-[35px] border border-dark-white bg-off-white rounded-full flex justify-center items-center duration-200 cursor-pointer"
           >
             <svg
               width="9"
@@ -282,7 +280,7 @@ export default function UseCasesSection() {
                 strokeWidth="2.02597"
               />
             </svg>
-          </button>
+          </div>
         </div>
 
         <div
