@@ -246,6 +246,7 @@ export default function UseCasesSection() {
         <div className="mb-6 flex justify-between">
           <button
             onClick={handlePrev}
+            aria-labelledby="prev button"
             className="active:scale-95 w-[35px] h-[35px] border border-dark-white bg-off-white rounded-full flex justify-center items-center duration-200"
           >
             <svg
@@ -265,6 +266,7 @@ export default function UseCasesSection() {
 
           <button
             onClick={handleNext}
+            aria-labelledby="next button"
             className="active:scale-95 w-[35px] h-[35px] border border-dark-white bg-off-white rounded-full flex justify-center items-center duration-200"
           >
             <svg

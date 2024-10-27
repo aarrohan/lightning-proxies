@@ -14,9 +14,9 @@ function BigBox() {
   return (
     <div className="px-8 border border-dark-white bg-off-white rounded-xl grid grid-cols-[auto_375px] items-center gap-14">
       <div className="py-8">
-        <h4 className="mb-2.5 font-medium tracking-[-0.16px] text-accent">
+        <p className="mb-2.5 font-medium tracking-[-0.16px] text-accent">
           Ethical IP Resources
-        </h4>
+        </p>
 
         <p className="mb-7 tracking-[-0.16px] text-primary/75">
           Become the identity of someone else on the web with the help of our
@@ -201,9 +201,9 @@ function BigBox() {
 function ContentBox({ title, description, img }: IContentBoxProps) {
   return (
     <div className="py-10 px-8 pb-4 border border-dark-white bg-off-white rounded-xl">
-      <h4 className="mb-2.5 font-medium tracking-[-0.16px] text-accent">
+      <p className="mb-2.5 font-medium tracking-[-0.16px] text-accent">
         {title}
-      </h4>
+      </p>
 
       <p className="mb-5 tracking-[-0.16px] text-primary/75">{description}</p>
 
@@ -216,9 +216,9 @@ function CodeBox() {
   return (
     <div className="border border-dark-white bg-off-white rounded-xl flex flex-col justify-between">
       <div className="pt-10 px-8">
-        <h4 className="mb-2.5 font-medium tracking-[-0.16px] text-accent">
+        <p className="mb-2.5 font-medium tracking-[-0.16px] text-accent">
           Effortless Integration with Any Language
-        </h4>
+        </p>
 
         <p className="mb-5 tracking-[-0.16px] text-primary/75">
           Simplify proxy implementation with our quick and easy demonstration
