@@ -20,7 +20,7 @@ export default function Footer() {
       />
 
       <div className="mx-auto container max-w-[1320px] px-5">
-        <div className="mb-12 grid lg:grid-cols-[auto_580px] gap-8 sm:gap-12">
+        <div className="mb-8 sm:mb-12 grid lg:grid-cols-[auto_580px] gap-8 sm:gap-12">
           <div>
             <h3 className="mb-3 sm:mb-5 text-[26px] sm:text-3xl font-semibold leading-[30px] sm:leading-[38px] tracking-[-0.52px] sm:tracking-[-0.9px] text-white">
               <span className="hidden sm:inline-block">
@@ -65,25 +65,25 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="pt-12 pb-20 border-t border-white/10 flex flex-wrap justify-between sm:justify-start lg:justify-between gap-12">
+        <div className="pt-8 sm:pt-12 pb-12 sm:pb-20 border-t border-white/10 flex flex-wrap justify-between sm:justify-start lg:justify-between gap-12">
           <div className="w-full lg:w-fit">
             <Image src={logoWhiteImg} alt="" className="mb-5 w-[165px]" />
 
-            <p className="mb-12 tracking-[-0.16px] text-white/75">
+            <p className="mb-8 sm:mb-12 text-xs sm:text-base tracking-[-0.12px] sm:tracking-[-0.16px] text-white/75">
               Faster, Stronger, Reliable.
             </p>
 
             <div>
-              <p className="mb-5 text-sm font-semibold tracking-[-0.14px] text-white">
+              <p className="mb-4 sm:mb-5 text-xs sm:text-sm font-semibold tracking-[-0.14px] text-white">
                 Connect with us
               </p>
 
-              <div className="flex gap-3">
+              <div className="flex gap-2.5 sm:gap-3">
                 <Link
                   href={"/"}
                   aria-label="twitter"
                   target="_blank"
-                  className="w-[38px] h-[38px] bg-white/10 hover:bg-white/15 rounded-md flex justify-center items-center duration-200"
+                  className="w-[32px] sm:w-[38px] h-[32px] sm:h-[38px] bg-white/10 hover:bg-white/15 rounded-md flex justify-center items-center duration-200"
                 >
                   <svg
                     width="15"
@@ -91,6 +91,7 @@ export default function Footer() {
                     viewBox="0 0 15 15"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
+                    className="w-[12px] sm:w-[15px] h-auto"
                   >
                     <g clipPath="url(#clip0_10_364)">
                       <path
@@ -115,7 +116,7 @@ export default function Footer() {
                   href={"/"}
                   aria-label="instagram"
                   target="_blank"
-                  className="w-[38px] h-[38px] bg-white/10 hover:bg-white/15 rounded-md flex justify-center items-center duration-200"
+                  className="w-[32px] sm:w-[38px] h-[32px] sm:h-[38px] bg-white/10 hover:bg-white/15 rounded-md flex justify-center items-center duration-200"
                 >
                   <svg
                     width="15"
@@ -123,6 +124,7 @@ export default function Footer() {
                     viewBox="0 0 15 15"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
+                    className="w-[13px] sm:w-[15px] h-auto"
                   >
                     <g clipPath="url(#clip0_10_368)">
                       <path
@@ -159,7 +161,7 @@ export default function Footer() {
                   href={"/"}
                   aria-label="discord"
                   target="_blank"
-                  className="w-[38px] h-[38px] bg-white/10 hover:bg-white/15 rounded-md flex justify-center items-center duration-200"
+                  className="w-[32px] sm:w-[38px] h-[32px] sm:h-[38px] bg-white/10 hover:bg-white/15 rounded-md flex justify-center items-center duration-200"
                 >
                   <svg
                     width="20"
@@ -167,6 +169,7 @@ export default function Footer() {
                     viewBox="0 0 20 21"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
+                    className="w-[15px] sm:w-[20px] h-auto"
                   >
                     <g clipPath="url(#clip0_10_374)">
                       <path
@@ -191,7 +194,7 @@ export default function Footer() {
                   href={"/"}
                   aria-label="telegram"
                   target="_blank"
-                  className="w-[38px] h-[38px] bg-white/10 hover:bg-white/15 rounded-md flex justify-center items-center duration-200"
+                  className="w-[32px] sm:w-[38px] h-[32px] sm:h-[38px] bg-white/10 hover:bg-white/15 rounded-md flex justify-center items-center duration-200"
                 >
                   <svg
                     width="15"
@@ -199,6 +202,7 @@ export default function Footer() {
                     viewBox="0 0 15 15"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
+                    className="w-[13px] sm:w-[15px] h-auto"
                   >
                     <g clipPath="url(#clip0_10_378)">
                       <path
@@ -225,42 +229,42 @@ export default function Footer() {
           </div>
 
           <div className="min-w-[150px] sm:min-w-fit">
-            <p className="mb-6 text-sm font-medium tracking-[-0.14px] text-white">
+            <p className="mb-6 text-xs sm:text-sm font-medium tracking-[-0.12px] sm:tracking-[-0.14px] text-white">
               Company
             </p>
 
             <div className="flex flex-col gap-y-5">
               <Link
                 href={"/"}
-                className="text-sm tracking-[-0.14px] text-white/75 hover:text-white duration-200"
+                className="text-xs sm:text-sm tracking-[-0.12px] sm:tracking-[-0.14px] text-white/75 hover:text-white duration-200"
               >
                 About Us
               </Link>
 
               <Link
                 href={"/"}
-                className="text-sm tracking-[-0.14px] text-white/75 hover:text-white duration-200"
+                className="text-xs sm:text-sm tracking-[-0.12px] sm:tracking-[-0.14px] text-white/75 hover:text-white duration-200"
               >
                 Blogs
               </Link>
 
               <Link
                 href={"/"}
-                className="text-sm tracking-[-0.14px] text-white/75 hover:text-white duration-200"
+                className="text-xs sm:text-sm tracking-[-0.12px] sm:tracking-[-0.14px] text-white/75 hover:text-white duration-200"
               >
                 API
               </Link>
 
               <Link
                 href={"/"}
-                className="text-sm tracking-[-0.14px] text-white/75 hover:text-white duration-200"
+                className="text-xs sm:text-sm tracking-[-0.12px] sm:tracking-[-0.14px] text-white/75 hover:text-white duration-200"
               >
                 Reseller Program
               </Link>
 
               <Link
                 href={"/"}
-                className="text-sm tracking-[-0.14px] text-white/75 hover:text-white duration-200"
+                className="text-xs sm:text-sm tracking-[-0.12px] sm:tracking-[-0.14px] text-white/75 hover:text-white duration-200"
               >
                 Affiliate Program
               </Link>
@@ -268,71 +272,71 @@ export default function Footer() {
           </div>
 
           <div className="min-w-[150px] sm:min-w-fit">
-            <p className="mb-6 text-sm font-medium tracking-[-0.14px] text-white">
+            <p className="mb-6 text-xs sm:text-sm font-medium tracking-[-0.12px] sm:tracking-[-0.14px] text-white">
               Proxies
             </p>
 
             <div className="flex flex-col gap-y-5">
               <Link
                 href={"/"}
-                className="text-sm tracking-[-0.14px] text-white/75 hover:text-white duration-200"
+                className="text-xs sm:text-sm tracking-[-0.12px] sm:tracking-[-0.14px] text-white/75 hover:text-white duration-200"
               >
                 Residential Proxies
               </Link>
 
               <Link
                 href={"/"}
-                className="text-sm tracking-[-0.14px] text-white/75 hover:text-white duration-200"
+                className="text-xs sm:text-sm tracking-[-0.12px] sm:tracking-[-0.14px] text-white/75 hover:text-white duration-200"
               >
                 Datacenter Proxies
               </Link>
 
               <Link
                 href={"/"}
-                className="text-sm tracking-[-0.14px] text-white/75 hover:text-white duration-200"
+                className="text-xs sm:text-sm tracking-[-0.12px] sm:tracking-[-0.14px] text-white/75 hover:text-white duration-200"
               >
                 ISP Proxies
               </Link>
 
               <Link
                 href={"/"}
-                className="text-sm tracking-[-0.14px] text-white/75 hover:text-white duration-200"
+                className="text-xs sm:text-sm tracking-[-0.12px] sm:tracking-[-0.14px] text-white/75 hover:text-white duration-200"
               >
                 IPv6 Proxies
               </Link>
 
               <Link
                 href={"/"}
-                className="text-sm tracking-[-0.14px] text-white/75 hover:text-white duration-200"
+                className="text-xs sm:text-sm tracking-[-0.12px] sm:tracking-[-0.14px] text-white/75 hover:text-white duration-200"
               >
                 Mobile Proxies
               </Link>
             </div>
           </div>
 
-          <div className="min-w-[150px] sm:min-w-fit">
-            <p className="mb-6 text-sm font-medium tracking-[-0.14px] text-white">
+          <div className="order-6 sm:order-[initial] min-w-[150px] sm:min-w-fit">
+            <p className="mb-6 text-xs sm:text-sm font-medium tracking-[-0.12px] sm:tracking-[-0.14px] text-white">
               Resources
             </p>
 
             <div className="flex flex-col gap-y-5">
               <Link
                 href={"/"}
-                className="text-sm tracking-[-0.14px] text-white/75 hover:text-white duration-200"
+                className="text-xs sm:text-sm tracking-[-0.12px] sm:tracking-[-0.14px] text-white/75 hover:text-white duration-200"
               >
                 Help Center
               </Link>
 
               <Link
                 href={"/"}
-                className="text-sm tracking-[-0.14px] text-white/75 hover:text-white duration-200"
+                className="text-xs sm:text-sm tracking-[-0.12px] sm:tracking-[-0.14px] text-white/75 hover:text-white duration-200"
               >
                 Proxy Checker
               </Link>
 
               <Link
                 href={"/"}
-                className="text-sm tracking-[-0.14px] text-white/75 hover:text-white duration-200"
+                className="text-xs sm:text-sm tracking-[-0.12px] sm:tracking-[-0.14px] text-white/75 hover:text-white duration-200"
               >
                 Free Proxy List
               </Link>
@@ -340,42 +344,42 @@ export default function Footer() {
           </div>
 
           <div className="min-w-[150px] sm:min-w-fit">
-            <p className="mb-6 text-sm font-medium tracking-[-0.14px] text-white">
+            <p className="mb-6 text-xs sm:text-sm font-medium tracking-[-0.12px] sm:tracking-[-0.14px] text-white">
               Use Cases
             </p>
 
             <div className="flex flex-col gap-y-5">
               <Link
                 href={"/"}
-                className="text-sm tracking-[-0.14px] text-white/75 hover:text-white duration-200"
+                className="text-xs sm:text-sm tracking-[-0.12px] sm:tracking-[-0.14px] text-white/75 hover:text-white duration-200"
               >
                 Ad Verification
               </Link>
 
               <Link
                 href={"/"}
-                className="text-sm tracking-[-0.14px] text-white/75 hover:text-white duration-200"
+                className="text-xs sm:text-sm tracking-[-0.12px] sm:tracking-[-0.14px] text-white/75 hover:text-white duration-200"
               >
                 Brand Protection
               </Link>
 
               <Link
                 href={"/"}
-                className="text-sm tracking-[-0.14px] text-white/75 hover:text-white duration-200"
+                className="text-xs sm:text-sm tracking-[-0.12px] sm:tracking-[-0.14px] text-white/75 hover:text-white duration-200"
               >
                 Market Research
               </Link>
 
               <Link
                 href={"/"}
-                className="text-sm tracking-[-0.14px] text-white/75 hover:text-white duration-200"
+                className="text-xs sm:text-sm tracking-[-0.12px] sm:tracking-[-0.14px] text-white/75 hover:text-white duration-200"
               >
                 SERP Monitoring
               </Link>
 
               <Link
                 href={"/"}
-                className="group flex items-center gap-2.5 text-sm tracking-[-0.14px] text-white/75 hover:text-white duration-200"
+                className="group flex items-center gap-2 sm:gap-2.5 text-xs sm:text-sm tracking-[-0.12px] sm:tracking-[-0.14px] text-white/75 hover:text-white duration-200"
               >
                 View All{" "}
                 <svg
@@ -384,6 +388,7 @@ export default function Footer() {
                   viewBox="0 0 6 11"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
+                  className="w-[5px] sm:w-[6px] h-auto"
                 >
                   <path
                     fillRule="evenodd"
@@ -397,42 +402,42 @@ export default function Footer() {
           </div>
 
           <div className="min-w-[150px] sm:min-w-fit">
-            <p className="mb-6 text-sm font-medium tracking-[-0.14px] text-white">
+            <p className="mb-6 text-xs sm:text-sm font-medium tracking-[-0.12px] sm:tracking-[-0.14px] text-white">
               Locations
             </p>
 
             <div className="flex flex-col gap-y-5">
               <Link
                 href={"/"}
-                className="text-sm tracking-[-0.14px] text-white/75 hover:text-white duration-200"
+                className="text-xs sm:text-sm tracking-[-0.12px] sm:tracking-[-0.14px] text-white/75 hover:text-white duration-200"
               >
                 United States
               </Link>
 
               <Link
                 href={"/"}
-                className="text-sm tracking-[-0.14px] text-white/75 hover:text-white duration-200"
+                className="text-xs sm:text-sm tracking-[-0.12px] sm:tracking-[-0.14px] text-white/75 hover:text-white duration-200"
               >
                 United Kingdom
               </Link>
 
               <Link
                 href={"/"}
-                className="text-sm tracking-[-0.14px] text-white/75 hover:text-white duration-200"
+                className="text-xs sm:text-sm tracking-[-0.12px] sm:tracking-[-0.14px] text-white/75 hover:text-white duration-200"
               >
                 Germany
               </Link>
 
               <Link
                 href={"/"}
-                className="text-sm tracking-[-0.14px] text-white/75 hover:text-white duration-200"
+                className="text-xs sm:text-sm tracking-[-0.12px] sm:tracking-[-0.14px] text-white/75 hover:text-white duration-200"
               >
                 Spain
               </Link>
 
               <Link
                 href={"/"}
-                className="group flex items-center gap-2.5 text-sm tracking-[-0.14px] text-white/75 hover:text-white duration-200"
+                className="group flex items-center gap-2 sm:gap-2.5 text-xs sm:text-sm tracking-[-0.12px] sm:tracking-[-0.14px] text-white/75 hover:text-white duration-200"
               >
                 View All{" "}
                 <svg
@@ -441,6 +446,7 @@ export default function Footer() {
                   viewBox="0 0 6 11"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
+                  className="w-[5px] sm:w-[6px] h-auto"
                 >
                   <path
                     fillRule="evenodd"
@@ -455,8 +461,8 @@ export default function Footer() {
         </div>
 
         <div className="mb-8 py-5 border-y border-white/10 flex flex-wrap justify-center md:justify-between items-center gap-y-6 gap-x-12">
-          <div className="flex items-center gap-6">
-            <p className="text-sm tracking-[-0.14px] text-white/75">
+          <div className="flex items-center gap-5 sm:gap-6">
+            <p className="text-xs sm:text-sm tracking-[-0.12px] sm:tracking-[-0.14px] text-white/75">
               <span className="font-light">&copy;</span>{" "}
               <span>2024 Lightning Proxies</span>
             </p>
@@ -467,6 +473,7 @@ export default function Footer() {
               viewBox="0 0 8 7"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
+              className="w-[6px] sm:w-[8px] h-auto"
             >
               <path
                 d="M4 5.5L4 1.5M4 5.5L2 3.5M4 5.5L6 3.5M4 1.5L2 3.5M4 1.5L6 3.5M6 3.5L2 3.5"
@@ -479,7 +486,7 @@ export default function Footer() {
 
             <Link
               href={"/"}
-              className="text-sm tracking-[-0.14px] text-white/75 hover:text-white duration-200"
+              className="text-xs sm:text-sm tracking-[-0.12px] sm:tracking-[-0.14px] text-white/75 hover:text-white duration-200"
             >
               Terms
             </Link>
@@ -490,13 +497,14 @@ export default function Footer() {
               viewBox="0 0 2 5"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
+              className="hidden sm:block"
             >
               <path d="M1 0.5V4.5" stroke="white" strokeLinecap="round" />
             </svg>
 
             <Link
               href={"/"}
-              className="text-sm tracking-[-0.14px] text-white/75 hover:text-white duration-200"
+              className="text-xs sm:text-sm tracking-[-0.12px] sm:tracking-[-0.14px] text-white/75 hover:text-white duration-200"
             >
               Privacy
             </Link>
@@ -507,27 +515,32 @@ export default function Footer() {
               viewBox="0 0 2 5"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
+              className="hidden sm:block"
             >
               <path d="M1 0.5V4.5" stroke="white" strokeLinecap="round" />
             </svg>
 
             <Link
               href={"/"}
-              className="text-sm tracking-[-0.14px] text-white/75 hover:text-white duration-200"
+              className="text-xs sm:text-sm tracking-[-0.12px] sm:tracking-[-0.14px] text-white/75 hover:text-white duration-200"
             >
               Cookies
             </Link>
           </div>
 
-          <Image src={paymentMethodsImg} alt="" className="w-[318px]" />
+          <Image
+            src={paymentMethodsImg}
+            alt=""
+            className="w-[295px] sm:w-[318px]"
+          />
         </div>
 
         <div>
-          <p className="mb-4 text-sm tracking-[-0.14px] text-white">
+          <p className="mb-3 sm:mb-4 text-xs sm:text-sm tracking-[-0.12px] sm:tracking-[-0.14px] text-white">
             Disclaimer:
           </p>
 
-          <p className="text-sm tracking-[-0.14px] text-white/50">
+          <p className="text-xs sm:text-sm tracking-[-0.12px] sm:tracking-[-0.14px] text-white/50">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget
             turpis vel elit facilisis ullamcorper. Mauris fringilla suscipit ex,
             et posuere magna faucibus nec. Nulla sed erat arcu. Ut nec sem
