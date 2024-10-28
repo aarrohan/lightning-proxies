@@ -6,12 +6,12 @@ import PrimaryBtn from "../ui/PrimaryBtn";
 export default function NavigationBar() {
   return (
     <nav className="fixed z-[1000] top-0 left-0 w-full bg-white border-b border-dark-white">
-      <div className="mx-auto container max-w-[1320px] h-[70px] flex justify-between items-center">
+      <div className="mx-auto container max-w-[1320px] h-[70px] px-5 flex justify-between items-center">
         <Link href={"/"} aria-label="logo">
           <Image src={logoImg} alt="logo" className="w-[130px]" />
         </Link>
 
-        <ul className="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 flex items-center gap-10">
+        <ul className="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 hidden lg:flex items-center gap-10">
           <li>
             <Link
               href={"/"}
@@ -124,25 +124,59 @@ export default function NavigationBar() {
         </ul>
 
         <div className="flex items-center gap-4">
-          <Link href={"/"} className="text-sm font-medium tracking-[-0.14px]">
+          <Link
+            href={"/"}
+            className="hidden sm:block text-sm font-medium tracking-[-0.14px]"
+          >
             Login
           </Link>
 
-          <PrimaryBtn>
-            Get Started{" "}
+          <div className="hidden sm:block">
+            <PrimaryBtn>
+              Get Started{" "}
+              <svg
+                width="14"
+                height="11"
+                viewBox="0 0 14 11"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8.21967 2.03033C7.92678 1.73744 7.92678 1.26256 8.21967 0.96967C8.51256 0.676777 8.98744 0.676777 9.28033 0.96967L13.2803 4.96967C13.5732 5.26256 13.5732 5.73744 13.2803 6.03033L9.28033 10.0303C8.98744 10.3232 8.51256 10.3232 8.21967 10.0303C7.92678 9.73744 7.92678 9.26256 8.21967 8.96967L10.9393 6.25H1.25C0.835787 6.25 0.5 5.91421 0.5 5.5C0.5 5.08579 0.835787 4.75 1.25 4.75H10.9393L8.21967 2.03033Z"
+                  className="fill-white"
+                />
+              </svg>
+            </PrimaryBtn>
+          </div>
+
+          <div className="flex lg:hidden cursor-pointer">
             <svg
-              width="14"
-              height="11"
-              viewBox="0 0 14 11"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
-                d="M8.21967 2.03033C7.92678 1.73744 7.92678 1.26256 8.21967 0.96967C8.51256 0.676777 8.98744 0.676777 9.28033 0.96967L13.2803 4.96967C13.5732 5.26256 13.5732 5.73744 13.2803 6.03033L9.28033 10.0303C8.98744 10.3232 8.51256 10.3232 8.21967 10.0303C7.92678 9.73744 7.92678 9.26256 8.21967 8.96967L10.9393 6.25H1.25C0.835787 6.25 0.5 5.91421 0.5 5.5C0.5 5.08579 0.835787 4.75 1.25 4.75H10.9393L8.21967 2.03033Z"
-                className="fill-white"
+                fillRule="evenodd"
+                clipRule="evenodd"
+                d="M21 6.5H13V5H21V6.5Z"
+                fill="#1D2026"
+              />
+              <path
+                fillRule="evenodd"
+                clipRule="evenodd"
+                d="M21 13H9V11.5H21V13Z"
+                fill="#1D2026"
+              />
+              <path
+                fillRule="evenodd"
+                clipRule="evenodd"
+                d="M21 19.5H3V18H21V19.5Z"
+                fill="#1D2026"
               />
             </svg>
-          </PrimaryBtn>
+          </div>
         </div>
       </div>
     </nav>

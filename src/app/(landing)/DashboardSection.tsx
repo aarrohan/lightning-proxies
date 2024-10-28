@@ -10,7 +10,7 @@ export default function DashboardSection() {
   const [activeTabIndex, setActiveIndex] = useState<number>(0);
 
   return (
-    <section className="pt-44 overflow-hidden">
+    <section className="pt-44 hidden sm:block overflow-hidden">
       <div className="mx-auto container max-w-[1320px]">
         <p className="mb-3 text-sm font-semibold tracking-[-0.14px] uppercase text-center text-accent">
           DASHBOARD

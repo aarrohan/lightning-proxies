@@ -5,30 +5,31 @@ import PrimaryBtn from "@/components/ui/PrimaryBtn";
 export default function HeroSection() {
   return (
     <section className="pt-[70px] bg-gradient-to-b from-accent/10 to-transparent">
-      <div className="mx-auto container max-w-[1320px] pt-20 pb-16 flex flex-col items-center">
-        <p className="mb-6 py-2 px-3.5 bg-accent/10 rounded-xl text-sm tracking-[-0.14px] text-accent">
+      <div className="mx-auto container max-w-[1320px] pt-20 pb-16 px-5 flex flex-col items-center">
+        <p className="mb-6 py-2 px-3.5 bg-accent/10 rounded-xl text-[11px] sm:text-sm tracking-[-0.11px] sm:tracking-[-0.14px] text-accent">
           Our online referral program is now available.{" "}
           <span className="font-medium">Earn Rewards</span>
         </p>
 
-        <h1 className="mb-6 text-[64px] leading-[72px] tracking-[-1.95px] font-semibold text-center">
+        <h1 className="mb-6 text-4xl sm:text-[64px] leading-[42px] sm:leading-[72px] tracking-[-1.08px] sm:tracking-[-1.95px] font-semibold text-center">
           Data Extraction <br /> <span className="text-accent">Excellence</span>{" "}
           at Scale
         </h1>
 
-        <p className="max-w-[580px] text-center">
+        <p className="max-w-[580px] text-xs sm:text-base leading-[18px] sm:leading-[24px] tracking-[-0.12px] sm:tracking-[-0.16px] text-center">
           Gather data efficiently with the industry-leading proxy network and
           enjoy limitless web scraping solutions on the most intense tasks.
         </p>
 
-        <div className="mt-7 mb-5  flex items-center gap-8">
-          <p className="flex items-center gap-3 font-medium tracking-[-0.16px]">
+        <div className="mt-7 mb-5 flex flex-wrap justify-center items-center gap-y-4 gap-x-6 sm:gap-x-8">
+          <p className="flex items-center gap-2 sm:gap-3 text-xs sm:text-base font-medium tracking-[-0.12px] sm:tracking-[-0.16px]">
             <svg
               width="87"
               height="18"
               viewBox="0 0 87 18"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
+              className="w-[70px] sm:w-[87px] h-auto"
             >
               <path
                 d="M9.24758 13.3479L13.0486 12.3846L14.6367 17.2791L9.24758 13.3479ZM17.9952 7.02153H11.3043L9.24758 0.721191L7.19086 7.02153H0.5L5.91517 10.9267L3.85844 17.227L9.27361 13.3219L12.606 10.9267L17.9952 7.02153Z"
@@ -81,6 +82,7 @@ export default function HeroSection() {
               viewBox="0 0 19 18"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
+              className="w-[18px] sm:w-[19px] h-auto"
             >
               <path
                 d="M9.73725 2.39038C9.75891 2.37562 9.79064 2.36454 9.82841 2.36454C9.86618 2.36454 9.89791 2.37562 9.91958 2.39038C9.93727 2.40244 9.95866 2.4234 9.97388 2.47023L11.0799 5.8743C11.2677 6.45234 11.8064 6.84371 12.4142 6.84371H15.9935C16.0427 6.84371 16.0692 6.85758 16.0862 6.87067C16.1069 6.88671 16.1272 6.91347 16.1389 6.94939C16.1506 6.98532 16.1499 7.01891 16.1425 7.04408C16.1365 7.06463 16.1232 7.09145 16.0834 7.12039L13.1877 9.22422C12.696 9.58147 12.4902 10.2147 12.678 10.7928L13.7841 14.1968C13.7993 14.2437 13.7943 14.2732 13.7871 14.2933C13.7782 14.318 13.7591 14.3456 13.7285 14.3678C13.698 14.39 13.6658 14.3997 13.6396 14.4005C13.6182 14.4012 13.5886 14.3968 13.5487 14.3678L10.653 12.264C10.1613 11.9067 9.49549 11.9068 9.00378 12.264L6.10811 14.3678C6.06827 14.3968 6.03865 14.4012 6.01725 14.4005C5.99105 14.3997 5.95887 14.39 5.92831 14.3678C5.89775 14.3456 5.87859 14.318 5.86974 14.2933C5.86252 14.2732 5.85753 14.2437 5.87275 14.1968L6.97879 10.7928C7.16661 10.2147 6.96086 9.58147 6.46914 9.22422L3.57347 7.12039C3.53363 7.09145 3.52031 7.06463 3.51431 7.04408C3.50696 7.01892 3.50624 6.98532 3.51791 6.94939C3.52958 6.91347 3.54992 6.88671 3.57066 6.87067C3.58759 6.85758 3.61413 6.84371 3.66337 6.84371H7.24262C7.85041 6.84371 8.38908 6.45234 8.5769 5.87429L9.68295 2.47023L9.08854 2.27709L9.68295 2.47023C9.69817 2.42339 9.71956 2.40244 9.73725 2.39038Z"
@@ -91,13 +93,14 @@ export default function HeroSection() {
             4.9 rating
           </p>
 
-          <p className="flex items-center gap-3 font-medium tracking-[-0.16px]">
+          <p className="flex items-center gap-2 sm:gap-3 text-xs sm:text-base font-medium tracking-[-0.12px] sm:tracking-[-0.16px]">
             <svg
               width="19"
               height="18"
               viewBox="0 0 19 18"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
+              className="w-[18px] sm:w-[19px] h-auto"
             >
               <path
                 d="M15.8281 8.8125C15.8281 12.3127 3.82812 12.3127 3.82812 8.8125M9.82812 2.25C6.51462 2.25 3.82812 3.2175 3.82812 4.41C3.82812 7.53 15.8281 7.53 15.8281 4.41C15.8281 3.2175 13.1416 2.25 9.82812 2.25Z"
@@ -117,13 +120,14 @@ export default function HeroSection() {
             25M+ Proxy Pool
           </p>
 
-          <p className="flex items-center gap-3 font-medium tracking-[-0.16px]">
+          <p className="flex items-center gap-2 sm:gap-3 text-xs sm:text-base font-medium tracking-[-0.12px] sm:tracking-[-0.16px]">
             <svg
               width="19"
               height="18"
               viewBox="0 0 19 18"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
+              className="w-[18px] sm:w-[19px] h-auto"
             >
               <path
                 d="M12.8138 5.66406L13.3441 5.13381M10.5931 15.1456L16.0666 9.67206C16.3441 9.39456 16.5016 9.01956 16.5068 8.62806L16.5781 3.01131C16.5794 2.91098 16.5606 2.8114 16.5228 2.71845C16.485 2.6255 16.429 2.54106 16.358 2.47011C16.2871 2.39916 16.2026 2.34313 16.1097 2.30534C16.0167 2.26755 15.9171 2.24875 15.8168 2.25006L10.2001 2.32131C9.80797 2.32633 9.43335 2.48431 9.15606 2.76156L3.68256 8.23506C3.17706 8.73981 2.78856 9.70431 3.36456 10.2803L8.54706 15.4628C9.12381 16.0396 10.0883 15.6503 10.5931 15.1456Z"
@@ -137,7 +141,7 @@ export default function HeroSection() {
           </p>
         </div>
 
-        <PrimaryBtn customClasses="!py-2.5 !px-12 !text-base !tracking-[-0.16px]">
+        <PrimaryBtn customClasses="!py-2.5 !px-12 sm:!text-base sm:!tracking-[-0.16px]">
           Get Started{" "}
           <svg
             width="14"
@@ -159,7 +163,11 @@ export default function HeroSection() {
           <span className="absolute -top-[2px] right-0 w-[5px] h-[5px] bg-accent rounded-full"></span>
         </div>
 
-        <Image src={heroSectionImg1} alt="" className="w-[425px]" />
+        <Image
+          src={heroSectionImg1}
+          alt=""
+          className="w-[280px] sm:w-[425px]"
+        />
 
         <div className="relative flex-1 h-px bg-gradient-to-r from-accent to-dark-white">
           <span className="absolute -top-[2px] left-0 w-[5px] h-[5px] bg-accent rounded-full"></span>

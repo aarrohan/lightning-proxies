@@ -1,10 +1,11 @@
 import SecondaryBtn from "@/components/ui/SecondaryBtn";
 import followUpSectionShapeImg from "@/assets/images/follow-up-section-shape.svg";
+import followUpSectionShapeMobileImg from "@/assets/images/follow-up-section-shape-mobile.svg";
 import Image from "next/image";
 
 export default function FollowUpSection() {
   return (
-    <section className="relative pt-16 pb-40 bg-gradient-to-b from-[#1488FF] to-[#015DE3] overflow-hidden">
+    <section className="relative pt-16 pb-40 sm:pb-36 bg-gradient-to-b from-[#1488FF] to-[#015DE3] overflow-hidden">
       <div
         className="absolute top-0 left-0 w-full h-full"
         style={{
@@ -16,20 +17,27 @@ export default function FollowUpSection() {
       <Image
         src={followUpSectionShapeImg}
         alt=""
-        className="absolute top-0 left-[49.895%] -translate-x-1/2 w-[1320px]"
+        className="absolute top-0 left-[49.895%] -translate-x-1/2 w-[1320px] hidden sm:block"
       />
 
-      <div className="relative z-20 mx-auto container max-w-[1320px] flex flex-col items-center">
-        <h2 className="mb-7 text-[42px] font-semibold leading-[48px] tracking-[-0.84px] text-center text-white">
-          Begin your data gathering <br /> journey today!
+      <Image
+        src={followUpSectionShapeMobileImg}
+        alt=""
+        className="absolute -bottom-[36px] left-[49.4%] -translate-x-1/2 w-[435px] min-w-[435px] block sm:hidden"
+      />
+
+      <div className="relative z-20 mx-auto container max-w-[1320px] px-5 flex flex-col items-center">
+        <h2 className="mb-6 sm:mb-7 text-4xl sm:text-[42px] font-semibold leading-[42px] sm:leading-[48px] tracking-[-1.08px] text-center text-white">
+          Begin your data gathering <br className="hidden sm:block" /> journey
+          today!
         </h2>
 
-        <p className="mb-6 tracking-[-0.16px] text-center text-white/75">
+        <p className="mb-6 text-xs sm:text-base leading-[18px] sm:leading-[24px] tracking-[-0.16px] text-center text-white/75">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br /> Donec
           eget turpis vel elit facilisis ullamcorper.
         </p>
 
-        <SecondaryBtn customClasses="!py-2.5 !px-12 !text-base !tracking-[-0.16px]">
+        <SecondaryBtn customClasses="sm:!py-2.5 !px-14 sm:!text-base sm:!tracking-[-0.16px]">
           Get Started{" "}
           <svg
             width="14"

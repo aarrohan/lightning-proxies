@@ -8,7 +8,7 @@ import footerIconImg from "@/assets/images/branding/footer-icon.svg";
 export default function Footer() {
   return (
     <footer
-      className="relative py-14"
+      className="relative pt-20 sm:pt-14 pb-10 sm:pb-14"
       style={{
         background: `linear-gradient(180deg, #121118 34.42%, #000 100%)`,
       }}
@@ -16,50 +16,57 @@ export default function Footer() {
       <Image
         src={footerIconImg}
         alt=""
-        className="absolute -top-[31px] left-1/2 -translate-x-1/2 w-[62px]"
+        className="absolute -top-[27.5px] sm:-top-[31px] left-1/2 -translate-x-1/2 w-[55px] sm:w-[62px]"
       />
 
-      <div className="mx-auto container max-w-[1320px]">
-        <div className="mb-12 grid grid-cols-[auto_580px]">
+      <div className="mx-auto container max-w-[1320px] px-5">
+        <div className="mb-12 grid lg:grid-cols-[auto_580px] gap-8 sm:gap-12">
           <div>
-            <h3 className="mb-5 text-3xl font-semibold leading-[38px] tracking-[-0.9px] text-white">
-              Want insights from Lightning Proxies <br /> delivered straight to
-              your mailbox
+            <h3 className="mb-3 sm:mb-5 text-[26px] sm:text-3xl font-semibold leading-[30px] sm:leading-[38px] tracking-[-0.52px] sm:tracking-[-0.9px] text-white">
+              <span className="hidden sm:inline-block">
+                Want insights from Lightning Proxies <br /> delivered straight
+                to your mailbox
+              </span>
+
+              <span className="inline-block sm:hidden">
+                Get insights delivered straight to your mailbox
+              </span>
             </h3>
 
-            <p className="text-sm leading-[22px] tracking-[-0.14px] text-white/75">
+            <p className="text-xs sm:text-sm leading-[22px] tracking-[-0.12px] sm:tracking-[-0.14px] text-white/75">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-              eget turpis vel elit facilisis <br /> ullamcorper.
+              eget turpis vel elit facilisis <br className="hidden sm:block" />{" "}
+              ullamcorper.
             </p>
           </div>
 
           <div>
             <form
               onSubmit={(e) => e.preventDefault()}
-              className="mb-5 p-2.5 pl-6 bg-white rounded-xl flex items-center gap-5"
+              className="mb-4 sm:mb-5 p-1.5 sm:p-2.5 pl-4 sm:pl-6 bg-white rounded-lg sm:rounded-xl flex items-center gap-5"
             >
               <input
                 type="email"
                 placeholder="Your email address"
                 required
-                className="flex-1 text-base tracking-[-0.16px] placeholder:text-primary/50"
+                className="flex-1 text-xs sm:text-base tracking-[-0.12px] sm:tracking-[-0.16px] placeholder:text-primary/50"
               />
 
-              <button className="py-2 px-4 bg-primary rounded-lg text-sm font-medium tracking-[-0.14px] text-white">
+              <button className="py-2 px-4 bg-primary rounded-md sm:rounded-lg text-xs sm:text-sm font-medium tracking-[-0.14px] text-white">
                 Submit
               </button>
             </form>
 
-            <p className="text-sm leading-[22px] tracking-[-0.14px] text-white/75">
+            <p className="text-xs sm:text-sm leading-[22px] tracking-[-0.12px] sm:tracking-[-0.14px] text-white/75">
               By clicking submit, you'll receive updates from Lightning Proxies.{" "}
-              <br />
+              <br className="hidden sm:block" />
               We promise not to spam.
             </p>
           </div>
         </div>
 
-        <div className="pt-12 pb-20 border-t border-white/10 flex justify-between">
-          <div>
+        <div className="pt-12 pb-20 border-t border-white/10 flex flex-wrap justify-between sm:justify-start lg:justify-between gap-12">
+          <div className="w-full lg:w-fit">
             <Image src={logoWhiteImg} alt="" className="mb-5 w-[165px]" />
 
             <p className="mb-12 tracking-[-0.16px] text-white/75">
@@ -217,7 +224,7 @@ export default function Footer() {
             </div>
           </div>
 
-          <div>
+          <div className="min-w-[150px] sm:min-w-fit">
             <p className="mb-6 text-sm font-medium tracking-[-0.14px] text-white">
               Company
             </p>
@@ -260,7 +267,7 @@ export default function Footer() {
             </div>
           </div>
 
-          <div>
+          <div className="min-w-[150px] sm:min-w-fit">
             <p className="mb-6 text-sm font-medium tracking-[-0.14px] text-white">
               Proxies
             </p>
@@ -303,7 +310,7 @@ export default function Footer() {
             </div>
           </div>
 
-          <div>
+          <div className="min-w-[150px] sm:min-w-fit">
             <p className="mb-6 text-sm font-medium tracking-[-0.14px] text-white">
               Resources
             </p>
@@ -332,7 +339,7 @@ export default function Footer() {
             </div>
           </div>
 
-          <div>
+          <div className="min-w-[150px] sm:min-w-fit">
             <p className="mb-6 text-sm font-medium tracking-[-0.14px] text-white">
               Use Cases
             </p>
@@ -389,7 +396,7 @@ export default function Footer() {
             </div>
           </div>
 
-          <div>
+          <div className="min-w-[150px] sm:min-w-fit">
             <p className="mb-6 text-sm font-medium tracking-[-0.14px] text-white">
               Locations
             </p>
@@ -447,7 +454,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mb-8 py-5 border-y border-white/10 flex justify-between items-center">
+        <div className="mb-8 py-5 border-y border-white/10 flex flex-wrap justify-center md:justify-between items-center gap-y-6 gap-x-12">
           <div className="flex items-center gap-6">
             <p className="text-sm tracking-[-0.14px] text-white/75">
               <span className="font-light">&copy;</span>{" "}

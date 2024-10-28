@@ -3,6 +3,7 @@ import feature1Img from "@/assets/images/feature-1.png";
 import feature2Img from "@/assets/images/feature-2.png";
 import feature3Img from "@/assets/images/feature-3.png";
 import feature4Img from "@/assets/images/feature-4.svg";
+import feature5Img from "@/assets/images/feature-5.svg";
 
 interface IContentBoxProps {
   title: string;
@@ -12,25 +13,26 @@ interface IContentBoxProps {
 
 function BigBox() {
   return (
-    <div className="px-8 border border-dark-white bg-off-white rounded-xl grid grid-cols-[auto_375px] items-center gap-14">
-      <div className="py-8">
-        <p className="mb-2.5 font-medium tracking-[-0.16px] text-accent">
+    <div className="px-6 sm:px-8 border border-dark-white bg-off-white rounded-xl grid md:grid-cols-[auto_375px] items-center gap-y-3 gap-x-14">
+      <div className="pt-8 sm:pt-10 pb-0 sm:pb-10">
+        <p className="mb-2.5 text-sm sm:text-base font-medium tracking-[-0.14px] sm:tracking-[-0.16px] text-accent">
           Ethical IP Resources
         </p>
 
-        <p className="mb-7 tracking-[-0.16px] text-primary/75">
+        <p className="mb-7 text-xs sm:text-base leading-[18px] sm:leading-[24px] tracking-[-0.12px] sm:tracking-[-0.16px] text-primary/75">
           Become the identity of someone else on the web with the help of our
           proxies, jump from country to country with one simple click.
         </p>
 
         <div className="border border-dark-white bg-white/25 rounded-lg grid grid-cols-3">
-          <div className="p-4 flex flex-col items-center gap-2.5">
+          <div className="p-3 sm:p-4 flex flex-col items-center gap-2.5">
             <svg
               width="34"
               height="34"
               viewBox="0 0 34 34"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
+              className="w-[24px] sm:w-[34px] h-auto"
             >
               <circle
                 opacity="0.35"
@@ -77,16 +79,19 @@ function BigBox() {
               </defs>
             </svg>
 
-            <p className="tracking-[-0.16px] text-primary/75">Worldwide</p>
+            <p className="text-xs sm:text-base tracking-[-0.12px] sm:tracking-[-0.16px] text-primary/75">
+              Worldwide
+            </p>
           </div>
 
-          <div className="p-4 border-x border-dark-white flex flex-col items-center gap-2.5">
+          <div className="p-3 sm:p-4 border-x border-dark-white flex flex-col items-center gap-2.5">
             <svg
               width="34"
               height="34"
               viewBox="0 0 34 34"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
+              className="w-[24px] sm:w-[34px] h-auto"
             >
               <path
                 opacity="0.35"
@@ -138,16 +143,19 @@ function BigBox() {
               </defs>
             </svg>
 
-            <p className="tracking-[-0.16px] text-primary/75">Reliable</p>
+            <p className="text-xs sm:text-base tracking-[-0.12px] sm:tracking-[-0.16px] text-primary/75">
+              Reliable
+            </p>
           </div>
 
-          <div className="p-4 flex flex-col items-center gap-2.5">
+          <div className="p-3 sm:p-4 flex flex-col items-center gap-2.5">
             <svg
               width="34"
               height="34"
               viewBox="0 0 34 34"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
+              className="w-[24px] sm:w-[34px] h-auto"
             >
               <path
                 opacity="0.35"
@@ -186,13 +194,15 @@ function BigBox() {
               </defs>
             </svg>
 
-            <p className="tracking-[-0.16px] text-primary/75">Fast</p>
+            <p className="text-xs sm:text-base tracking-[-0.12px] sm:tracking-[-0.16px] text-primary/75">
+              Fast
+            </p>
           </div>
         </div>
       </div>
 
       <div className="flex justify-center">
-        <Image src={feature1Img} alt="" className="w-full" />
+        <Image src={feature1Img} alt="" className="w-full max-w-[375px]" />
       </div>
     </div>
   );
@@ -200,12 +210,14 @@ function BigBox() {
 
 function ContentBox({ title, description, img }: IContentBoxProps) {
   return (
-    <div className="py-10 px-8 pb-4 border border-dark-white bg-off-white rounded-xl">
-      <p className="mb-2.5 font-medium tracking-[-0.16px] text-accent">
+    <div className="py-8 sm:py-10 px-6 sm:px-8 pb-4 border border-dark-white bg-off-white rounded-xl">
+      <p className="mb-2.5 text-sm sm:text-base font-medium tracking-[-0.14px] sm:tracking-[-0.16px] text-accent">
         {title}
       </p>
 
-      <p className="mb-5 tracking-[-0.16px] text-primary/75">{description}</p>
+      <p className="mb-7 text-xs sm:text-base leading-[18px] sm:leading-[24px] tracking-[-0.12px] sm:tracking-[-0.16px] text-primary/75">
+        {description}
+      </p>
 
       <div className="flex justify-center">{img}</div>
     </div>
@@ -215,19 +227,24 @@ function ContentBox({ title, description, img }: IContentBoxProps) {
 function CodeBox() {
   return (
     <div className="border border-dark-white bg-off-white rounded-xl flex flex-col justify-between">
-      <div className="pt-10 px-8">
-        <p className="mb-2.5 font-medium tracking-[-0.16px] text-accent">
+      <div className="pt-8 sm:pt-10 pb-6 lg:pb-0 px-6 sm:px-8">
+        <p className="mb-2.5 text-sm sm:text-base font-medium tracking-[-0.14px] sm:tracking-[-0.16px] text-accent">
           Effortless Integration with Any Language
         </p>
 
-        <p className="mb-5 tracking-[-0.16px] text-primary/75">
+        <p className="mb-2 text-xs sm:text-base leading-[18px] sm:leading-[24px] tracking-[-0.12px] sm:tracking-[-0.16px] text-primary/75">
           Simplify proxy implementation with our quick and easy demonstration
           codes. No hassle, just fast integration.
         </p>
       </div>
 
-      <div className="pl-8 flex justify-center">
-        <Image src={feature4Img} alt="" className="w-full" />
+      <div className="pb-8 sm:pb-10 lg:pb-0 lg:pl-8 px-6 sm:px-8 lg:px-0 flex justify-center lg:justify-end">
+        <Image src={feature4Img} alt="" className="w-full hidden lg:block" />
+        <Image
+          src={feature5Img}
+          alt=""
+          className="w-full max-w-[395px] rounded-lg block lg:hidden"
+        />
       </div>
     </div>
   );
@@ -239,32 +256,33 @@ export default function FeaturesSection() {
       title: "Detailed Proxy Guide for Everyone",
       description:
         "We offer a comprehensive library of step-by-step videos, designed to help you configure our proxies in any tool you can think of.",
-      img: <Image src={feature2Img} alt="" className="w-full" />,
+      img: <Image src={feature2Img} alt="" className="w-full max-w-[344px]" />,
     },
     {
       title: "Customer Support Around the Clock",
       description:
         "We're here for you every step of the way. Our support team is available 24/7 on live chat to assist with any issues you may encounter.",
-      img: <Image src={feature3Img} alt="" className="w-full" />,
+      img: <Image src={feature3Img} alt="" className="w-full max-w-[344px]" />,
     },
   ];
 
   return (
-    <section className="pt-44">
-      <div className="mx-auto container max-w-[1320px]">
-        <p className="mb-3 text-sm font-semibold tracking-[-0.14px] uppercase text-center text-orange">
+    <section className="pt-20 sm:pt-44">
+      <div className="mx-auto container max-w-[1320px] px-5">
+        <p className="mb-3 text-[11px] sm:text-sm font-semibold tracking-[-0.11px] sm:tracking-[-0.14px] uppercase text-center text-orange">
           Features
         </p>
 
-        <h2 className="mb-14 text-[42px] font-semibold leading-[46px] tracking-[-0.84px] text-center">
-          Everything you would expect from <br /> a proxy service, and much more
+        <h2 className="mb-8 sm:mb-14 text-[26px] sm:text-[42px] font-semibold leading-[30px] sm:leading-[46px] tracking-[-0.84px] text-center">
+          Everything you would expect from <br className="hidden sm:block" /> a
+          proxy service, and much more
         </h2>
 
-        <div className="grid grid-cols-[auto_428px] gap-4">
+        <div className="grid lg:grid-cols-[auto_428px] gap-4">
           <div>
             <BigBox />
 
-            <div className="mt-4 grid grid-cols-2 gap-4">
+            <div className="mt-4 grid md:grid-cols-2 gap-4">
               {contentBoxes.map((box, index) => (
                 <ContentBox key={index} {...box} />
               ))}

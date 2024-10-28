@@ -1,14 +1,31 @@
 interface IProps {
+  extraSmall?: boolean;
   customClasses?: string;
   children: React.ReactNode;
 }
 
-export default function PrimaryBtn({ customClasses, children }: IProps) {
+export default function PrimaryBtn({
+  extraSmall,
+  customClasses,
+  children,
+}: IProps) {
   return (
-    <div className="group active:scale-95 p-[5px] bg-accent-dark/15 rounded-[16px] duration-200">
-      <div className="p-[2px] bg-accent-dark rounded-[11px]">
+    <div
+      className={`group active:scale-95 ${
+        extraSmall ? "p-[4px]" : "p-[5px]"
+      } bg-accent-dark/15 ${
+        extraSmall ? "rounded-[10px]" : "rounded-[16px]"
+      } duration-200`}
+    >
+      <div
+        className={`p-[2px] bg-accent-dark ${
+          extraSmall ? "rounded-[8px]" : "rounded-[11px]"
+        }`}
+      >
         <button
-          className={`relative py-[7px] px-4 bg-accent-dark rounded-[9px] text-sm font-medium tracking-[-0.14px] text-white overflow-hidden ${customClasses}`}
+          className={`relative py-[7px] px-4 bg-accent-dark ${
+            extraSmall ? "rounded-[6px]" : "rounded-[9px]"
+          } text-sm font-medium tracking-[-0.14px] text-white overflow-hidden ${customClasses}`}
         >
           <span className="relative z-10 flex items-center gap-3">
             {children}
