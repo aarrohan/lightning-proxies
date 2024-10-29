@@ -25,7 +25,7 @@ function UseCaseCard({
     <div className="w-full min-w-[280px] sm:min-w-[468px] sm:py-6 sm:px-8 sm:border border-dark-white sm:bg-off-white sm:rounded-xl flex flex-col gap-5 sm:gap-0">
       <div className="order-2 sm:order-1">
         <p
-          className="mb-3 sm:mb-4 w-fit py-[1px] sm:py-2 px-2.5 sm:px-3.5 rounded-md sm:rounded-lg flex items-center gap-1.5 sm:gap-2.5 text-[10px] text-base tracking-[-0.1px] sm:tracking-[-0.16px] font-medium"
+          className="mb-3 sm:mb-4 w-fit py-1 sm:py-2 px-2 sm:px-3.5 rounded-md sm:rounded-lg flex items-center gap-1.5 sm:gap-2.5 text-[10px] sm:text-base tracking-[-0.1px] sm:tracking-[-0.16px] font-medium"
           style={{
             backgroundColor: `${color}18`,
             color: color,
