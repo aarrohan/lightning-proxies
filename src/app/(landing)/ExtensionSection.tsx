@@ -5,7 +5,7 @@ import chromeImg from "@/assets/images/chrome.svg";
 
 export default function ExtensionSection() {
   return (
-    <section className="sm:pt-44">
+    <section className="pt-20 sm:pt-44">
       <div className="mx-auto container max-w-[1320px] px-5">
         <div className="relative bg-gradient-to-b from-accent to-accent-dark rounded-2xl sm:rounded-3xl grid md:grid-cols-[auto_580px] items-center overflow-hidden">
           <div className="relative z-10 p-6 pt-10 pb-4 sm:p-14 sm:pr-0 flex flex-col items-start">
