@@ -4,7 +4,7 @@ import serpScraperApiIconImg from "@/assets/images/serp-scraper-api-icon.svg";
 
 export default function UpcomingSection() {
   return (
-    <section className="sm:pt-44 pb-20 sm:pb-44">
+    <section className="py-20 sm:py-44">
       <div className="mx-auto container max-w-[1320px] px-5">
         <p className="mb-3 text-[11px] sm:text-sm font-semibold tracking-[-0.11px] sm:tracking-[-0.14px] uppercase text-center text-green">
           RELEASING SOON

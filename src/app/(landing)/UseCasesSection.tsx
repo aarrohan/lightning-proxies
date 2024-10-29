@@ -86,6 +86,36 @@ export default function UseCasesSection() {
     }
   }, [actualWidthDivRef]);
 
+  const handleNext = () => {
+    const cardsWrapper = cardsWrapperRef.current;
+
+    if (cardsWrapper) {
+      const widthToScroll = width / 4;
+
+      if (currentPosition <= 4) {
+        setCurrentPosition(currentPosition + 1);
+        cardsWrapper.style.transform = `translateX(-${
+          widthToScroll * currentPosition
+        }px)`;
+      }
+    }
+  };
+
+  const handlePrev = () => {
+    const cardsWrapper = cardsWrapperRef.current;
+
+    if (cardsWrapper) {
+      const widthToScroll = width / 4;
+
+      if (currentPosition > 1) {
+        setCurrentPosition(currentPosition - 1);
+        cardsWrapper.style.transform = `translateX(-${
+          widthToScroll * (currentPosition - 2)
+        }px)`;
+      }
+    }
+  };
+
   const useCaseCards: IUseCaseCardProps[] = [
     {
       color: "#1675FF",
@@ -209,36 +239,6 @@ export default function UseCasesSection() {
       img: <Image src={useCase1Img} alt="" className="w-full rounded-lg" />,
     },
   ];
-
-  const handleNext = () => {
-    const cardsWrapper = cardsWrapperRef.current;
-
-    if (cardsWrapper) {
-      const widthToScroll = width / 4;
-
-      if (currentPosition <= 4) {
-        setCurrentPosition(currentPosition + 1);
-        cardsWrapper.style.transform = `translateX(-${
-          widthToScroll * currentPosition
-        }px)`;
-      }
-    }
-  };
-
-  const handlePrev = () => {
-    const cardsWrapper = cardsWrapperRef.current;
-
-    if (cardsWrapper) {
-      const widthToScroll = width / 4;
-
-      if (currentPosition > 1) {
-        setCurrentPosition(currentPosition - 1);
-        cardsWrapper.style.transform = `translateX(-${
-          widthToScroll * (currentPosition - 2)
-        }px)`;
-      }
-    }
-  };
 
   return (
     <section className="pt-20 sm:pt-44 pb-20 sm:pb-0 overflow-hidden">
