@@ -4,6 +4,7 @@ import ProductsSection from "./ProductsSection";
 import FeaturesSection from "./FeaturesSection";
 import UseCasesSection from "./UseCasesSection";
 import DashboardSection from "./DashboardSection";
+import UpcomingSection from "./UpcomingSection";
 import FollowUpSection from "./FollowUpSection";
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
       <FeaturesSection />
       <UseCasesSection />
       <DashboardSection />
+      <UpcomingSection />
       <FollowUpSection />
     </main>
   );
