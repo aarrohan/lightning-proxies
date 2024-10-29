@@ -540,7 +540,7 @@ export default function Footer() {
             Disclaimer:
           </p>
 
-          <p className="text-xs sm:text-sm tracking-[-0.12px] sm:tracking-[-0.14px] text-white/50">
+          <p className="text-xs sm:text-sm leading-[18px] sm:leading-[20px] tracking-[-0.12px] sm:tracking-[-0.14px] text-white/50">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget
             turpis vel elit facilisis ullamcorper. Mauris fringilla suscipit ex,
             et posuere magna faucibus nec. Nulla sed erat arcu. Ut nec sem

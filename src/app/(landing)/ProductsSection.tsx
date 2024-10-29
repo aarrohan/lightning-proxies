@@ -206,7 +206,7 @@ function ProductCard({
 }: IProductCardProps) {
   return (
     <div className="p-5 border border-dark-white rounded-xl">
-      <div className="relative mb-4 flex items-center gap-2.5">
+      <div className="relative mb-4 flex items-center gap-2.5 sm:gap-3">
         <span
           className="absolute top-1/2 -left-5 -translate-y-1/2 w-[4px] h-[32px] rounded-e-full"
           style={{ background: color }}
@@ -214,10 +214,12 @@ function ProductCard({
 
         {icon}
 
-        <h3 className="font-semibold tracking-[-0.16px]">{title}</h3>
+        <h3 className="text-base sm:text-xl font-semibold tracking-[-0.16px]">
+          {title}
+        </h3>
       </div>
 
-      <p className="mb-5 text-[11px] leading-[15px] tracking-[-0.11px]">
+      <p className="mb-5 text-[11px] sm:text-base !leading-[15px] tracking-[-0.11px] sm:tracking-[-0.15px]">
         {description}
       </p>
 
@@ -229,6 +231,7 @@ function ProductCard({
             viewBox="0 0 38 38"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
+            className="w-[24px] sm:w-[32px] h-auto"
           >
             <rect
               width="38"
@@ -246,7 +249,9 @@ function ProductCard({
             />
           </svg>
 
-          <p className="text-[11px] tracking-[-0.11px]">{statement1}</p>
+          <p className="text-[11px] sm:text-base tracking-[-0.11px] sm:tracking-[-0.15px]">
+            {statement1}
+          </p>
         </div>
 
         <div className="flex items-center gap-2.5">
@@ -256,6 +261,7 @@ function ProductCard({
             viewBox="0 0 38 38"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
+            className="w-[24px] sm:w-[32px] h-auto"
           >
             <rect
               width="38"
@@ -273,20 +279,24 @@ function ProductCard({
             />
           </svg>
 
-          <p className="text-[11px] tracking-[-0.11px]">{statement2}</p>
+          <p className="text-[11px] sm:text-base tracking-[-0.11px] sm:tracking-[-0.15px]">
+            {statement2}
+          </p>
         </div>
       </div>
 
       <div className="flex justify-between items-end">
         <div>
-          <p className="text-[9px] font-medium tracking-[-0.09px] text-primary/60">
+          <p className="text-[9px] sm:text-sm font-medium tracking-[-0.09px] text-primary/60">
             Starting from
           </p>
 
-          <p className="text-sm font-semibold tracking-[-0.14px]">{price}</p>
+          <p className="text-sm sm:text-lg font-semibold tracking-[-0.14px]">
+            {price}
+          </p>
         </div>
 
-        <PrimaryBtn extraSmall customClasses="!px-8 !text-xs">
+        <PrimaryBtn extraSmall customClasses="!px-8 !text-xs sm:!text-base">
           Get Started
         </PrimaryBtn>
       </div>
@@ -416,7 +426,9 @@ export default function ProductsSection() {
   const productCards: IProductCardProps[] = [
     {
       color: "#1675FF",
-      icon: <Image src={product1IconImg} alt="" className="w-[35px]" />,
+      icon: (
+        <Image src={product1IconImg} alt="" className="w-[35px] sm:w-[45px]" />
+      ),
       title: "Residential Proxies",
       description:
         "Sed varius justo ac sem luctus lobortis. Nunc porta leo nec pretium laoreet.",
@@ -426,7 +438,9 @@ export default function ProductsSection() {
     },
     {
       color: "#12A250",
-      icon: <Image src={product2IconImg} alt="" className="w-[35px]" />,
+      icon: (
+        <Image src={product2IconImg} alt="" className="w-[35px] sm:w-[45px]" />
+      ),
       title: "Residential Proxies",
       description:
         "Sed varius justo ac sem luctus lobortis. Nunc porta leo nec pretium laoreet.",
@@ -436,7 +450,9 @@ export default function ProductsSection() {
     },
     {
       color: "#EA7635",
-      icon: <Image src={product3IconImg} alt="" className="w-[35px]" />,
+      icon: (
+        <Image src={product3IconImg} alt="" className="w-[35px] sm:w-[45px]" />
+      ),
       title: "ISP Proxies",
       description:
         "Sed varius justo ac sem luctus lobortis. Nunc porta leo nec pretium laoreet.",
@@ -446,7 +462,9 @@ export default function ProductsSection() {
     },
     {
       color: "#A400DD",
-      icon: <Image src={product4IconImg} alt="" className="w-[35px]" />,
+      icon: (
+        <Image src={product4IconImg} alt="" className="w-[35px] sm:w-[45px]" />
+      ),
       title: "IPv6 Proxies",
       description:
         "Sed varius justo ac sem luctus lobortis. Nunc porta leo nec pretium laoreet.",
@@ -456,7 +474,9 @@ export default function ProductsSection() {
     },
     {
       color: "#00C1D1",
-      icon: <Image src={product5IconImg} alt="" className="w-[35px]" />,
+      icon: (
+        <Image src={product5IconImg} alt="" className="w-[35px] sm:w-[45px]" />
+      ),
       title: "Mobile Proxies",
       description:
         "Sed varius justo ac sem luctus lobortis. Nunc porta leo nec pretium laoreet.",
