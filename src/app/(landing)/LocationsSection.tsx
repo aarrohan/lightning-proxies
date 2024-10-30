@@ -86,9 +86,9 @@ export default function LocationsSection() {
   ];
 
   return (
-    <section className="pt-20 sm:pt-44">
+    <section className="-mt-60 sm:-mt-72">
       <div className="mx-auto container max-w-[1320px] px-5">
-        <div className="relative border border-dark-white bg-white rounded-2xl sm:rounded-3xl overflow-hidden">
+        <div className="relative border border-dark-white bg-white rounded-xl sm:rounded-2xl overflow-hidden">
           <div className="relative z-10 p-6 py-8 sm:p-14 sm:pr-0 flex flex-col items-start">
             <p className="mb-3 text-[11px] sm:text-sm font-semibold tracking-[-0.11px] sm:tracking-[-0.14px] uppercase text-accent">
               250+ LOCATIONS WORLDWIDE
