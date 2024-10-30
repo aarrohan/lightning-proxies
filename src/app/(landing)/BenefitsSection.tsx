@@ -264,7 +264,7 @@ export default function BenefitsSection() {
   ];
 
   return (
-    <section className="sm:pt-44">
+    <section className="pt-20 sm:pt-44">
       <div className="mx-auto container max-w-[1320px] px-5">
         <p className="mb-3 text-[11px] sm:text-sm font-semibold tracking-[-0.11px] sm:tracking-[-0.14px] uppercase text-center text-orange">
           BENEFITS

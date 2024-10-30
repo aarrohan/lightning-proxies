@@ -15,17 +15,41 @@ export default function ClientsSection() {
         </p>
 
         <div className="mb-8 grid lg:flex grid-cols-[auto_1px_auto_1px_auto] justify-center items-center gap-5 lg:gap-12">
-          <Image src={clientImg1} alt="" className="mx-auto h-[20px] lg:auto" />
+          <Image
+            src={clientImg1}
+            alt=""
+            className="mx-auto h-[20px] lg:h-auto"
+          />
           <span className="w-px h-[15px] bg-primary/25"></span>
-          <Image src={clientImg2} alt="" className="mx-auto h-[16px] lg:auto" />
+          <Image
+            src={clientImg2}
+            alt=""
+            className="mx-auto h-[16px] lg:h-auto"
+          />
           <span className="w-px h-[15px] bg-primary/25"></span>
-          <Image src={clientImg3} alt="" className="mx-auto h-[13px] lg:auto" />
+          <Image
+            src={clientImg3}
+            alt=""
+            className="mx-auto h-[13px] lg:h-auto"
+          />
           <span className="w-px h-[15px] bg-primary/25 hidden lg:block"></span>
-          <Image src={clientImg4} alt="" className="mx-auto h-[15px] lg:auto" />
+          <Image
+            src={clientImg4}
+            alt=""
+            className="mx-auto h-[15px] lg:h-auto"
+          />
           <span className="w-px h-[15px] bg-primary/25"></span>
-          <Image src={clientImg5} alt="" className="mx-auto h-[17px] lg:auto" />
+          <Image
+            src={clientImg5}
+            alt=""
+            className="mx-auto h-[17px] lg:h-auto"
+          />
           <span className="w-px h-[15px] bg-primary/25"></span>
-          <Image src={clientImg6} alt="" className="mx-auto h-[18px] lg:auto" />
+          <Image
+            src={clientImg6}
+            alt=""
+            className="mx-auto h-[18px] lg:h-auto"
+          />
         </div>
 
         <p className="py-1.5 px-3.5 border border-primary/25 rounded-full text-[11px] sm:text-sm tracking-[-0.14px] text-center">
