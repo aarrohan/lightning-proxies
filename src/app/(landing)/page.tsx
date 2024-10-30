@@ -4,6 +4,7 @@ import ProductsSection from "./ProductsSection";
 import FeaturesSection from "./FeaturesSection";
 import UseCasesSection from "./UseCasesSection";
 import DashboardSection from "./DashboardSection";
+import LocationsSection from "./LocationsSection";
 import ReviewsSection from "./ReviewsSection";
 import BenefitsSection from "./BenefitsSection";
 import ExtensionSection from "./ExtensionSection";
@@ -20,6 +21,7 @@ export default function Home() {
       <FeaturesSection />
       <UseCasesSection />
       <DashboardSection />
+      <LocationsSection />
       <ReviewsSection />
       <BenefitsSection />
       <ExtensionSection />

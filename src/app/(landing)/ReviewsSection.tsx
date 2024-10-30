@@ -90,7 +90,7 @@ export default function ReviewsSection() {
   ];
 
   return (
-    <section className="sm:pt-44">
+    <section className="pt-20 sm:pt-44">
       <div className="mx-auto container max-w-[1320px] px-5">
         <div className="mb-8 sm:mb-14 flex flex-col lg:flex-row justify-between items-start lg:items-end gap-4">
           <div>
