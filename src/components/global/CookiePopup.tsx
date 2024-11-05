@@ -93,14 +93,12 @@ export default function CookiePopup() {
         <div className="mt-7 grid grid-cols-2 items-center gap-2.5">
           <button
             onClick={() => setIsActive(false)}
-            className="active:scale-95 w-full py-[7px] px-4 border-2 border-dark-white rounded-[6px] text-sm font-medium tracking-[-0.14px] duration-200"
+            className="active:scale-95 w-full py-[7px] px-4 border-2 border-dark-white rounded-[9px] text-sm font-medium tracking-[-0.14px] duration-200"
           >
             Reject
           </button>
 
-          <PrimaryBtn handleClick={() => setIsActive(false)} extraSmall>
-            Accept
-          </PrimaryBtn>
+          <PrimaryBtn handleClick={() => setIsActive(false)}>Accept</PrimaryBtn>
         </div>
       </div>
     </div>
