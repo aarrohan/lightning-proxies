@@ -88,14 +88,13 @@ export default function UseCasesSection() {
     }
   }, [actualWidthDivRef]);
 
-  // Auto scroll after 3 seconds
   useEffect(() => {
     const interval = setInterval(() => {
       handleNext();
     }, 3000);
 
     return () => clearInterval(interval);
-  }, [currentPosition]);
+  });
 
   const handleNext = () => {
     const cardsWrapper = cardsWrapperRef.current;
@@ -307,7 +306,7 @@ export default function UseCasesSection() {
 
           <div
             ref={cardsWrapperRef}
-            className="slider-transition relative w-it flex gap-4"
+            className="slider-transition relative w-it flex gap-4 will-change-transform"
           >
             {useCaseCards.map((useCaseCard, index) => (
               <UseCaseCard key={index} {...useCaseCard} />

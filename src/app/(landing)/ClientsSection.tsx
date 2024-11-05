@@ -14,36 +14,63 @@ export default function ClientsSection() {
         <p className="mb-7 text-[11px] sm:text-sm font-semibold tracking-[-0.11px] sm:tracking-[-0.14px] uppercase text-center">
           Trusted by World's Top Leading Web Scraping Companies
         </p>
-      </div>
 
-      <Marquee autoFill={true} speed={80}>
-        <Image src={clientImg1} alt="" className="mx-auto h-[20px] lg:h-auto" />
+        <Marquee autoFill={true} speed={80}>
+          <Image
+            src={clientImg1}
+            alt=""
+            className="mx-auto h-[20px] lg:h-auto"
+          />
 
-        <span className="mx-8 sm:mx-12 w-px h-[15px] bg-primary/25 block"></span>
+          <span className="mx-8 sm:mx-12 w-px h-[15px] bg-primary/25 block"></span>
 
-        <Image src={clientImg2} alt="" className="mx-auto h-[16px] lg:h-auto" />
+          <Image
+            src={clientImg2}
+            alt=""
+            className="mx-auto h-[16px] lg:h-auto"
+          />
 
-        <span className="mx-8 sm:mx-12 w-px h-[15px] bg-primary/25 block"></span>
+          <span className="mx-8 sm:mx-12 w-px h-[15px] bg-primary/25 block"></span>
 
-        <Image src={clientImg3} alt="" className="mx-auto h-[13px] lg:h-auto" />
+          <Image
+            src={clientImg3}
+            alt=""
+            className="mx-auto h-[13px] lg:h-auto"
+          />
 
-        <span className="mx-8 sm:mx-12 w-px h-[15px] bg-primary/25 block"></span>
+          <span className="mx-8 sm:mx-12 w-px h-[15px] bg-primary/25 block"></span>
 
-        <Image src={clientImg4} alt="" className="mx-auto h-[15px] lg:h-auto" />
+          <Image
+            src={clientImg4}
+            alt=""
+            className="mx-auto h-[15px] lg:h-auto"
+          />
 
-        <span className="mx-8 sm:mx-12 w-px h-[15px] bg-primary/25 block"></span>
+          <span className="mx-8 sm:mx-12 w-px h-[15px] bg-primary/25 block"></span>
 
-        <Image src={clientImg5} alt="" className="mx-auto h-[17px] lg:h-auto" />
+          <Image
+            src={clientImg5}
+            alt=""
+            className="mx-auto h-[17px] lg:h-auto"
+          />
 
-        <span className="mx-8 sm:mx-12 w-px h-[15px] bg-primary/25 block"></span>
+          <span className="mx-8 sm:mx-12 w-px h-[15px] bg-primary/25 block"></span>
 
-        <Image src={clientImg6} alt="" className="mx-auto h-[18px] lg:h-auto" />
+          <Image
+            src={clientImg6}
+            alt=""
+            className="mx-auto h-[18px] lg:h-auto"
+          />
 
-        <span className="mx-8 sm:mx-12 w-px h-[15px] bg-primary/25 block"></span>
-      </Marquee>
+          <span className="mx-8 sm:mx-12 w-px h-[15px] bg-primary/25 block"></span>
+        </Marquee>
 
-      <div className="mt-8 mx-auto container max-w-[1320px] px-5 flex flex-col items-center">
-        <p className="py-1.5 px-3.5 border border-primary/25 rounded-full text-[11px] sm:text-sm tracking-[-0.14px] text-center">
+        <div className="relative z-10 -mt-[20px] sm:-mt-[28px] w-full h-[20px] sm:h-[28px]">
+          <div className="absolute top-0 left-0 w-[100px] h-full bg-gradient-to-r from-white to-transparent"></div>
+          <div className="absolute top-0 right-0 w-[100px] h-full bg-gradient-to-r from-transparent to-white"></div>
+        </div>
+
+        <p className="mt-8 py-1.5 px-3.5 border border-primary/25 rounded-full text-[11px] sm:text-sm tracking-[-0.14px] text-center">
           Learn how Lightning Proxies is transforming the proxy landscape
           worldwide
           <svg
