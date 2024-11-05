@@ -1,7 +1,7 @@
 import Image from "next/image";
 import feature1Img from "@/assets/images/feature-1.png";
-import feature2Img from "@/assets/images/feature-2.svg";
-import feature3Img from "@/assets/images/feature-3.svg";
+import feature2Img from "@/assets/images/feature-2.webp";
+import feature3Img from "@/assets/images/feature-3.webp";
 import feature4Img from "@/assets/images/feature-4.svg";
 import feature5Img from "@/assets/images/feature-5.svg";
 
