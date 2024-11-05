@@ -91,7 +91,7 @@ export default function UseCasesSection() {
   useEffect(() => {
     const interval = setInterval(() => {
       handleNext();
-    }, 3000);
+    }, 8000);
 
     return () => clearInterval(interval);
   });

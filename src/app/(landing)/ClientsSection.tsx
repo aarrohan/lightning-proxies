@@ -15,7 +15,7 @@ export default function ClientsSection() {
           Trusted by World's Top Leading Web Scraping Companies
         </p>
 
-        <Marquee autoFill={true} speed={80}>
+        <Marquee autoFill={true} speed={40}>
           <Image
             src={clientImg1}
             alt=""

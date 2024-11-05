@@ -74,7 +74,7 @@ export default function BlogSection() {
   useEffect(() => {
     const interval = setInterval(() => {
       handleNext();
-    }, 3000);
+    }, 16000);
 
     return () => clearInterval(interval);
   });
