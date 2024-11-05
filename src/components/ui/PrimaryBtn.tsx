@@ -1,16 +1,19 @@
 interface IProps {
   extraSmall?: boolean;
   customClasses?: string;
+  handleClick?: () => void;
   children: React.ReactNode;
 }
 
 export default function PrimaryBtn({
   extraSmall,
   customClasses,
+  handleClick,
   children,
 }: IProps) {
   return (
     <div
+      onClick={handleClick}
       className={`group active:scale-95 ${
         extraSmall ? "p-[4px]" : "p-[5px]"
       } bg-accent-dark/15 ${
@@ -23,11 +26,11 @@ export default function PrimaryBtn({
         }`}
       >
         <button
-          className={`relative py-[7px] px-4 bg-accent-dark ${
+          className={`relative w-full py-[7px] px-4 bg-accent-dark ${
             extraSmall ? "rounded-[6px]" : "rounded-[9px]"
           } text-sm font-medium tracking-[-0.14px] text-white overflow-hidden ${customClasses}`}
         >
-          <span className="relative z-10 flex items-center gap-3">
+          <span className="relative z-10 flex justify-center items-center gap-3">
             {children}
           </span>
 
