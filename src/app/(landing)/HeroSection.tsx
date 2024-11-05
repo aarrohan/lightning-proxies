@@ -1,6 +1,10 @@
 import Image from "next/image";
-import heroSectionImg1 from "@/assets/images/hero-section-1.svg";
 import PrimaryBtn from "@/components/ui/PrimaryBtn";
+import product1IconImg from "@/assets/images/product-1-icon.svg";
+import product2IconImg from "@/assets/images/product-2-icon.svg";
+import product3IconImg from "@/assets/images/product-3-icon.svg";
+import product4IconImg from "@/assets/images/product-4-icon.svg";
+import product5IconImg from "@/assets/images/product-5-icon.svg";
 
 export default function HeroSection() {
   return (
@@ -163,11 +167,37 @@ export default function HeroSection() {
           <span className="absolute -top-[2px] right-0 w-[5px] h-[5px] bg-accent rounded-full"></span>
         </div>
 
-        <Image
-          src={heroSectionImg1}
-          alt=""
-          className="w-[280px] sm:w-[425px]"
-        />
+        <div className="flex gap-2 sm:gap-4">
+          <Image
+            src={product1IconImg}
+            alt=""
+            className="rotate-[-5deg] w-[50px] sm:w-[75px] h-auto hover:scale-105 duration-200"
+          />
+
+          <Image
+            src={product2IconImg}
+            alt=""
+            className="rotate-[2deg] w-[50px] sm:w-[75px] h-auto hover:scale-105 duration-200"
+          />
+
+          <Image
+            src={product3IconImg}
+            alt=""
+            className="rotate-[3deg] w-[50px] sm:w-[75px] h-auto hover:scale-105 duration-200"
+          />
+
+          <Image
+            src={product4IconImg}
+            alt=""
+            className="rotate-[-6deg] w-[50px] sm:w-[75px] h-auto hover:scale-105 duration-200"
+          />
+
+          <Image
+            src={product5IconImg}
+            alt=""
+            className="rotate-[6deg] w-[50px] sm:w-[75px] h-auto hover:scale-105 duration-200"
+          />
+        </div>
 
         <div className="relative flex-1 h-px bg-gradient-to-r from-accent to-dark-white">
           <span className="absolute -top-[2px] left-0 w-[5px] h-[5px] bg-accent rounded-full"></span>

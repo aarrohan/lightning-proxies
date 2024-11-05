@@ -67,7 +67,7 @@ function UseCaseCard({
 }
 
 export default function UseCasesSection() {
-  const [width, setWidth] = useState<number>(0);
+  const [widthToScroll, setWidthToScroll] = useState<number>(0);
   const [currentPosition, setCurrentPosition] = useState<number>(1);
 
   const actualWidthDivRef = useRef<HTMLDivElement>(null);
@@ -82,21 +82,33 @@ export default function UseCasesSection() {
       let cardsWrapperWidth = 468 * 4;
       cardsWrapperWidth += 16 * 3;
 
-      setWidth(cardsWrapperWidth - actualWidth);
+      const calculatedWidth = cardsWrapperWidth - actualWidth;
+
+      setWidthToScroll(calculatedWidth / 2);
     }
   }, [actualWidthDivRef]);
+
+  // Auto scroll after 3 seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      handleNext();
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, [currentPosition]);
 
   const handleNext = () => {
     const cardsWrapper = cardsWrapperRef.current;
 
     if (cardsWrapper) {
-      const widthToScroll = width / 4;
-
       if (currentPosition <= 4) {
         setCurrentPosition(currentPosition + 1);
         cardsWrapper.style.transform = `translateX(-${
           widthToScroll * currentPosition
         }px)`;
+      } else {
+        setCurrentPosition(1);
+        cardsWrapper.style.transform = "translateX(0)";
       }
     }
   };
@@ -105,8 +117,6 @@ export default function UseCasesSection() {
     const cardsWrapper = cardsWrapperRef.current;
 
     if (cardsWrapper) {
-      const widthToScroll = width / 4;
-
       if (currentPosition > 1) {
         setCurrentPosition(currentPosition - 1);
         cardsWrapper.style.transform = `translateX(-${
@@ -256,7 +266,9 @@ export default function UseCasesSection() {
           <div className="mb-6 flex justify-between">
             <div
               onClick={handlePrev}
-              className="active:scale-95 w-[35px] h-[35px] border border-dark-white bg-off-white rounded-full flex justify-center items-center duration-200 cursor-pointer"
+              className={`active:scale-95 w-[35px] h-[35px] border border-dark-white bg-off-white rounded-full flex justify-center items-center ${
+                currentPosition === 1 ? "opacity-50 pointer-events-none" : ""
+              } duration-200 cursor-pointer`}
             >
               <svg
                 width="9"
@@ -295,7 +307,7 @@ export default function UseCasesSection() {
 
           <div
             ref={cardsWrapperRef}
-            className="relative w-it flex gap-4 duration-500"
+            className="slider-transition relative w-it flex gap-4"
           >
             {useCaseCards.map((useCaseCard, index) => (
               <UseCaseCard key={index} {...useCaseCard} />

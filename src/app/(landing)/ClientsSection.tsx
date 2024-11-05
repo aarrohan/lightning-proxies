@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Marquee from "react-fast-marquee";
 import clientImg1 from "@/assets/images/client-1.svg";
 import clientImg2 from "@/assets/images/client-2.svg";
 import clientImg3 from "@/assets/images/client-3.svg";
@@ -13,45 +14,35 @@ export default function ClientsSection() {
         <p className="mb-7 text-[11px] sm:text-sm font-semibold tracking-[-0.11px] sm:tracking-[-0.14px] uppercase text-center">
           Trusted by World's Top Leading Web Scraping Companies
         </p>
+      </div>
 
-        <div className="mb-8 grid lg:flex grid-cols-[auto_1px_auto_1px_auto] justify-center items-center gap-5 lg:gap-12">
-          <Image
-            src={clientImg1}
-            alt=""
-            className="mx-auto h-[20px] lg:h-auto"
-          />
-          <span className="w-px h-[15px] bg-primary/25"></span>
-          <Image
-            src={clientImg2}
-            alt=""
-            className="mx-auto h-[16px] lg:h-auto"
-          />
-          <span className="w-px h-[15px] bg-primary/25"></span>
-          <Image
-            src={clientImg3}
-            alt=""
-            className="mx-auto h-[13px] lg:h-auto"
-          />
-          <span className="w-px h-[15px] bg-primary/25 hidden lg:block"></span>
-          <Image
-            src={clientImg4}
-            alt=""
-            className="mx-auto h-[15px] lg:h-auto"
-          />
-          <span className="w-px h-[15px] bg-primary/25"></span>
-          <Image
-            src={clientImg5}
-            alt=""
-            className="mx-auto h-[17px] lg:h-auto"
-          />
-          <span className="w-px h-[15px] bg-primary/25"></span>
-          <Image
-            src={clientImg6}
-            alt=""
-            className="mx-auto h-[18px] lg:h-auto"
-          />
-        </div>
+      <Marquee autoFill={true} speed={80}>
+        <Image src={clientImg1} alt="" className="mx-auto h-[20px] lg:h-auto" />
 
+        <span className="mx-8 sm:mx-12 w-px h-[15px] bg-primary/25 block"></span>
+
+        <Image src={clientImg2} alt="" className="mx-auto h-[16px] lg:h-auto" />
+
+        <span className="mx-8 sm:mx-12 w-px h-[15px] bg-primary/25 block"></span>
+
+        <Image src={clientImg3} alt="" className="mx-auto h-[13px] lg:h-auto" />
+
+        <span className="mx-8 sm:mx-12 w-px h-[15px] bg-primary/25 block"></span>
+
+        <Image src={clientImg4} alt="" className="mx-auto h-[15px] lg:h-auto" />
+
+        <span className="mx-8 sm:mx-12 w-px h-[15px] bg-primary/25 block"></span>
+
+        <Image src={clientImg5} alt="" className="mx-auto h-[17px] lg:h-auto" />
+
+        <span className="mx-8 sm:mx-12 w-px h-[15px] bg-primary/25 block"></span>
+
+        <Image src={clientImg6} alt="" className="mx-auto h-[18px] lg:h-auto" />
+
+        <span className="mx-8 sm:mx-12 w-px h-[15px] bg-primary/25 block"></span>
+      </Marquee>
+
+      <div className="mt-8 mx-auto container max-w-[1320px] px-5 flex flex-col items-center">
         <p className="py-1.5 px-3.5 border border-primary/25 rounded-full text-[11px] sm:text-sm tracking-[-0.14px] text-center">
           Learn how Lightning Proxies is transforming the proxy landscape
           worldwide
