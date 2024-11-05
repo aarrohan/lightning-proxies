@@ -50,7 +50,7 @@ function ArticleCard({
 }
 
 export default function BlogSection() {
-  const [width, setWidth] = useState<number>(0);
+  const [widthToScroll, setWidthToScroll] = useState<number>(0);
   const [currentPosition, setCurrentPosition] = useState<number>(1);
 
   const actualWidthDivRef = useRef<HTMLDivElement>(null);
@@ -65,21 +65,32 @@ export default function BlogSection() {
       let cardsWrapperWidth = 468 * 4;
       cardsWrapperWidth += 16 * 3;
 
-      setWidth(cardsWrapperWidth - actualWidth);
+      const calculatedWidth = cardsWrapperWidth - actualWidth;
+
+      setWidthToScroll(calculatedWidth / 2);
     }
   }, [actualWidthDivRef]);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      handleNext();
+    }, 3000);
+
+    return () => clearInterval(interval);
+  });
 
   const handleNext = () => {
     const cardsWrapper = cardsWrapperRef.current;
 
     if (cardsWrapper) {
-      const widthToScroll = width / 4;
-
       if (currentPosition <= 4) {
         setCurrentPosition(currentPosition + 1);
         cardsWrapper.style.transform = `translateX(-${
           widthToScroll * currentPosition
         }px)`;
+      } else {
+        setCurrentPosition(1);
+        cardsWrapper.style.transform = "translateX(0)";
       }
     }
   };
@@ -88,8 +99,6 @@ export default function BlogSection() {
     const cardsWrapper = cardsWrapperRef.current;
 
     if (cardsWrapper) {
-      const widthToScroll = width / 4;
-
       if (currentPosition > 1) {
         setCurrentPosition(currentPosition - 1);
         cardsWrapper.style.transform = `translateX(-${
@@ -172,7 +181,7 @@ export default function BlogSection() {
         <div className="hidden sm:block">
           <div
             ref={cardsWrapperRef}
-            className="relative w-it flex gap-4 duration-500"
+            className="relative w-it flex gap-4 duration-500 will-change-transform"
           >
             {articleCards.map((articleCard, index) => (
               <ArticleCard key={index} {...articleCard} />
@@ -184,7 +193,9 @@ export default function BlogSection() {
           <div className="mt-6 flex justify-between">
             <div
               onClick={handlePrev}
-              className="active:scale-95 w-[35px] h-[35px] border border-dark-white bg-off-white rounded-full flex justify-center items-center duration-200 cursor-pointer"
+              className={`active:scale-95 w-[35px] h-[35px] border border-dark-white bg-off-white rounded-full flex justify-center items-center ${
+                currentPosition === 1 ? "opacity-50 pointer-events-none" : ""
+              } duration-200 cursor-pointer`}
             >
               <svg
                 width="9"
