@@ -76,7 +76,7 @@ export default function CookiePopup() {
             />
           </svg> */}
 
-          <p className="text-sm sm:text-base font-medium -tracking-[-0.3px] sm:-tracking-[-0.32px]">
+          <p className="text-sm sm:text-base font-semibold -tracking-[-0.3px] sm:-tracking-[-0.32px]">
             Cookie Settings
           </p>
         </div>
