@@ -76,12 +76,12 @@ export default function CookiePopup() {
             />
           </svg> */}
 
-          <p className="text-sm sm:text-base font-semibold -tracking-[-0.3px] sm:-tracking-[-0.32px]">
+          <p className="text-sm sm:text-base font-medium tracking-[-0.3px] sm:tracking-[-0.32px]">
             Cookie Settings
           </p>
         </div>
 
-        <p className="text-xs sm:text-sm -tracking-[-0.12px] sm:-tracking-[-0.14px] text-primary/80">
+        <p className="text-xs sm:text-sm tracking-[-0.12px] sm:tracking-[-0.14px] text-primary/80">
           We use cookies to enhance your browsing experience, analyze site
           traffic and deliver personalized content. For more information, please
           read our{" "}
