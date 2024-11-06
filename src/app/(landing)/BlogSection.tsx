@@ -71,13 +71,13 @@ export default function BlogSection() {
     }
   }, [actualWidthDivRef]);
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      handleNext();
-    }, 16000);
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     handleNext();
+  //   }, 16000);
 
-    return () => clearInterval(interval);
-  });
+  //   return () => clearInterval(interval);
+  // });
 
   const handleNext = () => {
     const cardsWrapper = cardsWrapperRef.current;

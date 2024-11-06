@@ -88,13 +88,13 @@ export default function UseCasesSection() {
     }
   }, [actualWidthDivRef]);
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      handleNext();
-    }, 8000);
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     handleNext();
+  //   }, 8000);
 
-    return () => clearInterval(interval);
-  });
+  //   return () => clearInterval(interval);
+  // });
 
   const handleNext = () => {
     const cardsWrapper = cardsWrapperRef.current;
