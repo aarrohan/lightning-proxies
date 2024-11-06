@@ -69,7 +69,7 @@ function ServiceSelect({
 
       <div
         ref={ref}
-        className={`absolute top-full left-0 ${
+        className={`absolute z-20 top-full left-0 ${
           !isOpened ? "scale-75" : ""
         } origin-top w-full pt-2 ${
           !isOpened ? "opacity-0 pointer-events-none" : ""
