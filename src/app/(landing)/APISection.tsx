@@ -1,6 +1,5 @@
 import Image from "next/image";
 import PrimaryBtn from "@/components/ui/PrimaryBtn";
-import apiSectionImg1 from "@/assets/images/api-section-1.svg";
 import apiSectionImg2 from "@/assets/images/api-section-2.png";
 import apiSectionImg3 from "@/assets/images/api-section-3.png";
 import apiSectionImg4 from "@/assets/images/api-section-4.png";
@@ -8,6 +7,7 @@ import apiSectionCard1BgImg from "@/assets/images/api-section-card-1-bg.png";
 import apiSectionCard2BgImg from "@/assets/images/api-section-card-2-bg.png";
 import apiSectionCard3BgImg from "@/assets/images/api-section-card-3-bg.png";
 import apiSectionBgImg from "@/assets/images/api-section-bg.svg";
+import ApiCodeBlock from "@/components/ui/ApiCodeBlock";
 
 interface IAPICardProps {
   img: JSX.Element;
@@ -131,11 +131,7 @@ export default function APISection() {
           </div>
 
           <div className="flex justify-center">
-            <Image
-              src={apiSectionImg1}
-              alt=""
-              className="w-full max-w-[665px]"
-            />
+            <ApiCodeBlock />
           </div>
         </div>
 

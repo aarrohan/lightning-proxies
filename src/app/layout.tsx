@@ -4,6 +4,7 @@ import "./globals.css";
 import NavigationBar from "@/components/global/NavigationBar";
 import Footer from "@/components/global/Footer";
 import CookiePopup from "@/components/global/CookiePopup";
+import { GeistMono } from "geist/font/mono";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} antialiased`}>
+      <body className={`${inter.className} ${GeistMono.variable} antialiased`}>
         <NavigationBar />
 
         {children}

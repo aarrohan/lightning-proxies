@@ -8,6 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        mono: ["var(--font-geist-mono)"],
+      },
       colors: {
         primary: "rgb(var(--primary-color-rgb) / <alpha-value>)",
         "dark-white": "rgb(var(--dark-white-color-rgb) / <alpha-value>)",
