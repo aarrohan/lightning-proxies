@@ -478,7 +478,16 @@ export default function ApiCodeBlock() {
               <span className="text-[#2EED7F]">"customer-USER:PASS"</span> https
               <span className="text-[#FEBE26]">://</span>
               ip.lightningproxies.io<span className="text-[#FEBE26]">/</span>
-              location
+              location <span className="text-[#FEBE26]">-</span>
+              <span className="text-[#FF5E00]">
+                {selectedLanguageIndex === 0 && "curl"}
+                {selectedLanguageIndex === 1 && "python"}
+                {selectedLanguageIndex === 2 && "nodejs"}
+                {selectedLanguageIndex === 3 && "php"}
+                {selectedLanguageIndex === 4 && "go"}
+                {selectedLanguageIndex === 5 && "java"}
+                {selectedLanguageIndex === 6 && "c#"}
+              </span>
             </p>
           </div>
 
