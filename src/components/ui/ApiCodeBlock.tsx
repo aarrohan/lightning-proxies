@@ -80,7 +80,10 @@ function ServiceSelect({
             return (
               <button
                 key={index}
-                onClick={() => setSelectedServiceIndex(index)}
+                onClick={() => {
+                  setSelectedServiceIndex(index);
+                  setIsOpened(false);
+                }}
                 className={`py-2.5 px-5 ${
                   index !== options.length - 1 ? "border-b border-white/10" : ""
                 } hover:bg-white/5 text-xs sm:text-sm font-medium text-left text-white duration-200`}
