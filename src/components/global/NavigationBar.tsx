@@ -2,20 +2,25 @@ import Link from "next/link";
 import Image from "next/image";
 import logoImg from "@/assets/images/branding/logo.svg";
 import PrimaryBtn from "../ui/PrimaryBtn";
+import MenuProducts from "./MenuProducts";
+import MenuLocations from "./MenuLocations";
+import MenuUseCases from "./MenuUseCases";
+import MenuResources from "./MenuResources";
+import MenuPricing from "./MenuPricing";
 
 export default function NavigationBar() {
   return (
-    <nav className="fixed z-[1000] top-0 left-0 w-full bg-white border-b border-dark-white">
+    <nav className="fixed z-[1000] top-0 left-0 w-full border-b border-dark-white bg-white">
       <div className="mx-auto container max-w-[1320px] h-[70px] px-5 flex justify-between items-center">
         <Link href={"/"} aria-label="logo">
           <Image src={logoImg} alt="logo" className="w-[130px]" />
         </Link>
 
-        <ul className="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 hidden lg:flex items-center gap-10">
-          <li>
+        <ul className="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 h-full hidden lg:flex items-center gap-10">
+          <li className="group h-full">
             <Link
               href={"/"}
-              className="flex items-center gap-2 text-sm font-medium tracking-[-0.14px]"
+              className="h-full flex items-center gap-2 text-sm font-medium tracking-[-0.14px]"
             >
               Products{" "}
               <svg
@@ -32,12 +37,14 @@ export default function NavigationBar() {
                 />
               </svg>
             </Link>
+
+            <MenuProducts />
           </li>
 
-          <li>
+          <li className="group h-full">
             <Link
               href={"/"}
-              className="flex items-center gap-2 text-sm font-medium tracking-[-0.14px]"
+              className="h-full flex items-center gap-2 text-sm font-medium tracking-[-0.14px]"
             >
               Locations{" "}
               <svg
@@ -54,12 +61,14 @@ export default function NavigationBar() {
                 />
               </svg>
             </Link>
+
+            <MenuLocations />
           </li>
 
-          <li>
+          <li className="group h-full">
             <Link
               href={"/"}
-              className="flex items-center gap-2 text-sm font-medium tracking-[-0.14px]"
+              className="h-full flex items-center gap-2 text-sm font-medium tracking-[-0.14px]"
             >
               Use Cases{" "}
               <svg
@@ -76,12 +85,14 @@ export default function NavigationBar() {
                 />
               </svg>
             </Link>
+
+            <MenuUseCases />
           </li>
 
-          <li>
+          <li className="group h-full">
             <Link
               href={"/"}
-              className="flex items-center gap-2 text-sm font-medium tracking-[-0.14px]"
+              className="h-full flex items-center gap-2 text-sm font-medium tracking-[-0.14px]"
             >
               Resources{" "}
               <svg
@@ -98,12 +109,14 @@ export default function NavigationBar() {
                 />
               </svg>
             </Link>
+
+            <MenuResources />
           </li>
 
-          <li>
+          <li className="group h-full">
             <Link
               href={"/"}
-              className="flex items-center gap-2 text-sm font-medium tracking-[-0.14px]"
+              className="h-full flex items-center gap-2 text-sm font-medium tracking-[-0.14px]"
             >
               Pricing{" "}
               <svg
@@ -120,6 +133,8 @@ export default function NavigationBar() {
                 />
               </svg>
             </Link>
+
+            <MenuPricing />
           </li>
         </ul>
 
