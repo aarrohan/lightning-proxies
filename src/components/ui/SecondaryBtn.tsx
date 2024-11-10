@@ -11,9 +11,7 @@ export default function SecondaryBtn({
 }: IProps) {
   return (
     <div className="group active:scale-95 p-[5px] bg-white/15 rounded-[16px] duration-200">
-      <div
-        className={`p-[2px] bg-accent-dark rounded-[11px] ${containerClasses}`}
-      >
+      <div className={`p-[2px] bg-white rounded-[11px] ${containerClasses}`}>
         <button
           className={`relative py-[7px] px-4 bg-white rounded-[9px] text-sm font-semibold tracking-[-0.14px] text-accent overflow-hidden ${customClasses}`}
         >
