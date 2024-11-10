@@ -14,12 +14,19 @@ import SecondaryBtn from "../ui/SecondaryBtn";
 
 export default function NavigationBar() {
   const [isScrolled, setIsScrolled] = useState<boolean>(false);
-  const [isHovered, setIsHovered] = useState<boolean>(false);
+  const [isHovered, setIsHovered] = useState<boolean>(true);
+
+  const [linksActiveLineValues, setLinksActiveLineValues] = useState({
+    top: 70,
+    left: 0,
+    width: 0,
+    height: 0,
+  });
 
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 0) {
-        setIsScrolled(true);
+        setIsScrolled(false);
       } else {
         setIsScrolled(false);
       }
@@ -31,6 +38,18 @@ export default function NavigationBar() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+  const handleLinkMouseEnter = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    const target = e.target as HTMLAnchorElement;
+    const { left, width, height } = target.getBoundingClientRect();
+
+    setLinksActiveLineValues({
+      top: height,
+      left: left + width / 2 - width / 4,
+      width,
+      height,
+    });
+  };
 
   return (
     <nav
@@ -51,9 +70,20 @@ export default function NavigationBar() {
           )}
         </Link>
 
-        <ul className="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 h-full hidden lg:flex items-center gap-10">
+        <ul
+          onMouseLeave={() => {
+            setLinksActiveLineValues({
+              top: 70,
+              left: 0,
+              width: 0,
+              height: 0,
+            });
+          }}
+          className="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 h-full hidden lg:flex items-center gap-10"
+        >
           <li className="group h-full">
             <Link
+              onMouseEnter={handleLinkMouseEnter}
               href={"/"}
               className={`h-full flex items-center gap-2 text-sm font-medium tracking-[-0.14px] ${
                 isScrolled && !isHovered ? "text-white" : "text-primary"
@@ -66,6 +96,7 @@ export default function NavigationBar() {
                 viewBox="0 0 9 6"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
+                className="pointer-events-none"
               >
                 <path
                   d="M1 1.25L4.75 4.75L8.25 1.25"
@@ -82,6 +113,7 @@ export default function NavigationBar() {
 
           <li className="group h-full">
             <Link
+              onMouseEnter={handleLinkMouseEnter}
               href={"/"}
               className={`h-full flex items-center gap-2 text-sm font-medium tracking-[-0.14px] ${
                 isScrolled && !isHovered ? "text-white" : "text-primary"
@@ -94,6 +126,7 @@ export default function NavigationBar() {
                 viewBox="0 0 9 6"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
+                className="pointer-events-none"
               >
                 <path
                   d="M1 1.25L4.75 4.75L8.25 1.25"
@@ -110,6 +143,7 @@ export default function NavigationBar() {
 
           <li className="group h-full">
             <Link
+              onMouseEnter={handleLinkMouseEnter}
               href={"/"}
               className={`h-full flex items-center gap-2 text-sm font-medium tracking-[-0.14px] ${
                 isScrolled && !isHovered ? "text-white" : "text-primary"
@@ -122,6 +156,7 @@ export default function NavigationBar() {
                 viewBox="0 0 9 6"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
+                className="pointer-events-none"
               >
                 <path
                   d="M1 1.25L4.75 4.75L8.25 1.25"
@@ -138,6 +173,7 @@ export default function NavigationBar() {
 
           <li className="group h-full">
             <Link
+              onMouseEnter={handleLinkMouseEnter}
               href={"/"}
               className={`h-full flex items-center gap-2 text-sm font-medium tracking-[-0.14px] ${
                 isScrolled && !isHovered ? "text-white" : "text-primary"
@@ -150,6 +186,7 @@ export default function NavigationBar() {
                 viewBox="0 0 9 6"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
+                className="pointer-events-none"
               >
                 <path
                   d="M1 1.25L4.75 4.75L8.25 1.25"
@@ -166,6 +203,7 @@ export default function NavigationBar() {
 
           <li className="group h-full">
             <Link
+              onMouseEnter={handleLinkMouseEnter}
               href={"/"}
               className={`h-full flex items-center gap-2 text-sm font-medium tracking-[-0.14px] ${
                 isScrolled && !isHovered ? "text-white" : "text-primary"
@@ -178,6 +216,7 @@ export default function NavigationBar() {
                 viewBox="0 0 9 6"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
+                className="pointer-events-none"
               >
                 <path
                   d="M1 1.25L4.75 4.75L8.25 1.25"
@@ -192,6 +231,16 @@ export default function NavigationBar() {
             <MenuPricing />
           </li>
         </ul>
+
+        <div
+          className={`absolute w-[40px] h-[2px] bg-accent ${
+            linksActiveLineValues.width === 0 ? "opacity-0" : ""
+          } duration-300`}
+          style={{
+            top: linksActiveLineValues.top,
+            left: linksActiveLineValues.left,
+          }}
+        ></div>
 
         <div className="flex items-center gap-4">
           <Link
