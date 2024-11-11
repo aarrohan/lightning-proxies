@@ -139,15 +139,6 @@ export default function MenuResources() {
       height: 0,
     });
 
-  const companyFirstItemRef = useRef<HTMLAnchorElement>(null);
-  const [companyCardBgValues, setCompanyCardBgValues] =
-    useState<ILinkCardBgValues>({
-      top: 0,
-      left: 0,
-      width: 0,
-      height: 0,
-    });
-
   const resourcesLinks: ILinkCard[] = [
     {
       icon: (
@@ -526,10 +517,10 @@ export default function MenuResources() {
 
           <div
             onMouseLeave={() => {
-              if (companyFirstItemRef.current) {
+              if (resourcesFirstItemRef.current) {
                 const { top, left, width, height } =
-                  companyFirstItemRef.current.getBoundingClientRect();
-                setCompanyCardBgValues({
+                  resourcesFirstItemRef.current.getBoundingClientRect();
+                setResourcesCardBgValues({
                   top: top - 70,
                   left: left + 10,
                   width,
@@ -543,24 +534,11 @@ export default function MenuResources() {
               <LinkCard
                 key={index}
                 index={index}
-                firstItemRef={companyFirstItemRef}
-                linksCardBgValues={companyCardBgValues}
-                setLinksCardBgValues={setCompanyCardBgValues}
+                linksCardBgValues={resourcesCardBgValues}
+                setLinksCardBgValues={setResourcesCardBgValues}
                 {...link}
               />
             ))}
-
-            <div
-              className={`absolute bg-off-white rounded-xl hidden lg:block ${
-                companyCardBgValues.width === 0 ? "opacity-0" : ""
-              } duration-300`}
-              style={{
-                top: companyCardBgValues.top,
-                left: companyCardBgValues.left,
-                width: companyCardBgValues.width,
-                height: companyCardBgValues.height,
-              }}
-            ></div>
           </div>
         </div>
 

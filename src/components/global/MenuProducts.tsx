@@ -131,14 +131,12 @@ export default function MenuProducts() {
       height: 0,
     });
 
-  const toolsAndAddonsFirstItemRef = useRef<HTMLAnchorElement>(null);
-  const [toolsAndAddonsCardBgValues, setToolsAndAddonsCardBgValues] =
-    useState<IProductsCardBgValues>({
-      top: 0,
-      left: 0,
-      width: 0,
-      height: 0,
-    });
+  useState<IProductsCardBgValues>({
+    top: 0,
+    left: 0,
+    width: 0,
+    height: 0,
+  });
 
   const products: IProductCard[] = [
     {
@@ -261,10 +259,10 @@ export default function MenuProducts() {
 
           <div
             onMouseLeave={() => {
-              if (toolsAndAddonsFirstItemRef.current) {
+              if (productsFirstItemRef.current) {
                 const { top, left, width, height } =
-                  toolsAndAddonsFirstItemRef.current.getBoundingClientRect();
-                setToolsAndAddonsCardBgValues({
+                  productsFirstItemRef.current.getBoundingClientRect();
+                setProductsCardBgValues({
                   top: top - 70,
                   left: left + 10,
                   width,
@@ -278,24 +276,11 @@ export default function MenuProducts() {
               <ProductCard
                 key={index}
                 index={index}
-                firstItemRef={toolsAndAddonsFirstItemRef}
-                productsCardBgValues={toolsAndAddonsCardBgValues}
-                setProductsCardBgValues={setToolsAndAddonsCardBgValues}
+                productsCardBgValues={productsCardBgValues}
+                setProductsCardBgValues={setProductsCardBgValues}
                 {...product}
               />
             ))}
-
-            <div
-              className={`absolute bg-off-white rounded-xl hidden lg:block ${
-                toolsAndAddonsCardBgValues.width === 0 ? "opacity-0" : ""
-              } duration-300`}
-              style={{
-                top: toolsAndAddonsCardBgValues.top,
-                left: toolsAndAddonsCardBgValues.left,
-                width: toolsAndAddonsCardBgValues.width,
-                height: toolsAndAddonsCardBgValues.height,
-              }}
-            ></div>
           </div>
         </div>
       </div>
