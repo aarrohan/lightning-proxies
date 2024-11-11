@@ -8,6 +8,10 @@ import product4IconImg from "@/assets/images/product-4-icon.svg";
 import product5IconImg from "@/assets/images/product-5-icon.svg";
 import PrimaryBtn from "@/components/ui/PrimaryBtn";
 import product1Img from "@/assets/images/product-1.png";
+import product2Img from "@/assets/images/product-2.png";
+import product3Img from "@/assets/images/product-3.png";
+import product4Img from "@/assets/images/product-4.png";
+import product5Img from "@/assets/images/product-5.png";
 
 interface IProductTabProps {
   isActive?: boolean;
@@ -367,7 +371,7 @@ export default function ProductsSection() {
       statement2: "Statement 02 about the proxies features",
       img: (
         <Image
-          src={product1Img}
+          src={product2Img}
           alt=""
           className="w-full border border-primary/10 rounded-2xl"
         />
@@ -383,7 +387,7 @@ export default function ProductsSection() {
       statement2: "Statement 02 about the proxies features",
       img: (
         <Image
-          src={product1Img}
+          src={product3Img}
           alt=""
           className="w-full border border-primary/10 rounded-2xl"
         />
@@ -399,7 +403,7 @@ export default function ProductsSection() {
       statement2: "Statement 02 about the proxies features",
       img: (
         <Image
-          src={product1Img}
+          src={product4Img}
           alt=""
           className="w-full border border-primary/10 rounded-2xl"
         />
@@ -415,7 +419,7 @@ export default function ProductsSection() {
       statement2: "Statement 02 about the proxies features",
       img: (
         <Image
-          src={product1Img}
+          src={product5Img}
           alt=""
           className="w-full border border-primary/10 rounded-2xl"
         />

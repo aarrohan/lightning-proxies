@@ -6,6 +6,7 @@ import product2IconImg from "@/assets/images/menu-product-2-icon.svg";
 import product3IconImg from "@/assets/images/menu-product-3-icon.svg";
 import product4IconImg from "@/assets/images/menu-product-4-icon.svg";
 import product5IconImg from "@/assets/images/menu-product-5-icon.svg";
+import product9IconImg from "@/assets/images/menu-product-9-icon.svg";
 import Link from "next/link";
 
 interface IProductCard {
@@ -182,6 +183,14 @@ export default function MenuPricing() {
       isNew: true,
       icon: <Image src={product5IconImg} alt="" className="w-[48px]" />,
       title: "Mobile Proxies",
+      href: "/",
+      description:
+        "Sed varius justo ac sem luctus lobortis. Nunc porta leo nec pretium laoreet.",
+    },
+    {
+      isNew: true,
+      icon: <Image src={product9IconImg} alt="" className="w-[48px]" />,
+      title: "Unlimited Residential Proxies",
       href: "/",
       description:
         "Sed varius justo ac sem luctus lobortis. Nunc porta leo nec pretium laoreet.",
