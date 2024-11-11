@@ -10,6 +10,13 @@ import menuLocation6Img from "@/assets/images/menu-location-6.svg";
 import menuLocation7Img from "@/assets/images/menu-location-7.svg";
 import menuLocationAllImg from "@/assets/images/menu-location-all.svg";
 import menuLocationMap1Img from "@/assets/images/menu-location-map-1.png";
+import menuLocationMap2Img from "@/assets/images/menu-location-map-2.png";
+import menuLocationMap3Img from "@/assets/images/menu-location-map-3.png";
+import menuLocationMap4Img from "@/assets/images/menu-location-map-4.png";
+import menuLocationMap5Img from "@/assets/images/menu-location-map-5.png";
+import menuLocationMap6Img from "@/assets/images/menu-location-map-6.png";
+import menuLocationMap7Img from "@/assets/images/menu-location-map-7.png";
+import menuLocationMapAllImg from "@/assets/images/menu-location-map-all.png";
 import Link from "next/link";
 
 interface ILocationCard {
@@ -128,7 +135,7 @@ export default function MenuLocations() {
         />
       ),
       bigImg: (
-        <Image src={menuLocationMap1Img} alt="" className="w-full rounded-xl" />
+        <Image src={menuLocationMap2Img} alt="" className="w-full rounded-xl" />
       ),
       title: "United Kingdom",
       href: "/",
@@ -143,7 +150,7 @@ export default function MenuLocations() {
         />
       ),
       bigImg: (
-        <Image src={menuLocationMap1Img} alt="" className="w-full rounded-xl" />
+        <Image src={menuLocationMap3Img} alt="" className="w-full rounded-xl" />
       ),
       title: "Germany",
       href: "/",
@@ -158,7 +165,7 @@ export default function MenuLocations() {
         />
       ),
       bigImg: (
-        <Image src={menuLocationMap1Img} alt="" className="w-full rounded-xl" />
+        <Image src={menuLocationMap4Img} alt="" className="w-full rounded-xl" />
       ),
       title: "France",
       href: "/",
@@ -173,7 +180,7 @@ export default function MenuLocations() {
         />
       ),
       bigImg: (
-        <Image src={menuLocationMap1Img} alt="" className="w-full rounded-xl" />
+        <Image src={menuLocationMap5Img} alt="" className="w-full rounded-xl" />
       ),
       title: "Canada",
       href: "/",
@@ -188,7 +195,7 @@ export default function MenuLocations() {
         />
       ),
       bigImg: (
-        <Image src={menuLocationMap1Img} alt="" className="w-full rounded-xl" />
+        <Image src={menuLocationMap6Img} alt="" className="w-full rounded-xl" />
       ),
       title: "China",
       href: "/",
@@ -203,7 +210,7 @@ export default function MenuLocations() {
         />
       ),
       bigImg: (
-        <Image src={menuLocationMap1Img} alt="" className="w-full rounded-xl" />
+        <Image src={menuLocationMap7Img} alt="" className="w-full rounded-xl" />
       ),
       title: "Brazil",
       href: "/",
@@ -215,7 +222,11 @@ export default function MenuLocations() {
         <Image src={menuLocationAllImg} alt="" className="w-full rounded-md" />
       ),
       bigImg: (
-        <Image src={menuLocationMap1Img} alt="" className="w-full rounded-xl" />
+        <Image
+          src={menuLocationMapAllImg}
+          alt=""
+          className="w-full rounded-xl"
+        />
       ),
       title: "View All",
       href: "/",
