@@ -473,7 +473,7 @@ export default function MenuResources() {
 
   return (
     <div className="lg:fixed top-[70px] left-1/2 lg:-translate-x-1/2 lg:w-[100vw] border-b lg:border-y border-dashed lg:border-solid border-dark-white lg:bg-white lg:opacity-0 group-hover:opacity-100 lg:pointer-events-none group-hover:pointer-events-auto duration-200">
-      <div className="mx-auto container max-w-[1320px] py-4 lg:py-8 lg:px-5 grid lg:grid-cols-3 gap-4">
+      <div className="mx-auto container max-w-[1320px] py-4 lg:px-5 grid lg:grid-cols-3 gap-4">
         <div>
           <p className="mb-4 lg:pb-3 lg:border-b border-dashed border-dark-white text-xs lg:text-sm font-semibold tracking-[-0.12px] lg:tracking-[-0.14px] lg:uppercase text-primary/50">
             Resources
