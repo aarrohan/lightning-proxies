@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import logoWhiteImg from "@/assets/images/branding/logo-white.svg";
@@ -30,6 +30,7 @@ export default function NavigationBar() {
   const [isPricingDropdownOpen, setIsPricingDropdownOpen] =
     useState<boolean>(false);
 
+  const firstLinkRef = useRef<HTMLAnchorElement>(null);
   const [linksActiveLineValues, setLinksActiveLineValues] = useState({
     top: 70,
     left: 0,
@@ -60,6 +61,20 @@ export default function NavigationBar() {
       document.body.style.overflow = "auto";
     }
   }, [isHamburgerMenuOpen]);
+
+  useEffect(() => {
+    if (firstLinkRef.current) {
+      const { left, width, height } =
+        firstLinkRef.current.getBoundingClientRect();
+
+      setLinksActiveLineValues({
+        top: height,
+        left: left + width / 2 - width / 4,
+        width: 0,
+        height: 0,
+      });
+    }
+  }, [firstLinkRef]);
 
   const handleLinkMouseEnter = (e: React.MouseEvent<HTMLAnchorElement>) => {
     const target = e.target as HTMLAnchorElement;
@@ -100,8 +115,7 @@ export default function NavigationBar() {
           <ul
             onMouseLeave={() => {
               setLinksActiveLineValues({
-                top: 70,
-                left: 0,
+                ...linksActiveLineValues,
                 width: 0,
                 height: 0,
               });
@@ -111,6 +125,7 @@ export default function NavigationBar() {
             {/* Products */}
             <li className="group w-full lg:w-fit h-fit lg:h-full">
               <Link
+                ref={firstLinkRef}
                 onMouseEnter={handleLinkMouseEnter}
                 onClick={() =>
                   setIsProductsDropdownOpen(!isProductsDropdownOpen)
