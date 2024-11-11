@@ -1,10 +1,12 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import article2Img from "@/assets/images/article-2.png";
 
 interface ILinkCard {
+  index?: number;
+  firstItemRef?: React.MutableRefObject<HTMLAnchorElement | null>;
   linksCardBgValues?: ILinkCardBgValues;
   setLinksCardBgValues?: (values: ILinkCardBgValues) => void;
   isNew?: boolean;
@@ -22,6 +24,8 @@ interface ILinkCardBgValues {
 }
 
 function LinkCard({
+  index,
+  firstItemRef,
   linksCardBgValues,
   setLinksCardBgValues,
   isNew,
@@ -30,8 +34,28 @@ function LinkCard({
   title,
   href,
 }: ILinkCard) {
+  useEffect(() => {
+    if (firstItemRef) {
+      const firstItem = firstItemRef.current;
+
+      if (firstItem) {
+        const { top, left, width, height } = firstItem.getBoundingClientRect();
+
+        if (linksCardBgValues && setLinksCardBgValues) {
+          setLinksCardBgValues({
+            top: top - 70,
+            left: left + 10,
+            width,
+            height,
+          });
+        }
+      }
+    }
+  }, [firstItemRef]);
+
   return (
     <Link
+      ref={index === 0 ? firstItemRef : null}
       href={href}
       onMouseEnter={(e) => {
         const target = e.target as HTMLAnchorElement;
@@ -106,6 +130,7 @@ function ArticleCard() {
 }
 
 export default function MenuResources() {
+  const resourcesFirstItemRef = useRef<HTMLAnchorElement>(null);
   const [resourcesCardBgValues, setResourcesCardBgValues] =
     useState<ILinkCardBgValues>({
       top: 0,
@@ -114,6 +139,7 @@ export default function MenuResources() {
       height: 0,
     });
 
+  const companyFirstItemRef = useRef<HTMLAnchorElement>(null);
   const [companyCardBgValues, setCompanyCardBgValues] =
     useState<ILinkCardBgValues>({
       top: 0,
@@ -455,18 +481,24 @@ export default function MenuResources() {
 
           <div
             onMouseLeave={() => {
-              setResourcesCardBgValues({
-                top: 0,
-                left: 0,
-                width: 0,
-                height: 0,
-              });
+              if (resourcesFirstItemRef.current) {
+                const { top, left, width, height } =
+                  resourcesFirstItemRef.current.getBoundingClientRect();
+                setResourcesCardBgValues({
+                  top: top - 70,
+                  left: left + 10,
+                  width,
+                  height,
+                });
+              }
             }}
             className="grid"
           >
             {resourcesLinks.map((link, index) => (
               <LinkCard
                 key={index}
+                index={index}
+                firstItemRef={resourcesFirstItemRef}
                 linksCardBgValues={resourcesCardBgValues}
                 setLinksCardBgValues={setResourcesCardBgValues}
                 {...link}
@@ -494,18 +526,24 @@ export default function MenuResources() {
 
           <div
             onMouseLeave={() => {
-              setCompanyCardBgValues({
-                top: 0,
-                left: 0,
-                width: 0,
-                height: 0,
-              });
+              if (companyFirstItemRef.current) {
+                const { top, left, width, height } =
+                  companyFirstItemRef.current.getBoundingClientRect();
+                setCompanyCardBgValues({
+                  top: top - 70,
+                  left: left + 10,
+                  width,
+                  height,
+                });
+              }
             }}
             className="grid"
           >
             {companyLinks.map((link, index) => (
               <LinkCard
                 key={index}
+                index={index}
+                firstItemRef={companyFirstItemRef}
                 linksCardBgValues={companyCardBgValues}
                 setLinksCardBgValues={setCompanyCardBgValues}
                 {...link}

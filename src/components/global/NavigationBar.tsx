@@ -357,7 +357,7 @@ export default function NavigationBar() {
         <div
           className={`absolute w-[40px] h-[2px] bg-accent hidden lg:block ${
             linksActiveLineValues.width === 0 ? "opacity-0" : ""
-          } duration-300`}
+          } pointer-events-none duration-300`}
           style={{
             top: linksActiveLineValues.top,
             left: linksActiveLineValues.left,
