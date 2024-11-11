@@ -11,10 +11,25 @@ import MenuUseCases from "./MenuUseCases";
 import MenuResources from "./MenuResources";
 import MenuPricing from "./MenuPricing";
 import SecondaryBtn from "../ui/SecondaryBtn";
+import GhostBtn from "../ui/GhostBtn";
 
 export default function NavigationBar() {
   const [isScrolled, setIsScrolled] = useState<boolean>(false);
   const [isHovered, setIsHovered] = useState<boolean>(true);
+
+  const [isHamburgerMenuOpen, setIsHamburgerMenuOpen] =
+    useState<boolean>(false);
+
+  const [isProductsDropdownOpen, setIsProductsDropdownOpen] =
+    useState<boolean>(false);
+  const [isLocationsDropdownOpen, setIsLocationsDropdownOpen] =
+    useState<boolean>(false);
+  const [isUseCasesDropdownOpen, setIsUseCasesDropdownOpen] =
+    useState<boolean>(false);
+  const [isResourcesDropdownOpen, setIsResourcesDropdownOpen] =
+    useState<boolean>(false);
+  const [isPricingDropdownOpen, setIsPricingDropdownOpen] =
+    useState<boolean>(false);
 
   const [linksActiveLineValues, setLinksActiveLineValues] = useState({
     top: 70,
@@ -70,170 +85,266 @@ export default function NavigationBar() {
           )}
         </Link>
 
-        <ul
-          onMouseLeave={() => {
-            setLinksActiveLineValues({
-              top: 70,
-              left: 0,
-              width: 0,
-              height: 0,
-            });
-          }}
-          className="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 h-full hidden lg:flex items-center gap-10"
+        <div
+          className={`hamburger-menu ${
+            isHamburgerMenuOpen ? "active" : ""
+          } fixed lg:static top-[70px] left-0 w-full lg:w-fit h-[calc(100svh-70px)] lg:h-fit border-t border-dark-white lg:border-transparent bg-off-white flex flex-col justify-center items-center overflow-y-auto duration-300`}
         >
-          <li className="group h-full">
-            <Link
-              onMouseEnter={handleLinkMouseEnter}
-              href={"/"}
-              className={`h-full flex items-center gap-2 text-sm font-medium tracking-[-0.14px] ${
-                isScrolled && !isHovered ? "text-white" : "text-primary"
-              } duration-200`}
-            >
-              Products{" "}
+          <ul
+            onMouseLeave={() => {
+              setLinksActiveLineValues({
+                top: 70,
+                left: 0,
+                width: 0,
+                height: 0,
+              });
+            }}
+            className="lg:absolute top-1/2 left-1/2 lg:-translate-y-1/2 lg:-translate-x-1/2 w-full lg:w-fit h-full py-8 lg:py-0 px-5 lg:px-0 flex flex-col lg:flex-row items-center lg:gap-10"
+          >
+            {/* Products */}
+            <li className="group w-full lg:w-fit h-fit lg:h-full">
+              <Link
+                onMouseEnter={handleLinkMouseEnter}
+                onClick={() =>
+                  setIsProductsDropdownOpen(!isProductsDropdownOpen)
+                }
+                href={"/"}
+                className={`w-full lg:w-fit h-fit lg:h-full pb-4 lg:pb-0 border-b lg:border-b-0 border-dashed border-dark-white flex justify-between items-center gap-2 text-sm font-medium tracking-[-0.14px] ${
+                  isScrolled && !isHovered ? "text-white" : "text-primary"
+                } duration-200`}
+              >
+                Products{" "}
+                <svg
+                  width="9"
+                  height="6"
+                  viewBox="0 0 9 6"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  className={`${
+                    isProductsDropdownOpen ? "rotate-180" : ""
+                  } lg:!rotate-0 pointer-events-none duration-200`}
+                >
+                  <path
+                    d="M1 1.25L4.75 4.75L8.25 1.25"
+                    strokeWidth="1.25"
+                    className={`${
+                      isScrolled && !isHovered
+                        ? "stroke-white"
+                        : "stroke-primary"
+                    } duration-200`}
+                  />
+                </svg>
+              </Link>
+
+              <div
+                className={`${
+                  !isProductsDropdownOpen ? "hidden" : ""
+                } lg:!block`}
+              >
+                <MenuProducts />
+              </div>
+            </li>
+
+            {/* Locations */}
+            <li className="group w-full lg:w-fit h-fit lg:h-full">
+              <Link
+                onMouseEnter={handleLinkMouseEnter}
+                onClick={() =>
+                  setIsLocationsDropdownOpen(!isLocationsDropdownOpen)
+                }
+                href={"/"}
+                className={`w-full lg:w-fit h-fit lg:h-full py-4 lg:py-0 border-b lg:border-b-0 border-dashed border-dark-white flex justify-between items-center gap-2 text-sm font-medium tracking-[-0.14px] ${
+                  isScrolled && !isHovered ? "text-white" : "text-primary"
+                } duration-200`}
+              >
+                Locations{" "}
+                <svg
+                  width="9"
+                  height="6"
+                  viewBox="0 0 9 6"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  className={`${
+                    isLocationsDropdownOpen ? "rotate-180" : ""
+                  } lg:!rotate-0 pointer-events-none duration-200`}
+                >
+                  <path
+                    d="M1 1.25L4.75 4.75L8.25 1.25"
+                    strokeWidth="1.25"
+                    className={`${
+                      isScrolled && !isHovered
+                        ? "stroke-white"
+                        : "stroke-primary"
+                    } duration-200`}
+                  />
+                </svg>
+              </Link>
+
+              <div
+                className={`${
+                  !isLocationsDropdownOpen ? "hidden" : ""
+                } lg:!block`}
+              >
+                <MenuLocations />
+              </div>
+            </li>
+
+            {/* Use cases */}
+            <li className="group w-full lg:w-fit h-fit lg:h-full">
+              <Link
+                onMouseEnter={handleLinkMouseEnter}
+                onClick={() =>
+                  setIsUseCasesDropdownOpen(!isUseCasesDropdownOpen)
+                }
+                href={"/"}
+                className={`w-full lg:w-fit h-fit lg:h-full py-4 lg:py-0 border-b lg:border-b-0 border-dashed border-dark-white flex justify-between items-center gap-2 text-sm font-medium tracking-[-0.14px] ${
+                  isScrolled && !isHovered ? "text-white" : "text-primary"
+                } duration-200`}
+              >
+                Use cases{" "}
+                <svg
+                  width="9"
+                  height="6"
+                  viewBox="0 0 9 6"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  className={`${
+                    isUseCasesDropdownOpen ? "rotate-180" : ""
+                  } lg:!rotate-0 pointer-events-none duration-200`}
+                >
+                  <path
+                    d="M1 1.25L4.75 4.75L8.25 1.25"
+                    strokeWidth="1.25"
+                    className={`${
+                      isScrolled && !isHovered
+                        ? "stroke-white"
+                        : "stroke-primary"
+                    } duration-200`}
+                  />
+                </svg>
+              </Link>
+
+              <div
+                className={`${
+                  !isUseCasesDropdownOpen ? "hidden" : ""
+                } lg:!block`}
+              >
+                <MenuUseCases />
+              </div>
+            </li>
+
+            {/* Resources */}
+            <li className="group w-full lg:w-fit h-fit lg:h-full">
+              <Link
+                onMouseEnter={handleLinkMouseEnter}
+                onClick={() =>
+                  setIsResourcesDropdownOpen(!isResourcesDropdownOpen)
+                }
+                href={"/"}
+                className={`w-full lg:w-fit h-fit lg:h-full py-4 lg:py-0 border-b lg:border-b-0 border-dashed border-dark-white flex justify-between items-center gap-2 text-sm font-medium tracking-[-0.14px] ${
+                  isScrolled && !isHovered ? "text-white" : "text-primary"
+                } duration-200`}
+              >
+                Resources{" "}
+                <svg
+                  width="9"
+                  height="6"
+                  viewBox="0 0 9 6"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  className={`${
+                    isResourcesDropdownOpen ? "rotate-180" : ""
+                  } lg:!rotate-0 pointer-events-none duration-200`}
+                >
+                  <path
+                    d="M1 1.25L4.75 4.75L8.25 1.25"
+                    strokeWidth="1.25"
+                    className={`${
+                      isScrolled && !isHovered
+                        ? "stroke-white"
+                        : "stroke-primary"
+                    } duration-200`}
+                  />
+                </svg>
+              </Link>
+
+              <div
+                className={`${
+                  !isResourcesDropdownOpen ? "hidden" : ""
+                } lg:!block`}
+              >
+                <MenuResources />
+              </div>
+            </li>
+
+            {/* Pricing */}
+            <li className="group w-full lg:w-fit h-fit lg:h-full">
+              <Link
+                onMouseEnter={handleLinkMouseEnter}
+                onClick={() => setIsPricingDropdownOpen(!isPricingDropdownOpen)}
+                href={"/"}
+                className={`w-full lg:w-fit h-fit lg:h-full pt-4 lg:pt-0 flex justify-between items-center gap-2 text-sm font-medium tracking-[-0.14px] ${
+                  isScrolled && !isHovered ? "text-white" : "text-primary"
+                } duration-200`}
+              >
+                Pricing{" "}
+                <svg
+                  width="9"
+                  height="6"
+                  viewBox="0 0 9 6"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  className={`${
+                    isPricingDropdownOpen ? "rotate-180" : ""
+                  } lg:!rotate-0 pointer-events-none duration-200`}
+                >
+                  <path
+                    d="M1 1.25L4.75 4.75L8.25 1.25"
+                    strokeWidth="1.25"
+                    className={`${
+                      isScrolled && !isHovered
+                        ? "stroke-white"
+                        : "stroke-primary"
+                    } duration-200`}
+                  />
+                </svg>
+              </Link>
+
+              <div
+                className={`${
+                  !isPricingDropdownOpen ? "hidden" : ""
+                } lg:!block`}
+              >
+                <MenuPricing />
+              </div>
+            </li>
+          </ul>
+
+          <div className="absolute z-10 bottom-0 left-0 w-full py-2.5 px-5 border-t border-dark-white bg-white grid lg:hidden grid-cols-2 items-center gap-2">
+            <button className="active:scale-95 w-full py-[7px] px-4 border-2 border-dark-white rounded-[9px] text-sm font-medium tracking-[-0.14px] duration-200">
+              Login
+            </button>
+
+            <PrimaryBtn>
+              Get Started{" "}
               <svg
-                width="9"
-                height="6"
-                viewBox="0 0 9 6"
+                width="14"
+                height="11"
+                viewBox="0 0 14 11"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                className="pointer-events-none"
               >
                 <path
-                  d="M1 1.25L4.75 4.75L8.25 1.25"
-                  strokeWidth="1.25"
-                  className={`${
-                    isScrolled && !isHovered ? "stroke-white" : "stroke-primary"
-                  } duration-200`}
+                  d="M8.21967 2.03033C7.92678 1.73744 7.92678 1.26256 8.21967 0.96967C8.51256 0.676777 8.98744 0.676777 9.28033 0.96967L13.2803 4.96967C13.5732 5.26256 13.5732 5.73744 13.2803 6.03033L9.28033 10.0303C8.98744 10.3232 8.51256 10.3232 8.21967 10.0303C7.92678 9.73744 7.92678 9.26256 8.21967 8.96967L10.9393 6.25H1.25C0.835787 6.25 0.5 5.91421 0.5 5.5C0.5 5.08579 0.835787 4.75 1.25 4.75H10.9393L8.21967 2.03033Z"
+                  className="fill-white"
                 />
               </svg>
-            </Link>
-
-            <MenuProducts />
-          </li>
-
-          <li className="group h-full">
-            <Link
-              onMouseEnter={handleLinkMouseEnter}
-              href={"/"}
-              className={`h-full flex items-center gap-2 text-sm font-medium tracking-[-0.14px] ${
-                isScrolled && !isHovered ? "text-white" : "text-primary"
-              } duration-200`}
-            >
-              Locations{" "}
-              <svg
-                width="9"
-                height="6"
-                viewBox="0 0 9 6"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                className="pointer-events-none"
-              >
-                <path
-                  d="M1 1.25L4.75 4.75L8.25 1.25"
-                  strokeWidth="1.25"
-                  className={`${
-                    isScrolled && !isHovered ? "stroke-white" : "stroke-primary"
-                  } duration-200`}
-                />
-              </svg>
-            </Link>
-
-            <MenuLocations />
-          </li>
-
-          <li className="group h-full">
-            <Link
-              onMouseEnter={handleLinkMouseEnter}
-              href={"/"}
-              className={`h-full flex items-center gap-2 text-sm font-medium tracking-[-0.14px] ${
-                isScrolled && !isHovered ? "text-white" : "text-primary"
-              } duration-200`}
-            >
-              Use Cases{" "}
-              <svg
-                width="9"
-                height="6"
-                viewBox="0 0 9 6"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                className="pointer-events-none"
-              >
-                <path
-                  d="M1 1.25L4.75 4.75L8.25 1.25"
-                  strokeWidth="1.25"
-                  className={`${
-                    isScrolled && !isHovered ? "stroke-white" : "stroke-primary"
-                  } duration-200`}
-                />
-              </svg>
-            </Link>
-
-            <MenuUseCases />
-          </li>
-
-          <li className="group h-full">
-            <Link
-              onMouseEnter={handleLinkMouseEnter}
-              href={"/"}
-              className={`h-full flex items-center gap-2 text-sm font-medium tracking-[-0.14px] ${
-                isScrolled && !isHovered ? "text-white" : "text-primary"
-              } duration-200`}
-            >
-              Resources{" "}
-              <svg
-                width="9"
-                height="6"
-                viewBox="0 0 9 6"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                className="pointer-events-none"
-              >
-                <path
-                  d="M1 1.25L4.75 4.75L8.25 1.25"
-                  strokeWidth="1.25"
-                  className={`${
-                    isScrolled && !isHovered ? "stroke-white" : "stroke-primary"
-                  } duration-200`}
-                />
-              </svg>
-            </Link>
-
-            <MenuResources />
-          </li>
-
-          <li className="group h-full">
-            <Link
-              onMouseEnter={handleLinkMouseEnter}
-              href={"/"}
-              className={`h-full flex items-center gap-2 text-sm font-medium tracking-[-0.14px] ${
-                isScrolled && !isHovered ? "text-white" : "text-primary"
-              } duration-200`}
-            >
-              Pricing{" "}
-              <svg
-                width="9"
-                height="6"
-                viewBox="0 0 9 6"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                className="pointer-events-none"
-              >
-                <path
-                  d="M1 1.25L4.75 4.75L8.25 1.25"
-                  strokeWidth="1.25"
-                  className={`${
-                    isScrolled && !isHovered ? "stroke-white" : "stroke-primary"
-                  } duration-200`}
-                />
-              </svg>
-            </Link>
-
-            <MenuPricing />
-          </li>
-        </ul>
+            </PrimaryBtn>
+          </div>
+        </div>
 
         <div
-          className={`absolute w-[40px] h-[2px] bg-accent ${
+          className={`absolute w-[40px] h-[2px] bg-accent hidden lg:block ${
             linksActiveLineValues.width === 0 ? "opacity-0" : ""
           } duration-300`}
           style={{
@@ -245,14 +356,14 @@ export default function NavigationBar() {
         <div className="flex items-center gap-4">
           <Link
             href={"/"}
-            className={`hidden sm:block text-sm font-medium tracking-[-0.14px] ${
+            className={`hidden lg:block text-sm font-medium tracking-[-0.14px] ${
               isScrolled && !isHovered ? "text-white" : "text-primary"
             } duration-200`}
           >
             Login
           </Link>
 
-          <div className="hidden sm:block">
+          <div className="hidden lg:block">
             {isScrolled && !isHovered ? (
               <SecondaryBtn>
                 Get Started{" "}
@@ -288,33 +399,63 @@ export default function NavigationBar() {
             )}
           </div>
 
-          <div className="flex lg:hidden cursor-pointer">
-            <svg
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fillRule="evenodd"
-                clipRule="evenodd"
-                d="M21 6.5H13V5H21V6.5Z"
-                fill="#1D2026"
-              />
-              <path
-                fillRule="evenodd"
-                clipRule="evenodd"
-                d="M21 13H9V11.5H21V13Z"
-                fill="#1D2026"
-              />
-              <path
-                fillRule="evenodd"
-                clipRule="evenodd"
-                d="M21 19.5H3V18H21V19.5Z"
-                fill="#1D2026"
-              />
-            </svg>
+          <div
+            onClick={() => {
+              setIsHamburgerMenuOpen(!isHamburgerMenuOpen);
+            }}
+            className="flex lg:hidden cursor-pointer"
+          >
+            {isHamburgerMenuOpen ? (
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 14 14"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12.3333 1.66632L1.66663 12.333"
+                  stroke="#1D2026"
+                  strokeWidth="2"
+                  strokeLinecap="square"
+                  strokeLinejoin="round"
+                />
+                <path
+                  d="M12.3333 12.333L1.66663 1.66632"
+                  stroke="#1D2026"
+                  strokeWidth="2"
+                  strokeLinecap="square"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            ) : (
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fillRule="evenodd"
+                  clipRule="evenodd"
+                  d="M21 6.5H13V5H21V6.5Z"
+                  fill="#1D2026"
+                />
+                <path
+                  fillRule="evenodd"
+                  clipRule="evenodd"
+                  d="M21 13H9V11.5H21V13Z"
+                  fill="#1D2026"
+                />
+                <path
+                  fillRule="evenodd"
+                  clipRule="evenodd"
+                  d="M21 19.5H3V18H21V19.5Z"
+                  fill="#1D2026"
+                />
+              </svg>
+            )}
           </div>
         </div>
       </div>

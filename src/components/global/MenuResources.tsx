@@ -46,12 +46,12 @@ function LinkCard({
           });
         }
       }}
-      className="group/link-card group relative z-10 p-4 rounded-xl"
+      className="group/link-card group relative z-10 p-2 lg:p-4 border lg:!border-0 border-transparent hover:border-dark-white bg-transparent hover:bg-white lg:!bg-transparent rounded-lg lg:rounded-xl"
     >
-      <div className="grid grid-cols-[20px_auto] items-start gap-2 pointer-events-none">
+      <div className="grid grid-cols-[20px_auto] items-center gap-2 pointer-events-none">
         <div className="flex">{icon}</div>
 
-        <p className="flex items-center font-medium tracking-[-0.16px]">
+        <p className="flex items-center text-xs lg:text-base font-medium tracking-[-0.12px] lg:tracking-[-0.16px]">
           {title}{" "}
           {!isNew && !isComingSoon && (
             <svg
@@ -69,12 +69,12 @@ function LinkCard({
             </svg>
           )}
           {isNew && (
-            <span className="ml-2 py-[2px] px-2 bg-accent/10 rounded-full text-xs font-medium uppercase text-accent">
+            <span className="ml-2 py-[2px] px-2 bg-accent/10 rounded-full text-[9px] lg:text-xs font-medium uppercase text-accent">
               New
             </span>
           )}
           {isComingSoon && (
-            <span className="ml-2 py-[2px] px-2 bg-green/10 rounded-full text-xs font-medium uppercase text-green">
+            <span className="ml-2 py-[2px] px-2 bg-green/10 rounded-full text-[9px] lg:text-xs font-medium uppercase text-green">
               Coming soon
             </span>
           )}
@@ -93,11 +93,11 @@ function ArticleCard() {
         className="group-hover/article-card:-translate-y-1 w-full rounded-xl duration-200"
       />
 
-      <h3 className="mt-4 mb-2 font-medium tracking-[-0.16px]">
+      <h3 className="mt-4 mb-1 lg:mb-2 text-xs lg:text-base font-medium tracking-[-0.12px] lg:tracking-[-0.16px]">
         Proxy vs VPN: The Difference
       </h3>
 
-      <p className="text-sm tracking-[-0.14px] text-primary/75">
+      <p className="text-[10px] lg:text-sm tracking-[-0.1px] lg:tracking-[-0.14px] text-primary/75">
         Sed varius justo ac sem luctus lobortis. Nunc porta leo nec pretium
         laoreet.
       </p>
@@ -131,6 +131,7 @@ export default function MenuResources() {
           viewBox="0 0 20 21"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
+          className="w-[16px] lg:w-[20px] h-auto"
         >
           <path
             d="M8.75 7.16663H15.4167M8.75 10.5H10.8333M15.4167 10.5H13.3333M8.75 13.8333H10.8333M15.4167 13.8333H13.3333"
@@ -166,6 +167,7 @@ export default function MenuResources() {
           viewBox="0 0 20 21"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
+          className="w-[16px] lg:w-[20px] h-auto"
         >
           <path
             d="M14.1667 9.50375C14.1667 9.21567 14.1667 9.07167 14.2101 8.94333C14.3361 8.57037 14.6682 8.42563 15.001 8.27407C15.3751 8.10368 15.5621 8.01849 15.7474 8.0035C15.9578 7.98648 16.1686 8.03182 16.3484 8.13274C16.5868 8.26653 16.7531 8.52078 16.9233 8.72752C17.7095 9.68233 18.1025 10.1598 18.2463 10.6863C18.3624 11.1112 18.3624 11.5555 18.2463 11.9803C18.0366 12.7482 17.3738 13.392 16.8832 13.9878C16.6323 14.2926 16.5068 14.445 16.3484 14.5339C16.1686 14.6348 15.9578 14.6802 15.7474 14.6632C15.5621 14.6482 15.3751 14.563 15.001 14.3926C14.6682 14.241 14.3361 14.0963 14.2101 13.7233C14.1667 13.595 14.1667 13.451 14.1667 13.1629V9.50375Z"
@@ -205,6 +207,7 @@ export default function MenuResources() {
           viewBox="0 0 20 21"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
+          className="w-[16px] lg:w-[20px] h-auto"
         >
           <path
             d="M14.1667 9.50375C14.1667 9.21567 14.1667 9.07167 14.2101 8.94333C14.3361 8.57037 14.6682 8.42563 15.001 8.27407C15.3751 8.10368 15.5621 8.01849 15.7474 8.0035C15.9578 7.98648 16.1686 8.03182 16.3484 8.13274C16.5868 8.26653 16.7531 8.52078 16.9233 8.72752C17.7095 9.68233 18.1025 10.1598 18.2463 10.6863C18.3624 11.1112 18.3624 11.5555 18.2463 11.9803C18.0366 12.7482 17.3738 13.392 16.8832 13.9878C16.6323 14.2926 16.5068 14.445 16.3484 14.5339C16.1686 14.6348 15.9578 14.6802 15.7474 14.6632C15.5621 14.6482 15.3751 14.563 15.001 14.3926C14.6682 14.241 14.3361 14.0963 14.2101 13.7233C14.1667 13.595 14.1667 13.451 14.1667 13.1629V9.50375Z"
@@ -244,6 +247,7 @@ export default function MenuResources() {
           viewBox="0 0 20 21"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
+          className="w-[16px] lg:w-[20px] h-auto"
         >
           <path
             d="M12.0834 10.5C12.0834 11.6505 11.1507 12.5833 10.0001 12.5833C8.8495 12.5833 7.91675 11.6505 7.91675 10.5C7.91675 9.34938 8.8495 8.41663 10.0001 8.41663C11.1507 8.41663 12.0834 9.34938 12.0834 10.5Z"
@@ -276,6 +280,7 @@ export default function MenuResources() {
           viewBox="0 0 20 21"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
+          className="w-[16px] lg:w-[20px] h-auto"
         >
           <path
             d="M9.16675 5.5H17.5001"
@@ -323,6 +328,7 @@ export default function MenuResources() {
           viewBox="0 0 20 21"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
+          className="w-[16px] lg:w-[20px] h-auto"
         >
           <path
             d="M18.3334 10.5C18.3334 5.89758 14.6024 2.16663 10.0001 2.16663C5.39771 2.16663 1.66675 5.89758 1.66675 10.5C1.66675 15.1023 5.39771 18.8333 10.0001 18.8333C14.6024 18.8333 18.3334 15.1023 18.3334 10.5Z"
@@ -352,6 +358,7 @@ export default function MenuResources() {
           viewBox="0 0 20 21"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
+          className="w-[16px] lg:w-[20px] h-auto"
         >
           <path
             d="M10.0001 18.8333V5.49996C10.0001 3.92861 10.0001 3.14293 9.51191 2.65478C9.02375 2.16663 8.2381 2.16663 6.66675 2.16663H5.00008C3.42873 2.16663 2.64306 2.16663 2.15491 2.65478C1.66675 3.14293 1.66675 3.92861 1.66675 5.49996V15.5C1.66675 17.0713 1.66675 17.857 2.15491 18.3451C2.64306 18.8333 3.42873 18.8333 5.00008 18.8333H10.0001Z"
@@ -388,6 +395,7 @@ export default function MenuResources() {
           viewBox="0 0 20 21"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
+          className="w-[16px] lg:w-[20px] h-auto"
         >
           <path
             d="M18.3334 6.12504H16.0093C15.5084 6.12504 15.2579 6.12504 15.0217 6.05352C14.7856 5.98202 14.5772 5.84308 14.1603 5.56521C13.5352 5.1484 12.8219 4.67292 12.4676 4.56564C12.1133 4.45837 11.7376 4.45837 10.9862 4.45837C9.96433 4.45837 9.30566 4.45837 8.84625 4.64867C8.38683 4.83897 8.02555 5.20027 7.30297 5.92284L6.66707 6.55874C6.50423 6.72158 6.42281 6.80301 6.37254 6.88339C6.18621 7.18138 6.20686 7.56425 6.42416 7.84047C6.48278 7.91498 6.57249 7.98717 6.7519 8.13156C7.41505 8.66524 8.37108 8.61197 8.97158 8.00789L10.0001 6.97326H10.8334L15.8334 12.003C16.2937 12.466 16.2937 13.2166 15.8334 13.6796C15.3732 14.1426 14.627 14.1426 14.1667 13.6796L13.7501 13.2604M13.7501 13.2604L11.2501 10.7456M13.7501 13.2604C14.2103 13.7234 14.2103 14.4741 13.7501 14.937C13.2898 15.4 12.5437 15.4 12.0834 14.937L11.2501 14.0988M11.2501 14.0988C11.7103 14.5617 11.7103 15.3123 11.2501 15.7753C10.7898 16.2383 10.0437 16.2383 9.58341 15.7753L8.33341 14.5178M11.2501 14.0988L9.58341 12.4321M8.33341 14.5178L7.91675 14.0988M8.33341 14.5178C8.79366 14.9808 8.79366 15.7315 8.33341 16.1945C7.87318 16.6574 7.12699 16.6574 6.66675 16.1945L4.31372 13.7924C3.83021 13.2988 3.58845 13.0521 3.27871 12.9218C2.96896 12.7917 2.62348 12.7917 1.93253 12.7917H1.66675"
@@ -421,6 +429,7 @@ export default function MenuResources() {
           viewBox="0 0 20 21"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
+          className="w-[16px] lg:w-[20px] h-auto"
         >
           <path
             d="M6.24565 11.9609C8.81942 8.97037 14.649 3.12902 17.1156 3.00375C18.6416 2.85759 15.6015 8.27126 8.39875 14.195M9.54842 8.87079L11.4298 10.7708M2.5 17.8789C3.09123 15.7894 2.71823 16.8162 2.92006 14.41C3.02755 14.0537 3.24382 12.9481 4.59465 12.3971C6.13015 11.7708 7.25582 12.7176 7.54677 13.1625C8.40392 14.0919 8.50325 15.246 7.54677 16.5645C6.59025 17.883 3.75293 18.2106 2.5 17.8789Z"
@@ -437,10 +446,10 @@ export default function MenuResources() {
   ];
 
   return (
-    <div className="fixed top-[70px] left-1/2 -translate-x-1/2 w-[100vw] border-y border-dark-white bg-white opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto duration-200">
-      <div className="mx-auto container max-w-[1320px] py-8 px-5 grid grid-cols-3 gap-4">
+    <div className="lg:fixed top-[70px] left-1/2 lg:-translate-x-1/2 lg:w-[100vw] border-b lg:border-y border-dashed lg:border-solid border-dark-white lg:bg-white lg:opacity-0 group-hover:opacity-100 lg:pointer-events-none group-hover:pointer-events-auto duration-200">
+      <div className="mx-auto container max-w-[1320px] py-4 lg:py-8 lg:px-5 grid lg:grid-cols-3 gap-4">
         <div>
-          <p className="mb-4 pb-3 border-b border-dashed border-dark-white text-sm font-semibold tracking-[-0.14px] uppercase text-primary/50">
+          <p className="mb-4 lg:pb-3 lg:border-b border-dashed border-dark-white text-xs lg:text-sm font-semibold tracking-[-0.12px] lg:tracking-[-0.14px] lg:uppercase text-primary/50">
             Resources
           </p>
 
@@ -465,7 +474,7 @@ export default function MenuResources() {
             ))}
 
             <div
-              className={`absolute bg-off-white rounded-xl ${
+              className={`absolute bg-off-white rounded-xl hidden lg:block ${
                 resourcesCardBgValues.width === 0 ? "opacity-0" : ""
               } duration-300`}
               style={{
@@ -479,7 +488,7 @@ export default function MenuResources() {
         </div>
 
         <div>
-          <p className="mb-4 pb-3 border-b border-dashed border-dark-white text-sm font-semibold tracking-[-0.14px] uppercase text-primary/50">
+          <p className="mb-4 lg:pb-3 lg:border-b border-dashed border-dark-white text-xs lg:text-sm font-semibold tracking-[-0.12px] lg:tracking-[-0.14px] lg:uppercase text-primary/50">
             Company
           </p>
 
@@ -504,7 +513,7 @@ export default function MenuResources() {
             ))}
 
             <div
-              className={`absolute bg-off-white rounded-xl ${
+              className={`absolute bg-off-white rounded-xl hidden lg:block ${
                 companyCardBgValues.width === 0 ? "opacity-0" : ""
               } duration-300`}
               style={{
@@ -518,14 +527,14 @@ export default function MenuResources() {
         </div>
 
         <div>
-          <div className="mb-4 pb-3 border-b border-dashed border-dark-white flex justify-between items-center">
-            <p className="text-sm font-semibold tracking-[-0.14px] uppercase text-primary/50">
+          <div className="mb-4 lg:pb-3 lg:border-b border-dashed border-dark-white flex justify-between items-center">
+            <p className="text-xs lg:text-sm font-semibold tracking-[-0.12px] lg:tracking-[-0.14px] lg:uppercase text-primary/50">
               Latest article
             </p>
 
             <Link
               href={"/"}
-              className="flex items-center gap-1.5 text-sm tracking-[-0.14px] opacity-50 hover:opacity-100 duration-200"
+              className="hidden lg:flex items-center gap-1.5 text-sm tracking-[-0.14px] opacity-50 hover:opacity-100 duration-200"
             >
               View all
               <svg

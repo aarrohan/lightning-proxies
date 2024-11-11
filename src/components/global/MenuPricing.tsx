@@ -52,13 +52,13 @@ function ProductCard({
           });
         }
       }}
-      className="group/product-card group relative z-10 p-5 rounded-xl flex justify-between items-start"
+      className="group/product-card group relative z-10 p-2.5 lg:p-5 border lg:!border-0 border-transparent hover:border-dark-white bg-transparent hover:bg-white lg:!bg-transparent rounded-xl flex flex-col lg:flex-row justify-between items-start gap-4"
     >
-      <div className="grid grid-cols-[48px_auto] items-start gap-4 pointer-events-none">
+      <div className="grid grid-cols-[38px_auto] lg:grid-cols-[48px_auto] items-start gap-2.5 lg:gap-4 pointer-events-none">
         <div className="flex">{icon}</div>
 
         <div>
-          <p className="flex items-center font-medium tracking-[-0.16px]">
+          <p className="flex items-center text-xs lg:text-base font-medium tracking-[-0.12px] lg:tracking-[-0.16px]">
             {title}{" "}
             {!isNew && !isComingSoon && (
               <svg
@@ -76,38 +76,38 @@ function ProductCard({
               </svg>
             )}
             {isNew && (
-              <span className="ml-2 py-[2px] px-2 bg-accent/10 rounded-full text-xs font-medium uppercase text-accent">
+              <span className="ml-2 py-[2px] px-2 bg-accent/10 rounded-full text-[9px] lg:text-xs font-medium uppercase text-accent">
                 New
               </span>
             )}
             {isComingSoon && (
-              <span className="ml-2 py-[2px] px-2 bg-green/10 rounded-full text-xs font-medium uppercase text-green">
+              <span className="ml-2 py-[2px] px-2 bg-green/10 rounded-full text-[9px] lg:text-xs font-medium uppercase text-green">
                 Coming soon
               </span>
             )}
           </p>
 
-          <p className="mt-1 max-w-[320px] text-sm tracking-[-0.14px] text-primary/75">
+          <p className="mt-1 text-[10px] lg:text-sm tracking-[-0.1px] lg:tracking-[-0.14px] text-primary/75">
             {description}
           </p>
         </div>
       </div>
 
       <div className="pointer-events-none">
-        <p className="text-xs font-medium tracking-[-0.12px] text-primary/50">
+        <p className="text-[10px] sm:text-xs font-medium tracking-[-0.1px] sm:tracking-[-0.12px] text-primary/50">
           From
         </p>
 
         <h4 className="mb-1">
-          <span className="text-lg font-semibold tracking-[-0.18px]">
+          <span className="text-sm sm:text-lg font-semibold tracking-[-0.18px]">
             $2.99
           </span>
-          <span className="text-xs uppercase tracking-[-0.12px] text-primary/50">
+          <span className="text-[10px] sm:text-xs uppercase tracking-[-0.1px] sm:tracking-[-0.12px] text-primary/50">
             /GB
           </span>
         </h4>
 
-        <p className="py-[2px] px-2 bg-accent/10 rounded-full text-xs font-medium text-accent">
+        <p className="py-[2px] px-2 bg-accent/10 rounded-full text-[10px] sm:text-xs font-medium text-accent">
           Pay as you go
         </p>
       </div>
@@ -164,11 +164,11 @@ export default function MenuPricing() {
   ];
 
   return (
-    <div className="fixed top-[70px] left-1/2 -translate-x-1/2 w-[100vw] border-y border-dark-white bg-white opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto duration-200">
-      <div className="mx-auto container max-w-[1320px] py-8 px-5">
+    <div className="lg:fixed top-[70px] left-1/2 lg:-translate-x-1/2 mt-4 lg:mt-0 lg:w-[100vw] border-y border-dashed lg:border-solid border-dark-white lg:bg-white lg:opacity-0 group-hover:opacity-100 lg:pointer-events-none group-hover:pointer-events-auto duration-200">
+      <div className="mx-auto container max-w-[1320px] py-4 lg:py-8 lg:px-5">
         <div>
-          <p className="mb-4 pb-3 border-b border-dashed border-dark-white text-sm font-semibold tracking-[-0.14px] uppercase text-primary/50">
-            PROXY SOLUTIONS
+          <p className="mb-4 lg:pb-3 lg:border-b border-dashed border-dark-white text-xs lg:text-sm font-semibold tracking-[-0.12px] lg:tracking-[-0.14px] lg:uppercase text-primary/50">
+            Proxy solutions
           </p>
 
           <div
@@ -180,7 +180,7 @@ export default function MenuPricing() {
                 height: 0,
               });
             }}
-            className="grid grid-cols-2"
+            className="grid lg:grid-cols-2 gap-2.5 lg:gap-0"
           >
             {products.map((product, index) => (
               <ProductCard
@@ -192,7 +192,7 @@ export default function MenuPricing() {
             ))}
 
             <div
-              className={`absolute bg-off-white rounded-xl ${
+              className={`absolute bg-off-white rounded-xl hidden lg:block ${
                 productsCardBgValues.width === 0 ? "opacity-0" : ""
               } duration-300`}
               style={{

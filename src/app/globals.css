@@ -45,3 +45,13 @@ img {
 .scrolled-nav-bg {
   background: linear-gradient(180deg, #121118 34.42%, #000 100%);
 }
+
+@media only screen and (max-width: 1023px) {
+  .hamburger-menu {
+    transform: translateX(100%);
+  }
+
+  .hamburger-menu.active {
+    transform: translateX(0);
+  }
+}

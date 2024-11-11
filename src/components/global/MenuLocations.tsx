@@ -59,14 +59,16 @@ function LocationCard({
           });
         }
       }}
-      className={`group/menu-use-case-card group relative z-10 p-5 rounded-xl grid ${
-        isSmallImg ? "grid-cols-[44px_auto]" : "grid-cols-[54px_auto]"
-      } items-center gap-4`}
+      className={`group/menu-use-case-card group relative z-10 p-2.5 lg:p-5 border lg:!border-0 border-transparent hover:border-dark-white bg-transparent hover:bg-white lg:!bg-transparent rounded-lg lg:rounded-xl grid ${
+        isSmallImg
+          ? "grid-cols-[38px_auto] lg:grid-cols-[44px_auto]"
+          : "grid-cols-[38px_auto] lg:grid-cols-[54px_auto]"
+      } items-center gap-2.5 lg:gap-4`}
     >
       <div className="flex pointer-events-none">{img}</div>
 
       <div className="pointer-events-none">
-        <p className="flex items-center font-medium tracking-[-0.16px]">
+        <p className="flex items-center text-xs lg:text-base font-medium tracking-[-0.12px] lg:tracking-[-0.16px]">
           {title}{" "}
           <svg
             width="4"
@@ -83,7 +85,7 @@ function LocationCard({
           </svg>
         </p>
 
-        <p className="mt-1 max-w-[320px] text-sm tracking-[-0.14px] text-primary/75">
+        <p className="mt-[2px] lg:mt-1 max-w-[320px] text-[10px] lg:text-sm tracking-[-0.1px] lg:tracking-[-0.14px] text-primary/75">
           {description}
         </p>
       </div>
@@ -217,22 +219,22 @@ export default function MenuLocations() {
       ),
       title: "View All",
       href: "/",
-      description: "250+ Locations Wordwide",
+      description: "250+ Locations",
     },
   ];
 
   return (
-    <div className="fixed top-[70px] left-1/2 -translate-x-1/2 w-[100vw] border-y border-dark-white bg-white opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto duration-200">
-      <div className="mx-auto container max-w-[1320px] py-8 px-5">
+    <div className="lg:fixed top-[70px] left-1/2 lg:-translate-x-1/2 lg:w-[100vw] border-b lg:border-y border-dashed lg:border-solid border-dark-white lg:bg-white lg:opacity-0 group-hover:opacity-100 lg:pointer-events-none group-hover:pointer-events-auto duration-200">
+      <div className="mx-auto container max-w-[1320px] py-4 lg:py-8 lg:px-5">
         <div>
-          <div className="mb-4 pb-3 border-b border-dashed border-dark-white flex justify-between items-center">
-            <p className="text-sm font-semibold tracking-[-0.14px] uppercase text-primary/50">
+          <div className="mb-4 lg:pb-3 lg:border-b border-dashed border-dark-white flex justify-between items-center">
+            <p className="text-xs lg:text-sm font-semibold tracking-[-0.12px] lg:tracking-[-0.14px] lg:uppercase text-primary/50">
               Locations
             </p>
 
             <Link
               href={"/"}
-              className="flex items-center gap-1.5 text-sm tracking-[-0.14px] opacity-50 hover:opacity-100 duration-200"
+              className="hidden lg:flex items-center gap-1.5 text-sm tracking-[-0.14px] opacity-50 hover:opacity-100 duration-200"
             >
               View all
               <svg
@@ -250,7 +252,7 @@ export default function MenuLocations() {
             </Link>
           </div>
 
-          <div className="grid grid-cols-[auto_425px] gap-4">
+          <div className="grid lg:grid-cols-[auto_425px] gap-4">
             <div
               onMouseLeave={() => {
                 setLocationsCardBgValues({
@@ -261,7 +263,7 @@ export default function MenuLocations() {
                   height: 0,
                 });
               }}
-              className="grid grid-cols-3"
+              className="grid grid-cols-2 lg:grid-cols-3"
             >
               {locations.map((location, index) => (
                 <LocationCard
@@ -274,7 +276,7 @@ export default function MenuLocations() {
               ))}
 
               <div
-                className={`absolute bg-off-white rounded-xl ${
+                className={`absolute bg-off-white rounded-xl hidden lg:block ${
                   locationsCardBgValues.width === 0 ? "opacity-0" : ""
                 } duration-300`}
                 style={{
@@ -286,7 +288,7 @@ export default function MenuLocations() {
               ></div>
             </div>
 
-            <div className="pl-4 border-l border-dashed border-dark-white">
+            <div className="pl-4 border-l border-dashed border-dark-white hidden lg:block">
               <div className="relative">
                 {locations.map((location, index) => {
                   return (
