@@ -1,5 +1,5 @@
 "use client";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import menuLocation1Img from "@/assets/images/menu-location-1.svg";
 import menuLocation2Img from "@/assets/images/menu-location-2.svg";
@@ -51,6 +51,26 @@ function LocationCard({
   href,
   description,
 }: ILocationCard) {
+  useEffect(() => {
+    if (firstItemRef) {
+      const firstItem = firstItemRef.current;
+
+      if (firstItem) {
+        const { top, left, width, height } = firstItem.getBoundingClientRect();
+
+        if (locationsCardBgValues && setLocationsCardBgValues) {
+          setLocationsCardBgValues({
+            index: 0,
+            top: top - 70,
+            left: left + 10,
+            width,
+            height,
+          });
+        }
+      }
+    }
+  }, [firstItemRef]);
+
   return (
     <Link
       ref={index === 0 ? firstItemRef : null}

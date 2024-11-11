@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import useCase1Img from "@/assets/images/use-case-1.svg";
 import useCase2Img from "@/assets/images/use-case-2.svg";
@@ -8,6 +8,7 @@ import Link from "next/link";
 
 interface IUseCaseCard {
   index?: number;
+  firstItemRef?: React.MutableRefObject<HTMLAnchorElement | null>;
   useCasesCardBgValues?: IUseCasesCardBgValues;
   setUseCasesCardBgValues?: (values: IUseCasesCardBgValues) => void;
   img: JSX.Element;
@@ -26,14 +27,36 @@ interface IUseCasesCardBgValues {
 
 function UseCaseCard({
   index = 0,
+  firstItemRef,
   useCasesCardBgValues,
   setUseCasesCardBgValues,
   title,
   href,
   description,
 }: IUseCaseCard) {
+  useEffect(() => {
+    if (firstItemRef) {
+      const firstItem = firstItemRef.current;
+
+      if (firstItem) {
+        const { top, left, width, height } = firstItem.getBoundingClientRect();
+
+        if (useCasesCardBgValues && setUseCasesCardBgValues) {
+          setUseCasesCardBgValues({
+            index: 0,
+            top: top - 70,
+            left: left + 10,
+            width,
+            height,
+          });
+        }
+      }
+    }
+  }, [firstItemRef]);
+
   return (
     <Link
+      ref={index === 0 ? firstItemRef : null}
       href={href}
       onMouseEnter={(e) => {
         const target = e.target as HTMLAnchorElement;
@@ -78,6 +101,7 @@ function UseCaseCard({
 }
 
 export default function MenuUseCases() {
+  const useCasesFirstItemRef = useRef<HTMLAnchorElement>(null);
   const [useCasesCardBgValues, setUseCasesCardBgValues] =
     useState<IUseCasesCardBgValues>({
       index: 0,
@@ -127,7 +151,7 @@ export default function MenuUseCases() {
 
   return (
     <div className="lg:fixed top-[70px] left-1/2 lg:-translate-x-1/2 lg:w-[100vw] border-b lg:border-y border-dashed lg:border-solid border-dark-white lg:bg-white lg:opacity-0 group-hover:opacity-100 lg:pointer-events-none group-hover:pointer-events-auto duration-200">
-      <div className="mx-auto container max-w-[1320px] py-4 lg:py-8 lg:px-5">
+      <div className="mx-auto container max-w-[1320px] py-4 lg:px-5">
         <div>
           <div className="mb-4 lg:pb-3 lg:border-b border-dashed border-dark-white flex justify-between items-center">
             <p className="text-xs lg:text-sm font-semibold tracking-[-0.12px] lg:tracking-[-0.14px] lg:uppercase text-primary/50">
@@ -157,13 +181,18 @@ export default function MenuUseCases() {
           <div className="grid lg:grid-cols-3 gap-4">
             <div
               onMouseLeave={() => {
-                setUseCasesCardBgValues({
-                  index: 0,
-                  top: 0,
-                  left: 0,
-                  width: 0,
-                  height: 0,
-                });
+                if (useCasesFirstItemRef.current) {
+                  const { top, left, width, height } =
+                    useCasesFirstItemRef.current.getBoundingClientRect();
+
+                  setUseCasesCardBgValues({
+                    index: 0,
+                    top: top - 70,
+                    left: left + 10,
+                    width,
+                    height,
+                  });
+                }
               }}
               className="col-span-2 grid lg:grid-cols-2"
             >
@@ -171,6 +200,7 @@ export default function MenuUseCases() {
                 <UseCaseCard
                   key={index}
                   index={index}
+                  firstItemRef={useCasesFirstItemRef}
                   useCasesCardBgValues={useCasesCardBgValues}
                   setUseCasesCardBgValues={setUseCasesCardBgValues}
                   {...useCase}
