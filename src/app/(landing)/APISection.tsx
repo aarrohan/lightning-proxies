@@ -8,6 +8,7 @@ import apiSectionCard2BgImg from "@/assets/images/api-section-card-2-bg.png";
 import apiSectionCard3BgImg from "@/assets/images/api-section-card-3-bg.png";
 import apiSectionBgImg from "@/assets/images/api-section-bg.svg";
 import ApiCodeBlock from "@/components/ui/ApiCodeBlock";
+import Link from "next/link";
 
 interface IAPICardProps {
   img: JSX.Element;
@@ -142,7 +143,10 @@ export default function APISection() {
         </div>
 
         <div className="mt-12 flex justify-center">
-          <p className="py-1.5 px-3.5 border border-white/25 rounded-full text-[11px] sm:text-sm tracking-[-0.14px] text-center text-white">
+          <Link
+            href={"/"}
+            className="py-1.5 px-3.5 border border-white/25 rounded-full text-[11px] sm:text-sm tracking-[-0.14px] text-center text-white"
+          >
             Looking for the Reseller API?{" "}
             <span className="font-semibold text-accent">Here it is</span>
             <svg
@@ -158,7 +162,7 @@ export default function APISection() {
                 className="fill-accent"
               />
             </svg>
-          </p>
+          </Link>
         </div>
       </div>
 

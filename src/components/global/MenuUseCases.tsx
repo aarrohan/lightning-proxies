@@ -1,9 +1,11 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
-import useCase1Img from "@/assets/images/use-case-1.svg";
-import useCase2Img from "@/assets/images/use-case-2.svg";
-import useCase3Img from "@/assets/images/use-case-3.svg";
+import useCase1Img from "@/assets/images/use-case-1.png";
+import useCase2Img from "@/assets/images/use-case-2.png";
+import useCase3Img from "@/assets/images/use-case-3.png";
+import useCase4Img from "@/assets/images/use-case-4.png";
+import useCase5Img from "@/assets/images/use-case-5.png";
 import Link from "next/link";
 
 interface IUseCaseCard {
@@ -134,14 +136,14 @@ export default function MenuUseCases() {
         "Sed varius justo ac sem luctus lobortis. Nunc porta leo nec pretium laoreet.",
     },
     {
-      img: <Image src={useCase1Img} alt="" className="w-full rounded-xl" />,
+      img: <Image src={useCase4Img} alt="" className="w-full rounded-xl" />,
       title: "Ad Verification",
       href: "/",
       description:
         "Sed varius justo ac sem luctus lobortis. Nunc porta leo nec pretium laoreet.",
     },
     {
-      img: <Image src={useCase2Img} alt="" className="w-full rounded-xl" />,
+      img: <Image src={useCase5Img} alt="" className="w-full rounded-xl" />,
       title: "Brand Protection",
       href: "/",
       description:

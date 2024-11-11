@@ -2,6 +2,7 @@ import Image from "next/image";
 import trustPilotStarsImg from "@/assets/images/trustpilot-stars.svg";
 import trustPilotImg from "@/assets/images/trustpilot.svg";
 import reviewCardBgImg from "@/assets/images/review-card-bg.svg";
+import Link from "next/link";
 
 interface IReviewCardProps {
   title: string;
@@ -11,7 +12,10 @@ interface IReviewCardProps {
 
 function ReviewCard({ title, description, username }: IReviewCardProps) {
   return (
-    <div className="relative w-full min-w-[280px] p-6 sm:p-8 border border-dark-white rounded-lg sm:rounded-xl overflow-hidden">
+    <Link
+      href={"/"}
+      className="relative hover:-translate-y-1 w-full min-w-[280px] p-6 sm:p-8 border border-dark-white hover:shadow-xl hover:shadow-primary/5 rounded-lg sm:rounded-xl overflow-hidden duration-300"
+    >
       <div className="relative z-10">
         <Image
           src={trustPilotStarsImg}
@@ -39,7 +43,7 @@ function ReviewCard({ title, description, username }: IReviewCardProps) {
       />
 
       <div className="absolute top-0 left-0 w-full h-[100px] bg-gradient-to-b from-[#16D857]/15 to-transparent"></div>
-    </div>
+    </Link>
   );
 }
 
@@ -103,7 +107,10 @@ export default function ReviewsSection() {
             </h2>
           </div>
 
-          <div className="py-[2px] sm:py-1 px-3 sm:px-5 border border-dark-white bg-gradient-to-b from-white to-off-white rounded-md sm:rounded-lg flex items-center gap-4">
+          <Link
+            href={"/"}
+            className="py-[2px] sm:py-1 px-3 sm:px-5 border border-dark-white bg-gradient-to-b from-white to-off-white rounded-md sm:rounded-lg flex items-center gap-4"
+          >
             <p className="text-xs sm:text-sm font-medium tracking-[-0.12px] sm:tracking-[-0.14px]">
               Excellent
             </p>
@@ -119,7 +126,7 @@ export default function ReviewsSection() {
               alt=""
               className="w-auto h-[28px] sm:h-[35px]"
             />
-          </div>
+          </Link>
         </div>
 
         <div className="hidden lg:grid grid-cols-3 gap-4">
@@ -136,7 +143,10 @@ export default function ReviewsSection() {
       </div>
 
       <div className="mt-8 mx-auto container max-w-[1320px] px-5 flex flex-col items-center">
-        <p className="py-1.5 px-3.5 border border-dark-white rounded-full text-[11px] sm:text-sm tracking-[-0.14px] text-center">
+        <Link
+          href={"/"}
+          className="py-1.5 px-3.5 border border-dark-white rounded-full text-[11px] sm:text-sm tracking-[-0.14px] text-center"
+        >
           View all reviews on Trustpilot.{" "}
           <span className="font-semibold text-green">Read more</span>
           <svg
@@ -152,7 +162,7 @@ export default function ReviewsSection() {
               className="fill-green"
             />
           </svg>
-        </p>
+        </Link>
       </div>
     </section>
   );

@@ -6,6 +6,7 @@ import clientImg3 from "@/assets/images/client-3.svg";
 import clientImg4 from "@/assets/images/client-4.svg";
 import clientImg5 from "@/assets/images/client-5.svg";
 import clientImg6 from "@/assets/images/client-6.svg";
+import Link from "next/link";
 
 export default function ClientsSection() {
   return (
@@ -70,7 +71,10 @@ export default function ClientsSection() {
           <div className="absolute top-0 right-0 w-[100px] h-full bg-gradient-to-r from-transparent to-white"></div>
         </div>
 
-        <p className="mt-8 py-1.5 px-3.5 border border-primary/25 rounded-full text-[11px] sm:text-sm tracking-[-0.14px] text-center">
+        <Link
+          href={"/"}
+          className="mt-8 py-1.5 px-3.5 border border-primary/25 rounded-full text-[11px] sm:text-sm tracking-[-0.14px] text-center"
+        >
           Learn how Lightning Proxies is transforming the proxy landscape
           worldwide
           <svg
@@ -86,7 +90,7 @@ export default function ClientsSection() {
               className="fill-primary"
             />
           </svg>
-        </p>
+        </Link>
       </div>
     </section>
   );
