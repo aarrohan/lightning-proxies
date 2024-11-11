@@ -11,7 +11,6 @@ import MenuUseCases from "./MenuUseCases";
 import MenuResources from "./MenuResources";
 import MenuPricing from "./MenuPricing";
 import SecondaryBtn from "../ui/SecondaryBtn";
-import GhostBtn from "../ui/GhostBtn";
 
 export default function NavigationBar() {
   const [isScrolled, setIsScrolled] = useState<boolean>(false);
