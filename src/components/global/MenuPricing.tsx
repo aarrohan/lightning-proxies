@@ -107,7 +107,7 @@ function ProductCard({
           </span>
         </h4>
 
-        <p className="py-[2px] px-2 bg-accent/10 rounded-full text-[10px] sm:text-xs font-medium text-accent">
+        <p className="py-[2px] px-2 bg-accent/10 rounded-full text-[10px] sm:text-xs font-medium whitespace-nowrap text-accent">
           Pay as you go
         </p>
       </div>

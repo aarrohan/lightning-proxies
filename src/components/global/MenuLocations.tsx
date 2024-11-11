@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import Image from "next/image";
 import menuLocation1Img from "@/assets/images/menu-location-1.svg";
 import menuLocation2Img from "@/assets/images/menu-location-2.svg";
@@ -21,6 +21,7 @@ import Link from "next/link";
 
 interface ILocationCard {
   index?: number;
+  firstItemRef?: React.MutableRefObject<HTMLAnchorElement | null>;
   isSmallImg?: boolean;
   locationsCardBgValues?: ILocationsCardBgValues;
   setLocationsCardBgValues?: (values: ILocationsCardBgValues) => void;
@@ -41,6 +42,7 @@ interface ILocationsCardBgValues {
 
 function LocationCard({
   index = 0,
+  firstItemRef,
   isSmallImg,
   locationsCardBgValues,
   setLocationsCardBgValues,
@@ -51,6 +53,7 @@ function LocationCard({
 }: ILocationCard) {
   return (
     <Link
+      ref={index === 0 ? firstItemRef : null}
       href={href}
       onMouseEnter={(e) => {
         const target = e.target as HTMLAnchorElement;
@@ -101,6 +104,7 @@ function LocationCard({
 }
 
 export default function MenuLocations() {
+  const locationsFirstItemRef = useRef<HTMLAnchorElement>(null);
   const [locationsCardBgValues, setLocationsCardBgValues] =
     useState<ILocationsCardBgValues>({
       index: 0,
@@ -236,7 +240,7 @@ export default function MenuLocations() {
 
   return (
     <div className="lg:fixed top-[70px] left-1/2 lg:-translate-x-1/2 lg:w-[100vw] border-b lg:border-y border-dashed lg:border-solid border-dark-white lg:bg-white lg:opacity-0 group-hover:opacity-100 lg:pointer-events-none group-hover:pointer-events-auto duration-200">
-      <div className="mx-auto container max-w-[1320px] py-4 lg:py-8 lg:px-5">
+      <div className="mx-auto container max-w-[1320px] py-4 lg:px-5">
         <div>
           <div className="mb-4 lg:pb-3 lg:border-b border-dashed border-dark-white flex justify-between items-center">
             <p className="text-xs lg:text-sm font-semibold tracking-[-0.12px] lg:tracking-[-0.14px] lg:uppercase text-primary/50">
@@ -266,13 +270,17 @@ export default function MenuLocations() {
           <div className="grid lg:grid-cols-[auto_425px] gap-4">
             <div
               onMouseLeave={() => {
-                setLocationsCardBgValues({
-                  index: 0,
-                  top: 0,
-                  left: 0,
-                  width: 0,
-                  height: 0,
-                });
+                if (locationsFirstItemRef.current) {
+                  const { top, left, width, height } =
+                    locationsFirstItemRef.current.getBoundingClientRect();
+                  setLocationsCardBgValues({
+                    index: 0,
+                    top: top - 70,
+                    left: left + 10,
+                    width,
+                    height,
+                  });
+                }
               }}
               className="grid grid-cols-2 lg:grid-cols-3"
             >
@@ -280,6 +288,7 @@ export default function MenuLocations() {
                 <LocationCard
                   key={index}
                   index={index}
+                  firstItemRef={locationsFirstItemRef}
                   locationsCardBgValues={locationsCardBgValues}
                   setLocationsCardBgValues={setLocationsCardBgValues}
                   {...location}

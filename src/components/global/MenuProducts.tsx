@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import product1IconImg from "@/assets/images/menu-product-1-icon.svg";
 import product2IconImg from "@/assets/images/menu-product-2-icon.svg";
@@ -12,6 +12,8 @@ import product8IconImg from "@/assets/images/menu-product-8-icon.svg";
 import Link from "next/link";
 
 interface IProductCard {
+  index?: number;
+  firstItemRef?: React.MutableRefObject<HTMLAnchorElement | null>;
   productsCardBgValues?: IProductsCardBgValues;
   setProductsCardBgValues?: (values: IProductsCardBgValues) => void;
   isNew?: boolean;
@@ -30,6 +32,8 @@ interface IProductsCardBgValues {
 }
 
 function ProductCard({
+  index,
+  firstItemRef,
   productsCardBgValues,
   setProductsCardBgValues,
   isNew,
@@ -39,8 +43,28 @@ function ProductCard({
   href,
   description,
 }: IProductCard) {
+  useEffect(() => {
+    if (firstItemRef) {
+      const firstItem = firstItemRef.current;
+
+      if (firstItem) {
+        const { top, left, width, height } = firstItem.getBoundingClientRect();
+
+        if (productsCardBgValues && setProductsCardBgValues) {
+          setProductsCardBgValues({
+            top: top - 70,
+            left: left + 10,
+            width,
+            height,
+          });
+        }
+      }
+    }
+  }, [firstItemRef]);
+
   return (
     <Link
+      ref={index === 0 ? firstItemRef : null}
       href={href}
       onMouseEnter={(e) => {
         const target = e.target as HTMLAnchorElement;
@@ -98,6 +122,7 @@ function ProductCard({
 }
 
 export default function MenuProducts() {
+  const productsFirstItemRef = useRef<HTMLAnchorElement>(null);
   const [productsCardBgValues, setProductsCardBgValues] =
     useState<IProductsCardBgValues>({
       top: 0,
@@ -105,6 +130,8 @@ export default function MenuProducts() {
       width: 0,
       height: 0,
     });
+
+  const toolsAndAddonsFirstItemRef = useRef<HTMLAnchorElement>(null);
   const [toolsAndAddonsCardBgValues, setToolsAndAddonsCardBgValues] =
     useState<IProductsCardBgValues>({
       top: 0,
@@ -181,7 +208,7 @@ export default function MenuProducts() {
 
   return (
     <div className="lg:fixed top-[70px] left-1/2 lg:-translate-x-1/2 lg:w-[100vw] border-b lg:border-y border-dashed lg:border-solid border-dark-white lg:bg-white lg:opacity-0 group-hover:opacity-100 lg:pointer-events-none group-hover:pointer-events-auto duration-200">
-      <div className="mx-auto container max-w-[1320px] py-4 lg:py-8 lg:px-5 grid lg:grid-cols-[auto_410px] gap-4">
+      <div className="mx-auto container max-w-[1320px] py-4 lg:px-5 grid lg:grid-cols-[auto_410px] gap-4">
         <div>
           <p className="mb-4 lg:pb-3 lg:border-b border-dashed border-dark-white text-xs lg:text-sm font-semibold tracking-[-0.12px] lg:tracking-[-0.14px] lg:uppercase text-primary/50">
             Products
@@ -189,18 +216,24 @@ export default function MenuProducts() {
 
           <div
             onMouseLeave={() => {
-              setProductsCardBgValues({
-                top: 0,
-                left: 0,
-                width: 0,
-                height: 0,
-              });
+              if (productsFirstItemRef.current) {
+                const { top, left, width, height } =
+                  productsFirstItemRef.current.getBoundingClientRect();
+                setProductsCardBgValues({
+                  top: top - 70,
+                  left: left + 10,
+                  width,
+                  height,
+                });
+              }
             }}
             className="grid lg:grid-cols-2"
           >
             {products.map((product, index) => (
               <ProductCard
                 key={index}
+                index={index}
+                firstItemRef={productsFirstItemRef}
                 productsCardBgValues={productsCardBgValues}
                 setProductsCardBgValues={setProductsCardBgValues}
                 {...product}
@@ -228,18 +261,24 @@ export default function MenuProducts() {
 
           <div
             onMouseLeave={() => {
-              setToolsAndAddonsCardBgValues({
-                top: 0,
-                left: 0,
-                width: 0,
-                height: 0,
-              });
+              if (toolsAndAddonsFirstItemRef.current) {
+                const { top, left, width, height } =
+                  toolsAndAddonsFirstItemRef.current.getBoundingClientRect();
+                setToolsAndAddonsCardBgValues({
+                  top: top - 70,
+                  left: left + 10,
+                  width,
+                  height,
+                });
+              }
             }}
             className="grid"
           >
             {toolsAndAddons.map((product, index) => (
               <ProductCard
                 key={index}
+                index={index}
+                firstItemRef={toolsAndAddonsFirstItemRef}
                 productsCardBgValues={toolsAndAddonsCardBgValues}
                 setProductsCardBgValues={setToolsAndAddonsCardBgValues}
                 {...product}
