@@ -5,12 +5,12 @@ import FAQsSection from "./FAQsSection";
 import FollowUpSection from "@/app/(landing)/FollowUpSection";
 
 export const metadata: Metadata = {
-  title: "Residential Proxies Pricing - Lightning Proxies",
+  title: "Unlimited Residential Proxies Pricing - Lightning Proxies",
   description:
     "Gather data efficiently with the industry-leading proxy network and enjoy limitless web scraping solutions on the most intense tasks.",
 };
 
-export default function ResidentialProxiesPricing() {
+export default function UnlimitedResidentialProxiesPricing() {
   return (
     <main>
       <HeroSection />

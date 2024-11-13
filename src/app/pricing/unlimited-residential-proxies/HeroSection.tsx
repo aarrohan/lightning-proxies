@@ -1,56 +1,55 @@
 import Image from "next/image";
 import pricingPageHeroSectionGrainImg from "@/assets/images/pricing-page-hero-section-grain.png";
-import ProductIconImg from "@/assets/images/pricing-residential-proxies-icon.svg";
+import ProductIconImg from "@/assets/images/pricing-unlimited-residential-proxies-icon.svg";
 import Link from "next/link";
 import IncludedBox from "./IncludedBox";
 import PaymentMethodsBox from "./PaymentMethodsBox";
 import ExtraDataBox from "./ExtraDataBox";
 import PointsBox from "./PointsBox";
-import TabNavs from "./TabNavs";
 import PriceBox, { IProps as IPriceBox } from "./PriceBox";
 
 export default function HeroSection() {
   const priceBoxes: IPriceBox[] = [
     {
-      title: "Micro",
+      title: "Beginner",
       options: [
         {
           title: "Included Bandwidth",
-          value: "1 GB",
+          value: "Unlimited",
         },
         {
-          title: "Price per GB",
-          value: "$ 4.5",
+          title: "Validity",
+          value: "1 Day",
         },
       ],
       price: "$4.5",
       btn: "secondary",
     },
     {
-      title: "Starter",
+      title: "Intermediate",
       options: [
         {
           title: "Included Bandwidth",
-          value: "5 GB",
+          value: "Unlimited",
         },
         {
-          title: "Price per GB",
-          value: "$ 4.5",
+          title: "Validity",
+          value: "7 Days",
         },
       ],
-      price: "$4.5",
+      price: "$20",
       btn: "secondary",
     },
     {
-      title: "Advanced",
+      title: "Professional",
       options: [
         {
           title: "Included Bandwidth",
-          value: "20 GB",
+          value: "Unlimited",
         },
         {
-          title: "Price per GB",
-          value: "$ 3.5",
+          title: "Validity",
+          value: "30 Days",
         },
       ],
       price: "$87.5",
@@ -58,16 +57,15 @@ export default function HeroSection() {
     },
     {
       isHighlighted: true,
-      isMostValue: true,
-      title: "Professional",
+      title: "Enterprise",
       options: [
         {
           title: "Included Bandwidth",
-          value: "100 GB",
+          value: "Unlimited",
         },
         {
-          title: "Price per GB",
-          value: "$ 3",
+          title: "Validity",
+          value: "60 Days",
         },
       ],
       price: "$300",
@@ -77,7 +75,7 @@ export default function HeroSection() {
 
   return (
     <section className="relative pt-[70px] bg-[#121118] overflow-hidden">
-      <div className="absolute top-0 left-0 w-full h-[800px] bg-gradient-to-b from-[#0050C3] to-transparent"></div>
+      <div className="absolute top-0 left-0 w-full h-[800px] bg-gradient-to-b from-[#44A5FF] to-transparent"></div>
 
       <Image
         src={pricingPageHeroSectionGrainImg}
@@ -93,15 +91,13 @@ export default function HeroSection() {
         />
 
         <h1 className="mt-5 mb-5 text-[26px] sm:text-[42px] font-semibold leading-[30px] sm:leading-[46px] tracking-[-0.84px] text-center text-white">
-          Residential Proxies Pricing
+          Unlimited Residential Proxies Pricing
         </h1>
 
-        <p className="mb-5 text-xs sm:text-base leading-[18px] sm:leading-[24px] tracking-[-0.12px] sm:tracking-[-0.16px] text-center text-white/75">
-          72M+ rotating residential IPs in 195 Country, state, city and zip code
-          geo-targeting <span className="font-semibold">free!</span>
+        <p className="mb-12 text-xs sm:text-base leading-[18px] sm:leading-[24px] tracking-[-0.12px] sm:tracking-[-0.16px] text-center text-white/75">
+          Sed imperdiet, velit non laoreet iaculis, sit amet rhoncus tortor quam
+          sit amet libero.
         </p>
-
-        <TabNavs />
 
         <div className="w-full grid lg:grid-cols-[350px_auto] gap-3">
           <div className="order-2 lg:order-1">
