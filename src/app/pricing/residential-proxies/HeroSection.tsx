@@ -57,6 +57,7 @@ export default function HeroSection() {
       btn: "secondary",
     },
     {
+      isHighlighted: true,
       isMostValue: true,
       title: "Professional",
       options: [

@@ -1,6 +1,7 @@
 import PrimaryBtn from "@/components/ui/PrimaryBtn";
 
 export interface IProps {
+  isHighlighted?: boolean;
   isMostValue?: boolean;
   title: string;
   options: {
@@ -12,6 +13,7 @@ export interface IProps {
 }
 
 export default function PriceBox({
+  isHighlighted,
   isMostValue,
   title,
   options,
@@ -19,7 +21,11 @@ export default function PriceBox({
   btn,
 }: IProps) {
   return (
-    <div className="p-5 border border-white/10 hover:border-accent/35 bg-white/5 rounded-xl flex flex-col justify-between duration-200">
+    <div
+      className={`p-5 border ${
+        isHighlighted ? "border-accent" : "border-white/10"
+      } bg-white/5 rounded-xl flex flex-col justify-between duration-200`}
+    >
       <div>
         <div className="mb-5 flex justify-between items-center">
           <h3 className="text-lg sm:text-[24px] font-semibold tracking-[-0.54px] sm:tracking-[-0.84px] text-white">
