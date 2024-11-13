@@ -84,7 +84,7 @@ export default function NavigationBar() {
   useEffect(() => {
     if (pathname.includes("/pricing/")) {
       setIsTransparent(true);
-      setIsHovered(true);
+      setIsHovered(false);
     } else {
       setIsTransparent(false);
       setIsHovered(false);

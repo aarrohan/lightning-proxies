@@ -89,7 +89,7 @@ export default function HeroSection() {
         <Image
           src={ProductIconImg}
           alt=""
-          className="w-[50px] sm:w-[60px] h-auto"
+          className="hover:scale-105 w-[50px] sm:w-[60px] h-auto duration-200"
         />
 
         <h1 className="mt-5 mb-5 text-[26px] sm:text-[42px] font-semibold leading-[30px] sm:leading-[46px] tracking-[-0.84px] text-center text-white">

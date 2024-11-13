@@ -1,10 +1,10 @@
 import Image from "next/image";
-import benefit1Img from "@/assets/images/residential-proxies-benefit-1.png";
-import benefit2Img from "@/assets/images/residential-proxies-benefit-2.png";
-import benefit3Img from "@/assets/images/residential-proxies-benefit-3.png";
-import benefit4Img from "@/assets/images/residential-proxies-benefit-4.png";
-import benefit5Img from "@/assets/images/residential-proxies-benefit-5.png";
-import benefit6Img from "@/assets/images/residential-proxies-benefit-6.png";
+import benefit1Img from "@/assets/images/residential-proxies-benefit-1.svg";
+import benefit2Img from "@/assets/images/residential-proxies-benefit-2.svg";
+import benefit3Img from "@/assets/images/residential-proxies-benefit-3.svg";
+import benefit4Img from "@/assets/images/residential-proxies-benefit-4.svg";
+import benefit5Img from "@/assets/images/residential-proxies-benefit-5.svg";
+import benefit6Img from "@/assets/images/residential-proxies-benefit-6.svg";
 
 interface IBenefitBox {
   icon: JSX.Element;
