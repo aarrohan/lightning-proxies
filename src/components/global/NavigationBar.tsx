@@ -82,7 +82,11 @@ export default function NavigationBar() {
   }, [firstLinkRef]);
 
   useEffect(() => {
-    if (pathname.includes("/pricing/")) {
+    if (
+      pathname.includes("/pricing/residential-proxies") ||
+      pathname.includes("/pricing/unlimited-residential-proxies") ||
+      pathname.includes("/pricing/mobile-proxies")
+    ) {
       setIsTransparent(true);
       setIsHovered(false);
     } else {
