@@ -1,5 +1,3 @@
-import PrimaryBtn from "@/components/ui/PrimaryBtn";
-
 export interface IProps {
   isHighlighted?: boolean;
   isMostValue?: boolean;
