@@ -1,3 +1,5 @@
+"use client";
+import { useState } from "react";
 import Image from "next/image";
 import pricingPageHeroSectionGrainImg from "@/assets/images/pricing-page-hero-section-grain.png";
 import ProductIconImg from "@/assets/images/pricing-mobile-proxies-icon.svg";
@@ -10,6 +12,8 @@ import TabNavs from "./TabNavs";
 import PriceBox, { IProps as IPriceBox } from "./PriceBox";
 
 export default function HeroSection() {
+  const [activeTabIndex, setActiveTabIndex] = useState<number>(0);
+
   const priceBoxes: IPriceBox[] = [
     {
       title: "Micro",
@@ -75,6 +79,71 @@ export default function HeroSection() {
     },
   ];
 
+  const enterprisePriceBoxes: IPriceBox[] = [
+    {
+      title: "Micro",
+      options: [
+        {
+          title: "Included Bandwidth",
+          value: "1 GB",
+        },
+        {
+          title: "Price per GB",
+          value: "$ 10",
+        },
+      ],
+      price: "$10",
+      btn: "secondary",
+    },
+    {
+      title: "Starter",
+      options: [
+        {
+          title: "Included Bandwidth",
+          value: "5 GB",
+        },
+        {
+          title: "Price per GB",
+          value: "$ 9",
+        },
+      ],
+      price: "$45",
+      btn: "secondary",
+    },
+    {
+      title: "Advanced",
+      options: [
+        {
+          title: "Included Bandwidth",
+          value: "25 GB",
+        },
+        {
+          title: "Price per GB",
+          value: "$ 8",
+        },
+      ],
+      price: "$200",
+      btn: "secondary",
+    },
+    {
+      isHighlighted: true,
+      isMostValue: true,
+      title: "Professional",
+      options: [
+        {
+          title: "Included Bandwidth",
+          value: "100 GB",
+        },
+        {
+          title: "Price per GB",
+          value: "$ 7",
+        },
+      ],
+      price: "$700",
+      btn: "primary",
+    },
+  ];
+
   return (
     <section className="relative pt-[70px] bg-[#121118] overflow-hidden">
       <div className="absolute top-0 left-0 w-full h-[800px] bg-gradient-to-b from-[#00C1D1] to-transparent"></div>
@@ -102,7 +171,10 @@ export default function HeroSection() {
           Mobile Proxies
         </p>
 
-        <TabNavs />
+        <TabNavs
+          activeTabIndex={activeTabIndex}
+          setActiveTabIndex={setActiveTabIndex}
+        />
 
         <div className="w-full grid lg:grid-cols-[350px_auto] gap-3">
           <div className="order-2 lg:order-1">
@@ -110,9 +182,19 @@ export default function HeroSection() {
           </div>
 
           <div className="order-1 lg:order-2 grid sm:grid-cols-2 gap-3">
-            {priceBoxes.map((priceBox, index) => {
-              return <PriceBox key={index} {...priceBox} />;
-            })}
+            {activeTabIndex === 0 ? (
+              <>
+                {priceBoxes.map((priceBox, index) => {
+                  return <PriceBox key={index} {...priceBox} />;
+                })}
+              </>
+            ) : (
+              <>
+                {enterprisePriceBoxes.map((priceBox, index) => {
+                  return <PriceBox key={index} {...priceBox} />;
+                })}
+              </>
+            )}
           </div>
         </div>
 

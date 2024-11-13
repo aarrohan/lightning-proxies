@@ -1,9 +1,9 @@
-"use client";
-import { useState } from "react";
+interface IProps {
+  activeTabIndex: number;
+  setActiveTabIndex: (index: number) => void;
+}
 
-export default function TabNavs() {
-  const [activeTabIndex, setActiveTabIndex] = useState<number>(0);
-
+export default function TabNavs({ activeTabIndex, setActiveTabIndex }: IProps) {
   return (
     <div className="mb-8 p-1.5 sm:p-2 bg-white/5 rounded-xl flex gap-1">
       <button
