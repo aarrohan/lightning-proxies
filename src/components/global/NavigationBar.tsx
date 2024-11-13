@@ -1,5 +1,6 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
+import { usePathname } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
 import logoWhiteImg from "@/assets/images/branding/logo-white.svg";
@@ -13,7 +14,7 @@ import MenuPricing from "./MenuPricing";
 import SecondaryBtn from "../ui/SecondaryBtn";
 
 export default function NavigationBar() {
-  const [isScrolled, setIsScrolled] = useState<boolean>(false);
+  const [isTransparent, setIsTransparent] = useState<boolean>(false);
   const [isHovered, setIsHovered] = useState<boolean>(true);
 
   const [isHamburgerMenuOpen, setIsHamburgerMenuOpen] =
@@ -38,12 +39,16 @@ export default function NavigationBar() {
     height: 0,
   });
 
+  const pathname = usePathname();
+
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 0) {
-        setIsScrolled(false);
-      } else {
-        setIsScrolled(false);
+      if (isTransparent) {
+        if (window.scrollY > 0) {
+          setIsHovered(true);
+        } else {
+          setIsHovered(false);
+        }
       }
     };
 
@@ -52,7 +57,7 @@ export default function NavigationBar() {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  });
 
   useEffect(() => {
     if (isHamburgerMenuOpen) {
@@ -76,6 +81,16 @@ export default function NavigationBar() {
     }
   }, [firstLinkRef]);
 
+  useEffect(() => {
+    if (pathname.includes("/pricing/")) {
+      setIsTransparent(true);
+      setIsHovered(false);
+    } else {
+      setIsTransparent(false);
+      setIsHovered(true);
+    }
+  }, [pathname]);
+
   const handleLinkMouseEnter = (e: React.MouseEvent<HTMLAnchorElement>) => {
     const target = e.target as HTMLAnchorElement;
     const { left, width, height } = target.getBoundingClientRect();
@@ -90,17 +105,25 @@ export default function NavigationBar() {
 
   return (
     <nav
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
-      className={`fixed z-[1000] top-0 left-0 w-full ${
-        isScrolled && !isHovered
-          ? "bg-primary"
-          : "border-b border-dark-white bg-white"
+      onMouseEnter={() => {
+        if (isTransparent) {
+          setIsHovered(true);
+        }
+      }}
+      onMouseLeave={() => {
+        if (isTransparent && window.scrollY === 0) {
+          setIsHovered(false);
+        }
+      }}
+      className={`fixed z-[1000] top-0 left-0 w-full border-b ${
+        !isHovered
+          ? "border-transparent bg-transparent"
+          : "border-dark-white bg-white"
       } duration-200`}
     >
       <div className="mx-auto container max-w-[1320px] h-[70px] px-5 flex justify-between items-center">
         <Link href={"/"} aria-label="logo">
-          {isScrolled && !isHovered ? (
+          {!isHovered ? (
             <Image src={logoWhiteImg} alt="logo" className="w-[130px]" />
           ) : (
             <Image src={logoImg} alt="logo" className="w-[130px]" />
@@ -132,7 +155,7 @@ export default function NavigationBar() {
                 }
                 href={"/"}
                 className={`w-full lg:w-fit h-fit lg:h-full pb-4 lg:pb-0 border-b lg:border-b-0 border-dashed border-dark-white flex justify-between items-center gap-2 text-sm font-medium tracking-[-0.14px] ${
-                  isScrolled && !isHovered ? "text-white" : "text-primary"
+                  !isHovered ? "text-white" : "text-primary"
                 } duration-200`}
               >
                 Products{" "}
@@ -150,9 +173,7 @@ export default function NavigationBar() {
                     d="M1 1.25L4.75 4.75L8.25 1.25"
                     strokeWidth="1.25"
                     className={`${
-                      isScrolled && !isHovered
-                        ? "stroke-white"
-                        : "stroke-primary"
+                      !isHovered ? "stroke-white" : "stroke-primary"
                     } duration-200`}
                   />
                 </svg>
@@ -176,7 +197,7 @@ export default function NavigationBar() {
                 }
                 href={"/"}
                 className={`w-full lg:w-fit h-fit lg:h-full py-4 lg:py-0 border-b lg:border-b-0 border-dashed border-dark-white flex justify-between items-center gap-2 text-sm font-medium tracking-[-0.14px] ${
-                  isScrolled && !isHovered ? "text-white" : "text-primary"
+                  !isHovered ? "text-white" : "text-primary"
                 } duration-200`}
               >
                 Locations{" "}
@@ -194,9 +215,7 @@ export default function NavigationBar() {
                     d="M1 1.25L4.75 4.75L8.25 1.25"
                     strokeWidth="1.25"
                     className={`${
-                      isScrolled && !isHovered
-                        ? "stroke-white"
-                        : "stroke-primary"
+                      !isHovered ? "stroke-white" : "stroke-primary"
                     } duration-200`}
                   />
                 </svg>
@@ -220,7 +239,7 @@ export default function NavigationBar() {
                 }
                 href={"/"}
                 className={`w-full lg:w-fit h-fit lg:h-full py-4 lg:py-0 border-b lg:border-b-0 border-dashed border-dark-white flex justify-between items-center gap-2 text-sm font-medium tracking-[-0.14px] ${
-                  isScrolled && !isHovered ? "text-white" : "text-primary"
+                  !isHovered ? "text-white" : "text-primary"
                 } duration-200`}
               >
                 Use cases{" "}
@@ -238,9 +257,7 @@ export default function NavigationBar() {
                     d="M1 1.25L4.75 4.75L8.25 1.25"
                     strokeWidth="1.25"
                     className={`${
-                      isScrolled && !isHovered
-                        ? "stroke-white"
-                        : "stroke-primary"
+                      !isHovered ? "stroke-white" : "stroke-primary"
                     } duration-200`}
                   />
                 </svg>
@@ -264,7 +281,7 @@ export default function NavigationBar() {
                 }
                 href={"/"}
                 className={`w-full lg:w-fit h-fit lg:h-full py-4 lg:py-0 border-b lg:border-b-0 border-dashed border-dark-white flex justify-between items-center gap-2 text-sm font-medium tracking-[-0.14px] ${
-                  isScrolled && !isHovered ? "text-white" : "text-primary"
+                  !isHovered ? "text-white" : "text-primary"
                 } duration-200`}
               >
                 Resources{" "}
@@ -282,9 +299,7 @@ export default function NavigationBar() {
                     d="M1 1.25L4.75 4.75L8.25 1.25"
                     strokeWidth="1.25"
                     className={`${
-                      isScrolled && !isHovered
-                        ? "stroke-white"
-                        : "stroke-primary"
+                      !isHovered ? "stroke-white" : "stroke-primary"
                     } duration-200`}
                   />
                 </svg>
@@ -306,7 +321,7 @@ export default function NavigationBar() {
                 onClick={() => setIsPricingDropdownOpen(!isPricingDropdownOpen)}
                 href={"/"}
                 className={`w-full lg:w-fit h-fit lg:h-full pt-4 lg:pt-0 flex justify-between items-center gap-2 text-sm font-medium tracking-[-0.14px] ${
-                  isScrolled && !isHovered ? "text-white" : "text-primary"
+                  !isHovered ? "text-white" : "text-primary"
                 } duration-200`}
               >
                 Pricing{" "}
@@ -324,9 +339,7 @@ export default function NavigationBar() {
                     d="M1 1.25L4.75 4.75L8.25 1.25"
                     strokeWidth="1.25"
                     className={`${
-                      isScrolled && !isHovered
-                        ? "stroke-white"
-                        : "stroke-primary"
+                      !isHovered ? "stroke-white" : "stroke-primary"
                     } duration-200`}
                   />
                 </svg>
@@ -383,14 +396,14 @@ export default function NavigationBar() {
           <Link
             href={"/"}
             className={`hidden lg:block text-sm font-medium tracking-[-0.14px] ${
-              isScrolled && !isHovered ? "text-white" : "text-primary"
+              !isHovered ? "text-white" : "text-primary"
             } duration-200`}
           >
             Login
           </Link>
 
           <div className="hidden lg:block">
-            {isScrolled && !isHovered ? (
+            {!isHovered ? (
               <SecondaryBtn>
                 Get Started{" "}
                 <svg
@@ -466,19 +479,25 @@ export default function NavigationBar() {
                   fillRule="evenodd"
                   clipRule="evenodd"
                   d="M21 6.5H13V5H21V6.5Z"
-                  fill="#1D2026"
+                  className={`${
+                    !isHovered ? "fill-white" : "fill-primary"
+                  } duration-200`}
                 />
                 <path
                   fillRule="evenodd"
                   clipRule="evenodd"
                   d="M21 13H9V11.5H21V13Z"
-                  fill="#1D2026"
+                  className={`${
+                    !isHovered ? "fill-white" : "fill-primary"
+                  } duration-200`}
                 />
                 <path
                   fillRule="evenodd"
                   clipRule="evenodd"
                   d="M21 19.5H3V18H21V19.5Z"
-                  fill="#1D2026"
+                  className={`${
+                    !isHovered ? "fill-white" : "fill-primary"
+                  } duration-200`}
                 />
               </svg>
             )}
