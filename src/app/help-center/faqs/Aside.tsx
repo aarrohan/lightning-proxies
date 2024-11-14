@@ -11,63 +11,63 @@ export default function Aside() {
         <div className="flex flex-col items-start gap-y-3">
           <Link
             href={"/help-center/faqs#general"}
-            className="text-base tracking-[-0.16px] hover:underline text-accent"
+            className="text-base tracking-[-0.16px] text-accent"
           >
             General
           </Link>
 
           <Link
             href={"/help-center/faqs#refunds"}
-            className="text-base tracking-[-0.16px] hover:underline text-accent"
+            className="text-base tracking-[-0.16px] text-accent"
           >
             Refunds
           </Link>
 
           <Link
             href={"/help-center/faqs#troubleshooting"}
-            className="text-base tracking-[-0.16px] hover:underline text-accent"
+            className="text-base tracking-[-0.16px] text-accent"
           >
             Troubleshooting
           </Link>
 
           <Link
             href={"/help-center/faqs"}
-            className="text-base tracking-[-0.16px] hover:underline text-accent"
+            className="text-base tracking-[-0.16px] text-accent"
           >
             Residential Proxies
           </Link>
 
           <Link
             href={"/help-center/faqs"}
-            className="text-base tracking-[-0.16px] hover:underline text-accent"
+            className="text-base tracking-[-0.16px] text-accent"
           >
             Datacenter Proxies
           </Link>
 
           <Link
             href={"/help-center/faqs"}
-            className="text-base tracking-[-0.16px] hover:underline text-accent"
+            className="text-base tracking-[-0.16px] text-accent"
           >
             Mobile Proxies
           </Link>
 
           <Link
             href={"/help-center/faqs"}
-            className="text-base tracking-[-0.16px] hover:underline text-accent"
+            className="text-base tracking-[-0.16px] text-accent"
           >
             ISP Proxies
           </Link>
 
           <Link
             href={"/help-center/faqs"}
-            className="text-base tracking-[-0.16px] hover:underline text-accent"
+            className="text-base tracking-[-0.16px] text-accent"
           >
             IPv6 Proxies
           </Link>
 
           <Link
             href={"/help-center/faqs"}
-            className="text-base tracking-[-0.16px] hover:underline text-accent"
+            className="text-base tracking-[-0.16px] text-accent"
           >
             Blogs
           </Link>
