@@ -44,7 +44,7 @@ export default function PriceBox({
                 key={index}
                 className="py-3.5 border-t border-dashed border-white/15 flex justify-between items-center gap-3.5"
               >
-                <p className="text-xs sm:text-base font-medium tracking-[-0.12px] sm:tracking-[-0.16px] text-white/75">
+                <p className="text-xs sm:text-base tracking-[-0.12px] sm:tracking-[-0.16px] text-white/75">
                   {option.title}
                 </p>
 
