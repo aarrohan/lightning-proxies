@@ -1,7 +1,5 @@
 import Link from "next/link";
 import FAQ, { IProps as IFAQ } from "@/components/ui/FAQ";
-{
-}
 
 export default function FAQsSection() {
   const faqs: IFAQ[] = [

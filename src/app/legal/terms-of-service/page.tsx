@@ -10,7 +10,7 @@ export default function TermsOfService() {
   return (
     <main>
       <section className="pt-[70px]">
-        <div className="mx-auto container max-w-[1320px] py-20 sm:py-28 px-5 grid sm:grid-cols-[300px_auto] gap-28">
+        <div className="mx-auto container max-w-[1320px] py-20 sm:py-28 px-5 grid lg:grid-cols-[300px_auto] gap-28">
           <Links />
 
           <div>
