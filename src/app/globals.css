@@ -22,6 +22,10 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 button,
 input,
 textarea,
