@@ -40,9 +40,7 @@ export default function HeroSection() {
             <IncludedBox />
           </div>
 
-          <div className="order-1 lg:order-2">
-            <PlanBox />
-          </div>
+          <PlanBox />
         </div>
 
         <div className="my-4 sm:my-8 w-full sm:pt-8 sm:border-t border-dashed border-white/15 grid lg:grid-cols-2 gap-4">

@@ -45,7 +45,7 @@ export default function PlanBox() {
   ];
 
   return (
-    <div className="p-5 border border-white/10 bg-white/5 rounded-xl flex flex-col justify-between duration-200">
+    <div className="order-1 lg:order-2 p-5 border border-white/10 bg-white/5 rounded-xl flex flex-col justify-between duration-200">
       <div>
         <h3 className="mb-5 text-lg sm:text-[24px] font-semibold tracking-[-0.54px] sm:tracking-[-0.84px] text-white">
           Select your plan
@@ -56,6 +56,12 @@ export default function PlanBox() {
             <p className="text-xs sm:text-base tracking-[-0.12px] sm:tracking-[-0.16px] text-white/75">
               Select Number of IPs
             </p>
+
+            <div className="hidden sm:block">
+              <p className="py-1.5 px-3 sm:px-4 border border-dashed border-white/25 bg-gradient-to-b from-white/10 to-[#999]/10 rounded-lg text-xs sm:text-base font-medium tracking-[-0.12px] sm:tracking-[-0.16px] text-white duration-200">
+                60
+              </p>
+            </div>
 
             <div className="sm:hidden">
               <Select
