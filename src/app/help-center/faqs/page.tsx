@@ -72,12 +72,12 @@ export default function FAQs() {
               FAQs
             </h1>
 
-            <p className="mb-12 text-sm sm:text-base tracking-[-0.14px] sm:tracking-[-0.16px] text-primary/50">
+            <p className="text-sm sm:text-base tracking-[-0.14px] sm:tracking-[-0.16px] text-primary/50">
               View answers to all your frequently asked questions.
             </p>
 
-            <div className="space-y-12">
-              <div>
+            <div>
+              <div id="general" className="pt-12">
                 <h4 className="mb-5 text-base sm:text-xl font-medium tracking-[-0.16px] sm:tracking-[-0.2px]">
                   General
                 </h4>
@@ -89,7 +89,7 @@ export default function FAQs() {
                 </div>
               </div>
 
-              <div>
+              <div id="refunds" className="pt-12">
                 <h4 className="mb-5 text-base sm:text-xl font-medium tracking-[-0.16px] sm:tracking-[-0.2px]">
                   Refunds
                 </h4>
@@ -101,7 +101,7 @@ export default function FAQs() {
                 </div>
               </div>
 
-              <div>
+              <div id="troubleshooting" className="pt-12">
                 <h4 className="mb-5 text-base sm:text-xl font-medium tracking-[-0.16px] sm:tracking-[-0.2px]">
                   Troubleshooting
                 </h4>

@@ -10,63 +10,63 @@ export default function Aside() {
 
         <div className="flex flex-col items-start gap-y-3">
           <Link
-            href={"/"}
+            href={"/help-center/faqs#general"}
             className="text-base tracking-[-0.16px] hover:underline text-accent"
           >
             General
           </Link>
 
           <Link
-            href={"/"}
+            href={"/help-center/faqs#refunds"}
             className="text-base tracking-[-0.16px] hover:underline text-accent"
           >
             Refunds
           </Link>
 
           <Link
-            href={"/"}
+            href={"/help-center/faqs#troubleshooting"}
             className="text-base tracking-[-0.16px] hover:underline text-accent"
           >
             Troubleshooting
           </Link>
 
           <Link
-            href={"/"}
+            href={"/help-center/faqs"}
             className="text-base tracking-[-0.16px] hover:underline text-accent"
           >
             Residential Proxies
           </Link>
 
           <Link
-            href={"/"}
+            href={"/help-center/faqs"}
             className="text-base tracking-[-0.16px] hover:underline text-accent"
           >
             Datacenter Proxies
           </Link>
 
           <Link
-            href={"/"}
+            href={"/help-center/faqs"}
             className="text-base tracking-[-0.16px] hover:underline text-accent"
           >
             Mobile Proxies
           </Link>
 
           <Link
-            href={"/"}
+            href={"/help-center/faqs"}
             className="text-base tracking-[-0.16px] hover:underline text-accent"
           >
             ISP Proxies
           </Link>
 
           <Link
-            href={"/"}
+            href={"/help-center/faqs"}
             className="text-base tracking-[-0.16px] hover:underline text-accent"
           >
             IPv6 Proxies
           </Link>
 
           <Link
-            href={"/"}
+            href={"/help-center/faqs"}
             className="text-base tracking-[-0.16px] hover:underline text-accent"
           >
             Blogs
@@ -81,7 +81,7 @@ export default function Aside() {
 
         <Link
           href={"/"}
-          className="flex items-center gap-1.5 text-base tracking-[-0.16px] hover:underline text-primary/75"
+          className="flex items-center gap-1.5 text-base tracking-[-0.16px] text-primary/75"
         >
           Contact our live chat support
           <svg
