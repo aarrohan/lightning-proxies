@@ -1,3 +1,5 @@
+"use client";
+import { useState } from "react";
 import Image from "next/image";
 import pricingPageHeroSectionGrainImg from "@/assets/images/pricing-page-hero-section-grain.png";
 import ProductIconImg from "@/assets/images/pricing-ipv6-proxies-icon.svg";
@@ -6,9 +8,12 @@ import IncludedBox from "./IncludedBox";
 import PaymentMethodsBox from "./PaymentMethodsBox";
 import ExtraDataBox from "./ExtraDataBox";
 import PointsBox from "./PointsBox";
+import TabNavs from "./TabNavs";
 // import PriceBox, { IProps as IPriceBox } from "./PriceBox";
 
 export default function HeroSection() {
+  const [activeTabIndex, setActiveTabIndex] = useState<number>(0);
+
   // const priceBoxes: IPriceBox[] = [
   //   {
   //     title: "Beginner",
@@ -94,9 +99,14 @@ export default function HeroSection() {
           IPv6 Proxies Pricing{" "}
         </h1>
 
-        <p className="mb-12 text-xs sm:text-base leading-[18px] sm:leading-[24px] tracking-[-0.12px] sm:tracking-[-0.16px] text-center text-white/75">
+        <p className="mb-5 text-xs sm:text-base leading-[18px] sm:leading-[24px] tracking-[-0.12px] sm:tracking-[-0.16px] text-center text-white/75">
           Top success rates and speed for cost-effective high-volume scraping.
         </p>
+
+        <TabNavs
+          activeTabIndex={activeTabIndex}
+          setActiveTabIndex={setActiveTabIndex}
+        />
 
         <div className="w-full grid lg:grid-cols-[350px_auto] gap-3">
           <div className="order-2 lg:order-1">
