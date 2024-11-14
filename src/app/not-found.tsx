@@ -16,9 +16,9 @@ export default function NotFound() {
         <div className="mx-auto container max-w-[1320px] py-20 sm:py-28 px-5 flex flex-col items-center">
           <Image src={notFoundImg} alt="" className="w-full max-w-[590px]" />
 
-          <h2 className="mt-7 mb-6 sm:mb-7 max-w-[500px] text-[26px] sm:text-[42px] font-semibold leading-[30px] sm:leading-[46px] tracking-[-0.84px] text-center">
+          <h1 className="mt-7 mb-6 sm:mb-7 max-w-[500px] text-[26px] sm:text-[42px] font-semibold leading-[30px] sm:leading-[46px] tracking-[-0.84px] text-center">
             We can’t find the page you’re looking for
-          </h2>
+          </h1>
 
           <p className="mb-7 max-w-[590px] text-xs sm:text-lg tracking-[-0.12px] sm:tracking-[-0.18px] text-center text-primary/50">
             It may have been moved, renamed or temporarily unavailable. Please
