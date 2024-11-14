@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Aside() {
   return (
-    <div className="hidden lg:block space-y-4">
+    <div className="sticky top-[100px] h-fit hidden lg:block space-y-4">
       <div className="py-6 px-8 border border-dark-white bg-off-white rounded-xl">
         <p className="mb-5 text-sm font-semibold tracking-[-0.14px] uppercase text-primary/75">
           Most popular topics

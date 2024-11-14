@@ -36,7 +36,7 @@ export default function FAQs() {
   return (
     <main>
       <section className="pt-[70px]">
-        <div className="mx-auto container max-w-[1320px] py-20 sm:py-28 px-5 grid lg:grid-cols-[auto_350px] gap-28">
+        <div className="relative mx-auto container max-w-[1320px] py-20 sm:py-28 px-5 grid lg:grid-cols-[auto_350px] gap-28">
           <div>
             <div className="mb-6 flex items-center gap-4">
               <Link

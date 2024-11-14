@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Links() {
   return (
-    <div className="hidden lg:flex flex-col items-start gap-y-5">
+    <div className="sticky top-[100px] h-fit hidden lg:flex flex-col items-start gap-y-5">
       <p className="text-sm font-semibold tracking-[-0.14px] uppercase text-accent">
         Legal
       </p>
