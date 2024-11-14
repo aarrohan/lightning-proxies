@@ -5,7 +5,7 @@ export default function PaymentMethodsBox() {
   return (
     <div className="p-4 px-5 border border-white/10 rounded-xl flex flex-col sm:flex-row justify-between sm:items-center gap-y-3 gap-x-12">
       <p className="text-sm sm:text-base font-medium tracking-[-0.14px] sm:tracking-[-0.16px] text-white">
-        Contact our team for custom plans
+        Accepted payment methods{" "}
       </p>
 
       <Image

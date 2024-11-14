@@ -85,6 +85,7 @@ export default function NavigationBar() {
     if (
       pathname.includes("/pricing/residential-proxies") ||
       pathname.includes("/pricing/unlimited-residential-proxies") ||
+      pathname.includes("/pricing/isp-proxies") ||
       pathname.includes("/pricing/mobile-proxies")
     ) {
       setIsTransparent(true);
