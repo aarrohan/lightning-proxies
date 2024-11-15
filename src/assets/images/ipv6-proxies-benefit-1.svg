@@ -1,0 +1,15 @@
+<svg width="342" height="170" viewBox="0 0 342 170" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M299.703 10L265.364 35.0544L208.918 60.1088L166.915 35.2018L139.208 110.218H81.4351L31.4736 60.2562H0" stroke="#00C153" stroke-width="1.47379"/>
+<path d="M328 10L295.135 35.0544L270.08 85.1632L188.874 110.218L131.544 60.1088H72.5925L30 135.272H2.5" stroke="#A400DD" stroke-width="1.47379"/>
+<path opacity="0.5" d="M131.839 10.1475V160.474" stroke="#565656" stroke-width="1.47379" stroke-dasharray="4.42 7.37"/>
+<circle cx="131.838" cy="60.6984" r="2.50544" fill="white" stroke="#A400DD" stroke-width="1.47379"/>
+<circle cx="132.133" cy="110.218" r="2.50544" fill="white" stroke="#00C153" stroke-width="1.47379"/>
+<rect x="146" y="69.5049" width="195.75" height="58" rx="6.04167" fill="#A400DD"/>
+<rect x="154.459" y="80.3799" width="36.25" height="36.25" rx="4.53125" fill="white" fill-opacity="0.25"/>
+<path d="M163.84 107.42V106.471M180.91 107.42V90.3496M172.375 107.42V98.8846M176.643 107.42V95.0913M168.108 107.42V102.678" stroke="white" stroke-width="1.4225" stroke-linecap="round" stroke-linejoin="round"/>
+<g opacity="0.25">
+<rect x="200.375" y="82.7969" width="114.792" height="14.5" rx="2.41667" fill="white"/>
+<rect x="200.375" y="103.339" width="73.7083" height="10.875" rx="2.41667" fill="white"/>
+<rect x="278.917" y="103.339" width="31.4167" height="10.875" rx="2.41667" fill="white"/>
+</g>
+</svg>

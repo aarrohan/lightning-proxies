@@ -1,10 +1,10 @@
 import Image from "next/image";
-import benefit1Img from "@/assets/images/residential-proxies-benefit-1.svg";
-import benefit2Img from "@/assets/images/residential-proxies-benefit-2.svg";
-import benefit3Img from "@/assets/images/residential-proxies-benefit-3.svg";
-import benefit4Img from "@/assets/images/residential-proxies-benefit-4.svg";
-import benefit5Img from "@/assets/images/residential-proxies-benefit-5.svg";
-import benefit6Img from "@/assets/images/residential-proxies-benefit-6.svg";
+import benefit1Img from "@/assets/images/ipv6-proxies-benefit-1.svg";
+import benefit2Img from "@/assets/images/ipv6-proxies-benefit-2.svg";
+import benefit3Img from "@/assets/images/ipv6-proxies-benefit-3.svg";
+import benefit4Img from "@/assets/images/ipv6-proxies-benefit-4.svg";
+import benefit5Img from "@/assets/images/ipv6-proxies-benefit-5.svg";
+import benefit6Img from "@/assets/images/ipv6-proxies-benefit-6.svg";
 
 interface IBenefitBox {
   icon: JSX.Element;
@@ -85,7 +85,7 @@ export default function BenefitsSection() {
         </svg>
       ),
       img: <Image src={benefit1Img} alt="" className="-mb-px w-full" />,
-      title: "2M+ dedicated proxies",
+      title: "Billions of IPs",
       description: "The highest number of datacenter proxies on the market.",
     },
     {
@@ -117,7 +117,7 @@ export default function BenefitsSection() {
         </svg>
       ),
       img: <Image src={benefit2Img} alt="" className="w-full" />,
-      title: "188 locations",
+      title: "20+ locations worldwide",
       description:
         "Extensive and unbeatable list of datacenter proxy server locations to suit any business' needs.",
     },
@@ -129,16 +129,17 @@ export default function BenefitsSection() {
           viewBox="0 0 24 24"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
+          className="w-[20px] sm:w-[24px] h-auto"
         >
           <path
-            d="M11.0809 13.152L8 7L13.4196 11.2796C14.1901 11.888 14.1941 13.0472 13.4277 13.6607C12.6614 14.2743 11.5189 14.0266 11.0809 13.152Z"
+            d="M20.3068 15.3302C16.7859 18.8511 11.1336 18.907 7.61276 15.3862C4.09192 11.8653 4.14799 6.2131 7.66883 2.69225M20.3068 15.3302C21.9837 13.6533 20.5139 9.46486 17.0241 5.97498C13.5342 2.4851 9.34571 1.01537 7.66883 2.69225M20.3068 15.3302C18.6299 17.0071 14.4414 15.5374 10.9516 12.0475M7.66883 2.69225C5.99196 4.36913 7.46169 8.55761 10.9516 12.0475M10.9516 12.0475L14 8.99902"
             stroke="#A400DD"
             strokeWidth="1.5"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
           <path
-            d="M5 4.81999C3.14864 6.63901 2 9.17384 2 11.9776C2 17.5129 6.47715 22.0001 12 22.0001C17.5228 22.0001 22 17.5129 22 11.9776C22 7.12419 18.5581 3.07655 13.9872 2.15287C13.1512 1.98393 12.7332 1.89946 12.3666 2.20021C12 2.50096 12 2.98713 12 3.95948V4.96174"
+            d="M6.48804 14.999L4.75106 17.4874C3.3523 19.4913 2.65291 20.4932 3.17039 21.2461C3.68787 21.999 5.07589 21.999 7.85193 21.999H12.1481C14.9241 21.999 16.3121 21.999 16.8296 21.2461C17.301 20.5602 16.7625 19.6676 15.6053 17.999"
             stroke="#A400DD"
             strokeWidth="1.5"
             strokeLinecap="round"
@@ -147,7 +148,7 @@ export default function BenefitsSection() {
         </svg>
       ),
       img: <Image src={benefit3Img} alt="" className="-mb-px w-full" />,
-      title: "99.9% uptime",
+      title: "10GBps up-link connection speed",
       description:
         "The most stable and reliable datacenter proxies with high uptime.",
     },
@@ -162,37 +163,37 @@ export default function BenefitsSection() {
           className="w-[20px] sm:w-[24px] h-auto"
         >
           <path
-            d="M11 7.99927C15.4183 7.99927 19 6.65612 19 4.99927C19 3.34241 15.4183 1.99927 11 1.99927C6.58172 1.99927 3 3.34241 3 4.99927C3 6.65612 6.58172 7.99927 11 7.99927Z"
-            stroke="#A400DD"
-            strokeWidth="1.5"
-          />
-          <path
-            d="M6 10.8411C6.60158 11.0219 7.27434 11.1709 8 11.281"
+            d="M2 11.999C2 9.17059 2 7.75638 2.87868 6.8777C3.75736 5.99902 5.17157 5.99902 8 5.99902H13C15.8284 5.99902 17.2426 5.99902 18.1213 6.8777C19 7.75638 19 9.17059 19 11.999C19 14.8274 19 16.2416 18.1213 17.1203C17.2426 17.999 15.8284 17.999 13 17.999H8C5.17157 17.999 3.75736 17.999 2.87868 17.1203C2 16.2416 2 14.8274 2 11.999Z"
             stroke="#A400DD"
             strokeWidth="1.5"
             strokeLinecap="round"
           />
           <path
-            d="M11 14.9993C6.58171 14.9993 3 13.6562 3 11.9993"
+            d="M19 9.49902L20.0272 9.67022C20.7085 9.78377 21.0491 9.84054 21.3076 10.0057C21.5618 10.1681 21.7612 10.4034 21.8796 10.6809C22 10.963 22 11.3083 22 11.999C22 12.6897 22 13.035 21.8796 13.3171C21.7612 13.5946 21.5618 13.8299 21.3076 13.9923C21.0491 14.1575 20.7085 14.2143 20.0272 14.3278L19 14.499"
             stroke="#A400DD"
             strokeWidth="1.5"
             strokeLinecap="round"
           />
           <path
-            d="M6 17.8411C6.60158 18.0219 7.27434 18.1709 8 18.281"
+            d="M6 9.99902V13.999"
             stroke="#A400DD"
             strokeWidth="1.5"
             strokeLinecap="round"
           />
           <path
-            d="M11 21.9993C6.58171 21.9993 3 20.6562 3 18.9993V4.99927M19 4.99927V10.4993"
+            d="M9 9.99902V13.999"
             stroke="#A400DD"
             strokeWidth="1.5"
             strokeLinecap="round"
-            strokeLinejoin="round"
           />
           <path
-            d="M15.7409 16.3778C15.7409 16.3178 15.7492 15.5528 15.7505 15.1184C15.7518 14.7214 15.7169 14.3387 15.9065 13.9885C16.6169 12.5755 18.6569 12.7194 19.1609 14.1588C19.2483 14.3958 19.2535 14.7714 19.2509 15.1184C19.2477 15.5617 19.2569 16.3778 19.2569 16.3778M15.7409 16.3778C14.6611 16.3778 14.2171 17.1575 14.0971 17.6373C13.9771 18.1171 13.9771 19.8563 14.0491 20.576C14.289 21.4756 14.8889 21.8475 15.4768 21.9674C16.0167 22.0154 18.2963 21.9974 18.9562 21.9974C19.916 22.0154 20.6359 21.6556 20.9358 20.576C20.9958 20.2162 21.0558 18.237 20.9058 17.6373C20.5879 16.6777 19.8568 16.3778 19.2569 16.3778M15.7409 16.3778H19.2569"
+            d="M12 9.99902V13.999"
+            stroke="#A400DD"
+            strokeWidth="1.5"
+            strokeLinecap="round"
+          />
+          <path
+            d="M15 9.99902V13.999"
             stroke="#A400DD"
             strokeWidth="1.5"
             strokeLinecap="round"
@@ -215,45 +216,26 @@ export default function BenefitsSection() {
           className="w-[20px] sm:w-[24px] h-auto"
         >
           <path
-            d="M22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12Z"
-            stroke="#A400DD"
-            strokeWidth="1.5"
-          />
-          <path
-            d="M11.9961 12H12.0051"
-            stroke="#A400DD"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          />
-          <path
-            d="M12 2V6"
+            d="M13.5 12.999L17 8.99902M14 14.999C14 16.1036 13.1046 16.999 12 16.999C10.8954 16.999 10 16.1036 10 14.999C10 13.8944 10.8954 12.999 12 12.999C13.1046 12.999 14 13.8944 14 14.999Z"
             stroke="#A400DD"
             strokeWidth="1.5"
             strokeLinecap="round"
           />
           <path
-            d="M22 12H18"
+            d="M6 11.999C6 8.68531 8.68629 5.99902 12 5.99902C13.0929 5.99902 14.1175 6.2912 15 6.80171"
             stroke="#A400DD"
             strokeWidth="1.5"
             strokeLinecap="round"
           />
           <path
-            d="M12 18V22"
+            d="M2.5 11.9991C2.5 7.52068 2.5 5.28151 3.89124 3.89026C5.28249 2.49902 7.52166 2.49902 12 2.49902C16.4783 2.49902 18.7175 2.49902 20.1087 3.89026C21.5 5.28151 21.5 7.52068 21.5 11.9991C21.5 16.4774 21.5 18.7166 20.1087 20.1078C18.7175 21.4991 16.4783 21.4991 12 21.4991C7.52166 21.4991 5.28249 21.4991 3.89124 20.1078C2.5 18.7166 2.5 16.4774 2.5 11.9991Z"
             stroke="#A400DD"
             strokeWidth="1.5"
-            strokeLinecap="round"
-          />
-          <path
-            d="M6 12H2"
-            stroke="#A400DD"
-            strokeWidth="1.5"
-            strokeLinecap="round"
           />
         </svg>
       ),
       img: <Image src={benefit5Img} alt="" className="-mb-px w-full" />,
-      title: "Unlimited number of targets",
+      title: "Unlimited Bandwidth",
       description: "No limits or restrictions for a number of targets.",
     },
     {
@@ -267,19 +249,37 @@ export default function BenefitsSection() {
           className="w-[20px] sm:w-[24px] h-auto"
         >
           <path
-            d="M12 12C12 12 10.3569 14.5 8.7 14.5C7.04315 14.5 6 13.3807 6 12C6 10.6193 7.04315 9.5 8.7 9.5C10.3569 9.5 12 12 12 12ZM12 12C12 12 13.6431 14.5 15.3 14.5C16.9569 14.5 18 13.3807 18 12C18 10.6193 16.9569 9.5 15.3 9.5C13.6431 9.5 12 12 12 12Z"
+            d="M20.5 5.49902H9.5C5.78672 5.49902 3 8.18405 3 11.999"
             stroke="#A400DD"
             strokeWidth="1.5"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           />
           <path
-            d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+            d="M3.5 18.499H14.5C18.2133 18.499 21 15.814 21 11.999"
             stroke="#A400DD"
             strokeWidth="1.5"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+          <path
+            d="M18.5 2.99902C18.5 2.99902 21 4.84024 21 5.49904C21 6.15784 18.5 7.99902 18.5 7.99902"
+            stroke="#A400DD"
+            strokeWidth="1.5"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+          <path
+            d="M5.49998 15.999C5.49998 15.999 3.00001 17.8402 3 18.499C2.99999 19.1578 5.5 20.999 5.5 20.999"
+            stroke="#A400DD"
+            strokeWidth="1.5"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           />
         </svg>
       ),
       img: <Image src={benefit6Img} alt="" className="-mb-px w-full" />,
-      title: "Unlimited concurrent sessions",
+      title: "Rotating/Sticky sessions",
       description:
         "Zero boundaries, send an unlimited amount of concurrent sessions.",
     },

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import notFoundImg from "@/assets/images/not-found.png";
+import notFoundImg from "@/assets/images/not-found.svg";
 import FollowUpSection from "./(landing)/FollowUpSection";
 import PrimaryBtn from "@/components/ui/PrimaryBtn";
 import Link from "next/link";

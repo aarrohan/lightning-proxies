@@ -68,7 +68,7 @@ export default function FAQsSection() {
 
         <div className="grid gap-5">
           {faqs.map((faq, index) => (
-            <FAQ key={index} color="#00C153" {...faq} />
+            <FAQ key={index} color="#A400DD" {...faq} />
           ))}
         </div>
       </div>
