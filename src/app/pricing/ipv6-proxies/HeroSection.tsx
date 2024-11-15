@@ -9,74 +9,12 @@ import PaymentMethodsBox from "./PaymentMethodsBox";
 import ExtraDataBox from "./ExtraDataBox";
 import PointsBox from "./PointsBox";
 import TabNavs from "./TabNavs";
-// import PriceBox, { IProps as IPriceBox } from "./PriceBox";
+import CountryBox from "./CountryBox";
+import PlanBox from "./PlanBox";
+import PlanBoxUnlimited from "./PlanBoxUnlimited";
 
 export default function HeroSection() {
   const [activeTabIndex, setActiveTabIndex] = useState<number>(0);
-
-  // const priceBoxes: IPriceBox[] = [
-  //   {
-  //     title: "Beginner",
-  //     options: [
-  //       {
-  //         title: "Included Bandwidth",
-  //         value: "Unlimited",
-  //       },
-  //       {
-  //         title: "Validity",
-  //         value: "1 Day",
-  //       },
-  //     ],
-  //     price: "$4.5",
-  //     btn: "secondary",
-  //   },
-  //   {
-  //     title: "Intermediate",
-  //     options: [
-  //       {
-  //         title: "Included Bandwidth",
-  //         value: "Unlimited",
-  //       },
-  //       {
-  //         title: "Validity",
-  //         value: "7 Days",
-  //       },
-  //     ],
-  //     price: "$20",
-  //     btn: "secondary",
-  //   },
-  //   {
-  //     title: "Professional",
-  //     options: [
-  //       {
-  //         title: "Included Bandwidth",
-  //         value: "Unlimited",
-  //       },
-  //       {
-  //         title: "Validity",
-  //         value: "30 Days",
-  //       },
-  //     ],
-  //     price: "$87.5",
-  //     btn: "secondary",
-  //   },
-  //   {
-  //     isHighlighted: true,
-  //     title: "Enterprise",
-  //     options: [
-  //       {
-  //         title: "Included Bandwidth",
-  //         value: "Unlimited",
-  //       },
-  //       {
-  //         title: "Validity",
-  //         value: "60 Days",
-  //       },
-  //     ],
-  //     price: "$300",
-  //     btn: "primary",
-  //   },
-  // ];
 
   return (
     <section className="relative pt-[70px] bg-[#121118] overflow-hidden">
@@ -113,10 +51,14 @@ export default function HeroSection() {
             <IncludedBox />
           </div>
 
-          <div className="order-1 lg:order-2 grid sm:grid-cols-2 gap-3">
-            {/* <PriceBox /> */}
+          <div className="order-1 lg:order-2 flex flex-col gap-3">
+            {activeTabIndex === 0 && <PlanBox />}
+            {activeTabIndex === 1 && <PlanBoxUnlimited />}
+            {activeTabIndex === 1 && <CountryBox isUnlimited={true} />}
           </div>
         </div>
+
+        {activeTabIndex === 0 && <CountryBox />}
 
         <div className="my-4 sm:my-8 w-full sm:pt-8 sm:border-t border-dashed border-white/15 grid lg:grid-cols-2 gap-4">
           <ExtraDataBox />
