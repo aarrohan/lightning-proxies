@@ -59,3 +59,37 @@ img {
     transform: translateX(0);
   }
 }
+
+.addon-boxes-wrapper .addon-box:nth-child(1) {
+  padding-right: 25px;
+}
+
+.addon-boxes-wrapper .addon-box:nth-child(3) {
+  padding-left: 25px;
+}
+
+.addon-boxes-wrapper .addon-box:nth-child(2) {
+  padding: 0 25px;
+  border-left: 1px dashed rgba(255, 255, 255, 0.15);
+  border-right: 1px dashed rgba(255, 255, 255, 0.15);
+}
+
+@media only screen and (max-width: 677px) {
+  .addon-boxes-wrapper .addon-box:nth-child(1) {
+    padding-bottom: 25px;
+    padding-right: 0;
+  }
+
+  .addon-boxes-wrapper .addon-box:nth-child(3) {
+    padding-top: 25px;
+    padding-left: 0;
+  }
+
+  .addon-boxes-wrapper .addon-box:nth-child(2) {
+    padding: 25px 0;
+    border-top: 1px dashed rgba(255, 255, 255, 0.15);
+    border-bottom: 1px dashed rgba(255, 255, 255, 0.15);
+    border-left: none;
+    border-right: none;
+  }
+}

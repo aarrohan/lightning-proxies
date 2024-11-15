@@ -1,0 +1,51 @@
+<svg width="350" height="180" viewBox="0 0 350 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M60.5771 43.8076L119.231 69.7692" stroke="#EEEEEE" stroke-width="1.44231"/>
+<path d="M300 39.9619L232.692 69.7696" stroke="#EEEEEE" stroke-width="1.44231"/>
+<path d="M114.423 91.4043H89.4229" stroke="#EEEEEE" stroke-width="1.44231"/>
+<path d="M237.5 91.4043H262.5" stroke="#EEEEEE" stroke-width="1.44231"/>
+<path d="M120.193 115.924L60.5771 138.039" stroke="#EEEEEE" stroke-width="1.44231"/>
+<path d="M231.73 115.924L291.346 138.039" stroke="#EEEEEE" stroke-width="1.44231"/>
+<g filter="url(#filter0_i_245_2906)">
+<circle cx="174.577" cy="89.5388" r="60.5769" fill="#00C153"/>
+</g>
+<circle cx="174.577" cy="89.5388" r="59.7295" stroke="#00C153" stroke-width="1.69492"/>
+<circle cx="30.2885" cy="44.2885" r="29.8077" fill="white" stroke="#EEEEEE" stroke-width="0.961538"/>
+<path d="M33.1312 34.4619C32.1462 34.1375 31.0936 33.9619 30 33.9619C24.4771 33.9619 20 38.4391 20 43.9619C20 49.4847 24.4771 53.9619 30 53.9619C35.5228 53.9619 40 49.4847 40 43.9619C40 42.9167 39.8396 41.909 39.5422 40.9619" stroke="#CCCCCC" stroke-width="1.5" stroke-linecap="round"/>
+<path d="M35 43.9619C35 46.7233 32.7614 48.9619 30 48.9619C27.2386 48.9619 25 46.7233 25 43.9619C25 41.2005 27.2386 38.9619 30 38.9619" stroke="#CCCCCC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M37.5 36.4619L30 43.9619M37.5 36.4619V33.9619M37.5 36.4619H40" stroke="#CCCCCC" stroke-width="1.5" stroke-linecap="round"/>
+<circle cx="68.7502" cy="91.635" r="20.1923" fill="white" stroke="#EEEEEE" stroke-width="0.961538"/>
+<path d="M77.3332 90.9622C77.3332 86.3599 73.6022 82.6289 68.9998 82.6289C64.3975 82.6289 60.6665 86.3599 60.6665 90.9622C60.6665 95.5646 64.3975 99.2956 68.9998 99.2956C73.6022 99.2956 77.3332 95.5646 77.3332 90.9622Z" stroke="#CCCCCC" stroke-width="1.25"/>
+<path d="M68.9966 90.9619H69.0041" stroke="#CCCCCC" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M69 82.6289V85.9622" stroke="#CCCCCC" stroke-width="1.25" stroke-linecap="round"/>
+<path d="M77.3333 90.9619H74" stroke="#CCCCCC" stroke-width="1.25" stroke-linecap="round"/>
+<path d="M69 95.9619V99.2952" stroke="#CCCCCC" stroke-width="1.25" stroke-linecap="round"/>
+<path d="M63.9998 90.9619H60.6665" stroke="#CCCCCC" stroke-width="1.25" stroke-linecap="round"/>
+<circle cx="37.9808" cy="140.443" r="25" fill="white" stroke="#EEEEEE" stroke-width="0.961538"/>
+<path d="M42.5962 144.558C40.0578 147.097 35.9422 147.097 33.4038 144.558C30.8654 142.02 30.8654 137.904 33.4038 135.366C34.9281 133.841 37.0212 133.232 39 133.539" stroke="#CCCCCC" stroke-width="1.5" stroke-linecap="round"/>
+<path d="M38 139.962L42.9497 135.012C43.9829 133.979 44.4995 133.462 44.3867 132.714C44.2739 131.965 43.7382 131.682 42.6667 131.115C41.2736 130.379 39.6855 129.962 38 129.962C32.4771 129.962 28 134.439 28 139.962C28 145.485 32.4771 149.962 38 149.962C43.5228 149.962 48 145.485 48 139.962C48 138.54 47.7031 137.187 47.1679 135.962" stroke="#CCCCCC" stroke-width="1.5" stroke-linecap="round"/>
+<circle cx="319.712" cy="135.634" r="29.8077" transform="rotate(180 319.712 135.634)" fill="white" stroke="#EEEEEE" stroke-width="0.961538"/>
+<path d="M327.633 144.594L330.667 147.628M329.15 139.286C329.15 135.517 326.094 132.461 322.325 132.461C318.556 132.461 315.5 135.517 315.5 139.286C315.5 143.055 318.556 146.111 322.325 146.111C326.094 146.111 329.15 143.055 329.15 139.286Z" stroke="#CCCCCC" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M327.254 144.215L330.667 147.628M320.05 139.286H322.325M322.325 139.286H324.6M322.325 139.286V137.011M322.325 139.286V141.561M329.15 139.286C329.15 135.517 326.094 132.461 322.325 132.461C318.556 132.461 315.5 135.517 315.5 139.286C315.5 143.055 318.556 146.111 322.325 146.111C326.094 146.111 329.15 143.055 329.15 139.286Z" stroke="#CCCCCC" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M307.333 128.961C307.486 127.403 307.831 126.355 308.612 125.573C309.394 124.791 310.442 124.446 312 124.294M312 147.627C310.442 147.475 309.394 147.13 308.612 146.348C307.831 145.567 307.486 144.519 307.333 142.961M330.667 128.961C330.515 127.403 330.17 126.355 329.388 125.573C328.606 124.791 327.558 124.446 326 124.294M307.333 133.627V138.294M321.333 124.294H316.667" stroke="#CCCCCC" stroke-width="1.75" stroke-linecap="round"/>
+<circle cx="316.827" cy="34.6731" r="20.1923" fill="white" stroke="#EEEEEE" stroke-width="0.961538"/>
+<path d="M309.5 41.6286C311.446 39.5641 314.089 38.2952 317 38.2952C319.911 38.2952 322.553 39.5641 324.5 41.6286M320.75 31.2119C320.75 33.283 319.071 34.9619 317 34.9619C314.929 34.9619 313.25 33.283 313.25 31.2119C313.25 29.1408 314.929 27.4619 317 27.4619C319.071 27.4619 320.75 29.1408 320.75 31.2119Z" stroke="#CCCCCC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="286.058" cy="83.7112" r="25" fill="white" stroke="#EEEEEE" stroke-width="0.961538"/>
+<path d="M290.583 88.5439L294.333 92.2939" stroke="#CCCCCC" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M292.667 83.1279C292.667 78.9858 289.309 75.6279 285.167 75.6279C281.024 75.6279 277.667 78.9858 277.667 83.1279C277.667 87.2701 281.024 90.6279 285.167 90.6279C289.309 90.6279 292.667 87.2701 292.667 83.1279Z" stroke="#CCCCCC" stroke-width="1.25" stroke-linejoin="round"/>
+<path d="M283.91 80.2109C283.313 80.2471 282.933 80.3467 282.659 80.6204C282.386 80.8942 282.286 81.2742 282.25 81.8713M286.423 80.2109C287.02 80.2471 287.4 80.3467 287.674 80.6204C287.948 80.8942 288.047 81.2742 288.083 81.8713M288.077 84.4788C288.036 85.0218 287.933 85.3758 287.674 85.6348C287.4 85.9085 287.02 86.0081 286.423 86.0443M283.91 86.0443C283.313 86.0081 282.933 85.9085 282.659 85.6348C282.401 85.3758 282.297 85.0218 282.256 84.4788" stroke="#CCCCCC" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M185 89.9619C185 95.4847 180.523 99.9619 175 99.9619C169.477 99.9619 165 95.4847 165 89.9619C165 84.4391 169.477 79.9619 175 79.9619" stroke="white" stroke-width="3" stroke-linecap="round"/>
+<path d="M179 70.362C177.708 70.0996 176.37 69.9619 175 69.9619C163.954 69.9619 155 78.9162 155 89.9619C155 101.008 163.954 109.962 175 109.962C186.046 109.962 195 101.008 195 89.9619C195 88.5921 194.862 87.2543 194.6 85.9619" stroke="white" stroke-width="3" stroke-linecap="round"/>
+<path d="M175.061 89.8867L184.166 80.7809M190.481 74.6509L189.374 70.6767C189.171 70.0219 188.383 69.761 187.852 70.1949C184.98 72.5421 181.851 75.7035 184.406 80.6901C189.554 83.0908 192.493 79.8534 194.747 77.1323C195.195 76.5909 194.925 75.777 194.249 75.5818L190.481 74.6509Z" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<defs>
+<filter id="filter0_i_245_2906" x="114" y="28.9619" width="122.849" height="122.849" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dx="6.77966" dy="15.2542"/>
+<feGaussianBlur stdDeviation="0.847458"/>
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+<feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.1 0"/>
+<feBlend mode="normal" in2="shape" result="effect1_innerShadow_245_2906"/>
+</filter>
+</defs>
+</svg>
