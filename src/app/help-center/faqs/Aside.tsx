@@ -1,3 +1,4 @@
+"use client";
 import Link from "next/link";
 
 export default function Aside() {
@@ -9,26 +10,53 @@ export default function Aside() {
         </p>
 
         <div className="flex flex-col items-start gap-y-3">
-          <Link
-            href={"/help-center/faqs#general"}
+          <button
+            onClick={() => {
+              const element = document.getElementById("general");
+
+              if (element) {
+                scrollTo({
+                  top: element.offsetTop,
+                  behavior: "smooth",
+                });
+              }
+            }}
             className="text-base tracking-[-0.16px] text-accent"
           >
             General
-          </Link>
+          </button>
 
-          <Link
-            href={"/help-center/faqs#refunds"}
+          <button
+            onClick={() => {
+              const element = document.getElementById("refunds");
+
+              if (element) {
+                scrollTo({
+                  top: element.offsetTop,
+                  behavior: "smooth",
+                });
+              }
+            }}
             className="text-base tracking-[-0.16px] text-accent"
           >
             Refunds
-          </Link>
+          </button>
 
-          <Link
-            href={"/help-center/faqs#troubleshooting"}
+          <button
+            onClick={() => {
+              const element = document.getElementById("troubleshooting");
+
+              if (element) {
+                scrollTo({
+                  top: element.offsetTop,
+                  behavior: "smooth",
+                });
+              }
+            }}
             className="text-base tracking-[-0.16px] text-accent"
           >
             Troubleshooting
-          </Link>
+          </button>
 
           <Link
             href={"/help-center/faqs"}
