@@ -8,21 +8,10 @@ import canadaFlagImg from "@/assets/images/flags/canada.svg";
 import Image from "next/image";
 
 export default function PlanBox() {
-  const [numberOfIPsSelectedOptionIndex, setNumberOfIPsSelectedOptionIndex] =
-    useState<number>(0);
+  const [numberOfIPs, setNumberOfIPs] = useState<number>(1);
+
   const [countrySelectedOptionIndex, setCountrySelectedOptionIndex] =
     useState<number>(0);
-
-  const numberofIPs: IOption[] = [
-    {
-      title: "60",
-      value: "60",
-    },
-    {
-      title: "100",
-      value: "100",
-    },
-  ];
 
   const countryOptions: IOption[] = [
     {
@@ -57,18 +46,46 @@ export default function PlanBox() {
               Select Number of IPs
             </p>
 
-            <div className="hidden sm:block">
-              <p className="py-1.5 px-3 sm:px-4 border border-dashed border-white/25 bg-gradient-to-b from-white/10 to-[#999]/10 rounded-lg text-xs sm:text-base font-medium tracking-[-0.12px] sm:tracking-[-0.16px] text-white duration-200">
-                60
-              </p>
-            </div>
+            <div className="flex items-center gap-3">
+              <div className="w-[450px] py-3.5 px-3 sm:px-4 border border-white/20 bg-gradient-to-b from-white/10 to-[#999]/10 rounded-lg hidden lg:flex">
+                <div className="ip-range-input-wrapper relative w-full flex">
+                  <input
+                    value={numberOfIPs}
+                    onChange={(e) => setNumberOfIPs(parseInt(e.target.value))}
+                    type="range"
+                    min="1"
+                    max="100"
+                    step={1}
+                    className="ip-range-input w-full"
+                  />
 
-            <div className="sm:hidden">
-              <Select
-                customClasses="border-dashed border-white/25 !gap-3"
-                options={numberofIPs}
-                selectedOptionIndex={numberOfIPsSelectedOptionIndex}
-                setSelectedOptionIndex={setNumberOfIPsSelectedOptionIndex}
+                  <span
+                    className="absolute top-1/2 left-0 -translate-y-1/2 h-[6px] bg-[#FF4720] rounded-full pointer-events-none"
+                    style={{
+                      width: `${numberOfIPs}%`,
+                    }}
+                  ></span>
+
+                  <p
+                    className="absolute w-[18px] h-[18px] ring-2 ring-white/10 bg-[#FF4720] rounded-[5px] flex justify-center items-center text-white pointer-events-none"
+                    style={{
+                      top: "50%",
+                      left: `calc(${numberOfIPs - 1}% - ${
+                        (numberOfIPs - 1) * (18 / 130)
+                      }px)`,
+                      transform: "translateY(-50%)",
+                    }}
+                  >
+                    +
+                  </p>
+                </div>
+              </div>
+
+              <input
+                value={numberOfIPs}
+                onChange={(e) => setNumberOfIPs(parseInt(e.target.value))}
+                type="text"
+                className="w-[70px] py-1.5 px-3 sm:px-4 border border-dashed border-white/25 bg-gradient-to-b from-white/10 to-[#999]/10 rounded-lg text-xs sm:text-base font-medium tracking-[-0.12px] sm:tracking-[-0.16px] text-center text-white duration-200"
               />
             </div>
           </div>
