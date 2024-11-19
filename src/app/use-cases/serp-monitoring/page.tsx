@@ -4,6 +4,7 @@ import ProductsSection from "./ProductsSection";
 import UseCasesSection2 from "./UseCasesSection";
 import UseCasesSection from "@/app/(landing)/UseCasesSection";
 import DetailsSection from "./DetailsSection";
+import LocationsSection from "./LocationsSection";
 import FollowUpSection from "@/app/(landing)/FollowUpSection";
 
 export const metadata: Metadata = {
@@ -18,6 +19,7 @@ export default function DatacenterProxiesPricing() {
       <UseCasesSection2 />
       <UseCasesSection />
       <DetailsSection />
+      <LocationsSection />
       <FollowUpSection />
     </main>
   );
