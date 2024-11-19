@@ -3,6 +3,7 @@ import HeroSection from "./HeroSection";
 import ProductsSection from "./ProductsSection";
 import Info1Section from "./Info1Section";
 import UseCasesSection from "@/app/(landing)/UseCasesSection";
+import Info2Section from "./Info2Section";
 import LocationsSection from "./LocationsSection";
 import FollowUpSection from "@/app/(landing)/FollowUpSection";
 
@@ -17,6 +18,7 @@ export default function USALocation() {
       <ProductsSection />
       <Info1Section />
       <UseCasesSection />
+      <Info2Section />
       <LocationsSection />
       <FollowUpSection />
     </main>
