@@ -1,24 +1,20 @@
 import type { Metadata } from "next";
 import HeroSection from "./HeroSection";
 import ProductsSection from "./ProductsSection";
-import UseCasesSection2 from "./UseCasesSection";
 import UseCasesSection from "@/app/(landing)/UseCasesSection";
-import DetailsSection from "./DetailsSection";
 import LocationsSection from "./LocationsSection";
 import FollowUpSection from "@/app/(landing)/FollowUpSection";
 
 export const metadata: Metadata = {
-  title: "Serp Monitoring Use Case - Lightning Proxies",
+  title: "USA Location - Lightning Proxies",
 };
 
-export default function SerpMonitoringUseCase() {
+export default function USALocation() {
   return (
     <main>
       <HeroSection />
       <ProductsSection />
-      <UseCasesSection2 />
       <UseCasesSection />
-      <DetailsSection />
       <LocationsSection />
       <FollowUpSection />
     </main>

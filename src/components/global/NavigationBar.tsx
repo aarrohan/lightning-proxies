@@ -83,6 +83,7 @@ export default function NavigationBar() {
 
   useEffect(() => {
     if (
+      pathname.includes("/locations/usa") ||
       pathname.includes("/use-cases/serp-monitoring") ||
       pathname.includes("/pricing/residential-proxies") ||
       pathname.includes("/pricing/datacenter-proxies") ||

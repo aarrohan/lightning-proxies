@@ -147,7 +147,7 @@ export default function MenuLocations() {
         <Image src={menuLocationMap1Img} alt="" className="w-full rounded-xl" />
       ),
       title: "United States",
-      href: "/",
+      href: "/locations/usa",
       description: "123,456,789 IPs",
     },
     {
