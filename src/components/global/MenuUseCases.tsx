@@ -117,7 +117,7 @@ export default function MenuUseCases() {
     {
       img: <Image src={useCase1Img} alt="" className="w-full rounded-xl" />,
       title: "SERP Monitoring",
-      href: "/",
+      href: "/use-cases/serp-monitoring",
       description:
         "Sed varius justo ac sem luctus lobortis. Nunc porta leo nec pretium laoreet.",
     },

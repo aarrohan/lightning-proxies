@@ -25,7 +25,7 @@ export default function HeroSection() {
           enjoy limitless web scraping solutions on the most intense tasks.
         </p>
 
-        <div className="mt-7 mb-5 flex flex-wrap justify-center items-center gap-y-4 gap-x-6 sm:gap-x-8">
+        <div className="my-7 flex flex-wrap justify-center items-center gap-y-4 gap-x-6 sm:gap-x-8">
           <p className="flex items-center gap-2 sm:gap-3 text-xs sm:text-base font-medium tracking-[-0.12px] sm:tracking-[-0.16px]">
             <svg
               width="87"
