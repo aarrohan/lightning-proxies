@@ -9,6 +9,7 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
+        serif: ["var(--font-caveat)"],
         mono: ["var(--font-geist-mono)"],
       },
       colors: {
