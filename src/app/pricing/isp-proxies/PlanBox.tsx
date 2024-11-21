@@ -8,7 +8,7 @@ import canadaFlagImg from "@/assets/images/flags/canada.svg";
 import Image from "next/image";
 
 export default function PlanBox() {
-  const [numberOfIPs, setNumberOfIPs] = useState<number>(1);
+  const [numberOfIPs, setNumberOfIPs] = useState<number>(25);
 
   const [countrySelectedOptionIndex, setCountrySelectedOptionIndex] =
     useState<number>(0);
@@ -54,7 +54,7 @@ export default function PlanBox() {
                     onChange={(e) => setNumberOfIPs(parseInt(e.target.value))}
                     type="range"
                     min="1"
-                    max="100"
+                    max="200"
                     step={1}
                     className="ip-range-input w-full"
                   />
@@ -62,7 +62,7 @@ export default function PlanBox() {
                   <span
                     className="absolute top-1/2 left-0 -translate-y-1/2 h-[6px] bg-[#FF4720] rounded-full pointer-events-none"
                     style={{
-                      width: `${numberOfIPs}%`,
+                      width: `${(numberOfIPs / 200) * 100}%`,
                     }}
                   ></span>
 
@@ -70,8 +70,8 @@ export default function PlanBox() {
                     className="absolute w-[18px] h-[18px] ring-2 ring-white/10 bg-[#FF4720] rounded-[5px] flex justify-center items-center text-white pointer-events-none"
                     style={{
                       top: "50%",
-                      left: `calc(${numberOfIPs - 1}% - ${
-                        (numberOfIPs - 1) * (18 / 130)
+                      left: `calc(${(numberOfIPs / 200) * 100}% - ${
+                        (numberOfIPs / 200) * (18 / 1)
                       }px)`,
                       transform: "translateY(-50%)",
                     }}
@@ -83,7 +83,17 @@ export default function PlanBox() {
 
               <input
                 value={numberOfIPs}
-                onChange={(e) => setNumberOfIPs(parseInt(e.target.value))}
+                onChange={(e) => {
+                  if (parseInt(e.target.value) > 200) {
+                    setNumberOfIPs(200);
+                  } else if (parseInt(e.target.value) < 1) {
+                    setNumberOfIPs(1);
+                  } else if (e.target.value === "") {
+                    setNumberOfIPs(1);
+                  } else {
+                    setNumberOfIPs(parseInt(e.target.value));
+                  }
+                }}
                 type="text"
                 className="w-[70px] py-1.5 px-3 sm:px-4 border border-dashed border-white/25 bg-gradient-to-b from-white/10 to-[#999]/10 rounded-lg text-xs sm:text-base font-medium tracking-[-0.12px] sm:tracking-[-0.16px] text-center text-white duration-200"
               />
