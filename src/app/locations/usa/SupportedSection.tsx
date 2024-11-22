@@ -52,7 +52,7 @@ export default function SupportedSection() {
   ];
 
   return (
-    <section className="py-20 sm:py-44 bg-gradient-to-b from-transparent to-off-white">
+    <section className="py-20 sm:py-44 bg-off-white">
       <div className="mx-auto container max-w-[1320px] px-5">
         <div className="mb-6 flex items-center gap-2">
           <span className="flex-1 h-px bg-primary/5"></span>
