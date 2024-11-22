@@ -214,7 +214,7 @@ export default function HeroSection() {
             <span className="font-medium">Earn Rewards</span>
           </p>
 
-          <h1 className="mb-8 sm:mb-6 text-4xl sm:text-[64px] leading-[10px] sm:leading-[72px] tracking-[-1.08px] sm:tracking-[-1.95px] font-semibold text-center xl:text-left text-white">
+          <h1 className="mb-8 sm:mb-6 text-4xl sm:text-[64px] sm:leading-[72px] tracking-[-1.08px] sm:tracking-[-1.95px] font-semibold text-center xl:text-left text-white">
             25,000,000+ IPs from United States
           </h1>
 
