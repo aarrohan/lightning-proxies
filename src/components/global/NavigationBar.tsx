@@ -100,6 +100,24 @@ export default function NavigationBar() {
     }
   }, [pathname]);
 
+  useEffect(() => {
+    document.querySelectorAll("nav ul li div a").forEach((a) => {
+      a.addEventListener("click", () => {
+        setIsTransparent(false);
+        setIsHovered(false);
+        setIsHamburgerMenuOpen(false);
+
+        setIsProductsDropdownOpen(false);
+        setIsLocationsDropdownOpen(false);
+        setIsUseCasesDropdownOpen(false);
+        setIsResourcesDropdownOpen(false);
+        setIsPricingDropdownOpen(false);
+
+        document.body.style.overflow = "auto";
+      });
+    });
+  }, []);
+
   const handleLinkMouseEnter = (e: React.MouseEvent<HTMLAnchorElement>) => {
     const target = e.target as HTMLAnchorElement;
     const { left, width, height } = target.getBoundingClientRect();
@@ -142,7 +160,7 @@ export default function NavigationBar() {
         <div
           className={`hamburger-menu ${
             isHamburgerMenuOpen ? "active" : ""
-          } fixed lg:static top-[70px] left-0 w-full lg:w-fit h-[calc(100svh-70px)] lg:h-fit border-t border-dark-white lg:border-transparent bg-off-white flex flex-col justify-center items-center overflow-y-auto duration-300`}
+          } fixed lg:static top-[70px] left-0 w-full lg:w-fit h-[calc(100svh-70px)] lg:h-fit border-t border-dark-white lg:border-transparent bg-off-white flex flex-col items-center overflow-y-auto duration-300`}
         >
           <ul
             onMouseLeave={() => {
@@ -152,7 +170,7 @@ export default function NavigationBar() {
                 height: 0,
               });
             }}
-            className="lg:absolute top-1/2 left-1/2 lg:-translate-y-1/2 lg:-translate-x-1/2 w-full lg:w-fit h-full py-8 lg:py-0 px-5 lg:px-0 flex flex-col lg:flex-row items-center lg:gap-10"
+            className="lg:absolute top-1/2 left-1/2 lg:-translate-y-1/2 lg:-translate-x-1/2 w-full lg:w-fit lg:h-full py-8 lg:py-0 px-5 lg:px-0 flex flex-col lg:flex-row items-center lg:gap-10"
           >
             {/* Products */}
             <li className="group w-full lg:w-fit h-fit lg:h-full">
@@ -373,6 +391,8 @@ export default function NavigationBar() {
               </div>
             </li>
           </ul>
+
+          <div className="w-full h-[65px] min-h-[65px] lg:hidden"></div>
         </div>
 
         <div
