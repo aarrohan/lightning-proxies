@@ -17,6 +17,8 @@ export default function NavigationBar() {
   const [isTransparent, setIsTransparent] = useState<boolean>(false);
   const [isHovered, setIsHovered] = useState<boolean>(true);
 
+  const [showGroup, setShowGroup] = useState<boolean>(true);
+
   const [isHamburgerMenuOpen, setIsHamburgerMenuOpen] =
     useState<boolean>(false);
 
@@ -105,6 +107,9 @@ export default function NavigationBar() {
       a.addEventListener("click", () => {
         setIsTransparent(false);
         setIsHovered(false);
+
+        setShowGroup(false);
+
         setIsHamburgerMenuOpen(false);
 
         setIsProductsDropdownOpen(false);
@@ -117,6 +122,14 @@ export default function NavigationBar() {
       });
     });
   }, []);
+
+  useEffect(() => {
+    if (!showGroup) {
+      setTimeout(() => {
+        setShowGroup(true);
+      }, 3000);
+    }
+  }, [showGroup]);
 
   const handleLinkMouseEnter = (e: React.MouseEvent<HTMLAnchorElement>) => {
     const target = e.target as HTMLAnchorElement;
@@ -173,7 +186,11 @@ export default function NavigationBar() {
             className="lg:absolute top-1/2 left-1/2 lg:-translate-y-1/2 lg:-translate-x-1/2 w-full lg:w-fit lg:h-full py-8 lg:py-0 px-5 lg:px-0 flex flex-col lg:flex-row items-center lg:gap-10"
           >
             {/* Products */}
-            <li className="group w-full lg:w-fit h-fit lg:h-full">
+            <li
+              className={`${
+                showGroup ? "group" : ""
+              } w-full lg:w-fit h-fit lg:h-full`}
+            >
               <Link
                 ref={firstLinkRef}
                 onMouseEnter={handleLinkMouseEnter}
@@ -218,7 +235,11 @@ export default function NavigationBar() {
             </li>
 
             {/* Locations */}
-            <li className="group w-full lg:w-fit h-fit lg:h-full">
+            <li
+              className={`${
+                showGroup ? "group" : ""
+              } w-full lg:w-fit h-fit lg:h-full`}
+            >
               <Link
                 onMouseEnter={handleLinkMouseEnter}
                 onClick={() =>
@@ -262,7 +283,11 @@ export default function NavigationBar() {
             </li>
 
             {/* Use cases */}
-            <li className="group w-full lg:w-fit h-fit lg:h-full">
+            <li
+              className={`${
+                showGroup ? "group" : ""
+              } w-full lg:w-fit h-fit lg:h-full`}
+            >
               <Link
                 onMouseEnter={handleLinkMouseEnter}
                 onClick={() =>
@@ -306,7 +331,11 @@ export default function NavigationBar() {
             </li>
 
             {/* Resources */}
-            <li className="group w-full lg:w-fit h-fit lg:h-full">
+            <li
+              className={`${
+                showGroup ? "group" : ""
+              } w-full lg:w-fit h-fit lg:h-full`}
+            >
               <Link
                 onMouseEnter={handleLinkMouseEnter}
                 onClick={() =>
@@ -350,7 +379,11 @@ export default function NavigationBar() {
             </li>
 
             {/* Pricing */}
-            <li className="group w-full lg:w-fit h-fit lg:h-full">
+            <li
+              className={`${
+                showGroup ? "group" : ""
+              } w-full lg:w-fit h-fit lg:h-full`}
+            >
               <Link
                 onMouseEnter={handleLinkMouseEnter}
                 onClick={() => setIsPricingDropdownOpen(!isPricingDropdownOpen)}
