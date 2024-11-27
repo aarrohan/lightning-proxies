@@ -124,28 +124,28 @@ export default function MenuUseCases() {
     {
       img: <Image src={useCase2Img} alt="" className="w-full rounded-xl" />,
       title: "Web Scraping",
-      href: "/",
+      href: "/use-cases/web-scraping",
       description:
         "Sed varius justo ac sem luctus lobortis. Nunc porta leo nec pretium laoreet.",
     },
     {
       img: <Image src={useCase3Img} alt="" className="w-full rounded-xl" />,
       title: "Market Research",
-      href: "/",
+      href: "/use-cases/market-research",
       description:
         "Sed varius justo ac sem luctus lobortis. Nunc porta leo nec pretium laoreet.",
     },
     {
       img: <Image src={useCase4Img} alt="" className="w-full rounded-xl" />,
       title: "Ad Verification",
-      href: "/",
+      href: "/use-cases/ad-verification",
       description:
         "Sed varius justo ac sem luctus lobortis. Nunc porta leo nec pretium laoreet.",
     },
     {
       img: <Image src={useCase5Img} alt="" className="w-full rounded-xl" />,
       title: "Brand Protection",
-      href: "/",
+      href: "/use-cases/brand-protection",
       description:
         "Sed varius justo ac sem luctus lobortis. Nunc porta leo nec pretium laoreet.",
     },

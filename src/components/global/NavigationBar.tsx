@@ -87,6 +87,10 @@ export default function NavigationBar() {
     if (
       pathname.includes("/locations/usa") ||
       pathname.includes("/use-cases/serp-monitoring") ||
+      pathname.includes("/use-cases/web-scraping") ||
+      pathname.includes("/use-cases/market-research") ||
+      pathname.includes("/use-cases/ad-verification") ||
+      pathname.includes("/use-cases/brand-protection") ||
       pathname.includes("/pricing/residential-proxies") ||
       pathname.includes("/pricing/datacenter-proxies") ||
       pathname.includes("/pricing/isp-proxies") ||
