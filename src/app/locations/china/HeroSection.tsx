@@ -2,25 +2,30 @@ import Image from "next/image";
 import pricingPageHeroSectionGrainImg from "@/assets/images/pricing-page-hero-section-grain.png";
 import PrimaryBtn from "@/components/ui/PrimaryBtn";
 import SecondaryBtn from "@/components/ui/SecondaryBtn";
-import locationImg from "@/assets/images/location-3.svg";
+import locationImg from "@/assets/images/location-6.svg";
+
 interface IInfoBoxProps {
   icon: JSX.Element;
   title: string;
   description: string;
 }
+
 function InfoBox({ icon, title, description }: IInfoBoxProps) {
   return (
-    <div className="p-6 sm:p-8 border border-dashed border-[#FFD018]/25 bg-gradient-to-b from-[#FFD018]/10 to-transparent rounded-xl">
+    <div className="p-6 sm:p-8 border border-dashed border-[#FF4720]/25 bg-gradient-to-b from-[#FF4720]/10 to-transparent rounded-xl">
       {icon}
+
       <h3 className="mt-4 mb-2 text-sm sm:text-base font-medium tracking-[-0.14px] sm:tracking-[-0.16px] text-white">
         {title}
       </h3>
+
       <p className="text-xs sm:text-base tracking-[-0.12px] sm:tracking-[-0.16px] text-white/50">
         {description}
       </p>
     </div>
   );
 }
+
 export default function HeroSection() {
   const infoBoxes: IInfoBoxProps[] = [
     {
@@ -35,35 +40,35 @@ export default function HeroSection() {
         >
           <path
             d="M9.33496 20C7.12583 20 5.33496 21.7908 5.33496 24C5.33496 26.2091 7.12583 28 9.33496 28C11.5441 28 13.335 26.2091 13.335 24C13.335 21.7908 11.5441 20 9.33496 20Z"
-            stroke="#FFD018"
+            stroke="#FF4720"
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
           <path
             d="M22.668 20C20.4588 20 18.668 21.7908 18.668 24C18.668 26.2091 20.4588 28 22.668 28C24.8772 28 26.668 26.2091 26.668 24C26.668 21.7908 24.8772 20 22.668 20Z"
-            stroke="#FFD018"
+            stroke="#FF4720"
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
           <path
             d="M18.6683 22.667H13.335"
-            stroke="#FFD018"
+            stroke="#FF4720"
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
           <path
             d="M29.3346 17.3337C26.0592 15.697 21.2992 14.667 16.0013 14.667C10.7034 14.667 5.94342 15.697 2.66797 17.3337"
-            stroke="#FFD018"
+            stroke="#FF4720"
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
           <path
             d="M25.3346 15.3334L23.9246 6.28327C23.637 4.43759 21.6322 3.4375 20.0137 4.33226L19.1937 4.78554C17.2038 5.8855 14.7988 5.8855 12.809 4.78554L11.989 4.33226C10.3703 3.4375 8.36554 4.4376 8.07798 6.28327L6.66797 15.3334"
-            stroke="#FFD018"
+            stroke="#FF4720"
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"
@@ -86,48 +91,48 @@ export default function HeroSection() {
         >
           <path
             d="M2.66699 7.99967C2.66699 6.74259 2.66699 6.11406 3.05751 5.72353C3.44805 5.33301 4.07658 5.33301 5.33366 5.33301C6.59074 5.33301 7.21927 5.33301 7.60981 5.72353C8.00033 6.11406 8.00033 6.74259 8.00033 7.99967V10.6663C8.00033 11.9234 8.00033 12.552 7.60981 12.9425C7.21927 13.333 6.59074 13.333 5.33366 13.333C4.07658 13.333 3.44805 13.333 3.05751 12.9425C2.66699 12.552 2.66699 11.9234 2.66699 10.6663V7.99967Z"
-            stroke="#FFD018"
+            stroke="#FF4720"
             strokeWidth="2"
           />
           <path
             d="M8.66699 21.3337C8.66699 20.0766 8.66699 19.4481 9.05751 19.0575C9.44805 18.667 10.0766 18.667 11.3337 18.667C12.5907 18.667 13.2193 18.667 13.6098 19.0575C14.0003 19.4481 14.0003 20.0766 14.0003 21.3337V24.0003C14.0003 25.2574 14.0003 25.8859 13.6098 26.2765C13.2193 26.667 12.5907 26.667 11.3337 26.667C10.0766 26.667 9.44805 26.667 9.05751 26.2765C8.66699 25.8859 8.66699 25.2574 8.66699 24.0003V21.3337Z"
-            stroke="#FFD018"
+            stroke="#FF4720"
             strokeWidth="2"
           />
           <path
             d="M18 7.99967C18 6.74259 18 6.11406 18.3905 5.72353C18.7811 5.33301 19.4096 5.33301 20.6667 5.33301C21.9237 5.33301 22.5523 5.33301 22.9428 5.72353C23.3333 6.11406 23.3333 6.74259 23.3333 7.99967V10.6663C23.3333 11.9234 23.3333 12.552 22.9428 12.9425C22.5523 13.333 21.9237 13.333 20.6667 13.333C19.4096 13.333 18.7811 13.333 18.3905 12.9425C18 12.552 18 11.9234 18 10.6663V7.99967Z"
-            stroke="#FFD018"
+            stroke="#FF4720"
             strokeWidth="2"
           />
           <path
             d="M18 21.3337C18 20.0766 18 19.4481 18.3905 19.0575C18.7811 18.667 19.4096 18.667 20.6667 18.667C21.9237 18.667 22.5523 18.667 22.9428 19.0575C23.3333 19.4481 23.3333 20.0766 23.3333 21.3337V24.0003C23.3333 25.2574 23.3333 25.8859 22.9428 26.2765C22.5523 26.667 21.9237 26.667 20.6667 26.667C19.4096 26.667 18.7811 26.667 18.3905 26.2765C18 25.8859 18 25.2574 18 24.0003V21.3337Z"
-            stroke="#FFD018"
+            stroke="#FF4720"
             strokeWidth="2"
           />
           <path
             d="M12 6.66634L14 5.33301V13.333"
-            stroke="#FFD018"
+            stroke="#FF4720"
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
           <path
             d="M2.66699 20.0003L4.66699 18.667V26.667"
-            stroke="#FFD018"
+            stroke="#FF4720"
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
           <path
             d="M27.333 6.66634L29.333 5.33301V13.333"
-            stroke="#FFD018"
+            stroke="#FF4720"
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
           <path
             d="M27.333 20.0003L29.333 18.667V26.667"
-            stroke="#FFD018"
+            stroke="#FF4720"
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"
@@ -150,37 +155,37 @@ export default function HeroSection() {
         >
           <path
             d="M14.6656 10.666C20.5567 10.666 25.3323 8.87515 25.3323 6.66602C25.3323 4.45687 20.5567 2.66602 14.6656 2.66602C8.77465 2.66602 3.99902 4.45687 3.99902 6.66602C3.99902 8.87515 8.77465 10.666 14.6656 10.666Z"
-            stroke="#FFD018"
+            stroke="#FF4720"
             strokeWidth="2"
           />
           <path
             d="M7.99902 14.4551C8.80113 14.6961 9.69814 14.8948 10.6657 15.0416"
-            stroke="#FFD018"
+            stroke="#FF4720"
             strokeWidth="2"
             strokeLinecap="round"
           />
           <path
             d="M14.6656 20C8.77464 20 3.99902 18.2092 3.99902 16"
-            stroke="#FFD018"
+            stroke="#FF4720"
             strokeWidth="2"
             strokeLinecap="round"
           />
           <path
             d="M7.99902 23.7881C8.80113 24.0292 9.69814 24.2278 10.6657 24.3746"
-            stroke="#FFD018"
+            stroke="#FF4720"
             strokeWidth="2"
             strokeLinecap="round"
           />
           <path
             d="M14.6656 29.3327C8.77464 29.3327 3.99902 27.5419 3.99902 25.3327V6.66602M25.3323 6.66602V13.9994"
-            stroke="#FFD018"
+            stroke="#FF4720"
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
           <path
             d="M20.9863 21.8377C20.9863 21.7577 20.9974 20.7377 20.9991 20.1585C21.0008 19.6291 20.9543 19.1189 21.2071 18.6519C22.1543 16.7679 24.8743 16.9598 25.5463 18.879C25.6628 19.195 25.6698 19.6958 25.6663 20.1585C25.662 20.7495 25.6743 21.8377 25.6743 21.8377M20.9863 21.8377C19.5466 21.8377 18.9546 22.8773 18.7946 23.517C18.6346 24.1567 18.6346 26.4757 18.7306 27.4353C19.0504 28.6347 19.8503 29.1306 20.6342 29.2905C21.354 29.3545 24.3935 29.3305 25.2734 29.3305C26.5531 29.3545 27.513 28.8747 27.9128 27.4353C27.9928 26.9555 28.0728 24.3166 27.8728 23.517C27.449 22.2375 26.4742 21.8377 25.6743 21.8377M20.9863 21.8377H25.6743"
-            stroke="#FFD018"
+            stroke="#FF4720"
             strokeWidth="2"
             strokeLinecap="round"
           />
@@ -191,27 +196,33 @@ export default function HeroSection() {
         "Sed varius justo ac sem luctus lobortis. Nunc porta leo nec pretium laoreet.  Quis laoreet ante sed eros auctor gravida.",
     },
   ];
+
   return (
     <section className="relative pt-[70px] bg-[#121118] overflow-hidden">
-      <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-[#785F00] to-transparent"></div>
+      <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-[#D62600] to-transparent"></div>
+
       <Image
         src={pricingPageHeroSectionGrainImg}
         alt=""
         className="absolute top-0 left-0 w-full h-full object-cover opacity-25 sm:opacity-50"
       />
+
       <div className="relative z-10 mx-auto container max-w-[1320px] pt-12 lg:pt-20 px-5 grid xl:grid-cols-[auto_550px] items-center gap-x-28">
         <div className="flex flex-col items-center xl:items-start">
           <p className="mb-2 sm:mb-6 py-2 px-3.5 bg-white/10 rounded-xl text-[11px] sm:text-sm tracking-[-0.11px] sm:tracking-[-0.14px] text-white">
             Our online referral program is now available.{" "}
             <span className="font-medium">Earn Rewards</span>
           </p>
+
           <h1 className="mb-8 sm:mb-6 text-4xl sm:text-[64px] sm:leading-[72px] tracking-[-1.08px] sm:tracking-[-1.95px] font-semibold text-center xl:text-left text-white">
-            15,000,000+ IPs from Germany
+            15,000,000+ IPs from China
           </h1>
+
           <p className="max-w-[580px] text-xs sm:text-base leading-[18px] sm:leading-[24px] tracking-[-0.12px] sm:tracking-[-0.16px] text-center xl:text-left text-white">
             Gather data efficiently with the industry-leading proxy network and
             enjoy limitless web scraping solutions on the most intense tasks.
           </p>
+
           <div className="my-7 flex flex-wrap justify-center items-center gap-y-4 gap-x-6 sm:gap-x-8">
             <p className="flex items-center gap-2 sm:gap-3 text-xs sm:text-base font-medium tracking-[-0.12px] sm:tracking-[-0.16px] text-white">
               <svg
@@ -283,6 +294,7 @@ export default function HeroSection() {
               </svg>
               4.9 rating
             </p>
+
             <p className="flex items-center gap-2 sm:gap-3 text-xs sm:text-base font-medium tracking-[-0.12px] sm:tracking-[-0.16px] text-white">
               <svg
                 width="19"
@@ -309,6 +321,7 @@ export default function HeroSection() {
               </svg>
               25M+ Proxy Pool
             </p>
+
             <p className="flex items-center gap-2 sm:gap-3 text-xs sm:text-base font-medium tracking-[-0.12px] sm:tracking-[-0.16px] text-white">
               <svg
                 width="19"
@@ -329,6 +342,7 @@ export default function HeroSection() {
               7 Day Free Trial
             </p>
           </div>
+
           <div className="w-full sm:w-fit grid sm:flex gap-3">
             <PrimaryBtn customClasses="!py-2.5 !px-12 sm:!text-base sm:!tracking-[-0.16px]">
               Get Started{" "}
@@ -345,6 +359,7 @@ export default function HeroSection() {
                 />
               </svg>
             </PrimaryBtn>
+
             <SecondaryBtn customClasses="!py-2.5 !px-8 sm:!text-base sm:!tracking-[-0.16px] text-primary">
               <svg
                 width="24"
@@ -374,10 +389,12 @@ export default function HeroSection() {
             </SecondaryBtn>
           </div>
         </div>
+
         <div className="hidden xl:flex justify-center">
           <Image src={locationImg} alt="" className="w-full rounded-xl" />
         </div>
       </div>
+
       <div className="relative z-10 mx-auto container max-w-[1320px] py-14 lg:py-24 px-5 grid lg:grid-cols-3 gap-y-5 gap-x-10">
         {infoBoxes.map((infoBox, index) => {
           return <InfoBox key={index} {...infoBox} />;
