@@ -1,5 +1,6 @@
 import Image from "next/image";
-import locationInfo2Img from "@/assets/images/germany-location-info-2.png";
+import locationInfo2Img from "@/assets/images/france-location-info-2.png";
+
 export default function Info2Section() {
   return (
     <section className="sm:pt-44">
@@ -7,13 +8,16 @@ export default function Info2Section() {
         <div className="order-2 lg:order-1 w-full max-w-[575px] flex">
           <Image src={locationInfo2Img} alt="" className="w-full rounded-lg" />
         </div>
+
         <div className="order-1 lg:order-2">
           <p className="mb-3 text-[11px] sm:text-sm font-semibold tracking-[-0.11px] sm:tracking-[-0.14px] uppercase text-[#12A250]">
             COST EFFECTIVE
           </p>
+
           <h2 className="mb-6 text-[26px] sm:text-[42px] font-semibold leading-[30px] sm:leading-[46px] tracking-[-0.84px]">
             Fastest US Datacenter proxy servers for cost-effective scraping
           </h2>
+
           <p className="mb-6 text-xs sm:text-base tracking-[-0.12px] sm:tracking-[-0.16px] text-primary/75">
             Scraping low or medium security websites can be done easily with
             Shared Datacenter proxy servers from US. <br />
@@ -23,6 +27,7 @@ export default function Info2Section() {
             Unlimited bandwidth and Unlimited concurrent sessions to help you
             scale your web scraping projects.
           </p>
+
           <button className="active:scale-95 w-full sm:w-fit py-2.5 sm:py-2 px-5 border border-dark-white bg-white rounded-lg flex justify-center items-center gap-2.5 text-xs sm:text-base font-medium tracking-[-0.16px] text-[#12A250] duration-300">
             Explore Datacenter Proxies
             <svg

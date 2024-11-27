@@ -12,6 +12,7 @@ import location3BgImg from "@/assets/images/location-3-bg.png";
 import location4BgImg from "@/assets/images/location-4-bg.png";
 import location5BgImg from "@/assets/images/location-5-bg.png";
 import location6BgImg from "@/assets/images/location-6-bg.png";
+
 interface ILocationCard {
   img: JSX.Element;
   bgImg: JSX.Element;
@@ -19,6 +20,7 @@ interface ILocationCard {
   href: string;
   ips: string;
 }
+
 function LocationCard({ img, bgImg, title, href, ips }: ILocationCard) {
   return (
     <Link
@@ -26,11 +28,14 @@ function LocationCard({ img, bgImg, title, href, ips }: ILocationCard) {
       className="relative hover:-translate-y-1 py-4 sm:py-6 px-6 sm:px-8 border border-dark-white bg-white rounded-xl overflow-hidden duration-200"
     >
       {bgImg}
+
       <div className="relative z-10">
         {img}
+
         <h3 className="mt-3 mb-1 text-sm sm:text-lg font-semibold tracking-[-0.14px] sm:tracking-[-0.2px]">
           {title}
         </h3>
+
         <p className="flex items-center gap-2 text-xs sm:text-base font-medium tracking-[-0.12px] sm:tracking-[-0.18px] text-primary/75">
           {ips}{" "}
           <svg
@@ -52,6 +57,7 @@ function LocationCard({ img, bgImg, title, href, ips }: ILocationCard) {
     </Link>
   );
 }
+
 export default function LocationsSection() {
   const locations: ILocationCard[] = [
     {
@@ -169,20 +175,24 @@ export default function LocationsSection() {
       ips: "1,200,505 IPs",
     },
   ];
+
   return (
     <section className="py-20 sm:py-44">
       <div className="mx-auto container max-w-[1320px] px-5">
         <p className="mb-3 text-[11px] sm:text-sm font-semibold tracking-[-0.11px] sm:tracking-[-0.14px] uppercase text-center text-accent">
           LOCATIONS
         </p>
+
         <h2 className="mb-8 sm:mb-14 text-[26px] sm:text-[42px] font-semibold leading-[30px] sm:leading-[46px] tracking-[-0.84px] text-center">
           Browse more locations worldwide
         </h2>
+
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3.5 sm:gap-5">
           {locations.map((location, index) => (
             <LocationCard key={index} {...location} />
           ))}
         </div>
+
         <div className="mt-10 mx-auto container max-w-[1320px] px-5 flex flex-col items-center">
           <Link
             href={"/"}

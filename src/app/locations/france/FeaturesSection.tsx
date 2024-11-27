@@ -4,8 +4,10 @@ interface IInfoBoxProps {
   title: string;
   description: string;
 }
+
 function InfoBox({ index, icon, title, description }: IInfoBoxProps) {
   if (!index) index = 0;
+
   return (
     <div
       className={`${
@@ -23,16 +25,19 @@ function InfoBox({ index, icon, title, description }: IInfoBoxProps) {
       >
         {icon}
       </div>
+
       <h3 className="relative mb-1.5 text-xs sm:text-base font-medium tracking-[-0.12px] sm:tracking-[-0.16px]">
         {title}
         <span className="absolute top-0 -left-[24px] sm:-left-[41px] w-[2px] h-full bg-accent"></span>
       </h3>
+
       <p className="text-xs sm:text-base tracking-[-0.12px] sm:tracking-[-0.16px] text-primary/50">
         {description}
       </p>
     </div>
   );
 }
+
 export default function FeaturesSection() {
   const infoBoxes: IInfoBoxProps[] = [
     {
@@ -283,19 +288,23 @@ export default function FeaturesSection() {
         "Praesent fringilla, lectus ut efficitur iaculis, nisl ante tristique odio.",
     },
   ];
+
   return (
     <section className="pt-20 sm:pt-44 bg-gradient-to-b from-transparent to-off-white">
       <div className="mx-auto container max-w-[1320px] px-5">
         <p className="mb-3 text-[11px] sm:text-sm font-semibold tracking-[-0.11px] sm:tracking-[-0.14px] uppercase text-center text-accent">
           Features
         </p>
+
         <h2 className="mb-8 sm:mb-20 text-[26px] sm:text-[42px] font-semibold leading-[30px] sm:leading-[46px] tracking-[-0.84px] text-center">
           Why our customers choose <br /> our United States proxies
         </h2>
+
         <div className="relative grid sm:grid-cols-3">
           <div className="absolute top-1/2 left-0 w-full h-px bg-primary/5 hidden sm:block"></div>
           <div className="absolute top-0 left-0 w-px h-full bg-primary/5"></div>
           <div className="absolute top-0 right-0 w-px h-full bg-primary/5"></div>
+
           {infoBoxes.map((infoBox, index) => (
             <InfoBox key={index} index={index} {...infoBox} />
           ))}
