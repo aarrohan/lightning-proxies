@@ -1,16 +1,12 @@
 import Image from "next/image";
-import usaLocationInfo2Img from "@/assets/images/usa-location-info-2.png";
+import locationInfo2Img from "@/assets/images/uk-location-info-2.png";
 
 export default function Info2Section() {
   return (
     <section className="sm:pt-44">
       <div className="mx-auto container max-w-[1320px] px-5 grid lg:grid-cols-[575px_auto] items-center gap-6 sm:gap-14">
         <div className="order-2 lg:order-1 w-full max-w-[575px] flex">
-          <Image
-            src={usaLocationInfo2Img}
-            alt=""
-            className="w-full rounded-lg"
-          />
+          <Image src={locationInfo2Img} alt="" className="w-full rounded-lg" />
         </div>
 
         <div className="order-1 lg:order-2">

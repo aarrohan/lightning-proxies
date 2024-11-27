@@ -162,7 +162,7 @@ export default function MenuLocations() {
         <Image src={menuLocationMap2Img} alt="" className="w-full rounded-xl" />
       ),
       title: "United Kingdom",
-      href: "/",
+      href: "/locations/uk",
       description: "123,456,789 IPs",
     },
     {
@@ -177,7 +177,7 @@ export default function MenuLocations() {
         <Image src={menuLocationMap3Img} alt="" className="w-full rounded-xl" />
       ),
       title: "Germany",
-      href: "/",
+      href: "/locations/germany",
       description: "123,456,789 IPs",
     },
     {
@@ -192,7 +192,7 @@ export default function MenuLocations() {
         <Image src={menuLocationMap4Img} alt="" className="w-full rounded-xl" />
       ),
       title: "France",
-      href: "/",
+      href: "/locations/france",
       description: "123,456,789 IPs",
     },
     {
@@ -207,7 +207,7 @@ export default function MenuLocations() {
         <Image src={menuLocationMap5Img} alt="" className="w-full rounded-xl" />
       ),
       title: "Canada",
-      href: "/",
+      href: "/locations/canada",
       description: "123,456,789 IPs",
     },
     {
@@ -222,7 +222,7 @@ export default function MenuLocations() {
         <Image src={menuLocationMap6Img} alt="" className="w-full rounded-xl" />
       ),
       title: "China",
-      href: "/",
+      href: "/locations/china",
       description: "123,456,789 IPs",
     },
     {
@@ -237,7 +237,7 @@ export default function MenuLocations() {
         <Image src={menuLocationMap7Img} alt="" className="w-full rounded-xl" />
       ),
       title: "Brazil",
-      href: "/",
+      href: "/locations/brazil",
       description: "123,456,789 IPs",
     },
     {
