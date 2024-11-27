@@ -1,5 +1,5 @@
 import Image from "next/image";
-import locationInfo2Img from "@/assets/images/germany-location-info-2.png";
+import locationInfo2Img from "@/assets/images/france-location-info-2.png";
 
 export default function Info2Section() {
   return (
