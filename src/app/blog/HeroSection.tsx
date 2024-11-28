@@ -33,7 +33,7 @@ export default function HeroSection() {
           </Link>
         </div>
 
-        <div className="p-5 sm:p-8 border border-dark-white bg-white shadow-[0px_10px_10px_0px_rgba(0,0,0,0.02),_0px_1px_0px_0px_rgba(0,0,0,0.02)] rounded-2xl grid lg:grid-cols-2 items-center gap-y-8 gap-x-14">
+        <div className="hover:-translate-y-1 p-5 sm:p-8 border border-dark-white bg-white shadow-[0px_10px_10px_0px_rgba(0,0,0,0.02),_0px_1px_0px_0px_rgba(0,0,0,0.02)] rounded-2xl grid lg:grid-cols-2 items-center gap-y-8 gap-x-14 cursor-pointer duration-200">
           <div>
             <p className="mb-3 text-xs sm:text-sm font-semibold tracking-[-0.12px] sm:tracking-[-0.14px] text-accent">
               RECENT UPDATE
