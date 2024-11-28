@@ -209,7 +209,7 @@ export default function NavigationBar() {
                 }
                 href={"/"}
                 className={`w-full lg:w-fit h-fit lg:h-full pb-4 lg:pb-0 border-b lg:border-b-0 border-dashed border-dark-white flex justify-between items-center gap-2 text-sm font-medium tracking-[-0.14px] ${
-                  isTransparent && !isHovered ? "text-white" : "text-primary"
+                  isTransparent && !isHovered ? "sm:text-white" : "text-primary"
                 } duration-200`}
               >
                 Products{" "}
@@ -257,7 +257,7 @@ export default function NavigationBar() {
                 }
                 href={"/"}
                 className={`w-full lg:w-fit h-fit lg:h-full py-4 lg:py-0 border-b lg:border-b-0 border-dashed border-dark-white flex justify-between items-center gap-2 text-sm font-medium tracking-[-0.14px] ${
-                  isTransparent && !isHovered ? "text-white" : "text-primary"
+                  isTransparent && !isHovered ? "sm:text-white" : "text-primary"
                 } duration-200`}
               >
                 Locations{" "}
@@ -305,7 +305,7 @@ export default function NavigationBar() {
                 }
                 href={"/"}
                 className={`w-full lg:w-fit h-fit lg:h-full py-4 lg:py-0 border-b lg:border-b-0 border-dashed border-dark-white flex justify-between items-center gap-2 text-sm font-medium tracking-[-0.14px] ${
-                  isTransparent && !isHovered ? "text-white" : "text-primary"
+                  isTransparent && !isHovered ? "sm:text-white" : "text-primary"
                 } duration-200`}
               >
                 Use cases{" "}
@@ -353,7 +353,7 @@ export default function NavigationBar() {
                 }
                 href={"/"}
                 className={`w-full lg:w-fit h-fit lg:h-full py-4 lg:py-0 border-b lg:border-b-0 border-dashed border-dark-white flex justify-between items-center gap-2 text-sm font-medium tracking-[-0.14px] ${
-                  isTransparent && !isHovered ? "text-white" : "text-primary"
+                  isTransparent && !isHovered ? "sm:text-white" : "text-primary"
                 } duration-200`}
               >
                 Resources{" "}
@@ -399,7 +399,7 @@ export default function NavigationBar() {
                 onClick={() => setIsPricingDropdownOpen(!isPricingDropdownOpen)}
                 href={"/"}
                 className={`w-full lg:w-fit h-fit lg:h-full pt-4 lg:pt-0 flex justify-between items-center gap-2 text-sm font-medium tracking-[-0.14px] ${
-                  isTransparent && !isHovered ? "text-white" : "text-primary"
+                  isTransparent && !isHovered ? "sm:text-white" : "text-primary"
                 } duration-200`}
               >
                 Pricing{" "}
@@ -478,7 +478,7 @@ export default function NavigationBar() {
           <Link
             href={"/"}
             className={`hidden lg:block text-sm font-medium tracking-[-0.14px] ${
-              isTransparent && !isHovered ? "text-white" : "text-primary"
+              isTransparent && !isHovered ? "sm:text-white" : "text-primary"
             } duration-200`}
           >
             Login
