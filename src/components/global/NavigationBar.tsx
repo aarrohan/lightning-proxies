@@ -137,7 +137,7 @@ export default function NavigationBar() {
     if (!showGroup) {
       setTimeout(() => {
         setShowGroup(true);
-      }, 3000);
+      }, 1000);
     }
   }, [showGroup]);
 

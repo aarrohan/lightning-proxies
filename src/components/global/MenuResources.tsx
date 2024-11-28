@@ -174,7 +174,7 @@ export default function MenuResources() {
         </svg>
       ),
       title: "Blogs",
-      href: "/",
+      href: "/blog",
     },
     {
       icon: (
@@ -458,7 +458,7 @@ export default function MenuResources() {
         </svg>
       ),
       title: "Brand Assets",
-      href: "/",
+      href: "/brand-assets",
     },
   ];
 

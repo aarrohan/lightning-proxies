@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import HeroSection from "./HeroSection";
 import ColorsSection from "./ColorsSection";
 import TypographySection from "./Typography";
-import FollowUpSection from "@/app/(landing)/FollowUpSection";
 import DownloadSection from "./DownloadSection";
+import FollowUpSection from "@/app/(landing)/FollowUpSection";
 
 export const metadata: Metadata = {
   title: "Brand Assets - Lightning Proxies",
