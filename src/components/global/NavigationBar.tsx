@@ -229,7 +229,7 @@ export default function NavigationBar() {
                     strokeWidth="1.25"
                     className={`${
                       isTransparent && !isHovered
-                        ? "sm:stroke-white"
+                        ? "stroke-primary sm:stroke-white"
                         : "stroke-primary"
                     } duration-200`}
                   />
@@ -278,7 +278,7 @@ export default function NavigationBar() {
                     strokeWidth="1.25"
                     className={`${
                       isTransparent && !isHovered
-                        ? "sm:stroke-white"
+                        ? "stroke-primary sm:stroke-white"
                         : "stroke-primary"
                     } duration-200`}
                   />
@@ -327,7 +327,7 @@ export default function NavigationBar() {
                     strokeWidth="1.25"
                     className={`${
                       isTransparent && !isHovered
-                        ? "sm:stroke-white"
+                        ? "stroke-primary sm:stroke-white"
                         : "stroke-primary"
                     } duration-200`}
                   />
@@ -376,7 +376,7 @@ export default function NavigationBar() {
                     strokeWidth="1.25"
                     className={`${
                       isTransparent && !isHovered
-                        ? "sm:stroke-white"
+                        ? "stroke-primary sm:stroke-white"
                         : "stroke-primary"
                     } duration-200`}
                   />
@@ -425,7 +425,7 @@ export default function NavigationBar() {
                     strokeWidth="1.25"
                     className={`${
                       isTransparent && !isHovered
-                        ? "sm:stroke-white"
+                        ? "stroke-primary sm:stroke-white"
                         : "stroke-primary"
                     } duration-200`}
                   />
