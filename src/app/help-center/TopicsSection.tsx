@@ -1,6 +1,6 @@
 export default function TopicsSection() {
   return (
-    <section className="pb-20 sm:pb-28">
+    <section className="pb-16 sm:pb-24">
       <div className="mx-auto container max-w-[1320px] px-5">
         <h2 className="mb-10 text-xl sm:text-3xl font-semibold tracking-[-0.2px] sm:tracking-[-0.56px]">
           Popular Topics
