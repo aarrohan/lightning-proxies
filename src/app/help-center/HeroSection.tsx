@@ -58,7 +58,7 @@ export default function HeroSection() {
           </div>
         </div>
 
-        <div className="grid lg:grid-cols-3 gap-5">
+        <div className="grid lg:grid-cols-3 gap-y-3.5 gap-x-5">
           <div className="relative py-5 sm:py-7 px-7 sm:px-10 border border-dark-white rounded-xl">
             <h3 className="mb-3.5 sm:mb-5 text-lg sm:text-3xl font-semibold tracking-[-0.56px]">
               FAQs
