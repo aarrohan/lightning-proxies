@@ -543,17 +543,25 @@ export default function NavigationBar() {
               >
                 <path
                   d="M12.3333 1.66632L1.66663 12.333"
-                  stroke="#1D2026"
                   strokeWidth="2"
                   strokeLinecap="square"
                   strokeLinejoin="round"
+                  className={`${
+                    isTransparent && !isHovered
+                      ? "stroke-white"
+                      : "stroke-primary"
+                  } duration-200`}
                 />
                 <path
                   d="M12.3333 12.333L1.66663 1.66632"
-                  stroke="#1D2026"
                   strokeWidth="2"
                   strokeLinecap="square"
                   strokeLinejoin="round"
+                  className={`${
+                    isTransparent && !isHovered
+                      ? "stroke-white"
+                      : "stroke-primary"
+                  } duration-200`}
                 />
               </svg>
             ) : (
