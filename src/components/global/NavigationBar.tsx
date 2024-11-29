@@ -201,12 +201,13 @@ export default function NavigationBar() {
                 showGroup ? "group" : ""
               } w-full lg:w-fit h-fit lg:h-full`}
             >
-              <Link
+              <a
                 ref={firstLinkRef}
                 onMouseEnter={handleLinkMouseEnter}
-                onClick={() =>
-                  setIsProductsDropdownOpen(!isProductsDropdownOpen)
-                }
+                onClick={(e) => {
+                  e.preventDefault();
+                  setIsProductsDropdownOpen(!isProductsDropdownOpen);
+                }}
                 href={"/"}
                 className={`w-full lg:w-fit h-fit lg:h-full pb-4 lg:pb-0 border-b lg:border-b-0 border-dashed border-dark-white flex justify-between items-center gap-2 text-sm font-medium tracking-[-0.14px] ${
                   isTransparent && !isHovered ? "sm:text-white" : "text-primary"
@@ -233,7 +234,7 @@ export default function NavigationBar() {
                     } duration-200`}
                   />
                 </svg>
-              </Link>
+              </a>
 
               <div
                 className={`${
@@ -252,9 +253,10 @@ export default function NavigationBar() {
             >
               <Link
                 onMouseEnter={handleLinkMouseEnter}
-                onClick={() =>
-                  setIsLocationsDropdownOpen(!isLocationsDropdownOpen)
-                }
+                onClick={(e) => {
+                  e.preventDefault();
+                  setIsLocationsDropdownOpen(!isLocationsDropdownOpen);
+                }}
                 href={"/"}
                 className={`w-full lg:w-fit h-fit lg:h-full py-4 lg:py-0 border-b lg:border-b-0 border-dashed border-dark-white flex justify-between items-center gap-2 text-sm font-medium tracking-[-0.14px] ${
                   isTransparent && !isHovered ? "sm:text-white" : "text-primary"
@@ -300,9 +302,10 @@ export default function NavigationBar() {
             >
               <Link
                 onMouseEnter={handleLinkMouseEnter}
-                onClick={() =>
-                  setIsUseCasesDropdownOpen(!isUseCasesDropdownOpen)
-                }
+                onClick={(e) => {
+                  e.preventDefault();
+                  setIsUseCasesDropdownOpen(!isUseCasesDropdownOpen);
+                }}
                 href={"/"}
                 className={`w-full lg:w-fit h-fit lg:h-full py-4 lg:py-0 border-b lg:border-b-0 border-dashed border-dark-white flex justify-between items-center gap-2 text-sm font-medium tracking-[-0.14px] ${
                   isTransparent && !isHovered ? "sm:text-white" : "text-primary"
@@ -348,9 +351,10 @@ export default function NavigationBar() {
             >
               <Link
                 onMouseEnter={handleLinkMouseEnter}
-                onClick={() =>
-                  setIsResourcesDropdownOpen(!isResourcesDropdownOpen)
-                }
+                onClick={(e) => {
+                  e.preventDefault();
+                  setIsResourcesDropdownOpen(!isResourcesDropdownOpen);
+                }}
                 href={"/"}
                 className={`w-full lg:w-fit h-fit lg:h-full py-4 lg:py-0 border-b lg:border-b-0 border-dashed border-dark-white flex justify-between items-center gap-2 text-sm font-medium tracking-[-0.14px] ${
                   isTransparent && !isHovered ? "sm:text-white" : "text-primary"
@@ -396,7 +400,10 @@ export default function NavigationBar() {
             >
               <Link
                 onMouseEnter={handleLinkMouseEnter}
-                onClick={() => setIsPricingDropdownOpen(!isPricingDropdownOpen)}
+                onClick={(e) => {
+                  e.preventDefault();
+                  setIsPricingDropdownOpen(!isPricingDropdownOpen);
+                }}
                 href={"/"}
                 className={`w-full lg:w-fit h-fit lg:h-full pt-4 lg:pt-0 flex justify-between items-center gap-2 text-sm font-medium tracking-[-0.14px] ${
                   isTransparent && !isHovered ? "sm:text-white" : "text-primary"
