@@ -213,7 +213,7 @@ export default function MenuResources() {
         </svg>
       ),
       title: "Help Center",
-      href: "/",
+      href: "/help-center",
     },
     {
       isNew: true,
