@@ -102,7 +102,8 @@ export default function NavigationBar() {
       pathname.includes("/pricing/isp-proxies") ||
       pathname.includes("/pricing/ipv6-proxies") ||
       pathname.includes("/pricing/mobile-proxies") ||
-      pathname.includes("/pricing/unlimited-residential-proxies")
+      pathname.includes("/pricing/unlimited-residential-proxies") ||
+      pathname.includes("/coming-soon")
     ) {
       setIsTransparent(true);
       setIsHovered(false);
