@@ -6,7 +6,7 @@ import affiliateProgramImg1 from "@/assets/images/affiliate-program-1.svg";
 export default function HeroSection() {
   return (
     <section className="pt-[70px]">
-      <div className="mx-auto container max-w-[1320px] pt-20 pb-16 px-5 grid xl:grid-cols-[auto_650px] items-center gap-x-28">
+      <div className="mx-auto container max-w-[1320px] pt-20 px-5 grid xl:grid-cols-[auto_650px] items-center gap-x-28">
         <div className="flex flex-col items-center xl:items-start">
           <p className="mb-6 py-2 px-3.5 bg-accent/10 rounded-xl text-[11px] sm:text-sm tracking-[-0.11px] sm:tracking-[-0.14px] text-accent">
             Our online referral program is now available.{" "}

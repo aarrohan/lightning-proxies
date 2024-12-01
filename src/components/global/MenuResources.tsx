@@ -252,8 +252,8 @@ export default function MenuResources() {
           />
         </svg>
       ),
-      title: "Reseller Program",
-      href: "/",
+      title: "Referral Program",
+      href: "/referral-program",
     },
     {
       isComingSoon: true,
@@ -286,7 +286,7 @@ export default function MenuResources() {
         </svg>
       ),
       title: "Affiliate Program",
-      href: "/",
+      href: "/affiliate-program",
     },
     {
       isComingSoon: true,
@@ -402,7 +402,7 @@ export default function MenuResources() {
         </svg>
       ),
       title: "About Us",
-      href: "/",
+      href: "/about",
     },
     {
       icon: (
@@ -436,7 +436,7 @@ export default function MenuResources() {
         </svg>
       ),
       title: "Our Partners",
-      href: "/",
+      href: "/partners",
     },
     {
       icon: (
