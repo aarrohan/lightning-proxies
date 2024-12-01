@@ -3,10 +3,10 @@ import HeroSection from "./HeroSection";
 import FollowUpSection from "@/app/(landing)/FollowUpSection";
 
 export const metadata: Metadata = {
-  title: "Affiliate Program - Lightning Proxies",
+  title: "Referral Program - Lightning Proxies",
 };
 
-export default function Affiliate() {
+export default function Referral() {
   return (
     <main>
       <HeroSection />
