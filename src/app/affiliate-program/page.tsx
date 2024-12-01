@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import HeroSection from "./HeroSection";
 import InfosSection from "./InfosSection";
+import StepsSection from "./StepsSection";
 import FollowUpSection from "@/app/(landing)/FollowUpSection";
 
 export const metadata: Metadata = {
@@ -12,6 +13,7 @@ export default function Affiliate() {
     <main>
       <HeroSection />
       <InfosSection />
+      <StepsSection />
       <FollowUpSection />
     </main>
   );
