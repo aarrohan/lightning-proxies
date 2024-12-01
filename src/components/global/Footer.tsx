@@ -4,8 +4,11 @@ import paymentMethodsImg from "@/assets/images/payment-methods.svg";
 import Link from "next/link";
 import logoWhiteImg from "@/assets/images/branding/logo-white.svg";
 import footerIconImg from "@/assets/images/branding/footer-icon.svg";
+import { usePathname } from "next/navigation";
 
 export default function Footer() {
+  const pathname = usePathname();
+
   return (
     <footer
       className="relative pt-20 sm:pt-14 pb-10 sm:pb-14"
@@ -13,11 +16,13 @@ export default function Footer() {
         background: `linear-gradient(180deg, #121118 34.42%, #000 100%)`,
       }}
     >
-      <Image
-        src={footerIconImg}
-        alt=""
-        className="absolute -top-[27.5px] sm:-top-[31px] left-1/2 -translate-x-1/2 w-[55px] sm:w-[62px]"
-      />
+      {pathname !== "/coming-soon" && (
+        <Image
+          src={footerIconImg}
+          alt=""
+          className="absolute -top-[27.5px] sm:-top-[31px] left-1/2 -translate-x-1/2 w-[55px] sm:w-[62px]"
+        />
+      )}
 
       <div className="mx-auto container max-w-[1320px] px-5">
         <div className="mb-8 sm:mb-12 grid lg:grid-cols-[auto_580px] gap-8 sm:gap-12">

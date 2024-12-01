@@ -1,9 +1,12 @@
 "use client";
+import { useState } from "react";
 import Image from "next/image";
 import pricingPageHeroSectionGrainImg from "@/assets/images/pricing-page-hero-section-grain.png";
 import comingSoonShape1Img from "@/assets/images/coming-soon-shape-1.svg";
 
 export default function HeroSection() {
+  const [isSubmited, setIsSubmited] = useState<boolean>(false);
+
   return (
     <section className="relative pt-[70px] bg-[#121118] overflow-hidden">
       <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-[#1675FF] to-transparent"></div>
@@ -37,7 +40,11 @@ export default function HeroSection() {
         </p>
 
         <form
-          onSubmit={(e) => e.preventDefault()}
+          onSubmit={(e) => {
+            e.preventDefault();
+
+            setIsSubmited(true);
+          }}
           className="mb-4 sm:mb-5 w-full max-w-[380px] sm:max-w-[590px] p-1.5 sm:p-2.5 pl-4 sm:pl-6 bg-white rounded-lg sm:rounded-xl flex items-center gap-5"
         >
           <input
@@ -56,7 +63,11 @@ export default function HeroSection() {
           No spam, we promise.
         </p>
 
-        <p className="mt-5 sm:mt-8 sm:mb-6 py-3 px-4 bg-[#16D857]/25 rounded-xl flex items-center gap-2.5 text-[11px] sm:text-sm tracking-[-0.11px] sm:tracking-[-0.14px] text-[#16D857]">
+        <p
+          className={`mt-5 sm:mt-8 sm:mb-6 py-3 px-4 bg-[#16D857]/25 rounded-xl flex items-center gap-2.5 text-[11px] sm:text-sm tracking-[-0.11px] sm:tracking-[-0.14px] text-[#16D857] ${
+            !isSubmited ? "opacity-0 pointer-events-none" : ""
+          } duration-200`}
+        >
           <svg
             width="18"
             height="18"
