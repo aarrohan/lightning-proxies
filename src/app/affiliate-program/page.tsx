@@ -2,8 +2,9 @@ import type { Metadata } from "next";
 import HeroSection from "./HeroSection";
 import InfosSection from "./InfosSection";
 import StepsSection from "./StepsSection";
-import FollowUpSection from "@/app/(landing)/FollowUpSection";
 import PaymentsSection from "./PaymentsSection";
+import JoinSection from "./JoinSection";
+import FollowUpSection from "@/app/(landing)/FollowUpSection";
 
 export const metadata: Metadata = {
   title: "Affiliate Program - Lightning Proxies",
@@ -16,6 +17,7 @@ export default function Affiliate() {
       <InfosSection />
       <StepsSection />
       <PaymentsSection />
+      <JoinSection />
       <FollowUpSection />
     </main>
   );
