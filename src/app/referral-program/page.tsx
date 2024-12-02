@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import HeroSection from "./HeroSection";
+import InfosSection from "./InfosSection";
 import FeaturesSection from "./FeaturesSection";
 import StepsSection from "./StepsSection";
 import DashboardSection from "./DashboardSection";
@@ -13,6 +14,7 @@ export default function Referral() {
   return (
     <main>
       <HeroSection />
+      <InfosSection />
       <FeaturesSection />
       <StepsSection />
       <DashboardSection />
