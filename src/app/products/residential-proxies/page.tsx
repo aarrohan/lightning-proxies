@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import HeroSection from "./HeroSection";
+import Info1Section from "./Info1Section";
+import Info2Section from "./Info2Section";
 import FeaturesSection from "./FeaturesSection";
 import UseCasesSection from "@/app/(landing)/UseCasesSection";
 import DashboardSection from "@/app/(landing)/DashboardSection";
@@ -18,6 +20,8 @@ export default function ResidentialProxiesProduct() {
   return (
     <main>
       <HeroSection />
+      <Info1Section />
+      <Info2Section />
       <FeaturesSection />
       <UseCasesSection />
       <DashboardSection />
