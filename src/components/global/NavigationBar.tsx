@@ -85,6 +85,12 @@ export default function NavigationBar() {
 
   useEffect(() => {
     if (
+      pathname.includes("/products/residential-proxies") ||
+      pathname.includes("/products/datacenter-proxies") ||
+      pathname.includes("/products/isp-proxies") ||
+      pathname.includes("/products/ipv6-proxies") ||
+      pathname.includes("/products/mobile-proxies") ||
+      pathname.includes("/products/unlimited-residential-proxies") ||
       pathname.includes("/locations/usa") ||
       pathname.includes("/locations/uk") ||
       pathname.includes("/locations/germany") ||

@@ -143,28 +143,28 @@ export default function MenuProducts() {
     {
       icon: <Image src={product1IconImg} alt="" className="w-[48px]" />,
       title: "Residential Proxies",
-      href: "/",
+      href: "/products/residential-proxies",
       description:
         "Sed varius justo ac sem luctus lobortis. Nunc porta leo nec pretium laoreet.",
     },
     {
       icon: <Image src={product2IconImg} alt="" className="w-[48px]" />,
       title: "Datacenter Proxies",
-      href: "/",
+      href: "/products/datacenter-proxies",
       description:
         "Sed varius justo ac sem luctus lobortis. Nunc porta leo nec pretium laoreet.",
     },
     {
       icon: <Image src={product3IconImg} alt="" className="w-[48px]" />,
       title: "ISP Proxies",
-      href: "/",
+      href: "/products/isp-proxies",
       description:
         "Sed varius justo ac sem luctus lobortis. Nunc porta leo nec pretium laoreet.",
     },
     {
       icon: <Image src={product4IconImg} alt="" className="w-[48px]" />,
       title: "IPv6 Proxies",
-      href: "/",
+      href: "/products/ipv6-proxies",
       description:
         "Sed varius justo ac sem luctus lobortis. Nunc porta leo nec pretium laoreet.",
     },
@@ -172,7 +172,7 @@ export default function MenuProducts() {
       isNew: true,
       icon: <Image src={product5IconImg} alt="" className="w-[48px]" />,
       title: "Mobile Proxies",
-      href: "/",
+      href: "/products/mobile-proxies",
       description:
         "Sed varius justo ac sem luctus lobortis. Nunc porta leo nec pretium laoreet.",
     },
@@ -180,7 +180,7 @@ export default function MenuProducts() {
       isNew: true,
       icon: <Image src={product9IconImg} alt="" className="w-[48px]" />,
       title: "Unlimited Residential Proxies",
-      href: "/",
+      href: "/products/unlimited-residential-proxies",
       description:
         "Sed varius justo ac sem luctus lobortis. Nunc porta leo nec pretium laoreet.",
     },
