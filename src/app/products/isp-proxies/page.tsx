@@ -13,10 +13,10 @@ import UpcomingSection from "@/app/(landing)/UpcomingSection";
 import FollowUpSection from "@/app/(landing)/FollowUpSection";
 
 export const metadata: Metadata = {
-  title: "Datacenter Proxies - Lightning Proxies",
+  title: "ISP Proxies - Lightning Proxies",
 };
 
-export default function DatacenterProxiesProduct() {
+export default function ISPProxiesProduct() {
   return (
     <main>
       <HeroSection />
