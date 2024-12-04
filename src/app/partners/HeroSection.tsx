@@ -22,7 +22,7 @@ export default function HeroSection() {
           <input
             type="text"
             placeholder="Search all partners..."
-            className="w-full h-[40px] sm:h-[48px] pl-11 pr-4 border border-dark-white focus:border-accent bg-white rounded-md text-sm sm:text-base placeholder:text-primary/35 duration-200"
+            className="w-full h-[40px] sm:h-[48px] pl-11 focus:ring-[3px] focus:ring-accent/15 pr-4 border border-dark-white focus:border-accent bg-white rounded-md text-sm sm:text-base placeholder:text-primary/35 duration-200"
           />
 
           <svg
