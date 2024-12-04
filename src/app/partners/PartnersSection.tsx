@@ -70,7 +70,7 @@ export default function PartnersSection() {
   return (
     <section className="py-16 sm:py-28">
       <div className="mx-auto container max-w-[1320px] px-5 grid lg:grid-cols-[270px_auto] gap-16">
-        <div>
+        <div className="hidden lg:block">
           <p className="mb-3.5 text-[11px] sm:text-sm font-semibold tracking-[-0.11px] sm:tracking-[-0.14px] uppercase text-accent">
             CATEGORIES
           </p>
