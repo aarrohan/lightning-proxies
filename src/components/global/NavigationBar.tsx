@@ -91,6 +91,7 @@ export default function NavigationBar() {
       pathname.includes("/products/ipv6-proxies") ||
       pathname.includes("/products/mobile-proxies") ||
       pathname.includes("/products/unlimited-residential-proxies") ||
+      pathname.includes("/locations") ||
       pathname.includes("/locations/usa") ||
       pathname.includes("/locations/uk") ||
       pathname.includes("/locations/germany") ||
