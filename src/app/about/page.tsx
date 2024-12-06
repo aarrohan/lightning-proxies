@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import HeroSection from "./HeroSection";
 import ValuesSection from "./ValuesSection";
+import HistorySection from "./HistorySection";
 import TeamSection from "./TeamSection";
 import FollowUpSection from "@/app/(landing)/FollowUpSection";
 
@@ -13,6 +14,7 @@ export default function About() {
     <main>
       <HeroSection />
       <ValuesSection />
+      <HistorySection />
       <TeamSection />
       <FollowUpSection />
     </main>
