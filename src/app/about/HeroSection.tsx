@@ -4,7 +4,7 @@ import aboutPageHeroSectionImg from "@/assets/images/about-page-hero-section-1.p
 export default function HeroSection() {
   return (
     <section className="relative pt-[70px]">
-      <div className="absolute top-0 left-0 w-full h-[80%] bg-gradient-to-b from-accent to-transparent"></div>
+      <div className="absolute top-[70px] left-0 w-full h-[80%] bg-gradient-to-b from-[#1675FF] to-transparent"></div>
 
       <div className="relative z-10 mx-auto container max-w-[1320px] py-20 sm:py-28 px-5 flex flex-col items-center">
         <p className="mb-3 text-sm font-semibold tracking-[-0.14px] uppercase text-center text-white">
