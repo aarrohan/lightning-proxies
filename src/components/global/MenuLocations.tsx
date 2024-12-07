@@ -253,7 +253,7 @@ export default function MenuLocations() {
         />
       ),
       title: "View All",
-      href: "/",
+      href: "/locations",
       description: "250+ Locations",
     },
   ];

@@ -2,7 +2,7 @@ import Image from "next/image";
 import pricingPageHeroSectionGrainImg from "@/assets/images/pricing-page-hero-section-grain.png";
 import PrimaryBtn from "@/components/ui/PrimaryBtn";
 import SecondaryBtn from "@/components/ui/SecondaryBtn";
-import product1BigImg from "@/assets/images/product-1-big.svg";
+import product1BigImg from "@/assets/images/product-1-big.png";
 import PricingPart from "@/app/pricing/residential-proxies/PricingPart";
 import Marquee from "react-fast-marquee";
 import clientImg1 from "@/assets/images/client-1-white.svg";

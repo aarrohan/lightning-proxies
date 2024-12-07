@@ -22,6 +22,7 @@ const config: Config = {
         green: "rgb(var(--green-color-rgb) / <alpha-value>)",
         purple: "rgb(var(--purple-color-rgb) / <alpha-value>)",
         yellow: "rgb(var(--yellow-color-rgb) / <alpha-value>)",
+        blue: "rgb(var(--blue-color-rgb) / <alpha-value>)",
       },
     },
   },

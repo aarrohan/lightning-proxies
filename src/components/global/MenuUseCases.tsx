@@ -6,6 +6,12 @@ import useCase2Img from "@/assets/images/use-case-2.png";
 import useCase3Img from "@/assets/images/use-case-3.png";
 import useCase4Img from "@/assets/images/use-case-4.png";
 import useCase5Img from "@/assets/images/use-case-5.png";
+import serpMonitoringIconImg from "@/assets/images/serp-monitoring-icon.svg";
+import webScrapingIconImg from "@/assets/images/web-scraping-icon.svg";
+import marketResearchIconImg from "@/assets/images/market-research-icon.svg";
+import adVerificationIconImg from "@/assets/images/ad-verification-icon.svg";
+import brandProtectionIconImg from "@/assets/images/brand-protection-icon.svg";
+import useCasesIconImg from "@/assets/images/use-cases-icon.svg";
 import Link from "next/link";
 
 interface IUseCaseCard {
@@ -13,6 +19,7 @@ interface IUseCaseCard {
   firstItemRef?: React.MutableRefObject<HTMLAnchorElement | null>;
   useCasesCardBgValues?: IUseCasesCardBgValues;
   setUseCasesCardBgValues?: (values: IUseCasesCardBgValues) => void;
+  icon: JSX.Element;
   img: JSX.Element;
   title: string;
   href: string;
@@ -32,6 +39,7 @@ function UseCaseCard({
   firstItemRef,
   useCasesCardBgValues,
   setUseCasesCardBgValues,
+  icon,
   title,
   href,
   description,
@@ -74,8 +82,10 @@ function UseCaseCard({
           });
         }
       }}
-      className="group/menu-use-case-card group relative z-10 p-2.5 lg:p-5 border lg:!border-0 border-transparent hover:border-dark-white bg-transparent hover:bg-white lg:!bg-transparent rounded-lg lg:rounded-xl"
+      className="group/menu-use-case-card group relative z-10 p-2.5 lg:p-5 border lg:!border-0 border-transparent hover:border-dark-white bg-transparent hover:bg-white lg:!bg-transparent rounded-lg lg:rounded-xl grid grid-cols-[38px_auto] lg:grid-cols-[48px_auto] items-start gap-2.5 lg:gap-4"
     >
+      <div className="flex pointer-events-none">{icon}</div>
+
       <div className="pointer-events-none">
         <p className="flex items-center text-xs lg:text-base font-medium tracking-[-0.12px] lg:tracking-[-0.16px]">
           {title}{" "}
@@ -115,6 +125,7 @@ export default function MenuUseCases() {
 
   const useCases: IUseCaseCard[] = [
     {
+      icon: <Image src={serpMonitoringIconImg} alt="" className="w-full" />,
       img: <Image src={useCase1Img} alt="" className="w-full rounded-xl" />,
       title: "SERP Monitoring",
       href: "/use-cases/serp-monitoring",
@@ -122,6 +133,7 @@ export default function MenuUseCases() {
         "Sed varius justo ac sem luctus lobortis. Nunc porta leo nec pretium laoreet.",
     },
     {
+      icon: <Image src={webScrapingIconImg} alt="" className="w-full" />,
       img: <Image src={useCase2Img} alt="" className="w-full rounded-xl" />,
       title: "Web Scraping",
       href: "/use-cases/web-scraping",
@@ -129,6 +141,7 @@ export default function MenuUseCases() {
         "Sed varius justo ac sem luctus lobortis. Nunc porta leo nec pretium laoreet.",
     },
     {
+      icon: <Image src={marketResearchIconImg} alt="" className="w-full" />,
       img: <Image src={useCase3Img} alt="" className="w-full rounded-xl" />,
       title: "Market Research",
       href: "/use-cases/market-research",
@@ -136,6 +149,7 @@ export default function MenuUseCases() {
         "Sed varius justo ac sem luctus lobortis. Nunc porta leo nec pretium laoreet.",
     },
     {
+      icon: <Image src={adVerificationIconImg} alt="" className="w-full" />,
       img: <Image src={useCase4Img} alt="" className="w-full rounded-xl" />,
       title: "Ad Verification",
       href: "/use-cases/ad-verification",
@@ -143,9 +157,18 @@ export default function MenuUseCases() {
         "Sed varius justo ac sem luctus lobortis. Nunc porta leo nec pretium laoreet.",
     },
     {
+      icon: <Image src={brandProtectionIconImg} alt="" className="w-full" />,
       img: <Image src={useCase5Img} alt="" className="w-full rounded-xl" />,
       title: "Brand Protection",
       href: "/use-cases/brand-protection",
+      description:
+        "Sed varius justo ac sem luctus lobortis. Nunc porta leo nec pretium laoreet.",
+    },
+    {
+      icon: <Image src={useCasesIconImg} alt="" className="w-full" />,
+      img: <Image src={useCase1Img} alt="" className="w-full rounded-xl" />,
+      title: "View All Use Cases",
+      href: "/use-cases",
       description:
         "Sed varius justo ac sem luctus lobortis. Nunc porta leo nec pretium laoreet.",
     },

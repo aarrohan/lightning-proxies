@@ -25,7 +25,7 @@ export default function ValuesSection() {
             <Image
               src={ethic1Img}
               alt=""
-              className="w-[48px] sm:w-[80px] aspect-square"
+              className="w-[56px] sm:w-[80px] aspect-square"
             />
 
             <h4 className="mt-5 sm:mt-6 mb-2 text-xs sm:text-xl font-medium tracking-[-0.12px] sm:tracking-[-0.2px] text-center">
@@ -44,7 +44,7 @@ export default function ValuesSection() {
             <Image
               src={ethic2Img}
               alt=""
-              className="w-[48px] sm:w-[80px] aspect-square"
+              className="w-[56px] sm:w-[80px] aspect-square"
             />
 
             <h4 className="mt-5 sm:mt-6 mb-2 text-xs sm:text-xl font-medium tracking-[-0.12px] sm:tracking-[-0.2px] text-center">
@@ -63,7 +63,7 @@ export default function ValuesSection() {
             <Image
               src={ethic3Img}
               alt=""
-              className="w-[48px] sm:w-[80px] aspect-square"
+              className="w-[56px] sm:w-[80px] aspect-square"
             />
 
             <h4 className="mt-5 sm:mt-6 mb-2 text-xs sm:text-xl font-medium tracking-[-0.12px] sm:tracking-[-0.2px] text-center">
