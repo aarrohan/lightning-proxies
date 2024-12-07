@@ -5,6 +5,7 @@ import product2IconImg from "@/assets/images/product-2-icon.svg";
 import product3IconImg from "@/assets/images/product-3-icon.svg";
 import product4IconImg from "@/assets/images/product-4-icon.svg";
 import product5IconImg from "@/assets/images/product-5-icon.svg";
+import Link from "next/link";
 
 export default function HeroSection() {
   return (
@@ -168,35 +169,185 @@ export default function HeroSection() {
         </div>
 
         <div className="flex gap-2 sm:gap-4">
-          <Image
-            src={product1IconImg}
-            alt=""
-            className="rotate-[-5deg] w-[50px] sm:w-[75px] h-auto hover:scale-105 duration-200"
-          />
+          <div className="relative group">
+            <Image
+              src={product1IconImg}
+              alt=""
+              className="rotate-[-5deg] group-hover:rotate-0 w-[50px] sm:w-[75px] h-auto group-hover:scale-105 duration-200"
+            />
 
-          <Image
-            src={product2IconImg}
-            alt=""
-            className="rotate-[2deg] w-[50px] sm:w-[75px] h-auto hover:scale-105 duration-200"
-          />
+            <div className="absolute z-10 top-full left-1/2 -translate-x-1/2 scale-50 group-hover:scale-100 opacity-0 group-hover:opacity-100 duration-300">
+              <Link
+                href={"/products/residential-proxies"}
+                className="relative mt-4 py-1.5 px-4 border border-dark-white bg-[#f9f9f9] rounded-lg flex"
+              >
+                <svg
+                  width="16"
+                  height="8"
+                  viewBox="0 0 16 8"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="absolute -top-[7px] left-1/2 -translate-x-1/2"
+                >
+                  <path
+                    d="M1.20711 7.5H14.7929L8 0.707107L1.20711 7.5Z"
+                    fill="#F9F9F9"
+                    stroke="#eee"
+                  />
+                </svg>
 
-          <Image
-            src={product3IconImg}
-            alt=""
-            className="rotate-[3deg] w-[50px] sm:w-[75px] h-auto hover:scale-105 duration-200"
-          />
+                <span className="absolute top-0 left-1/2 -translate-x-1/2 w-1/2 h-px bg-[#f9f9f9]"></span>
 
-          <Image
-            src={product4IconImg}
-            alt=""
-            className="rotate-[-6deg] w-[50px] sm:w-[75px] h-auto hover:scale-105 duration-200"
-          />
+                <p className="text-xs sm:text-sm font-medium whitespace-nowrap tracking-[-0.12px] sm:tracking-[-0.14px]">
+                  Residential Proxies
+                </p>
+              </Link>
+            </div>
+          </div>
 
-          <Image
-            src={product5IconImg}
-            alt=""
-            className="rotate-[6deg] w-[50px] sm:w-[75px] h-auto hover:scale-105 duration-200"
-          />
+          <div className="relative group">
+            <Image
+              src={product2IconImg}
+              alt=""
+              className="rotate-[2deg] group-hover:rotate-0 w-[50px] sm:w-[75px] h-auto group-hover:scale-105 duration-200"
+            />
+
+            <div className="absolute z-10 top-full left-1/2 -translate-x-1/2 scale-50 group-hover:scale-100 opacity-0 group-hover:opacity-100 duration-300">
+              <Link
+                href={"/products/datacenter-proxies"}
+                className="relative mt-4 py-1.5 px-4 border border-dark-white bg-[#f9f9f9] rounded-lg flex"
+              >
+                <svg
+                  width="16"
+                  height="8"
+                  viewBox="0 0 16 8"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="absolute -top-[7px] left-1/2 -translate-x-1/2"
+                >
+                  <path
+                    d="M1.20711 7.5H14.7929L8 0.707107L1.20711 7.5Z"
+                    fill="#F9F9F9"
+                    stroke="#eee"
+                  />
+                </svg>
+
+                <span className="absolute top-0 left-1/2 -translate-x-1/2 w-1/2 h-px bg-[#f9f9f9]"></span>
+
+                <p className="text-xs sm:text-sm font-medium whitespace-nowrap tracking-[-0.12px] sm:tracking-[-0.14px]">
+                  Datacenter Proxies
+                </p>
+              </Link>
+            </div>
+          </div>
+
+          <div className="relative group">
+            <Image
+              src={product3IconImg}
+              alt=""
+              className="rotate-[3deg] group-hover:rotate-0 w-[50px] sm:w-[75px] h-auto group-hover:scale-105 duration-200"
+            />
+
+            <div className="absolute z-10 top-full left-1/2 -translate-x-1/2 scale-50 group-hover:scale-100 opacity-0 group-hover:opacity-100 duration-300">
+              <Link
+                href={"/products/isp-proxies"}
+                className="relative mt-4 py-1.5 px-4 border border-dark-white bg-[#f9f9f9] rounded-lg flex"
+              >
+                <svg
+                  width="16"
+                  height="8"
+                  viewBox="0 0 16 8"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="absolute -top-[7px] left-1/2 -translate-x-1/2"
+                >
+                  <path
+                    d="M1.20711 7.5H14.7929L8 0.707107L1.20711 7.5Z"
+                    fill="#F9F9F9"
+                    stroke="#eee"
+                  />
+                </svg>
+
+                <span className="absolute top-0 left-1/2 -translate-x-1/2 w-1/2 h-px bg-[#f9f9f9]"></span>
+
+                <p className="text-xs sm:text-sm font-medium whitespace-nowrap tracking-[-0.12px] sm:tracking-[-0.14px]">
+                  ISP Proxies
+                </p>
+              </Link>
+            </div>
+          </div>
+
+          <div className="relative group">
+            <Image
+              src={product4IconImg}
+              alt=""
+              className="rotate-[-6deg] group-hover:rotate-0 w-[50px] sm:w-[75px] h-auto group-hover:scale-105 duration-200"
+            />
+
+            <div className="absolute z-10 top-full left-1/2 -translate-x-1/2 scale-50 group-hover:scale-100 opacity-0 group-hover:opacity-100 duration-300">
+              <Link
+                href={"/products/ipv6-proxies"}
+                className="relative mt-4 py-1.5 px-4 border border-dark-white bg-[#f9f9f9] rounded-lg flex"
+              >
+                <svg
+                  width="16"
+                  height="8"
+                  viewBox="0 0 16 8"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="absolute -top-[7px] left-1/2 -translate-x-1/2"
+                >
+                  <path
+                    d="M1.20711 7.5H14.7929L8 0.707107L1.20711 7.5Z"
+                    fill="#F9F9F9"
+                    stroke="#eee"
+                  />
+                </svg>
+
+                <span className="absolute top-0 left-1/2 -translate-x-1/2 w-1/2 h-px bg-[#f9f9f9]"></span>
+
+                <p className="text-xs sm:text-sm font-medium whitespace-nowrap tracking-[-0.12px] sm:tracking-[-0.14px]">
+                  IPv6 Proxies
+                </p>
+              </Link>
+            </div>
+          </div>
+
+          <div className="relative group">
+            <Image
+              src={product5IconImg}
+              alt=""
+              className="rotate-[6deg] group-hover:rotate-0 w-[50px] sm:w-[75px] h-auto group-hover:scale-105 duration-200"
+            />
+
+            <div className="absolute z-10 top-full left-1/2 -translate-x-1/2 scale-50 group-hover:scale-100 opacity-0 group-hover:opacity-100 duration-300">
+              <Link
+                href={"/products/mobile-proxies"}
+                className="relative mt-4 py-1.5 px-4 border border-dark-white bg-[#f9f9f9] rounded-lg flex"
+              >
+                <svg
+                  width="16"
+                  height="8"
+                  viewBox="0 0 16 8"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="absolute -top-[7px] left-1/2 -translate-x-1/2"
+                >
+                  <path
+                    d="M1.20711 7.5H14.7929L8 0.707107L1.20711 7.5Z"
+                    fill="#F9F9F9"
+                    stroke="#eee"
+                  />
+                </svg>
+
+                <span className="absolute top-0 left-1/2 -translate-x-1/2 w-1/2 h-px bg-[#f9f9f9]"></span>
+
+                <p className="text-xs sm:text-sm font-medium whitespace-nowrap tracking-[-0.12px] sm:tracking-[-0.14px]">
+                  Mobile Proxies
+                </p>
+              </Link>
+            </div>
+          </div>
         </div>
 
         <div className="relative flex-1 h-px bg-gradient-to-r from-accent to-dark-white">

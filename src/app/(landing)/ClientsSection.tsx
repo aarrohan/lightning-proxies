@@ -10,7 +10,7 @@ import Link from "next/link";
 
 export default function ClientsSection() {
   return (
-    <section className="-mt-[24.5px] sm:-mt-[37.5px] pt-24 border-t border-dark-white bg-gradient-to-b from-off-white to-transparent">
+    <section className="-mt-[24.5px] sm:-mt-[37.5px] pt-32 border-t border-dark-white bg-gradient-to-b from-off-white to-transparent">
       <div className="mx-auto container max-w-[1320px] px-5 flex flex-col items-center">
         <p className="mb-7 text-[11px] sm:text-sm font-semibold tracking-[-0.11px] sm:tracking-[-0.14px] uppercase text-center">
           Trusted by World's Top Leading Web Scraping Companies
