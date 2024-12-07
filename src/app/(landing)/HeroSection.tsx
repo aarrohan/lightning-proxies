@@ -169,7 +169,10 @@ export default function HeroSection() {
         </div>
 
         <div className="flex gap-2 sm:gap-4">
-          <div className="relative group">
+          <Link
+            href={"/products/residential-proxies"}
+            className="relative group"
+          >
             <Image
               src={product1IconImg}
               alt=""
@@ -177,10 +180,7 @@ export default function HeroSection() {
             />
 
             <div className="absolute z-10 top-full left-1/2 -translate-x-1/2 scale-50 group-hover:scale-100 opacity-0 group-hover:opacity-100 duration-300">
-              <Link
-                href={"/products/residential-proxies"}
-                className="relative mt-4 py-1.5 px-4 border border-dark-white bg-[#f9f9f9] rounded-lg flex"
-              >
+              <div className="relative mt-4 py-1.5 px-4 border border-dark-white bg-[#f9f9f9] rounded-lg flex">
                 <svg
                   width="16"
                   height="8"
@@ -201,11 +201,14 @@ export default function HeroSection() {
                 <p className="text-xs sm:text-sm font-medium whitespace-nowrap tracking-[-0.12px] sm:tracking-[-0.14px]">
                   Residential Proxies
                 </p>
-              </Link>
+              </div>
             </div>
-          </div>
+          </Link>
 
-          <div className="relative group">
+          <Link
+            href={"/products/datacenter-proxies"}
+            className="relative group"
+          >
             <Image
               src={product2IconImg}
               alt=""
@@ -213,10 +216,7 @@ export default function HeroSection() {
             />
 
             <div className="absolute z-10 top-full left-1/2 -translate-x-1/2 scale-50 group-hover:scale-100 opacity-0 group-hover:opacity-100 duration-300">
-              <Link
-                href={"/products/datacenter-proxies"}
-                className="relative mt-4 py-1.5 px-4 border border-dark-white bg-[#f9f9f9] rounded-lg flex"
-              >
+              <div className="relative mt-4 py-1.5 px-4 border border-dark-white bg-[#f9f9f9] rounded-lg flex">
                 <svg
                   width="16"
                   height="8"
@@ -237,11 +237,11 @@ export default function HeroSection() {
                 <p className="text-xs sm:text-sm font-medium whitespace-nowrap tracking-[-0.12px] sm:tracking-[-0.14px]">
                   Datacenter Proxies
                 </p>
-              </Link>
+              </div>
             </div>
-          </div>
+          </Link>
 
-          <div className="relative group">
+          <Link href={"/products/isp-proxies"} className="relative group">
             <Image
               src={product3IconImg}
               alt=""
@@ -249,10 +249,7 @@ export default function HeroSection() {
             />
 
             <div className="absolute z-10 top-full left-1/2 -translate-x-1/2 scale-50 group-hover:scale-100 opacity-0 group-hover:opacity-100 duration-300">
-              <Link
-                href={"/products/isp-proxies"}
-                className="relative mt-4 py-1.5 px-4 border border-dark-white bg-[#f9f9f9] rounded-lg flex"
-              >
+              <div className="relative mt-4 py-1.5 px-4 border border-dark-white bg-[#f9f9f9] rounded-lg flex">
                 <svg
                   width="16"
                   height="8"
@@ -273,11 +270,11 @@ export default function HeroSection() {
                 <p className="text-xs sm:text-sm font-medium whitespace-nowrap tracking-[-0.12px] sm:tracking-[-0.14px]">
                   ISP Proxies
                 </p>
-              </Link>
+              </div>
             </div>
-          </div>
+          </Link>
 
-          <div className="relative group">
+          <Link href={"/products/ipv6-proxies"} className="relative group">
             <Image
               src={product4IconImg}
               alt=""
@@ -285,10 +282,7 @@ export default function HeroSection() {
             />
 
             <div className="absolute z-10 top-full left-1/2 -translate-x-1/2 scale-50 group-hover:scale-100 opacity-0 group-hover:opacity-100 duration-300">
-              <Link
-                href={"/products/ipv6-proxies"}
-                className="relative mt-4 py-1.5 px-4 border border-dark-white bg-[#f9f9f9] rounded-lg flex"
-              >
+              <div className="relative mt-4 py-1.5 px-4 border border-dark-white bg-[#f9f9f9] rounded-lg flex">
                 <svg
                   width="16"
                   height="8"
@@ -309,11 +303,11 @@ export default function HeroSection() {
                 <p className="text-xs sm:text-sm font-medium whitespace-nowrap tracking-[-0.12px] sm:tracking-[-0.14px]">
                   IPv6 Proxies
                 </p>
-              </Link>
+              </div>
             </div>
-          </div>
+          </Link>
 
-          <div className="relative group">
+          <Link href={"/products/mobile-proxies"} className="relative group">
             <Image
               src={product5IconImg}
               alt=""
@@ -321,10 +315,7 @@ export default function HeroSection() {
             />
 
             <div className="absolute z-10 top-full left-1/2 -translate-x-1/2 scale-50 group-hover:scale-100 opacity-0 group-hover:opacity-100 duration-300">
-              <Link
-                href={"/products/mobile-proxies"}
-                className="relative mt-4 py-1.5 px-4 border border-dark-white bg-[#f9f9f9] rounded-lg flex"
-              >
+              <div className="relative mt-4 py-1.5 px-4 border border-dark-white bg-[#f9f9f9] rounded-lg flex">
                 <svg
                   width="16"
                   height="8"
@@ -345,9 +336,9 @@ export default function HeroSection() {
                 <p className="text-xs sm:text-sm font-medium whitespace-nowrap tracking-[-0.12px] sm:tracking-[-0.14px]">
                   Mobile Proxies
                 </p>
-              </Link>
+              </div>
             </div>
-          </div>
+          </Link>
         </div>
 
         <div className="relative flex-1 h-px bg-gradient-to-r from-accent to-dark-white">
