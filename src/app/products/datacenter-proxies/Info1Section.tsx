@@ -1,10 +1,14 @@
+import Image from "next/image";
+import infoImg from "@/assets/images/product-2-info-1.png";
 import SecondaryBtn from "@/components/ui/SecondaryBtn";
 
 export default function Info1Section() {
   return (
     <section className="pt-20 sm:pt-44">
       <div className="mx-auto container max-w-[1320px] px-5 grid lg:grid-cols-2 gap-10 sm:gap-16 items-center">
-        <div className="order-2 lg:order-1 w-full aspect-square bg-[#00CA57] rounded-2xl"></div>
+        <div className="order-2 lg:order-1 w-full flex">
+          <Image src={infoImg} alt="" className="w-full" />
+        </div>
 
         <div className="order-1 lg:order-2 flex flex-col items-start">
           <p className="mb-3 text-[11px] sm:text-sm font-semibold tracking-[-0.11px] sm:tracking-[-0.14px] uppercase text-[#00CA57]">

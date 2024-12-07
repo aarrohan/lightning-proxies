@@ -9,7 +9,7 @@ import APISection from "@/app/(landing)/APISection";
 import LocationsSection from "@/app/(landing)/LocationsSection";
 import ReviewsSection from "@/app/(landing)/ReviewsSection";
 import ExtensionSection from "@/app/(landing)/ExtensionSection";
-import UpcomingSection from "@/app/(landing)/UpcomingSection";
+import ExploreSection from "./ExploreSection";
 import FollowUpSection from "@/app/(landing)/FollowUpSection";
 
 export const metadata: Metadata = {
@@ -29,7 +29,7 @@ export default function IPv6ProxiesProduct() {
       <LocationsSection />
       <ReviewsSection />
       <ExtensionSection />
-      <UpcomingSection />
+      <ExploreSection />
       <FollowUpSection />
     </main>
   );

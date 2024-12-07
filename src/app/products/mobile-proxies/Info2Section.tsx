@@ -1,3 +1,6 @@
+import Image from "next/image";
+import infoImg from "@/assets/images/product-5-info-2.png";
+
 export default function Info2Section() {
   return (
     <section className="pt-20 sm:pt-44">
@@ -123,7 +126,9 @@ export default function Info2Section() {
           </div>
         </div>
 
-        <div className="w-full aspect-square bg-[#00CEDF] rounded-2xl"></div>
+        <div className="w-full flex">
+          <Image src={infoImg} alt="" className="w-full h-auto" />
+        </div>
       </div>
     </section>
   );
