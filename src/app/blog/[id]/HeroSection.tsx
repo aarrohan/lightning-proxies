@@ -1,9 +1,82 @@
+"use client";
+import { useEffect, useRef, useState } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Link from "next/link";
 import Image from "next/image";
 import article3Img from "@/assets/images/article-3.png";
 import article7Img from "@/assets/images/article-7.png";
 
 export default function HeroSection() {
+  const [currentInfoStep, setCurrentInfoStep] = useState<number>(1);
+
+  const step2Ref = useRef<HTMLHeadingElement | null>(null);
+  const step3Ref = useRef<HTMLHeadingElement | null>(null);
+  const step4Ref = useRef<HTMLHeadingElement | null>(null);
+  const step5Ref = useRef<HTMLHeadingElement | null>(null);
+
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+  });
+
+  useEffect(() => {
+    const step2 = step2Ref.current;
+
+    if (step2) {
+      gsap.to(step2, {
+        scrollTrigger: {
+          trigger: step2,
+          start: "center center",
+          end: "center center",
+          onEnter: () => setCurrentInfoStep(2),
+          onLeaveBack: () => setCurrentInfoStep(1),
+        },
+      });
+    }
+
+    const step3 = step3Ref.current;
+
+    if (step3) {
+      gsap.to(step3, {
+        scrollTrigger: {
+          trigger: step3,
+          start: "center center",
+          end: "center center",
+          onEnter: () => setCurrentInfoStep(3),
+          onLeaveBack: () => setCurrentInfoStep(2),
+        },
+      });
+    }
+
+    const step4 = step4Ref.current;
+
+    if (step4) {
+      gsap.to(step4, {
+        scrollTrigger: {
+          trigger: step4,
+          start: "center center",
+          end: "center center",
+          onEnter: () => setCurrentInfoStep(4),
+          onLeaveBack: () => setCurrentInfoStep(3),
+        },
+      });
+    }
+
+    const step5 = step5Ref.current;
+
+    if (step5) {
+      gsap.to(step5, {
+        scrollTrigger: {
+          trigger: step5,
+          start: "center center",
+          end: "center center",
+          onEnter: () => setCurrentInfoStep(5),
+          onLeaveBack: () => setCurrentInfoStep(4),
+        },
+      });
+    }
+  }, []);
+
   return (
     <section className="pt-[70px]">
       <div className="relative mx-auto container max-w-[1320px] pt-10 sm:pt-14 px-5">
@@ -43,29 +116,69 @@ export default function HeroSection() {
             <div className="relative space-y-5">
               <span className="absolute top-5 -left-[25px] w-[2px] h-[calc(100%-30px)] bg-[#C1D8FB] block"></span>
 
-              <p className="relative z-10 text-base font-medium tracking-[-0.16px] text-primary/75">
+              <p
+                className={`relative z-10 text-base font-medium tracking-[-0.16px] ${
+                  currentInfoStep > 0 ? "text-primary/75" : "text-primary/40"
+                } duration-200`}
+              >
                 ​​Setting Up a Proxy in the OctoBrowser
-                <span className="absolute top-1/2 -left-7 -translate-y-1/2 w-[8px] aspect-square bg-accent rounded-full block"></span>
+                <span
+                  className={`absolute top-1/2 -left-7 -translate-y-1/2 w-[8px] aspect-square ${
+                    currentInfoStep > 0 ? "bg-accent" : "bg-[#C1D8FB]"
+                  } rounded-full block duration-200`}
+                ></span>
               </p>
 
-              <p className="relative z-10 text-base font-medium tracking-[-0.16px] text-primary/75">
+              <p
+                className={`relative z-10 text-base font-medium tracking-[-0.16px] ${
+                  currentInfoStep > 1 ? "text-primary/75" : "text-primary/40"
+                } duration-200`}
+              >
                 How to Integrate Proxies with OctoBrowser?
-                <span className="absolute top-1/2 -left-7 -translate-y-1/2 w-[8px] aspect-square bg-accent rounded-full block"></span>
+                <span
+                  className={`absolute top-1/2 -left-7 -translate-y-1/2 w-[8px] aspect-square ${
+                    currentInfoStep > 1 ? "bg-accent" : "bg-[#C1D8FB]"
+                  } rounded-full block duration-200`}
+                ></span>
               </p>
 
-              <p className="relative z-10 text-base font-medium tracking-[-0.16px] text-primary/40">
+              <p
+                className={`relative z-10 text-base font-medium tracking-[-0.16px] ${
+                  currentInfoStep > 2 ? "text-primary/75" : "text-primary/40"
+                } duration-200`}
+              >
                 Residential Proxies
-                <span className="absolute top-1/2 -left-7 -translate-y-1/2 w-[8px] aspect-square bg-[#C1D8FB] rounded-full block"></span>
+                <span
+                  className={`absolute top-1/2 -left-7 -translate-y-1/2 w-[8px] aspect-square ${
+                    currentInfoStep > 2 ? "bg-accent" : "bg-[#C1D8FB]"
+                  } rounded-full block duration-200`}
+                ></span>
               </p>
 
-              <p className="relative z-10 text-base font-medium tracking-[-0.16px] text-primary/40">
+              <p
+                className={`relative z-10 text-base font-medium tracking-[-0.16px] ${
+                  currentInfoStep > 3 ? "text-primary/75" : "text-primary/40"
+                } duration-200`}
+              >
                 Rotating Datacenter Proxies
-                <span className="absolute top-1/2 -left-7 -translate-y-1/2 w-[8px] aspect-square bg-[#C1D8FB] rounded-full block"></span>
+                <span
+                  className={`absolute top-1/2 -left-7 -translate-y-1/2 w-[8px] aspect-square ${
+                    currentInfoStep > 3 ? "bg-accent" : "bg-[#C1D8FB]"
+                  } rounded-full block duration-200`}
+                ></span>
               </p>
 
-              <p className="relative z-10 text-base font-medium tracking-[-0.16px] text-primary/40">
+              <p
+                className={`relative z-10 text-base font-medium tracking-[-0.16px] ${
+                  currentInfoStep > 4 ? "text-primary/75" : "text-primary/40"
+                } duration-200`}
+              >
                 Discount Code
-                <span className="absolute top-1/2 -left-7 -translate-y-1/2 w-[8px] aspect-square bg-[#C1D8FB] rounded-full block"></span>
+                <span
+                  className={`absolute top-1/2 -left-7 -translate-y-1/2 w-[8px] aspect-square ${
+                    currentInfoStep > 4 ? "bg-accent" : "bg-[#C1D8FB]"
+                  } rounded-full block duration-200`}
+                ></span>
               </p>
             </div>
           </div>
@@ -107,7 +220,10 @@ export default function HeroSection() {
                 Datacenter Proxies with Octo.​
               </p>
 
-              <p className="text-lg sm:text-2xl font-medium tracking-[-0.18px] sm:tracking-[-0.24px]">
+              <p
+                ref={step2Ref}
+                className="text-lg sm:text-2xl font-medium tracking-[-0.18px] sm:tracking-[-0.24px]"
+              >
                 How to Integrate LightningProxies' Proxies with OctoBrowser?
               </p>
 
@@ -122,7 +238,10 @@ export default function HeroSection() {
 
               <Image src={article7Img} alt="" className="w-full" />
 
-              <p className="text-lg sm:text-xl font-medium tracking-[-0.18px] sm:tracking-[-0.2px]">
+              <p
+                ref={step3Ref}
+                className="text-lg sm:text-xl font-medium tracking-[-0.18px] sm:tracking-[-0.2px]"
+              >
                 Residential Proxies
               </p>
 
@@ -145,7 +264,10 @@ export default function HeroSection() {
                 </p>
               </div>
 
-              <p className="text-lg sm:text-xl font-medium tracking-[-0.18px] sm:tracking-[-0.2px]">
+              <p
+                ref={step4Ref}
+                className="text-lg sm:text-xl font-medium tracking-[-0.18px] sm:tracking-[-0.2px]"
+              >
                 Rotating Datacenter Proxies
               </p>
 
@@ -175,7 +297,10 @@ export default function HeroSection() {
                 below.
               </p>
 
-              <p className="py-4 sm:py-6 px-7 sm:px-10 bg-accent/10 rounded-md sm:rounded-lg text-sm sm:text-lg tracking-[-0.14px] sm:tracking-[-0.18px]">
+              <p
+                ref={step5Ref}
+                className="py-4 sm:py-6 px-7 sm:px-10 bg-accent/10 rounded-md sm:rounded-lg text-sm sm:text-lg tracking-[-0.14px] sm:tracking-[-0.18px]"
+              >
                 Use code{" "}
                 <span className="font-semibold text-accent">LIGHTNING</span> at
                 check out and start browsing efficient and anonymous!
