@@ -148,18 +148,39 @@ export default function HeroSection() {
 
         <PrimaryBtn customClasses="!py-2.5 !px-12 sm:!text-base sm:!tracking-[-0.16px]">
           Get Started{" "}
-          <svg
-            width="14"
-            height="11"
-            viewBox="0 0 14 11"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M8.21967 2.03033C7.92678 1.73744 7.92678 1.26256 8.21967 0.96967C8.51256 0.676777 8.98744 0.676777 9.28033 0.96967L13.2803 4.96967C13.5732 5.26256 13.5732 5.73744 13.2803 6.03033L9.28033 10.0303C8.98744 10.3232 8.51256 10.3232 8.21967 10.0303C7.92678 9.73744 7.92678 9.26256 8.21967 8.96967L10.9393 6.25H1.25C0.835787 6.25 0.5 5.91421 0.5 5.5C0.5 5.08579 0.835787 4.75 1.25 4.75H10.9393L8.21967 2.03033Z"
-              className="fill-white"
-            />
-          </svg>
+          <span className="relative">
+            <svg
+              width="9"
+              height="10"
+              viewBox="0 0 9 10"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              className="relative -left-[4px] group-hover:-left-0 duration-200"
+            >
+              <path
+                fillRule="evenodd"
+                clipRule="evenodd"
+                d="M3.21967 0.21967C3.51256 -0.0732232 3.98744 -0.0732232 4.28033 0.21967L8.28033 4.21967C8.57322 4.51256 8.57322 4.98744 8.28033 5.28033L4.28033 9.2803C3.98744 9.5732 3.51256 9.5732 3.21967 9.2803C2.92678 8.98744 2.92678 8.51256 3.21967 8.21967L6.68934 4.75L3.21967 1.28033C2.92678 0.98744 2.92678 0.51256 3.21967 0.21967Z"
+                className="fill-white/75 group-hover:fill-white duration-200"
+              />
+            </svg>
+
+            <svg
+              width="9"
+              height="10"
+              viewBox="0 0 9 10"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              className="absolute top-0 left-0"
+            >
+              <rect
+                y="4"
+                height="1.5"
+                rx="0.75"
+                className="w-[7px] fill-white opacity-0 group-hover:opacity-100 duration-200"
+              />
+            </svg>
+          </span>
         </PrimaryBtn>
       </div>
 
