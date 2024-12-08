@@ -50,46 +50,38 @@ function ReviewCard({ title, description, username }: IReviewCardProps) {
 export default function ReviewsSection() {
   const reviews: IReviewCardProps[] = [
     {
-      title: "Most Reliable Proxy Service",
+      title: "If you need Mobile proxies in the USA",
       description: (
         <>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam molestie
-          ultricies fermentum. Aliquam erat volutpat. Ut non odio in sapien
-          tincidunt ultrices. Sed accumsan quam in hendrerit bibendum. <br />
-          <br />
-          Pellentesque habitant morbi tristique senectus et netus et malesuada
-          fames ac turpis egestas. In luctus, mi quis suscipit tristique.
+          If you need mobile proxies in USA, go for it! I'm using them for app
+          testing, and the results are super accurate. Plus, they offer new IPs
+          with each request, which has been amazing for my work.
         </>
       ),
-      username: "echodzns",
+      username: "Xiaobo",
     },
     {
-      title: "Most Reliable Proxy Service",
+      title: "We’ve been using the Residential....",
       description: (
         <>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam molestie
-          ultricies fermentum. Aliquam erat volutpat. Ut non odio in sapien
-          tincidunt ultrices. Sed accumsan quam in hendrerit bibendum. <br />
-          <br />
-          Pellentesque habitant morbi tristique senectus et netus et malesuada
-          fames ac turpis egestas. In luctus, mi quis suscipit tristique.
+          We've been using the Residential Proxies for Bing scraping and they
+          perform as we expected, success rate is great considering we use over
+          50GB per day. Keep up with the good work!
         </>
       ),
-      username: "echodzns",
+      username: "Audrius Norkus",
     },
     {
-      title: "Most Reliable Proxy Service",
+      title: "I’m based in Spain but needed UK...",
       description: (
         <>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam molestie
-          ultricies fermentum. Aliquam erat volutpat. Ut non odio in sapien
-          tincidunt ultrices. Sed accumsan quam in hendrerit bibendum. <br />
-          <br />
-          Pellentesque habitant morbi tristique senectus et netus et malesuada
-          fames ac turpis egestas. In luctus, mi quis suscipit tristique.
+          I'm based in Spain but needed UK proxies for my work, and these guys
+          delivered big time! Proxies are fast and reliable, and customer
+          support was fast, especially Dre, helped me quick with some questions
+          I had.
         </>
       ),
-      username: "echodzns",
+      username: "Alvaro Rubio",
     },
   ];
 

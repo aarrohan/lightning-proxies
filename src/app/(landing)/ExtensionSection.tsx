@@ -18,10 +18,13 @@ export default function ExtensionSection() {
             </h2>
 
             <p className="mb-6 sm:mb-8 max-w-[590px] text-xs sm:text-base font-light leading-[18px] sm:leading-[24px] tracking-[-0.12px] sm:tracking-[-0.16px] text-white/75">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-              molestie nec dui ut laoreet. Vivamus pellentesque, ipsum vel
-              sagittis pharetra, risus orci suscipit urna, finibus rhoncus arcu
-              massa nec velit. Aliquam viverra orci vitae neque feugiat.
+              The LightningProxies Chrome Extension makes managing proxies
+              effortless. You can quickly switch between different proxy
+              profiles with just a click, keeping everything smooth and
+              hassle-free. It even clears your cache automatically to protect
+              your privacy and keep things running cleanly. Plus, the interface
+              is simple and easy to use, so you can focus on what matters
+              without getting bogged down by complicated settings.
             </p>
 
             <SecondaryBtn

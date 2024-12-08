@@ -33,8 +33,8 @@ export default function FollowUpSection() {
         </h2>
 
         <p className="mb-6 text-xs sm:text-base leading-[18px] sm:leading-[24px] tracking-[-0.16px] text-center text-white/75">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br /> Donec
-          eget turpis vel elit facilisis ullamcorper.
+          We help you gather data faster and smarter with our <br /> advanced
+          proxy solutions.
         </p>
 
         <SecondaryBtn customClasses="sm:!py-2.5 !px-14 sm:!text-base sm:!tracking-[-0.16px]">

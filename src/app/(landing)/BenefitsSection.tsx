@@ -70,7 +70,7 @@ function BigBox() {
               />
             </svg>
           }
-          title="Subheading here"
+          title="24/7 Assistance"
         />
 
         <h3 className="mt-3.5 mb-2 sm:mb-3 text-base sm:text-[28px] font-semibold sm:leading-[34px] tracking-[-0.16px] sm:tracking-[-0.56px] lg:text-center">
@@ -215,7 +215,7 @@ export default function BenefitsSection() {
           />
         </svg>
       ),
-      subHeadingTitle: "Subheading here",
+      subHeadingTitle: "Guranteed Uptime",
       title: "Reliable Infrastructure",
       description:
         "Global datacenters across Europe, North America, and Asia guarantee 99% uptime and the fastest response times for any proxy IP.",
@@ -249,7 +249,7 @@ export default function BenefitsSection() {
           />
         </svg>
       ),
-      subHeadingTitle: "Subheading here",
+      subHeadingTitle: "Powerful Network",
       title: "Proxy solutions you can rely on",
       description:
         "Choose from our range of proxy products that best suit your use case. Unsure which one to select? No worries — contact sales team.",

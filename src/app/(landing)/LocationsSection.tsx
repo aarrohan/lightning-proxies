@@ -9,15 +9,16 @@ import globeImg from "@/assets/images/globe.svg";
 import Link from "next/link";
 
 interface ILocationCardProps {
+  href: string;
   img: JSX.Element;
   title: string;
   description: string;
 }
 
-function LocationCard({ img, title, description }: ILocationCardProps) {
+function LocationCard({ href, img, title, description }: ILocationCardProps) {
   return (
     <Link
-      href={"/"}
+      href={href}
       className="hover:-translate-y-1 py-2 sm:py-3 px-3.5 sm:px-5 border border-dark-white bg-white rounded-lg flex items-center gap-2.5 sm:gap-3.5 duration-200"
       style={{
         boxShadow: `0px 2px 6px -2px rgba(0, 0, 0, 0.05)`,
@@ -40,39 +41,45 @@ function LocationCard({ img, title, description }: ILocationCardProps) {
 export default function LocationsSection() {
   const locations: ILocationCardProps[] = [
     {
+      href: "/locations/usa",
       img: (
         <Image src={usaImg} alt="" className="w-[28px] sm:w-[42px] h-auto" />
       ),
       title: "United States",
-      description: "2,505,230 IPs",
+      description: "1.530.310 IPs",
     },
     {
+      href: "/locations/uk",
       img: <Image src={ukImg} alt="" className="w-[28px] sm:w-[42px] h-auto" />,
       title: "United Kingdom",
-      description: "1,200,505 IPs",
+      description: "720.545 IPs",
     },
     {
+      href: "/locations/canada",
       img: (
         <Image src={canadaImg} alt="" className="w-[28px] sm:w-[42px] h-auto" />
       ),
       title: "Canada",
-      description: "353,627 IPs",
+      description: "530.600 IPs",
     },
     {
+      href: "/locations/china",
       img: (
         <Image src={chinaImg} alt="" className="w-[28px] sm:w-[42px] h-auto" />
       ),
       title: "China",
-      description: "353,627 IPs",
+      description: "1.130.344 IPs",
     },
     {
+      href: "/locations/france",
       img: (
         <Image src={franceImg} alt="" className="w-[28px] sm:w-[42px] h-auto" />
       ),
       title: "France",
-      description: "353,627 IPs",
+      description: "350.720 IPs",
     },
     {
+      href: "/locations/germany",
       img: (
         <Image
           src={germanyImg}
@@ -81,7 +88,7 @@ export default function LocationsSection() {
         />
       ),
       title: "Germany",
-      description: "353,627 IPs",
+      description: "485.913 IPs",
     },
   ];
 
@@ -114,7 +121,7 @@ export default function LocationsSection() {
             </div>
 
             <Link
-              href={"/"}
+              href={"/locations"}
               className="py-3 sm:py-4 px-5 sm:px-6 bg-accent/10 hover:bg-accent/15 rounded-lg sm:rounded-xl flex items-center gap-2.5 sm:gap-3 text-xs sm:text-base font-semibold tracking-[-0.12px] sm:tracking-[-0.16px] text-accent duration-200"
             >
               View All Locations

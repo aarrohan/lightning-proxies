@@ -26,13 +26,13 @@ export default function UpcomingSection() {
               Web Scraper API
             </h3>
 
-            <p className="max-w-[420px] text-xs sm:text-base tracking-[-0.12px] sm:tracking-[-0.16px] text-center text-primary/50">
-              Sed tortor est, volutpat id bibendum eu, convallis non magna. Cras
-              accumsan lobortis odio in finibus.
+            <p className="max-w-[450px] text-xs sm:text-base tracking-[-0.12px] sm:tracking-[-0.16px] text-center text-primary/50">
+              Effortlessly collect data from websites with our powerful Web
+              Scraper API, designed for reliability and ease of use.
             </p>
 
             <p className="py-1 sm:py-1.5 px-2.5 sm:px-3.5 bg-green/10 rounded-lg sm:rounded-xl text-[11px] sm:text-base font-medium tracking-[-0.11px] sm:tracking-[-0.16px] text-green">
-              Coming Winter 2024
+              Launching Winter 2024.
             </p>
           </div>
 
@@ -47,13 +47,13 @@ export default function UpcomingSection() {
               SERP Scraper API
             </h3>
 
-            <p className="max-w-[420px] text-xs sm:text-base tracking-[-0.12px] sm:tracking-[-0.16px] text-center text-primary/50">
-              Sed tortor est, volutpat id bibendum eu, convallis non magna. Cras
-              accumsan lobortis odio in finibus.
+            <p className="max-w-[450px] text-xs sm:text-base tracking-[-0.12px] sm:tracking-[-0.16px] text-center text-primary/50">
+              Unlock precise search engine result data with the SERP Scraper
+              API, perfect for SEO and market insights.
             </p>
 
             <p className="py-1 sm:py-1.5 px-2.5 sm:px-3.5 bg-yellow/10 rounded-lg sm:rounded-xl text-[11px] sm:text-base font-medium tracking-[-0.11px] sm:tracking-[-0.16px] text-yellow">
-              Coming Early 2025
+              Launching Soon
             </p>
           </div>
 

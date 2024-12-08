@@ -52,7 +52,7 @@ export default function APISection() {
       ),
       title: "Hassle-free onboarding experience",
       description:
-        "Praesent fringilla, lectus ut efficitur iaculis, nisl ante tristique odio.",
+        "Quick and simple setup to get started without delays. Save time with a seamless and efficient onboarding process.",
     },
     {
       img: (
@@ -67,7 +67,7 @@ export default function APISection() {
       ),
       title: "Proxy plan management with API",
       description:
-        "Praesent fringilla, lectus ut efficitur iaculis, nisl ante tristique odio.",
+        "Easily control and scale your proxy usage with our flexible, powerful API for all your needs.",
     },
     {
       img: (
@@ -82,7 +82,7 @@ export default function APISection() {
       ),
       title: "Developer-friendly documentation",
       description:
-        "Praesent fringilla, lectus ut efficitur iaculis, nisl ante tristique odio.",
+        "Clear, concise guides and examples to help you integrate proxies with ease and confidence.",
     },
   ];
 

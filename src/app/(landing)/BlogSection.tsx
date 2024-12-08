@@ -21,7 +21,7 @@ function ArticleCard({
 }: IArticleCardProps) {
   return (
     <Link
-      href={"/"}
+      href={"/coming-soon"}
       className="w-full min-w-[280px] sm:min-w-[468px] p-3.5 sm:p-5 border border-dark-white bg-off-white rounded-lg sm:rounded-xl"
     >
       {img}
@@ -83,7 +83,7 @@ export default function BlogSection() {
     const cardsWrapper = cardsWrapperRef.current;
 
     if (cardsWrapper) {
-      if (currentPosition <= 4) {
+      if (currentPosition <= 6) {
         setCurrentPosition(currentPosition + 1);
         cardsWrapper.style.transform = `translateX(-${
           widthToScroll * currentPosition
@@ -117,9 +117,9 @@ export default function BlogSection() {
           className="w-full border border-dark-white rounded-md sm:rounded-lg"
         />
       ),
-      title: "Blog Heading in this section",
+      title: "Amplifying YouTube Access",
       description:
-        "Sed varius justo ac sem luctus lobortis. Nunc porta leo nec pretium laoreet.",
+        "Explore how YouTube proxies can enhance access and performance.",
       category: "Announcements",
       date: "August 27, 2024",
     },
@@ -131,9 +131,9 @@ export default function BlogSection() {
           className="w-full border border-dark-white rounded-md sm:rounded-lg"
         />
       ),
-      title: "Blog Heading in this section",
+      title: "Residential vs Datacenter",
       description:
-        "Sed varius justo ac sem luctus lobortis. Nunc porta leo nec pretium laoreet.",
+        "Understand the key differences between residential and datacenter proxies.",
       category: "Announcements",
       date: "August 27, 2024",
     },
@@ -145,9 +145,9 @@ export default function BlogSection() {
           className="w-full border border-dark-white rounded-md sm:rounded-lg"
         />
       ),
-      title: "Blog Heading in this section",
+      title: "Proxy vs VPN: The Main Differences",
       description:
-        "Sed varius justo ac sem luctus lobortis. Nunc porta leo nec pretium laoreet.",
+        "Learn how proxies and VPNs differ to make the best choice for your needs.",
       category: "Announcements",
       date: "August 27, 2024",
     },
@@ -159,9 +159,37 @@ export default function BlogSection() {
           className="w-full border border-dark-white rounded-md sm:rounded-lg"
         />
       ),
-      title: "Blog Heading in this section",
+      title: "Effective Ad Verification Using Residential Proxies",
       description:
-        "Sed varius justo ac sem luctus lobortis. Nunc porta leo nec pretium laoreet.",
+        "Use residential proxies to ensure ad campaigns are running as intended.",
+      category: "Announcements",
+      date: "August 27, 2024",
+    },
+    {
+      img: (
+        <Image
+          src={article1Img}
+          alt=""
+          className="w-full border border-dark-white rounded-md sm:rounded-lg"
+        />
+      ),
+      title: "The Ultimate Guide to Proxy IP Types",
+      description:
+        "A complete guide to understanding the different types of proxy IPs.",
+      category: "Announcements",
+      date: "August 27, 2024",
+    },
+    {
+      img: (
+        <Image
+          src={article1Img}
+          alt=""
+          className="w-full border border-dark-white rounded-md sm:rounded-lg"
+        />
+      ),
+      title: "Curl with a Proxy and Its 4 Unique Benefits",
+      description:
+        "Discover the advantages of using cURL with a proxy for your tasks.",
       category: "Announcements",
       date: "August 27, 2024",
     },

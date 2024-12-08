@@ -129,6 +129,7 @@ function ProductTabData({
               viewBox="0 0 38 38"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
+              className="w-[38px] min-w-[38px] h-auto"
             >
               <rect
                 width="38"
@@ -156,6 +157,7 @@ function ProductTabData({
               viewBox="0 0 38 38"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
+              className="w-[38px] min-w-[38px] h-auto"
             >
               <rect
                 width="38"
@@ -316,43 +318,44 @@ export default function ProductsSection() {
       color: "#1675FF",
       icon: <Image src={product1IconImg} alt="" className="mb-2.5 w-[53px]" />,
       title: "Residential Proxies",
-      description: "Starting from $2/GB",
+      description: "Starting from 4.5$/GB",
     },
     {
       color: "#12A250",
       icon: <Image src={product2IconImg} alt="" className="mb-2.5 w-[53px]" />,
       title: "Datacenter Proxies",
-      description: "Starting from $9/Day",
+      description: "Starting from 2$/Day",
     },
     {
       color: "#EA7635",
       icon: <Image src={product3IconImg} alt="" className="mb-2.5 w-[53px]" />,
       title: "ISP Proxies",
-      description: "Starting from $4.99",
+      description: "Starting from 4$/IP",
     },
     {
       color: "#A400DD",
       icon: <Image src={product4IconImg} alt="" className="mb-2.5 w-[53px]" />,
       title: "IPv6 Proxies",
-      description: "Starting from $4.99",
+      description: "Starting from 10$/Day",
     },
     {
       color: "#00C1D1",
       icon: <Image src={product5IconImg} alt="" className="mb-2.5 w-[53px]" />,
       title: "Mobile Proxies",
-      description: "Starting from $2/GB",
+      description: "Starting from 5$/GB",
     },
   ];
 
   const productTabDatas: IProductTabDataProps[] = [
     {
       color: "#1675FF",
-      title: "Blazing Fast, Affordable Residential Proxies",
+      title: "High-Speed, Reliable Residential Proxies",
       subTitle: "Guaranteed High Speeds",
       description:
-        "Sed varius justo ac sem luctus lobortis. Nunc porta leo nec pretium laoreet.",
-      statement1: "Statement 01 about the proxies features",
-      statement2: "Statement 02 about the proxies features",
+        "Efficient, affordable, and built to deliver fast, secure connections.",
+      statement1: "Multiple global locations with guaranteed high performance.",
+      statement2:
+        "Flexible plans starting from just $4.5/GB, catering to various use cases.",
       img: (
         <Image
           src={product1Img}
@@ -363,12 +366,14 @@ export default function ProductsSection() {
     },
     {
       color: "#12A250",
-      title: "Blazing Fast, Affordable Datacenter Proxies",
+      title: "Reliable Datacenter Proxy Servers",
       subTitle: "Guaranteed High Speeds",
       description:
-        "Sed varius justo ac sem luctus lobortis. Nunc porta leo nec pretium laoreet.",
-      statement1: "Statement 01 about the proxies features",
-      statement2: "Statement 02 about the proxies features",
+        "The most affordable proxy solution, perfect for public data scraping and a wide range of use cases.",
+      statement1:
+        "Five global datacenter locations with over 15.000 IPs available.",
+      statement2:
+        "Strong performance with speeds of up to 1 Gbps for both download and upload.",
       img: (
         <Image
           src={product2Img}
@@ -379,12 +384,13 @@ export default function ProductsSection() {
     },
     {
       color: "#EA7635",
-      title: "Blazing Fast, Affordable ISP Proxies",
+      title: "Static ISP Proxies",
       subTitle: "Guaranteed High Speeds",
       description:
-        "Sed varius justo ac sem luctus lobortis. Nunc porta leo nec pretium laoreet.",
-      statement1: "Statement 01 about the proxies features",
-      statement2: "Statement 02 about the proxies features",
+        "Combined Datacenter Speeds with Residential IPs in One Package.",
+      statement1: "Worldwide ISP Locations with over 20 countries available.",
+      statement2:
+        "Customized IP quantities and durations to suit your specific needs.",
       img: (
         <Image
           src={product3Img}
@@ -395,12 +401,14 @@ export default function ProductsSection() {
     },
     {
       color: "#A400DD",
-      title: "Blazing Fast, Affordable IPv6 Proxies",
+      title: "Rotating IPv6 Proxies",
       subTitle: "Guaranteed High Speeds",
       description:
-        "Sed varius justo ac sem luctus lobortis. Nunc porta leo nec pretium laoreet.",
-      statement1: "Statement 01 about the proxies features",
-      statement2: "Statement 02 about the proxies features",
+        "Optimized for high-speed scraping on IPv6-enabled targets with unmatched efficiency.",
+      statement1:
+        "Global coverage with availability in 20+ countries worldwide.",
+      statement2:
+        "Cost-effective solution with abundant IPv6 IPs and extensive subnet diversity, perfect for efficient scraping.",
       img: (
         <Image
           src={product4Img}
@@ -411,12 +419,12 @@ export default function ProductsSection() {
     },
     {
       color: "#00C1D1",
-      title: "Blazing Fast, Affordable Mobile Proxies",
+      title: "Real Mobile IP Proxies",
       subTitle: "Guaranteed High Speeds",
       description:
-        "Sed varius justo ac sem luctus lobortis. Nunc porta leo nec pretium laoreet.",
-      statement1: "Statement 01 about the proxies features",
-      statement2: "Statement 02 about the proxies features",
+        "Access the largest pool of 500k+ Mobile IPs and easily bypass blocks. Filter by country and ASN - no extra costs.",
+      statement1: "3G/4G/5G/LTE cellular networks.",
+      statement2: "Accurate geo-location targeting.",
       img: (
         <Image
           src={product5Img}

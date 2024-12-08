@@ -39,9 +39,8 @@ export default function Footer() {
             </h3>
 
             <p className="text-xs sm:text-sm leading-[22px] tracking-[-0.12px] sm:tracking-[-0.14px] text-white/75">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-              eget turpis vel elit facilisis <br className="hidden sm:block" />{" "}
-              ullamcorper.
+              Stay updated with the latest insights, tips, and proxy solutions
+              from Lightning Proxies. Delivered straight to your inbox.
             </p>
           </div>
 
@@ -582,11 +581,9 @@ export default function Footer() {
           </p>
 
           <p className="text-xs sm:text-sm leading-[18px] sm:leading-[20px] tracking-[-0.12px] sm:tracking-[-0.14px] text-white/50">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget
-            turpis vel elit facilisis ullamcorper. Mauris fringilla suscipit ex,
-            et posuere magna faucibus nec. Nulla sed erat arcu. Ut nec sem
-            luctus, bibendum felis a, laoreet purus. Proin sit amet lorem justo.
-            Duis viverra iaculis massa vel pharetra.
+            All services provided by Lightning Proxies comply with local laws
+            and regulations. Users are responsible for adhering to applicable
+            rules when utilizing our proxies.
           </p>
         </div>
       </div>
