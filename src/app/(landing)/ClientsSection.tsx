@@ -1,11 +1,13 @@
 import Image from "next/image";
 import Marquee from "react-fast-marquee";
-import clientImg1 from "@/assets/images/client-1.svg";
-import clientImg2 from "@/assets/images/client-2.svg";
-import clientImg3 from "@/assets/images/client-3.svg";
-import clientImg4 from "@/assets/images/client-4.svg";
-import clientImg5 from "@/assets/images/client-5.svg";
-import clientImg6 from "@/assets/images/client-6.svg";
+import clientImg1 from "@/assets/images/gologin-logo.svg";
+import clientImg2 from "@/assets/images/dolphinanty-logo.svg";
+import clientImg3 from "@/assets/images/geelark-logo.png";
+import clientImg4 from "@/assets/images/octobrowser-logo.svg";
+import clientImg5 from "@/assets/images/incogniton-logo.svg";
+import clientImg6 from "@/assets/images/multilogin-logo.svg";
+import clientImg7 from "@/assets/images/undetectable-logo.svg";
+import clientImg8 from "@/assets/images/capsolver-logo.png";
 import Link from "next/link";
 
 export default function ClientsSection() {
@@ -17,51 +19,35 @@ export default function ClientsSection() {
         </p>
 
         <Marquee autoFill={true} speed={40}>
-          <Image
-            src={clientImg1}
-            alt=""
-            className="mx-auto h-[20px] lg:h-auto"
-          />
+          <Image src={clientImg1} alt="" className="mx-auto w-auto h-[24px]" />
 
           <span className="mx-8 sm:mx-12 w-px h-[15px] bg-primary/25 block"></span>
 
-          <Image
-            src={clientImg2}
-            alt=""
-            className="mx-auto h-[16px] lg:h-auto"
-          />
+          <Image src={clientImg2} alt="" className="mx-auto w-auto h-[24px]" />
 
           <span className="mx-8 sm:mx-12 w-px h-[15px] bg-primary/25 block"></span>
 
-          <Image
-            src={clientImg3}
-            alt=""
-            className="mx-auto h-[13px] lg:h-auto"
-          />
+          <Image src={clientImg3} alt="" className="mx-auto w-auto h-[24px]" />
 
           <span className="mx-8 sm:mx-12 w-px h-[15px] bg-primary/25 block"></span>
 
-          <Image
-            src={clientImg4}
-            alt=""
-            className="mx-auto h-[15px] lg:h-auto"
-          />
+          <Image src={clientImg4} alt="" className="mx-auto w-auto h-[24px]" />
 
           <span className="mx-8 sm:mx-12 w-px h-[15px] bg-primary/25 block"></span>
 
-          <Image
-            src={clientImg5}
-            alt=""
-            className="mx-auto h-[17px] lg:h-auto"
-          />
+          <Image src={clientImg5} alt="" className="mx-auto w-auto h-[24px]" />
 
           <span className="mx-8 sm:mx-12 w-px h-[15px] bg-primary/25 block"></span>
 
-          <Image
-            src={clientImg6}
-            alt=""
-            className="mx-auto h-[18px] lg:h-auto"
-          />
+          <Image src={clientImg6} alt="" className="mx-auto w-auto h-[24px]" />
+
+          <span className="mx-8 sm:mx-12 w-px h-[15px] bg-primary/25 block"></span>
+
+          <Image src={clientImg7} alt="" className="mx-auto w-auto h-[24px]" />
+
+          <span className="mx-8 sm:mx-12 w-px h-[15px] bg-primary/25 block"></span>
+
+          <Image src={clientImg8} alt="" className="mx-auto w-auto h-[24px]" />
 
           <span className="mx-8 sm:mx-12 w-px h-[15px] bg-primary/25 block"></span>
         </Marquee>
