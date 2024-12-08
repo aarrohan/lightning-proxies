@@ -387,21 +387,41 @@ export default function Footer() {
                 className="group flex items-center gap-2 sm:gap-2.5 text-xs sm:text-sm tracking-[-0.12px] sm:tracking-[-0.14px] text-white/75 hover:text-white duration-200"
               >
                 View All{" "}
-                <svg
-                  width="6"
-                  height="11"
-                  viewBox="0 0 6 11"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="w-[5px] sm:w-[6px] h-auto"
-                >
-                  <path
-                    fillRule="evenodd"
-                    clipRule="evenodd"
-                    d="M0.71967 0.96967C1.01256 0.676777 1.48744 0.676777 1.78033 0.96967L5.78033 4.96967C6.07322 5.26256 6.07322 5.73744 5.78033 6.03033L1.78033 10.0303C1.48744 10.3232 1.01256 10.3232 0.71967 10.0303C0.426777 9.73744 0.426777 9.26256 0.71967 8.96967L4.18934 5.5L0.71967 2.03033C0.426776 1.73744 0.426776 1.26256 0.71967 0.96967Z"
-                    className="fill-white/75 group-hover:fill-white"
-                  />
-                </svg>
+                <span className="relative">
+                  <span className="relative">
+                    <svg
+                      width="9"
+                      height="10"
+                      viewBox="0 0 9 10"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="relative -left-[4px] group-hover:-left-0 duration-200"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        clipRule="evenodd"
+                        d="M3.21967 0.21967C3.51256 -0.0732232 3.98744 -0.0732232 4.28033 0.21967L8.28033 4.21967C8.57322 4.51256 8.57322 4.98744 8.28033 5.28033L4.28033 9.2803C3.98744 9.5732 3.51256 9.5732 3.21967 9.2803C2.92678 8.98744 2.92678 8.51256 3.21967 8.21967L6.68934 4.75L3.21967 1.28033C2.92678 0.98744 2.92678 0.51256 3.21967 0.21967Z"
+                        className="fill-white/75 group-hover:fill-white duration-200"
+                      />
+                    </svg>
+
+                    <svg
+                      width="9"
+                      height="10"
+                      viewBox="0 0 9 10"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="absolute top-0 left-0"
+                    >
+                      <rect
+                        y="4"
+                        height="1.5"
+                        rx="0.75"
+                        className="w-[7px] fill-white opacity-0 group-hover:opacity-100 duration-200"
+                      />
+                    </svg>
+                  </span>
+                </span>
               </Link>
             </div>
           </div>
@@ -445,21 +465,41 @@ export default function Footer() {
                 className="group flex items-center gap-2 sm:gap-2.5 text-xs sm:text-sm tracking-[-0.12px] sm:tracking-[-0.14px] text-white/75 hover:text-white duration-200"
               >
                 View All{" "}
-                <svg
-                  width="6"
-                  height="11"
-                  viewBox="0 0 6 11"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="w-[5px] sm:w-[6px] h-auto"
-                >
-                  <path
-                    fillRule="evenodd"
-                    clipRule="evenodd"
-                    d="M0.71967 0.96967C1.01256 0.676777 1.48744 0.676777 1.78033 0.96967L5.78033 4.96967C6.07322 5.26256 6.07322 5.73744 5.78033 6.03033L1.78033 10.0303C1.48744 10.3232 1.01256 10.3232 0.71967 10.0303C0.426777 9.73744 0.426777 9.26256 0.71967 8.96967L4.18934 5.5L0.71967 2.03033C0.426776 1.73744 0.426776 1.26256 0.71967 0.96967Z"
-                    className="fill-white/75 group-hover:fill-white"
-                  />
-                </svg>
+                <span className="relative">
+                  <span className="relative">
+                    <svg
+                      width="9"
+                      height="10"
+                      viewBox="0 0 9 10"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="relative -left-[4px] group-hover:-left-0 duration-200"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        clipRule="evenodd"
+                        d="M3.21967 0.21967C3.51256 -0.0732232 3.98744 -0.0732232 4.28033 0.21967L8.28033 4.21967C8.57322 4.51256 8.57322 4.98744 8.28033 5.28033L4.28033 9.2803C3.98744 9.5732 3.51256 9.5732 3.21967 9.2803C2.92678 8.98744 2.92678 8.51256 3.21967 8.21967L6.68934 4.75L3.21967 1.28033C2.92678 0.98744 2.92678 0.51256 3.21967 0.21967Z"
+                        className="fill-white/75 group-hover:fill-white duration-200"
+                      />
+                    </svg>
+
+                    <svg
+                      width="9"
+                      height="10"
+                      viewBox="0 0 9 10"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="absolute top-0 left-0"
+                    >
+                      <rect
+                        y="4"
+                        height="1.5"
+                        rx="0.75"
+                        className="w-[7px] fill-white opacity-0 group-hover:opacity-100 duration-200"
+                      />
+                    </svg>
+                  </span>
+                </span>
               </Link>
             </div>
           </div>
