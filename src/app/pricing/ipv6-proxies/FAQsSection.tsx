@@ -8,23 +8,22 @@ export default function FAQsSection() {
     {
       question: "What is a IPv6 proxy?",
       answer:
-        "Aenean turpis lectus, convallis vel laoreet quis, maximus sit amet purus. Nulla sollicitudin justo id aliquet condimentum. Suspendisse vehicula, est ut accumsan efficitur, velit massa vulputate erat, sit amet bibendum libero nunc at sem. Aliquam in ligula vel est suscipit consequat. Aliquam sit amet lacus id est convallis sagittis.",
+        "An IPv6 proxy is a proxy server that uses IPv6 addresses to route internet traffic. IPv6 is the latest version of the Internet Protocol, designed to replace IPv4 due to the exhaustion of available IPv4 addresses. It provides a vastly larger pool of IP addresses, improved performance, and advanced features.",
     },
     {
-      question: "What's the difference between a Datacenter and an IPv6 proxy?",
+      question: "Can I use IPv6 with every target?",
       answer:
-        "Aenean turpis lectus, convallis vel laoreet quis, maximus sit amet purus. Nulla sollicitudin justo id aliquet condimentum. Suspendisse vehicula, est ut accumsan efficitur, velit massa vulputate erat, sit amet bibendum libero nunc at sem. Aliquam in ligula vel est suscipit consequat. Aliquam sit amet lacus id est convallis sagittis.",
+        "Not all targets fully support IPv6 yet, so it depends on the specific website or platform you want to access. While IPv6 adoption is growing, some websites or services still rely solely on IPv4 and do not accept IPv6 connections.",
     },
     {
-      question:
-        "Are your Datacenter & IPv6 proxies truly unlimited in any way?",
+      question: "Is IPv6 faster than IPv4?",
       answer:
-        "Aenean turpis lectus, convallis vel laoreet quis, maximus sit amet purus. Nulla sollicitudin justo id aliquet condimentum. Suspendisse vehicula, est ut accumsan efficitur, velit massa vulputate erat, sit amet bibendum libero nunc at sem. Aliquam in ligula vel est suscipit consequat. Aliquam sit amet lacus id est convallis sagittis.",
+        "Yes, IPv6 can be faster than IPv4 in certain scenarios due to its modern infrastructure and design, but the actual speed difference depends on multiple factors.",
     },
     {
-      question: "What should I choose between Datacenter & IPv6?",
+      question: "Do you offer free trial for IPv6 proxies?",
       answer:
-        "Aenean turpis lectus, convallis vel laoreet quis, maximus sit amet purus. Nulla sollicitudin justo id aliquet condimentum. Suspendisse vehicula, est ut accumsan efficitur, velit massa vulputate erat, sit amet bibendum libero nunc at sem. Aliquam in ligula vel est suscipit consequat. Aliquam sit amet lacus id est convallis sagittis.",
+        "Yes, we offer free trials for IPv6 proxies. Please contact our support team via live chat to request your trial and explore our services.",
     },
   ];
 

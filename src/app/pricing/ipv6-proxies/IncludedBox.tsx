@@ -73,7 +73,7 @@ export default function IncludedBox() {
           />
         </svg>
       ),
-      title: "10M+ Residential IPs",
+      title: "2x /29 Subnets",
       subTitle: "IPs included",
     },
     {
@@ -149,7 +149,7 @@ export default function IncludedBox() {
           />
         </svg>
       ),
-      title: "State, city, provider",
+      title: "Country",
       subTitle: "Targeting",
     },
     {
@@ -253,7 +253,7 @@ export default function IncludedBox() {
           />
         </svg>
       ),
-      title: "Without restrictions",
+      title: "Up to 10.000",
       subTitle: "Threads",
     },
     {

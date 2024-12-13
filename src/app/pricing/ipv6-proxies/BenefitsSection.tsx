@@ -86,7 +86,8 @@ export default function BenefitsSection() {
       ),
       img: <Image src={benefit1Img} alt="" className="-mb-px w-full" />,
       title: "Billions of IPs",
-      description: "The highest number of datacenter proxies on the market.",
+      description:
+        "Access one of the largest IP pools available, ensuring unique, non-reused addresses for seamless and effective scraping.",
     },
     {
       icon: (
@@ -119,7 +120,7 @@ export default function BenefitsSection() {
       img: <Image src={benefit2Img} alt="" className="w-full" />,
       title: "20+ locations worldwide",
       description:
-        "Extensive and unbeatable list of datacenter proxy server locations to suit any business' needs.",
+        "A diverse range of datacenter proxy servers across the globe, ensuring flexibility to meet any business needs.",
     },
     {
       icon: (
@@ -148,9 +149,9 @@ export default function BenefitsSection() {
         </svg>
       ),
       img: <Image src={benefit3Img} alt="" className="-mb-px w-full" />,
-      title: "10GBps up-link connection speed",
+      title: "10Gbps Uplink Connection Speed",
       description:
-        "The most stable and reliable datacenter proxies with high uptime.",
+        "Experience the fastest and most reliable IPv6 proxies in the industry.",
     },
     {
       icon: (
@@ -201,9 +202,9 @@ export default function BenefitsSection() {
         </svg>
       ),
       img: <Image src={benefit4Img} alt="" className="-mb-px w-full" />,
-      title: "Unlimited bandwidth",
+      title: "Ultra-Fast Request Processing",
       description:
-        "No limits for requests or traffic, pay only per datacenter IP.",
+        "Leverage IPv6 technology to accelerate your tasks like never before.",
     },
     {
       icon: (
@@ -236,7 +237,8 @@ export default function BenefitsSection() {
       ),
       img: <Image src={benefit5Img} alt="" className="-mb-px w-full" />,
       title: "Unlimited Bandwidth",
-      description: "No limits or restrictions for a number of targets.",
+      description:
+        "Enjoy unrestricted data usage with IPv6 proxies throughout your plan's duration—pay only for the time, not for traffic limits.",
     },
     {
       icon: (
@@ -279,9 +281,9 @@ export default function BenefitsSection() {
         </svg>
       ),
       img: <Image src={benefit6Img} alt="" className="-mb-px w-full" />,
-      title: "Rotating/Sticky sessions",
+      title: "Rotating/Sticky Sessions",
       description:
-        "Zero boundaries, send an unlimited amount of concurrent sessions.",
+        "Switch between rotating or static ports, customizable through your personal generator.",
     },
   ];
 
