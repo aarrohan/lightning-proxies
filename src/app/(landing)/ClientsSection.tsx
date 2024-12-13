@@ -19,40 +19,83 @@ export default function ClientsSection() {
         </p>
 
         <Marquee autoFill={true} speed={40}>
-          <Image src={clientImg1} alt="" className="mx-auto w-auto h-[24px]" />
-
+          <Link href={"https://gologin.com/"} target="_blank">
+            <Image
+              src={clientImg1}
+              alt=""
+              className="mx-auto w-auto h-[24px]"
+            />
+          </Link>
           <span className="mx-8 sm:mx-12 w-px h-[15px] bg-primary/25 block"></span>
-
-          <Image src={clientImg2} alt="" className="mx-auto w-auto h-[24px]" />
-
+          <Link
+            href={
+              "https://dolphin-anty.com/?utm_source=media&utm_medium=partners&utm_campaign=lightningproxies&utm_content=partners-page"
+            }
+            target="_blank"
+          >
+            <Image
+              src={clientImg2}
+              alt=""
+              className="mx-auto w-auto h-[24px]"
+            />
+          </Link>
           <span className="mx-8 sm:mx-12 w-px h-[15px] bg-primary/25 block"></span>
-
-          <Image src={clientImg3} alt="" className="mx-auto w-auto h-[24px]" />
-
+          <Link href={"https://www.geelark.com/"} target="_blank">
+            <Image
+              src={clientImg3}
+              alt=""
+              className="mx-auto w-auto h-[24px]"
+            />
+          </Link>
           <span className="mx-8 sm:mx-12 w-px h-[15px] bg-primary/25 block"></span>
-
-          <Image src={clientImg4} alt="" className="mx-auto w-auto h-[24px]" />
-
+          <Link href={"https://octobrowser.net/"} target="_blank">
+            <Image
+              src={clientImg4}
+              alt=""
+              className="mx-auto w-auto h-[24px]"
+            />
+          </Link>
           <span className="mx-8 sm:mx-12 w-px h-[15px] bg-primary/25 block"></span>
-
-          <Image src={clientImg5} alt="" className="mx-auto w-auto h-[24px]" />
-
+          <Link href={"https://incogniton.com/"}>
+            <Image
+              src={clientImg5}
+              alt=""
+              className="mx-auto w-auto h-[24px]"
+            />
+          </Link>
           <span className="mx-8 sm:mx-12 w-px h-[15px] bg-primary/25 block"></span>
-
-          <Image src={clientImg6} alt="" className="mx-auto w-auto h-[24px]" />
-
+          <Link href={"https://multilogin.com/"}>
+            <Image
+              src={clientImg6}
+              alt=""
+              className="mx-auto w-auto h-[24px]"
+            />
+          </Link>
           <span className="mx-8 sm:mx-12 w-px h-[15px] bg-primary/25 block"></span>
-
-          <Image src={clientImg7} alt="" className="mx-auto w-auto h-[24px]" />
-
+          <Link
+            href={
+              "https://undetectable.io/?r=ToJma&utm_source=lightningproxies&utm_medium=affiliate"
+            }
+          >
+            <Image
+              src={clientImg7}
+              alt=""
+              className="mx-auto w-auto h-[24px]"
+            />
+          </Link>
           <span className="mx-8 sm:mx-12 w-px h-[15px] bg-primary/25 block"></span>
-
-          <Image src={clientImg8} alt="" className="mx-auto w-auto h-[24px]" />
+          <Link href={"https://www.capsolver.com/"}>
+            <Image
+              src={clientImg8}
+              alt=""
+              className="mx-auto w-auto h-[24px]"
+            />
+          </Link>
 
           <span className="mx-8 sm:mx-12 w-px h-[15px] bg-primary/25 block"></span>
         </Marquee>
 
-        <div className="relative z-10 -mt-[20px] sm:-mt-[28px] w-full h-[20px] sm:h-[28px]">
+        <div className="relative z-10 -mt-[20px] sm:-mt-[28px] w-full h-[20px] sm:h-[28px] pointer-events-none">
           <div className="absolute top-0 left-0 w-[100px] h-full bg-gradient-to-r from-white to-transparent"></div>
           <div className="absolute top-0 right-0 w-[100px] h-full bg-gradient-to-r from-transparent to-white"></div>
         </div>
