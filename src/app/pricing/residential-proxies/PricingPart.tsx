@@ -36,10 +36,10 @@ export default function PricingPart() {
         },
         {
           title: "Price per GB",
-          value: "$ 4.5",
+          value: "$ 4",
         },
       ],
-      price: "$4.5",
+      price: "$20",
       btn: "secondary",
     },
     {
@@ -47,7 +47,7 @@ export default function PricingPart() {
       options: [
         {
           title: "Included Bandwidth",
-          value: "20 GB",
+          value: "25 GB",
         },
         {
           title: "Price per GB",
@@ -78,65 +78,65 @@ export default function PricingPart() {
 
   const enterprisePriceBoxes: IPriceBox[] = [
     {
-      title: "Micro",
+      title: "Premium",
       options: [
         {
           title: "Included Bandwidth",
-          value: "1 GB",
+          value: "500 GB",
         },
         {
           title: "Price per GB",
-          value: "$ 9",
+          value: "$ 2",
         },
       ],
-      price: "$9",
+      price: "$1000",
       btn: "secondary",
     },
     {
-      title: "Starter",
+      title: "Master",
       options: [
         {
           title: "Included Bandwidth",
-          value: "5 GB",
+          value: "1000 GB",
         },
         {
           title: "Price per GB",
-          value: "$ 9",
+          value: "$ 1.5",
         },
       ],
-      price: "$9",
+      price: "$1500",
       btn: "secondary",
     },
     {
-      title: "Advanced",
+      title: "Elite",
       options: [
         {
           title: "Included Bandwidth",
-          value: "20 GB",
+          value: "3000 GB",
         },
         {
           title: "Price per GB",
-          value: "$ 7",
+          value: "$ 1.25",
         },
       ],
-      price: "$175",
+      price: "$3750",
       btn: "secondary",
     },
     {
       isHighlighted: true,
       isMostValue: true,
-      title: "Professional",
+      title: "Corporate",
       options: [
         {
           title: "Included Bandwidth",
-          value: "100 GB",
+          value: "5000 GB",
         },
         {
           title: "Price per GB",
-          value: "$ 6",
+          value: "$ 1.10",
         },
       ],
-      price: "$600",
+      price: "$5500",
       btn: "primary",
     },
   ];

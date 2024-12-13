@@ -8,23 +8,27 @@ export default function FAQsSection() {
     {
       question: "What is a residential proxy?",
       answer:
-        "Aenean turpis lectus, convallis vel laoreet quis, maximus sit amet purus. Nulla sollicitudin justo id aliquet condimentum. Suspendisse vehicula, est ut accumsan efficitur, velit massa vulputate erat, sit amet bibendum libero nunc at sem. Aliquam in ligula vel est suscipit consequat. Aliquam sit amet lacus id est convallis sagittis.",
+        "A residential proxy is a type of proxy server that uses IP addresses assigned to real residential devices (like smartphones, computers, and routers) rather than data center servers. These IP addresses are provided by Internet Service Providers (ISPs) to homeowners, which makes them appear as regular user traffic, giving the proxy a more natural, less detectable appearance.",
     },
     {
-      question: "What's the difference between a Datacenter and an IPv6 proxy?",
+      question: "Do you offer a residential proxy free trial?",
       answer:
-        "Aenean turpis lectus, convallis vel laoreet quis, maximus sit amet purus. Nulla sollicitudin justo id aliquet condimentum. Suspendisse vehicula, est ut accumsan efficitur, velit massa vulputate erat, sit amet bibendum libero nunc at sem. Aliquam in ligula vel est suscipit consequat. Aliquam sit amet lacus id est convallis sagittis.",
+        "Yes, we do offer a free trial for our residential proxies! To get started, simply reach out to our support team via Live Chat. They’ll assist you with your request and schedule your free trial.",
     },
     {
-      question:
-        "Are your Datacenter & IPv6 proxies truly unlimited in any way?",
+      question: "What is a sticky residential proxy?",
       answer:
-        "Aenean turpis lectus, convallis vel laoreet quis, maximus sit amet purus. Nulla sollicitudin justo id aliquet condimentum. Suspendisse vehicula, est ut accumsan efficitur, velit massa vulputate erat, sit amet bibendum libero nunc at sem. Aliquam in ligula vel est suscipit consequat. Aliquam sit amet lacus id est convallis sagittis.",
+        "A sticky residential proxy is a type of residential proxy that maintains the same IP address for an extended period of time, rather than rotating with every request. This means that you can continue to use the same IP address for a specific session or for a longer duration, making it ideal for tasks where consistency is important.",
     },
     {
-      question: "What should I choose between Datacenter & IPv6?",
+      question: "What is an unlimited residential proxy?",
       answer:
-        "Aenean turpis lectus, convallis vel laoreet quis, maximus sit amet purus. Nulla sollicitudin justo id aliquet condimentum. Suspendisse vehicula, est ut accumsan efficitur, velit massa vulputate erat, sit amet bibendum libero nunc at sem. Aliquam in ligula vel est suscipit consequat. Aliquam sit amet lacus id est convallis sagittis.",
+        "An unlimited residential proxy is a proxy that offers unrestricted data usage and connections. LightningProxies provides unlimited residential proxies, ideal for tasks like web scraping, data mining, and much more.",
+    },
+    {
+      question: "Are residential proxies legal? ",
+      answer:
+        "Yes, residential proxies are generally legal to use, as they use IP addresses provided by Internet Service Providers (ISPs) to real users. However, the legality of using residential proxies depends on how they are used and the laws in your specific country or region.",
     },
   ];
 

@@ -54,7 +54,7 @@ export default function PointsBox() {
           </svg>
 
           <p className="text-xs sm:text-base leading-[18px] sm:leading-[24px] tracking-[-0.12px] sm:tracking-[-0.16px] text-white">
-            3 proxy users
+            Unlimited proxy users
           </p>
         </div>
 
@@ -146,7 +146,7 @@ export default function PointsBox() {
           </svg>
 
           <p className="text-xs sm:text-base leading-[18px] sm:leading-[24px] tracking-[-0.12px] sm:tracking-[-0.16px] text-white">
-            10 whitelisted IPs
+            50 whitelisted IPs
           </p>
         </div>
       </div>
