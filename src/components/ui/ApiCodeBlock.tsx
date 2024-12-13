@@ -464,68 +464,710 @@ export default function ApiCodeBlock() {
           />
         </div>
 
-        <div className="relative py-5 sm:py-7 px-3 sm:px-7 flex gap-3 sm:gap-7">
-          <div>
-            <p className="font-mono text-[10px] sm:text-sm leading-[24px] sm:leading-[32px] text-white/10">
-              1 <br /> 2 <br /> 3 <br /> 4 <br /> 5 <br /> 6
-            </p>
-          </div>
+        {/* =============== Curl start =============== */}
 
-          <div className="flex-1">
-            <p className="font-mono text-[10px] sm:text-sm leading-[24px] sm:leading-[32px] break-all sm:break-normal text-white">
-              curl <span className="text-[#FEBE26]">-</span>x
-              pr.lightningproxies.io<span className="text-[#FEBE26]">:</span>
-              <span className="text-[#FF5E00]">7777</span>{" "}
-              <span className="text-[#FEBE26]">-</span>
-              <span className="text-[#FF5E00]">U</span>{" "}
-              <span className="text-[#2EED7F]">"customer-USER:PASS"</span> https
-              <span className="text-[#FEBE26]">://</span>
-              ip.lightningproxies.io<span className="text-[#FEBE26]">/</span>
-              location <span className="text-[#FEBE26]">-</span>
-              <span className="text-[#FF5E00]">
-                {selectedLanguageIndex === 0 && "curl"}
-                {selectedLanguageIndex === 1 && "python"}
-                {selectedLanguageIndex === 2 && "nodejs"}
-                {selectedLanguageIndex === 3 && "php"}
-                {selectedLanguageIndex === 4 && "go"}
-                {selectedLanguageIndex === 5 && "java"}
-                {selectedLanguageIndex === 6 && "c#"}
-              </span>
-            </p>
-          </div>
+        {/* Residential */}
+        {selectedServiceIndex === 0 &&
+          languages[selectedLanguageIndex].name === "Curl" && (
+            <div className="relative py-5 sm:py-7 px-3 sm:px-7 flex gap-3 sm:gap-7">
+              <div>
+                <p className="font-mono text-[10px] sm:text-sm leading-[24px] sm:leading-[32px] text-white/10">
+                  1 <br /> 2 <br /> 3 <br /> 4 <br /> 5 <br /> 6
+                </p>
+              </div>
 
-          <button
-            onClick={handleCopy}
-            className="absolute bottom-3 sm:bottom-5 right-3 sm:right-7 py-1.5 px-2.5 border border-white/15 hover:bg-white/5 rounded-md flex items-center gap-2 text-[10px] sm:text-xs font-medium text-white duration-200"
-          >
-            {copied ? (
-              "Copied"
-            ) : (
-              <>
-                <svg
-                  width="18"
-                  height="18"
-                  viewBox="0 0 18 18"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="w-[14px] sm:w-[18px] h-auto"
+              <div className="flex-1">
+                <p className="font-mono text-[10px] sm:text-sm leading-[24px] sm:leading-[32px] break-all sm:break-normal text-white">
+                  curl <span className="text-yellow">-</span>x{" "}
+                  <span className="text-orange">http</span>
+                  <span className="text-yellow">://</span>
+                  <span className="text-[#2EED7F]">your-username</span>
+                  <span className="text-yellow">:</span>
+                  <span className="text-[#2EED7F]">your-password</span>
+                  @resi-us.lightningproxies.net
+                  <span className="text-yellow">:</span>
+                  <span className="text-orange">9999</span>{" "}
+                  <span className="text-orange">https</span>
+                  <span className="text-yellow">://</span>
+                  ip-check.lightningproxies.net
+                </p>
+              </div>
+
+              <button
+                onClick={handleCopy}
+                className="absolute bottom-3 sm:bottom-5 right-3 sm:right-7 py-1.5 px-2.5 border border-white/15 hover:bg-white/5 rounded-md flex items-center gap-2 text-[10px] sm:text-xs font-medium text-white duration-200"
+              >
+                {copied ? (
+                  "Copied"
+                ) : (
+                  <>
+                    <svg
+                      width="18"
+                      height="18"
+                      viewBox="0 0 18 18"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="w-[14px] sm:w-[18px] h-auto"
+                    >
+                      <path
+                        d="M6.75 2.4375C4.36827 2.4375 2.4375 4.36827 2.4375 6.75V12.0802C2.4375 12.3908 2.68934 12.6427 3 12.6427C3.31066 12.6427 3.5625 12.3908 3.5625 12.0802V6.75C3.5625 4.98959 4.98959 3.5625 6.75 3.5625H12.0096C12.3203 3.5625 12.5721 3.31066 12.5721 3C12.5721 2.68934 12.3203 2.4375 12.0096 2.4375H6.75Z"
+                        fill="white"
+                      />
+                      <path
+                        fillRule="evenodd"
+                        clipRule="evenodd"
+                        d="M13.8019 5.09494C11.3712 4.82328 8.87882 4.82328 6.44811 5.09494C5.75565 5.17234 5.1992 5.71728 5.11758 6.41511C4.8293 8.87997 4.8293 11.37 5.11758 13.8349C5.1992 14.5327 5.75565 15.0777 6.44811 15.1551C8.87882 15.4267 11.3712 15.4267 13.8019 15.1551C14.4944 15.0777 15.0508 14.5327 15.1324 13.8349C15.4207 11.37 15.4207 8.87997 15.1324 6.41511C15.0508 5.71728 14.4944 5.17234 13.8019 5.09494ZM6.57307 6.21298C8.92073 5.9506 11.3293 5.9506 13.677 6.21298C13.855 6.23288 13.9949 6.37366 14.0151 6.5458C14.2932 8.92383 14.2932 11.3262 14.0151 13.7042C13.9949 13.8763 13.855 14.0171 13.677 14.037C11.3293 14.2994 8.92073 14.2994 6.57307 14.037C6.39505 14.0171 6.2551 13.8763 6.23497 13.7042C5.95683 11.3262 5.95683 8.92383 6.23497 6.5458C6.2551 6.37366 6.39505 6.23288 6.57307 6.21298Z"
+                        fill="white"
+                      />
+                    </svg>
+                    Copy
+                  </>
+                )}
+              </button>
+            </div>
+          )}
+
+        {/* Datacenter */}
+        {selectedServiceIndex === 1 &&
+          languages[selectedLanguageIndex].name === "Curl" && (
+            <div className="relative py-5 sm:py-7 px-3 sm:px-7 flex gap-3 sm:gap-7">
+              <div>
+                <p className="font-mono text-[10px] sm:text-sm leading-[24px] sm:leading-[32px] text-white/10">
+                  1 <br /> 2 <br /> 3 <br /> 4 <br /> 5 <br /> 6
+                </p>
+              </div>
+
+              <div className="flex-1">
+                <p className="font-mono text-[10px] sm:text-sm leading-[24px] sm:leading-[32px] break-all sm:break-normal text-white">
+                  curl <span className="text-yellow">-</span>x{" "}
+                  <span className="text-orange">http</span>
+                  <span className="text-yellow">://</span>
+                  <span className="text-[#2EED7F]">your-username</span>
+                  <span className="text-yellow">:</span>
+                  <span className="text-[#2EED7F]">your-password</span>
+                  @datacenter-us-pr.lightningproxies.net
+                  <span className="text-yellow">:</span>
+                  <span className="text-orange">9090</span>{" "}
+                  <span className="text-orange">https</span>
+                  <span className="text-yellow">://</span>
+                  ip-check.lightningproxies.net
+                </p>
+              </div>
+
+              <button
+                onClick={handleCopy}
+                className="absolute bottom-3 sm:bottom-5 right-3 sm:right-7 py-1.5 px-2.5 border border-white/15 hover:bg-white/5 rounded-md flex items-center gap-2 text-[10px] sm:text-xs font-medium text-white duration-200"
+              >
+                {copied ? (
+                  "Copied"
+                ) : (
+                  <>
+                    <svg
+                      width="18"
+                      height="18"
+                      viewBox="0 0 18 18"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="w-[14px] sm:w-[18px] h-auto"
+                    >
+                      <path
+                        d="M6.75 2.4375C4.36827 2.4375 2.4375 4.36827 2.4375 6.75V12.0802C2.4375 12.3908 2.68934 12.6427 3 12.6427C3.31066 12.6427 3.5625 12.3908 3.5625 12.0802V6.75C3.5625 4.98959 4.98959 3.5625 6.75 3.5625H12.0096C12.3203 3.5625 12.5721 3.31066 12.5721 3C12.5721 2.68934 12.3203 2.4375 12.0096 2.4375H6.75Z"
+                        fill="white"
+                      />
+                      <path
+                        fillRule="evenodd"
+                        clipRule="evenodd"
+                        d="M13.8019 5.09494C11.3712 4.82328 8.87882 4.82328 6.44811 5.09494C5.75565 5.17234 5.1992 5.71728 5.11758 6.41511C4.8293 8.87997 4.8293 11.37 5.11758 13.8349C5.1992 14.5327 5.75565 15.0777 6.44811 15.1551C8.87882 15.4267 11.3712 15.4267 13.8019 15.1551C14.4944 15.0777 15.0508 14.5327 15.1324 13.8349C15.4207 11.37 15.4207 8.87997 15.1324 6.41511C15.0508 5.71728 14.4944 5.17234 13.8019 5.09494ZM6.57307 6.21298C8.92073 5.9506 11.3293 5.9506 13.677 6.21298C13.855 6.23288 13.9949 6.37366 14.0151 6.5458C14.2932 8.92383 14.2932 11.3262 14.0151 13.7042C13.9949 13.8763 13.855 14.0171 13.677 14.037C11.3293 14.2994 8.92073 14.2994 6.57307 14.037C6.39505 14.0171 6.2551 13.8763 6.23497 13.7042C5.95683 11.3262 5.95683 8.92383 6.23497 6.5458C6.2551 6.37366 6.39505 6.23288 6.57307 6.21298Z"
+                        fill="white"
+                      />
+                    </svg>
+                    Copy
+                  </>
+                )}
+              </button>
+            </div>
+          )}
+
+        {/* ISP */}
+        {selectedServiceIndex === 2 &&
+          languages[selectedLanguageIndex].name === "Curl" && (
+            <div className="relative py-5 sm:py-7 px-3 sm:px-7 flex gap-3 sm:gap-7">
+              <div>
+                <p className="font-mono text-[10px] sm:text-sm leading-[24px] sm:leading-[32px] text-white/10">
+                  1 <br /> 2 <br /> 3 <br /> 4 <br /> 5 <br /> 6
+                </p>
+              </div>
+
+              <div className="flex-1">
+                <p className="font-mono text-[10px] sm:text-sm leading-[24px] sm:leading-[32px] break-all sm:break-normal text-white">
+                  curl <span className="text-yellow">-</span>x{" "}
+                  <span className="text-orange">http</span>
+                  <span className="text-yellow">://</span>
+                  <span className="text-[#2EED7F]">your-username</span>
+                  <span className="text-yellow">:</span>
+                  <span className="text-[#2EED7F]">your-password</span>
+                  @your-ip
+                  <span className="text-yellow">:</span>
+                  <span className="text-orange">50100</span>{" "}
+                  <span className="text-orange">https</span>
+                  <span className="text-yellow">://</span>
+                  ip-check.lightningproxies.net
+                </p>
+              </div>
+
+              <button
+                onClick={handleCopy}
+                className="absolute bottom-3 sm:bottom-5 right-3 sm:right-7 py-1.5 px-2.5 border border-white/15 hover:bg-white/5 rounded-md flex items-center gap-2 text-[10px] sm:text-xs font-medium text-white duration-200"
+              >
+                {copied ? (
+                  "Copied"
+                ) : (
+                  <>
+                    <svg
+                      width="18"
+                      height="18"
+                      viewBox="0 0 18 18"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="w-[14px] sm:w-[18px] h-auto"
+                    >
+                      <path
+                        d="M6.75 2.4375C4.36827 2.4375 2.4375 4.36827 2.4375 6.75V12.0802C2.4375 12.3908 2.68934 12.6427 3 12.6427C3.31066 12.6427 3.5625 12.3908 3.5625 12.0802V6.75C3.5625 4.98959 4.98959 3.5625 6.75 3.5625H12.0096C12.3203 3.5625 12.5721 3.31066 12.5721 3C12.5721 2.68934 12.3203 2.4375 12.0096 2.4375H6.75Z"
+                        fill="white"
+                      />
+                      <path
+                        fillRule="evenodd"
+                        clipRule="evenodd"
+                        d="M13.8019 5.09494C11.3712 4.82328 8.87882 4.82328 6.44811 5.09494C5.75565 5.17234 5.1992 5.71728 5.11758 6.41511C4.8293 8.87997 4.8293 11.37 5.11758 13.8349C5.1992 14.5327 5.75565 15.0777 6.44811 15.1551C8.87882 15.4267 11.3712 15.4267 13.8019 15.1551C14.4944 15.0777 15.0508 14.5327 15.1324 13.8349C15.4207 11.37 15.4207 8.87997 15.1324 6.41511C15.0508 5.71728 14.4944 5.17234 13.8019 5.09494ZM6.57307 6.21298C8.92073 5.9506 11.3293 5.9506 13.677 6.21298C13.855 6.23288 13.9949 6.37366 14.0151 6.5458C14.2932 8.92383 14.2932 11.3262 14.0151 13.7042C13.9949 13.8763 13.855 14.0171 13.677 14.037C11.3293 14.2994 8.92073 14.2994 6.57307 14.037C6.39505 14.0171 6.2551 13.8763 6.23497 13.7042C5.95683 11.3262 5.95683 8.92383 6.23497 6.5458C6.2551 6.37366 6.39505 6.23288 6.57307 6.21298Z"
+                        fill="white"
+                      />
+                    </svg>
+                    Copy
+                  </>
+                )}
+              </button>
+            </div>
+          )}
+
+        {/* IPv6 */}
+        {selectedServiceIndex === 3 &&
+          languages[selectedLanguageIndex].name === "Curl" && (
+            <div className="relative py-5 sm:py-7 px-3 sm:px-7 flex gap-3 sm:gap-7">
+              <div>
+                <p className="font-mono text-[10px] sm:text-sm leading-[24px] sm:leading-[32px] text-white/10">
+                  1 <br /> 2 <br /> 3 <br /> 4 <br /> 5 <br /> 6
+                </p>
+              </div>
+
+              <div className="flex-1">
+                <p className="font-mono text-[10px] sm:text-sm leading-[24px] sm:leading-[32px] break-all sm:break-normal text-white">
+                  curl <span className="text-yellow">-</span>x{" "}
+                  <span className="text-orange">http</span>
+                  <span className="text-yellow">://</span>
+                  <span className="text-[#2EED7F]">your-username</span>
+                  <span className="text-yellow">:</span>
+                  <span className="text-[#2EED7F]">your-password</span>
+                  @ipv6.lightningproxies.net
+                  <span className="text-yellow">:</span>
+                  <span className="text-orange">1001</span>{" "}
+                  <span className="text-orange">https</span>
+                  <span className="text-yellow">://</span>
+                  ip-check.lightningproxies.net
+                </p>
+              </div>
+
+              <button
+                onClick={handleCopy}
+                className="absolute bottom-3 sm:bottom-5 right-3 sm:right-7 py-1.5 px-2.5 border border-white/15 hover:bg-white/5 rounded-md flex items-center gap-2 text-[10px] sm:text-xs font-medium text-white duration-200"
+              >
+                {copied ? (
+                  "Copied"
+                ) : (
+                  <>
+                    <svg
+                      width="18"
+                      height="18"
+                      viewBox="0 0 18 18"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="w-[14px] sm:w-[18px] h-auto"
+                    >
+                      <path
+                        d="M6.75 2.4375C4.36827 2.4375 2.4375 4.36827 2.4375 6.75V12.0802C2.4375 12.3908 2.68934 12.6427 3 12.6427C3.31066 12.6427 3.5625 12.3908 3.5625 12.0802V6.75C3.5625 4.98959 4.98959 3.5625 6.75 3.5625H12.0096C12.3203 3.5625 12.5721 3.31066 12.5721 3C12.5721 2.68934 12.3203 2.4375 12.0096 2.4375H6.75Z"
+                        fill="white"
+                      />
+                      <path
+                        fillRule="evenodd"
+                        clipRule="evenodd"
+                        d="M13.8019 5.09494C11.3712 4.82328 8.87882 4.82328 6.44811 5.09494C5.75565 5.17234 5.1992 5.71728 5.11758 6.41511C4.8293 8.87997 4.8293 11.37 5.11758 13.8349C5.1992 14.5327 5.75565 15.0777 6.44811 15.1551C8.87882 15.4267 11.3712 15.4267 13.8019 15.1551C14.4944 15.0777 15.0508 14.5327 15.1324 13.8349C15.4207 11.37 15.4207 8.87997 15.1324 6.41511C15.0508 5.71728 14.4944 5.17234 13.8019 5.09494ZM6.57307 6.21298C8.92073 5.9506 11.3293 5.9506 13.677 6.21298C13.855 6.23288 13.9949 6.37366 14.0151 6.5458C14.2932 8.92383 14.2932 11.3262 14.0151 13.7042C13.9949 13.8763 13.855 14.0171 13.677 14.037C11.3293 14.2994 8.92073 14.2994 6.57307 14.037C6.39505 14.0171 6.2551 13.8763 6.23497 13.7042C5.95683 11.3262 5.95683 8.92383 6.23497 6.5458C6.2551 6.37366 6.39505 6.23288 6.57307 6.21298Z"
+                        fill="white"
+                      />
+                    </svg>
+                    Copy
+                  </>
+                )}
+              </button>
+            </div>
+          )}
+
+        {/* Mobile */}
+        {selectedServiceIndex === 4 &&
+          languages[selectedLanguageIndex].name === "Curl" && (
+            <div className="relative py-5 sm:py-7 px-3 sm:px-7 flex gap-3 sm:gap-7">
+              <div>
+                <p className="font-mono text-[10px] sm:text-sm leading-[24px] sm:leading-[32px] text-white/10">
+                  1 <br /> 2 <br /> 3 <br /> 4 <br /> 5 <br /> 6
+                </p>
+              </div>
+
+              <div className="flex-1">
+                <p className="font-mono text-[10px] sm:text-sm leading-[24px] sm:leading-[32px] break-all sm:break-normal text-white">
+                  curl <span className="text-yellow">-</span>x{" "}
+                  <span className="text-orange">http</span>
+                  <span className="text-yellow">://</span>
+                  <span className="text-[#2EED7F]">your-username</span>
+                  <span className="text-yellow">:</span>
+                  <span className="text-[#2EED7F]">your-password</span>
+                  @mobile-us.lightningproxies.net
+                  <span className="text-yellow">:</span>
+                  <span className="text-orange">8000</span>{" "}
+                  <span className="text-orange">https</span>
+                  <span className="text-yellow">://</span>
+                  ip-check.lightningproxies.net
+                </p>
+              </div>
+
+              <button
+                onClick={handleCopy}
+                className="absolute bottom-3 sm:bottom-5 right-3 sm:right-7 py-1.5 px-2.5 border border-white/15 hover:bg-white/5 rounded-md flex items-center gap-2 text-[10px] sm:text-xs font-medium text-white duration-200"
+              >
+                {copied ? (
+                  "Copied"
+                ) : (
+                  <>
+                    <svg
+                      width="18"
+                      height="18"
+                      viewBox="0 0 18 18"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="w-[14px] sm:w-[18px] h-auto"
+                    >
+                      <path
+                        d="M6.75 2.4375C4.36827 2.4375 2.4375 4.36827 2.4375 6.75V12.0802C2.4375 12.3908 2.68934 12.6427 3 12.6427C3.31066 12.6427 3.5625 12.3908 3.5625 12.0802V6.75C3.5625 4.98959 4.98959 3.5625 6.75 3.5625H12.0096C12.3203 3.5625 12.5721 3.31066 12.5721 3C12.5721 2.68934 12.3203 2.4375 12.0096 2.4375H6.75Z"
+                        fill="white"
+                      />
+                      <path
+                        fillRule="evenodd"
+                        clipRule="evenodd"
+                        d="M13.8019 5.09494C11.3712 4.82328 8.87882 4.82328 6.44811 5.09494C5.75565 5.17234 5.1992 5.71728 5.11758 6.41511C4.8293 8.87997 4.8293 11.37 5.11758 13.8349C5.1992 14.5327 5.75565 15.0777 6.44811 15.1551C8.87882 15.4267 11.3712 15.4267 13.8019 15.1551C14.4944 15.0777 15.0508 14.5327 15.1324 13.8349C15.4207 11.37 15.4207 8.87997 15.1324 6.41511C15.0508 5.71728 14.4944 5.17234 13.8019 5.09494ZM6.57307 6.21298C8.92073 5.9506 11.3293 5.9506 13.677 6.21298C13.855 6.23288 13.9949 6.37366 14.0151 6.5458C14.2932 8.92383 14.2932 11.3262 14.0151 13.7042C13.9949 13.8763 13.855 14.0171 13.677 14.037C11.3293 14.2994 8.92073 14.2994 6.57307 14.037C6.39505 14.0171 6.2551 13.8763 6.23497 13.7042C5.95683 11.3262 5.95683 8.92383 6.23497 6.5458C6.2551 6.37366 6.39505 6.23288 6.57307 6.21298Z"
+                        fill="white"
+                      />
+                    </svg>
+                    Copy
+                  </>
+                )}
+              </button>
+            </div>
+          )}
+
+        {/* =x============== Curl end ==============x= */}
+
+        {/* ================================ */}
+
+        {/* =============== Python start =============== */}
+
+        {/* Residential */}
+        {selectedServiceIndex === 0 &&
+          languages[selectedLanguageIndex].name === "Python" && (
+            <div className="hide-scrollbar relative max-h-[248px] py-5 sm:py-7 px-3 sm:px-7 flex gap-3 sm:gap-7 overflow-y-auto">
+              <div>
+                <p className="font-mono text-[10px] sm:text-sm leading-[24px] sm:leading-[32px] text-white/10">
+                  1 <br /> 2 <br /> 3 <br /> 4 <br /> 5 <br /> 6 <br /> 7 <br />{" "}
+                  8 <br /> 9 <br /> 10 <br /> 11 <br /> 12 <br /> 13 <br /> 14{" "}
+                  <br /> 15 <br /> 16 <br /> 17 <br /> 18 <br /> 19 <br /> 20{" "}
+                  <br /> 21 <br /> 22 <br /> 24 <br /> 25
+                </p>
+              </div>
+
+              <div className="flex-1">
+                <p
+                  className="font-mono text-[10px] sm:text-sm leading-[24px] sm:leading-[32px] break-all sm:break-normal text-white"
+                  dangerouslySetInnerHTML={{
+                    __html: `
+                    <span class="text-accent">import</span> requests <br/><br/>
+
+                    username <span class="text-yellow">=</span> <span class="text-[#2EED7F]">"your-username"</span> <br/>
+                    password <span class="text-yellow">=</span> <span class="text-[#2EED7F]">"your-password"</span> <br/>
+                    proxy <span class="text-yellow">=</span> <span class="text-[#2EED7F]">"resi-us.lightningproxies.net:9999"</span> <br/><br/>
+
+                    proxies <span class="text-yellow">=</span> { <br/>
+                        &nbsp;&nbsp;&nbsp;<span class="text-orange">'http'</span><span class="text-yellow">:</span> f<span class="text-[#2EED7F]">'http://{username}:{password}@{proxy}'</span>, <br/>
+                        &nbsp;&nbsp;&nbsp;<span class="text-orange">'https'</span><span class="text-yellow">:</span> f<span class="text-[#2EED7F]">'http://{username}:{password}@{proxy}'</span>, <br/>
+                    } <br/><br/>
+
+                    url <span class="text-yellow">=</span> <span class="text-[#2EED7F]">"https://ip-check.lightningproxies.net"</span> <br/><br/>
+
+                    <span class="text-accent">try:</span> <br/>
+                        &nbsp;&nbsp;&nbsp;response <span class="text-yellow">=</span> requests.<span class="text-orange">get</span>(url, <span class="text-orange">proxies</span><span class="text-yellow">=</span>proxies) <br/>
+                        &nbsp;&nbsp;&nbsp;<span class="text-orange">print</span>(f<span class="text-[#2EED7F]">"Response Status Code: <span class="text-white">{response.<span class="text-orange">status_code</span>}</span>"</span>) <br/>
+                        &nbsp;&nbsp;&nbsp;<span class="text-orange">print</span>(f<span class="text-[#2EED7F]">"Response Content: <span class="text-white">{response.<span class="text-orange">text</span>}</span>"</span>) <br/>
+                    <span class="text-accent">except</span> requests.exceptions.RequestException as e: <br/>
+                        &nbsp;&nbsp;&nbsp;<span class="text-orange">print</span>(f<span class="text-[#2EED7F]">"An error occurred: <span class="text-white">{e}</span>"</span>)
+    `,
+                  }}
+                ></p>
+              </div>
+
+              {/* <div className="sticky top-0 right-0 flex items-end">
+                <button
+                  onClick={handleCopy}
+                  className="-mb-2 py-1.5 px-2.5 border border-white/15 hover:bg-white/5 rounded-md flex items-center gap-2 text-[10px] sm:text-xs font-medium text-white duration-200"
                 >
-                  <path
-                    d="M6.75 2.4375C4.36827 2.4375 2.4375 4.36827 2.4375 6.75V12.0802C2.4375 12.3908 2.68934 12.6427 3 12.6427C3.31066 12.6427 3.5625 12.3908 3.5625 12.0802V6.75C3.5625 4.98959 4.98959 3.5625 6.75 3.5625H12.0096C12.3203 3.5625 12.5721 3.31066 12.5721 3C12.5721 2.68934 12.3203 2.4375 12.0096 2.4375H6.75Z"
-                    fill="white"
-                  />
-                  <path
-                    fillRule="evenodd"
-                    clipRule="evenodd"
-                    d="M13.8019 5.09494C11.3712 4.82328 8.87882 4.82328 6.44811 5.09494C5.75565 5.17234 5.1992 5.71728 5.11758 6.41511C4.8293 8.87997 4.8293 11.37 5.11758 13.8349C5.1992 14.5327 5.75565 15.0777 6.44811 15.1551C8.87882 15.4267 11.3712 15.4267 13.8019 15.1551C14.4944 15.0777 15.0508 14.5327 15.1324 13.8349C15.4207 11.37 15.4207 8.87997 15.1324 6.41511C15.0508 5.71728 14.4944 5.17234 13.8019 5.09494ZM6.57307 6.21298C8.92073 5.9506 11.3293 5.9506 13.677 6.21298C13.855 6.23288 13.9949 6.37366 14.0151 6.5458C14.2932 8.92383 14.2932 11.3262 14.0151 13.7042C13.9949 13.8763 13.855 14.0171 13.677 14.037C11.3293 14.2994 8.92073 14.2994 6.57307 14.037C6.39505 14.0171 6.2551 13.8763 6.23497 13.7042C5.95683 11.3262 5.95683 8.92383 6.23497 6.5458C6.2551 6.37366 6.39505 6.23288 6.57307 6.21298Z"
-                    fill="white"
-                  />
-                </svg>
-                Copy
-              </>
-            )}
-          </button>
-        </div>
+                  {copied ? (
+                    "Copied"
+                  ) : (
+                    <>
+                      <svg
+                        width="18"
+                        height="18"
+                        viewBox="0 0 18 18"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="w-[14px] sm:w-[18px] h-auto"
+                      >
+                        <path
+                          d="M6.75 2.4375C4.36827 2.4375 2.4375 4.36827 2.4375 6.75V12.0802C2.4375 12.3908 2.68934 12.6427 3 12.6427C3.31066 12.6427 3.5625 12.3908 3.5625 12.0802V6.75C3.5625 4.98959 4.98959 3.5625 6.75 3.5625H12.0096C12.3203 3.5625 12.5721 3.31066 12.5721 3C12.5721 2.68934 12.3203 2.4375 12.0096 2.4375H6.75Z"
+                          fill="white"
+                        />
+                        <path
+                          fillRule="evenodd"
+                          clipRule="evenodd"
+                          d="M13.8019 5.09494C11.3712 4.82328 8.87882 4.82328 6.44811 5.09494C5.75565 5.17234 5.1992 5.71728 5.11758 6.41511C4.8293 8.87997 4.8293 11.37 5.11758 13.8349C5.1992 14.5327 5.75565 15.0777 6.44811 15.1551C8.87882 15.4267 11.3712 15.4267 13.8019 15.1551C14.4944 15.0777 15.0508 14.5327 15.1324 13.8349C15.4207 11.37 15.4207 8.87997 15.1324 6.41511C15.0508 5.71728 14.4944 5.17234 13.8019 5.09494ZM6.57307 6.21298C8.92073 5.9506 11.3293 5.9506 13.677 6.21298C13.855 6.23288 13.9949 6.37366 14.0151 6.5458C14.2932 8.92383 14.2932 11.3262 14.0151 13.7042C13.9949 13.8763 13.855 14.0171 13.677 14.037C11.3293 14.2994 8.92073 14.2994 6.57307 14.037C6.39505 14.0171 6.2551 13.8763 6.23497 13.7042C5.95683 11.3262 5.95683 8.92383 6.23497 6.5458C6.2551 6.37366 6.39505 6.23288 6.57307 6.21298Z"
+                          fill="white"
+                        />
+                      </svg>
+                      Copy
+                    </>
+                  )}
+                </button>
+              </div> */}
+            </div>
+          )}
+
+        {/* Datacenter */}
+        {selectedServiceIndex === 1 &&
+          languages[selectedLanguageIndex].name === "Python" && (
+            <div className="hide-scrollbar relative max-h-[248px] py-5 sm:py-7 px-3 sm:px-7 flex gap-3 sm:gap-7 overflow-y-auto">
+              <div>
+                <p className="font-mono text-[10px] sm:text-sm leading-[24px] sm:leading-[32px] text-white/10">
+                  1 <br /> 2 <br /> 3 <br /> 4 <br /> 5 <br /> 6 <br /> 7 <br />{" "}
+                  8 <br /> 9 <br /> 10 <br /> 11 <br /> 12 <br /> 13 <br /> 14{" "}
+                  <br /> 15 <br /> 16 <br /> 17 <br /> 18 <br /> 19 <br /> 20{" "}
+                  <br /> 21 <br /> 22 <br /> 24 <br /> 25
+                </p>
+              </div>
+
+              <div className="flex-1">
+                <p
+                  className="font-mono text-[10px] sm:text-sm leading-[24px] sm:leading-[32px] break-all sm:break-normal text-white"
+                  dangerouslySetInnerHTML={{
+                    __html: `
+                    <span class="text-accent">import</span> requests <br/><br/>
+
+                    username <span class="text-yellow">=</span> <span class="text-[#2EED7F]">"your-username"</span> <br/>
+                    password <span class="text-yellow">=</span> <span class="text-[#2EED7F]">"your-password"</span> <br/>
+                    proxy <span class="text-yellow">=</span> <span class="text-[#2EED7F]">"datacenter-us-pr.lightningproxies.net:9090"</span> <br/><br/>
+
+                    proxies <span class="text-yellow">=</span> { <br/>
+                        &nbsp;&nbsp;&nbsp;<span class="text-orange">'http'</span><span class="text-yellow">:</span> f<span class="text-[#2EED7F]">'http://{username}:{password}@{proxy}'</span>, <br/>
+                        &nbsp;&nbsp;&nbsp;<span class="text-orange">'https'</span><span class="text-yellow">:</span> f<span class="text-[#2EED7F]">'http://{username}:{password}@{proxy}'</span>, <br/>
+                    } <br/><br/>
+
+                    url <span class="text-yellow">=</span> <span class="text-[#2EED7F]">"https://ip-check.lightningproxies.net"</span> <br/><br/>
+
+                    <span class="text-accent">try:</span> <br/>
+                        &nbsp;&nbsp;&nbsp;response <span class="text-yellow">=</span> requests.<span class="text-orange">get</span>(url, <span class="text-orange">proxies</span><span class="text-yellow">=</span>proxies) <br/>
+                        &nbsp;&nbsp;&nbsp;<span class="text-orange">print</span>(f<span class="text-[#2EED7F]">"Response Status Code: <span class="text-white">{response.<span class="text-orange">status_code</span>}</span>"</span>) <br/>
+                        &nbsp;&nbsp;&nbsp;<span class="text-orange">print</span>(f<span class="text-[#2EED7F]">"Response Content: <span class="text-white">{response.<span class="text-orange">text</span>}</span>"</span>) <br/>
+                    <span class="text-accent">except</span> requests.exceptions.RequestException as e: <br/>
+                        &nbsp;&nbsp;&nbsp;<span class="text-orange">print</span>(f<span class="text-[#2EED7F]">"An error occurred: <span class="text-white">{e}</span>"</span>)
+    `,
+                  }}
+                ></p>
+              </div>
+
+              {/* <div className="sticky top-0 right-0 flex items-end">
+                <button
+                  onClick={handleCopy}
+                  className="-mb-2 py-1.5 px-2.5 border border-white/15 hover:bg-white/5 rounded-md flex items-center gap-2 text-[10px] sm:text-xs font-medium text-white duration-200"
+                >
+                  {copied ? (
+                    "Copied"
+                  ) : (
+                    <>
+                      <svg
+                        width="18"
+                        height="18"
+                        viewBox="0 0 18 18"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="w-[14px] sm:w-[18px] h-auto"
+                      >
+                        <path
+                          d="M6.75 2.4375C4.36827 2.4375 2.4375 4.36827 2.4375 6.75V12.0802C2.4375 12.3908 2.68934 12.6427 3 12.6427C3.31066 12.6427 3.5625 12.3908 3.5625 12.0802V6.75C3.5625 4.98959 4.98959 3.5625 6.75 3.5625H12.0096C12.3203 3.5625 12.5721 3.31066 12.5721 3C12.5721 2.68934 12.3203 2.4375 12.0096 2.4375H6.75Z"
+                          fill="white"
+                        />
+                        <path
+                          fillRule="evenodd"
+                          clipRule="evenodd"
+                          d="M13.8019 5.09494C11.3712 4.82328 8.87882 4.82328 6.44811 5.09494C5.75565 5.17234 5.1992 5.71728 5.11758 6.41511C4.8293 8.87997 4.8293 11.37 5.11758 13.8349C5.1992 14.5327 5.75565 15.0777 6.44811 15.1551C8.87882 15.4267 11.3712 15.4267 13.8019 15.1551C14.4944 15.0777 15.0508 14.5327 15.1324 13.8349C15.4207 11.37 15.4207 8.87997 15.1324 6.41511C15.0508 5.71728 14.4944 5.17234 13.8019 5.09494ZM6.57307 6.21298C8.92073 5.9506 11.3293 5.9506 13.677 6.21298C13.855 6.23288 13.9949 6.37366 14.0151 6.5458C14.2932 8.92383 14.2932 11.3262 14.0151 13.7042C13.9949 13.8763 13.855 14.0171 13.677 14.037C11.3293 14.2994 8.92073 14.2994 6.57307 14.037C6.39505 14.0171 6.2551 13.8763 6.23497 13.7042C5.95683 11.3262 5.95683 8.92383 6.23497 6.5458C6.2551 6.37366 6.39505 6.23288 6.57307 6.21298Z"
+                          fill="white"
+                        />
+                      </svg>
+                      Copy
+                    </>
+                  )}
+                </button>
+              </div> */}
+            </div>
+          )}
+
+        {/* ISP */}
+        {selectedServiceIndex === 2 &&
+          languages[selectedLanguageIndex].name === "Python" && (
+            <div className="hide-scrollbar relative max-h-[248px] py-5 sm:py-7 px-3 sm:px-7 flex gap-3 sm:gap-7 overflow-y-auto">
+              <div>
+                <p className="font-mono text-[10px] sm:text-sm leading-[24px] sm:leading-[32px] text-white/10">
+                  1 <br /> 2 <br /> 3 <br /> 4 <br /> 5 <br /> 6 <br /> 7 <br />{" "}
+                  8 <br /> 9 <br /> 10 <br /> 11 <br /> 12 <br /> 13 <br /> 14{" "}
+                  <br /> 15 <br /> 16 <br /> 17 <br /> 18 <br /> 19 <br /> 20{" "}
+                  <br /> 21 <br /> 22 <br /> 24 <br /> 25
+                </p>
+              </div>
+
+              <div className="flex-1">
+                <p
+                  className="font-mono text-[10px] sm:text-sm leading-[24px] sm:leading-[32px] break-all sm:break-normal text-white"
+                  dangerouslySetInnerHTML={{
+                    __html: `
+                    <span class="text-accent">import</span> requests <br/><br/>
+
+                    username <span class="text-yellow">=</span> <span class="text-[#2EED7F]">"your-username"</span> <br/>
+                    password <span class="text-yellow">=</span> <span class="text-[#2EED7F]">"your-password"</span> <br/>
+                    proxy <span class="text-yellow">=</span> <span class="text-[#2EED7F]">"your-ip:50100"</span> <br/><br/>
+
+                    proxies <span class="text-yellow">=</span> { <br/>
+                        &nbsp;&nbsp;&nbsp;<span class="text-orange">'http'</span><span class="text-yellow">:</span> f<span class="text-[#2EED7F]">'http://{username}:{password}@{proxy}'</span>, <br/>
+                        &nbsp;&nbsp;&nbsp;<span class="text-orange">'https'</span><span class="text-yellow">:</span> f<span class="text-[#2EED7F]">'http://{username}:{password}@{proxy}'</span>, <br/>
+                    } <br/><br/>
+
+                    url <span class="text-yellow">=</span> <span class="text-[#2EED7F]">"https://ip-check.lightningproxies.net"</span> <br/><br/>
+
+                    <span class="text-accent">try:</span> <br/>
+                        &nbsp;&nbsp;&nbsp;response <span class="text-yellow">=</span> requests.<span class="text-orange">get</span>(url, <span class="text-orange">proxies</span><span class="text-yellow">=</span>proxies) <br/>
+                        &nbsp;&nbsp;&nbsp;<span class="text-orange">print</span>(f<span class="text-[#2EED7F]">"Response Status Code: <span class="text-white">{response.<span class="text-orange">status_code</span>}</span>"</span>) <br/>
+                        &nbsp;&nbsp;&nbsp;<span class="text-orange">print</span>(f<span class="text-[#2EED7F]">"Response Content: <span class="text-white">{response.<span class="text-orange">text</span>}</span>"</span>) <br/>
+                    <span class="text-accent">except</span> requests.exceptions.RequestException as e: <br/>
+                        &nbsp;&nbsp;&nbsp;<span class="text-orange">print</span>(f<span class="text-[#2EED7F]">"An error occurred: <span class="text-white">{e}</span>"</span>)
+    `,
+                  }}
+                ></p>
+              </div>
+
+              {/* <div className="sticky top-0 right-0 flex items-end">
+                <button
+                  onClick={handleCopy}
+                  className="-mb-2 py-1.5 px-2.5 border border-white/15 hover:bg-white/5 rounded-md flex items-center gap-2 text-[10px] sm:text-xs font-medium text-white duration-200"
+                >
+                  {copied ? (
+                    "Copied"
+                  ) : (
+                    <>
+                      <svg
+                        width="18"
+                        height="18"
+                        viewBox="0 0 18 18"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="w-[14px] sm:w-[18px] h-auto"
+                      >
+                        <path
+                          d="M6.75 2.4375C4.36827 2.4375 2.4375 4.36827 2.4375 6.75V12.0802C2.4375 12.3908 2.68934 12.6427 3 12.6427C3.31066 12.6427 3.5625 12.3908 3.5625 12.0802V6.75C3.5625 4.98959 4.98959 3.5625 6.75 3.5625H12.0096C12.3203 3.5625 12.5721 3.31066 12.5721 3C12.5721 2.68934 12.3203 2.4375 12.0096 2.4375H6.75Z"
+                          fill="white"
+                        />
+                        <path
+                          fillRule="evenodd"
+                          clipRule="evenodd"
+                          d="M13.8019 5.09494C11.3712 4.82328 8.87882 4.82328 6.44811 5.09494C5.75565 5.17234 5.1992 5.71728 5.11758 6.41511C4.8293 8.87997 4.8293 11.37 5.11758 13.8349C5.1992 14.5327 5.75565 15.0777 6.44811 15.1551C8.87882 15.4267 11.3712 15.4267 13.8019 15.1551C14.4944 15.0777 15.0508 14.5327 15.1324 13.8349C15.4207 11.37 15.4207 8.87997 15.1324 6.41511C15.0508 5.71728 14.4944 5.17234 13.8019 5.09494ZM6.57307 6.21298C8.92073 5.9506 11.3293 5.9506 13.677 6.21298C13.855 6.23288 13.9949 6.37366 14.0151 6.5458C14.2932 8.92383 14.2932 11.3262 14.0151 13.7042C13.9949 13.8763 13.855 14.0171 13.677 14.037C11.3293 14.2994 8.92073 14.2994 6.57307 14.037C6.39505 14.0171 6.2551 13.8763 6.23497 13.7042C5.95683 11.3262 5.95683 8.92383 6.23497 6.5458C6.2551 6.37366 6.39505 6.23288 6.57307 6.21298Z"
+                          fill="white"
+                        />
+                      </svg>
+                      Copy
+                    </>
+                  )}
+                </button>
+              </div> */}
+            </div>
+          )}
+
+        {/* IPv6 */}
+        {selectedServiceIndex === 3 &&
+          languages[selectedLanguageIndex].name === "Python" && (
+            <div className="hide-scrollbar relative max-h-[248px] py-5 sm:py-7 px-3 sm:px-7 flex gap-3 sm:gap-7 overflow-y-auto">
+              <div>
+                <p className="font-mono text-[10px] sm:text-sm leading-[24px] sm:leading-[32px] text-white/10">
+                  1 <br /> 2 <br /> 3 <br /> 4 <br /> 5 <br /> 6 <br /> 7 <br />{" "}
+                  8 <br /> 9 <br /> 10 <br /> 11 <br /> 12 <br /> 13 <br /> 14{" "}
+                  <br /> 15 <br /> 16 <br /> 17 <br /> 18 <br /> 19 <br /> 20{" "}
+                  <br /> 21 <br /> 22 <br /> 24 <br /> 25
+                </p>
+              </div>
+
+              <div className="flex-1">
+                <p
+                  className="font-mono text-[10px] sm:text-sm leading-[24px] sm:leading-[32px] break-all sm:break-normal text-white"
+                  dangerouslySetInnerHTML={{
+                    __html: `
+                    <span class="text-accent">import</span> requests <br/><br/>
+
+                    username <span class="text-yellow">=</span> <span class="text-[#2EED7F]">"your-username"</span> <br/>
+                    password <span class="text-yellow">=</span> <span class="text-[#2EED7F]">"your-password"</span> <br/>
+                    proxy <span class="text-yellow">=</span> <span class="text-[#2EED7F]">"ipv6.lightningproxies.net:1001"</span> <br/><br/>
+
+                    proxies <span class="text-yellow">=</span> { <br/>
+                        &nbsp;&nbsp;&nbsp;<span class="text-orange">'http'</span><span class="text-yellow">:</span> f<span class="text-[#2EED7F]">'http://{username}:{password}@{proxy}'</span>, <br/>
+                        &nbsp;&nbsp;&nbsp;<span class="text-orange">'https'</span><span class="text-yellow">:</span> f<span class="text-[#2EED7F]">'http://{username}:{password}@{proxy}'</span>, <br/>
+                    } <br/><br/>
+
+                    url <span class="text-yellow">=</span> <span class="text-[#2EED7F]">"https://ip-check.lightningproxies.net"</span> <br/><br/>
+
+                    <span class="text-accent">try:</span> <br/>
+                        &nbsp;&nbsp;&nbsp;response <span class="text-yellow">=</span> requests.<span class="text-orange">get</span>(url, <span class="text-orange">proxies</span><span class="text-yellow">=</span>proxies) <br/>
+                        &nbsp;&nbsp;&nbsp;<span class="text-orange">print</span>(f<span class="text-[#2EED7F]">"Response Status Code: <span class="text-white">{response.<span class="text-orange">status_code</span>}</span>"</span>) <br/>
+                        &nbsp;&nbsp;&nbsp;<span class="text-orange">print</span>(f<span class="text-[#2EED7F]">"Response Content: <span class="text-white">{response.<span class="text-orange">text</span>}</span>"</span>) <br/>
+                    <span class="text-accent">except</span> requests.exceptions.RequestException as e: <br/>
+                        &nbsp;&nbsp;&nbsp;<span class="text-orange">print</span>(f<span class="text-[#2EED7F]">"An error occurred: <span class="text-white">{e}</span>"</span>)
+    `,
+                  }}
+                ></p>
+              </div>
+
+              {/* <div className="sticky top-0 right-0 flex items-end">
+                <button
+                  onClick={handleCopy}
+                  className="-mb-2 py-1.5 px-2.5 border border-white/15 hover:bg-white/5 rounded-md flex items-center gap-2 text-[10px] sm:text-xs font-medium text-white duration-200"
+                >
+                  {copied ? (
+                    "Copied"
+                  ) : (
+                    <>
+                      <svg
+                        width="18"
+                        height="18"
+                        viewBox="0 0 18 18"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="w-[14px] sm:w-[18px] h-auto"
+                      >
+                        <path
+                          d="M6.75 2.4375C4.36827 2.4375 2.4375 4.36827 2.4375 6.75V12.0802C2.4375 12.3908 2.68934 12.6427 3 12.6427C3.31066 12.6427 3.5625 12.3908 3.5625 12.0802V6.75C3.5625 4.98959 4.98959 3.5625 6.75 3.5625H12.0096C12.3203 3.5625 12.5721 3.31066 12.5721 3C12.5721 2.68934 12.3203 2.4375 12.0096 2.4375H6.75Z"
+                          fill="white"
+                        />
+                        <path
+                          fillRule="evenodd"
+                          clipRule="evenodd"
+                          d="M13.8019 5.09494C11.3712 4.82328 8.87882 4.82328 6.44811 5.09494C5.75565 5.17234 5.1992 5.71728 5.11758 6.41511C4.8293 8.87997 4.8293 11.37 5.11758 13.8349C5.1992 14.5327 5.75565 15.0777 6.44811 15.1551C8.87882 15.4267 11.3712 15.4267 13.8019 15.1551C14.4944 15.0777 15.0508 14.5327 15.1324 13.8349C15.4207 11.37 15.4207 8.87997 15.1324 6.41511C15.0508 5.71728 14.4944 5.17234 13.8019 5.09494ZM6.57307 6.21298C8.92073 5.9506 11.3293 5.9506 13.677 6.21298C13.855 6.23288 13.9949 6.37366 14.0151 6.5458C14.2932 8.92383 14.2932 11.3262 14.0151 13.7042C13.9949 13.8763 13.855 14.0171 13.677 14.037C11.3293 14.2994 8.92073 14.2994 6.57307 14.037C6.39505 14.0171 6.2551 13.8763 6.23497 13.7042C5.95683 11.3262 5.95683 8.92383 6.23497 6.5458C6.2551 6.37366 6.39505 6.23288 6.57307 6.21298Z"
+                          fill="white"
+                        />
+                      </svg>
+                      Copy
+                    </>
+                  )}
+                </button>
+              </div> */}
+            </div>
+          )}
+
+        {/* IPv6 */}
+        {selectedServiceIndex === 4 &&
+          languages[selectedLanguageIndex].name === "Python" && (
+            <div className="hide-scrollbar relative max-h-[248px] py-5 sm:py-7 px-3 sm:px-7 flex gap-3 sm:gap-7 overflow-y-auto">
+              <div>
+                <p className="font-mono text-[10px] sm:text-sm leading-[24px] sm:leading-[32px] text-white/10">
+                  1 <br /> 2 <br /> 3 <br /> 4 <br /> 5 <br /> 6 <br /> 7 <br />{" "}
+                  8 <br /> 9 <br /> 10 <br /> 11 <br /> 12 <br /> 13 <br /> 14{" "}
+                  <br /> 15 <br /> 16 <br /> 17 <br /> 18 <br /> 19 <br /> 20{" "}
+                  <br /> 21 <br /> 22 <br /> 24 <br /> 25
+                </p>
+              </div>
+
+              <div className="flex-1">
+                <p
+                  className="font-mono text-[10px] sm:text-sm leading-[24px] sm:leading-[32px] break-all sm:break-normal text-white"
+                  dangerouslySetInnerHTML={{
+                    __html: `
+                    <span class="text-accent">import</span> requests <br/><br/>
+
+                    username <span class="text-yellow">=</span> <span class="text-[#2EED7F]">"your-username"</span> <br/>
+                    password <span class="text-yellow">=</span> <span class="text-[#2EED7F]">"your-password"</span> <br/>
+                    proxy <span class="text-yellow">=</span> <span class="text-[#2EED7F]">"mobile-us.lightningproxies.net:8000"</span> <br/><br/>
+
+                    proxies <span class="text-yellow">=</span> { <br/>
+                        &nbsp;&nbsp;&nbsp;<span class="text-orange">'http'</span><span class="text-yellow">:</span> f<span class="text-[#2EED7F]">'http://{username}:{password}@{proxy}'</span>, <br/>
+                        &nbsp;&nbsp;&nbsp;<span class="text-orange">'https'</span><span class="text-yellow">:</span> f<span class="text-[#2EED7F]">'http://{username}:{password}@{proxy}'</span>, <br/>
+                    } <br/><br/>
+
+                    url <span class="text-yellow">=</span> <span class="text-[#2EED7F]">"https://ip-check.lightningproxies.net"</span> <br/><br/>
+
+                    <span class="text-accent">try:</span> <br/>
+                        &nbsp;&nbsp;&nbsp;response <span class="text-yellow">=</span> requests.<span class="text-orange">get</span>(url, <span class="text-orange">proxies</span><span class="text-yellow">=</span>proxies) <br/>
+                        &nbsp;&nbsp;&nbsp;<span class="text-orange">print</span>(f<span class="text-[#2EED7F]">"Response Status Code: <span class="text-white">{response.<span class="text-orange">status_code</span>}</span>"</span>) <br/>
+                        &nbsp;&nbsp;&nbsp;<span class="text-orange">print</span>(f<span class="text-[#2EED7F]">"Response Content: <span class="text-white">{response.<span class="text-orange">text</span>}</span>"</span>) <br/>
+                    <span class="text-accent">except</span> requests.exceptions.RequestException as e: <br/>
+                        &nbsp;&nbsp;&nbsp;<span class="text-orange">print</span>(f<span class="text-[#2EED7F]">"An error occurred: <span class="text-white">{e}</span>"</span>)
+    `,
+                  }}
+                ></p>
+              </div>
+
+              {/* <div className="sticky top-0 right-0 flex items-end">
+                <button
+                  onClick={handleCopy}
+                  className="-mb-2 py-1.5 px-2.5 border border-white/15 hover:bg-white/5 rounded-md flex items-center gap-2 text-[10px] sm:text-xs font-medium text-white duration-200"
+                >
+                  {copied ? (
+                    "Copied"
+                  ) : (
+                    <>
+                      <svg
+                        width="18"
+                        height="18"
+                        viewBox="0 0 18 18"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="w-[14px] sm:w-[18px] h-auto"
+                      >
+                        <path
+                          d="M6.75 2.4375C4.36827 2.4375 2.4375 4.36827 2.4375 6.75V12.0802C2.4375 12.3908 2.68934 12.6427 3 12.6427C3.31066 12.6427 3.5625 12.3908 3.5625 12.0802V6.75C3.5625 4.98959 4.98959 3.5625 6.75 3.5625H12.0096C12.3203 3.5625 12.5721 3.31066 12.5721 3C12.5721 2.68934 12.3203 2.4375 12.0096 2.4375H6.75Z"
+                          fill="white"
+                        />
+                        <path
+                          fillRule="evenodd"
+                          clipRule="evenodd"
+                          d="M13.8019 5.09494C11.3712 4.82328 8.87882 4.82328 6.44811 5.09494C5.75565 5.17234 5.1992 5.71728 5.11758 6.41511C4.8293 8.87997 4.8293 11.37 5.11758 13.8349C5.1992 14.5327 5.75565 15.0777 6.44811 15.1551C8.87882 15.4267 11.3712 15.4267 13.8019 15.1551C14.4944 15.0777 15.0508 14.5327 15.1324 13.8349C15.4207 11.37 15.4207 8.87997 15.1324 6.41511C15.0508 5.71728 14.4944 5.17234 13.8019 5.09494ZM6.57307 6.21298C8.92073 5.9506 11.3293 5.9506 13.677 6.21298C13.855 6.23288 13.9949 6.37366 14.0151 6.5458C14.2932 8.92383 14.2932 11.3262 14.0151 13.7042C13.9949 13.8763 13.855 14.0171 13.677 14.037C11.3293 14.2994 8.92073 14.2994 6.57307 14.037C6.39505 14.0171 6.2551 13.8763 6.23497 13.7042C5.95683 11.3262 5.95683 8.92383 6.23497 6.5458C6.2551 6.37366 6.39505 6.23288 6.57307 6.21298Z"
+                          fill="white"
+                        />
+                      </svg>
+                      Copy
+                    </>
+                  )}
+                </button>
+              </div> */}
+            </div>
+          )}
+
+        {/* =x============== Python end ==============x= */}
       </div>
     </div>
   );
