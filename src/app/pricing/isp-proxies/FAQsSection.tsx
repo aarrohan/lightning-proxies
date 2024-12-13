@@ -8,23 +8,34 @@ export default function FAQsSection() {
     {
       question: "What is a ISP proxy?",
       answer:
-        "Aenean turpis lectus, convallis vel laoreet quis, maximus sit amet purus. Nulla sollicitudin justo id aliquet condimentum. Suspendisse vehicula, est ut accumsan efficitur, velit massa vulputate erat, sit amet bibendum libero nunc at sem. Aliquam in ligula vel est suscipit consequat. Aliquam sit amet lacus id est convallis sagittis.",
-    },
-    {
-      question: "What's the difference between a Datacenter and an IPv6 proxy?",
-      answer:
-        "Aenean turpis lectus, convallis vel laoreet quis, maximus sit amet purus. Nulla sollicitudin justo id aliquet condimentum. Suspendisse vehicula, est ut accumsan efficitur, velit massa vulputate erat, sit amet bibendum libero nunc at sem. Aliquam in ligula vel est suscipit consequat. Aliquam sit amet lacus id est convallis sagittis.",
+        "An ISP proxy (Internet Service Provider proxy), also known as a static residential proxy, is a type of proxy server that uses IP addresses provided by an internet service provider (ISP). These IPs are associated with real residential locations, but unlike traditional residential proxies, ISP proxies are not tied to actual end-users. Instead, they are static, meaning the IP addresses don’t rotate and remain consistent.",
     },
     {
       question:
-        "Are your Datacenter & IPv6 proxies truly unlimited in any way?",
-      answer:
-        "Aenean turpis lectus, convallis vel laoreet quis, maximus sit amet purus. Nulla sollicitudin justo id aliquet condimentum. Suspendisse vehicula, est ut accumsan efficitur, velit massa vulputate erat, sit amet bibendum libero nunc at sem. Aliquam in ligula vel est suscipit consequat. Aliquam sit amet lacus id est convallis sagittis.",
+        "What is the difference between a ISP proxy and residential proxy?",
+      answer: `
+        <span class="font-semibold">ISP Proxy:</span> Uses static IPs assigned by ISPs,
+offering fast, stable connections ideal for
+consistent tasks like account management. <br/><br/>
+<span class="font-semibold">Residential Proxy:</span> Uses IPs from real
+devices, providing high anonymity and
+rotating options for activities like large-scale
+scraping.
+        `,
     },
     {
-      question: "What should I choose between Datacenter & IPv6?",
+      question: "Are there target restrictions for ISP Proxies?",
+      answer: `Yes, LightningProxies enforces restrictions on certain targets for ISP Proxies. To ensure you have the most accurate and up-to-date information about which targets are supported, please reach out to our support team.`,
+    },
+    {
+      question: "Do you offer a free trial for ISP Proxies?",
       answer:
-        "Aenean turpis lectus, convallis vel laoreet quis, maximus sit amet purus. Nulla sollicitudin justo id aliquet condimentum. Suspendisse vehicula, est ut accumsan efficitur, velit massa vulputate erat, sit amet bibendum libero nunc at sem. Aliquam in ligula vel est suscipit consequat. Aliquam sit amet lacus id est convallis sagittis.",
+        "Unfortunately, we do not offer a free trial for ISP Proxies due to the diversity of subnets and locations, which might differ from the actual order. We recommend starting with the purchase of a single IP to test our service and scaling up if you're satisfied.",
+    },
+    {
+      question: "Are ISP proxies better than datacenter proxies?",
+      answer:
+        "ISP proxies are better than datacenter proxies for tasks requiring high anonymity, legitimacy, and reliability, while datacenter proxies are more cost-effective for speedintensive or large-scale operations.",
     },
   ];
 

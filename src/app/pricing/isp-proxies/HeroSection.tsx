@@ -26,8 +26,7 @@ export default function HeroSection() {
         </h1>
 
         <p className="mb-12 text-xs sm:text-base leading-[18px] sm:leading-[24px] tracking-[-0.12px] sm:tracking-[-0.16px] text-center text-white/75">
-          Praesent vestibulum bibendum suscipit. Pellentesque sit amet convallis
-          orci. 
+          Learn more about LightningProxies' Static ISP pricing.
         </p>
 
         <PricingPart />

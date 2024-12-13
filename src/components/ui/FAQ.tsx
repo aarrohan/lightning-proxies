@@ -56,9 +56,12 @@ export default function FAQ({ color, question, answer }: IProps) {
             : "0px",
         }}
       >
-        <p className="text-sm sm:text-base tracking-[-0.14px] sm:tracking-[-0.16px] text-primary/75">
-          {answer}
-        </p>
+        <p
+          className="text-sm sm:text-base tracking-[-0.14px] sm:tracking-[-0.16px] text-primary/75"
+          dangerouslySetInnerHTML={{
+            __html: answer,
+          }}
+        ></p>
       </div>
     </div>
   );

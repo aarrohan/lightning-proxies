@@ -15,13 +15,6 @@ export default function PlanBox() {
 
   const countryOptions: IOption[] = [
     {
-      icon: (
-        <Image src={canadaFlagImg} alt="" className="w-[24px] sm:w-[27px]" />
-      ),
-      title: "Canada",
-      value: "canada",
-    },
-    {
       icon: <Image src={usaFlagImg} alt="" className="w-[24px] sm:w-[27px]" />,
       title: "United States",
       value: "united-states",
@@ -30,6 +23,13 @@ export default function PlanBox() {
       icon: <Image src={ukFlagImg} alt="" className="w-[24px] sm:w-[27px]" />,
       title: "United Kingdom",
       value: "united-kingdom",
+    },
+    {
+      icon: (
+        <Image src={canadaFlagImg} alt="" className="w-[24px] sm:w-[27px]" />
+      ),
+      title: "Canada",
+      value: "canada",
     },
   ];
 

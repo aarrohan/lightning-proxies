@@ -78,7 +78,7 @@ export default function IncludedBox() {
           />
         </svg>
       ),
-      title: "User-pass / IP Whitelist",
+      title: "User-pass",
       subTitle: "Authorization",
     },
     {
@@ -109,7 +109,7 @@ export default function IncludedBox() {
           />
         </svg>
       ),
-      title: "Country & ISP Targeting",
+      title: "Country",
       subTitle: "Targeting",
     },
     {
@@ -131,7 +131,7 @@ export default function IncludedBox() {
           />
         </svg>
       ),
-      title: "Sticky / Rotating",
+      title: "Static",
       subTitle: "Rotation interval",
     },
     {
@@ -173,7 +173,7 @@ export default function IncludedBox() {
         </svg>
       ),
       title: "Protocol",
-      subTitle: "HTTP Protocol Supported",
+      subTitle: "HTTP & SOCKS5",
     },
   ];
 
