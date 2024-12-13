@@ -26,8 +26,8 @@ export default function HeroSection() {
         </h1>
 
         <p className="mb-12 text-xs sm:text-base leading-[18px] sm:leading-[24px] tracking-[-0.12px] sm:tracking-[-0.16px] text-center text-white/75">
-          Praesent vestibulum bibendum suscipit. Pellentesque sit amet convallis
-          orci. 
+          Robust IPv4 proxy servers available across 5 global locations,
+          tailored to meet your specific needs with customizable settings.
         </p>
 
         <PricingPart />

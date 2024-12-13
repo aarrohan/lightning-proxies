@@ -73,7 +73,7 @@ export default function IncludedBox() {
           />
         </svg>
       ),
-      title: "10M+ Residential IPs",
+      title: "15.000+ Datacenter IPs",
       subTitle: "IPs included",
     },
     {
@@ -149,7 +149,7 @@ export default function IncludedBox() {
           />
         </svg>
       ),
-      title: "State, city, provider",
+      title: "Country",
       subTitle: "Targeting",
     },
     {
@@ -253,7 +253,7 @@ export default function IncludedBox() {
           />
         </svg>
       ),
-      title: "Without restrictions",
+      title: "Up to 2.500",
       subTitle: "Threads",
     },
     {

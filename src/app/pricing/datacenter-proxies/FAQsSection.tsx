@@ -6,23 +6,29 @@ export default function FAQsSection() {
     {
       question: "What is a datacenter proxy?",
       answer:
-        "Aenean turpis lectus, convallis vel laoreet quis, maximus sit amet purus. Nulla sollicitudin justo id aliquet condimentum. Suspendisse vehicula, est ut accumsan efficitur, velit massa vulputate erat, sit amet bibendum libero nunc at sem. Aliquam in ligula vel est suscipit consequat. Aliquam sit amet lacus id est convallis sagittis.",
-    },
-    {
-      question: "What's the difference between a Datacenter and an IPv6 proxy?",
-      answer:
-        "Aenean turpis lectus, convallis vel laoreet quis, maximus sit amet purus. Nulla sollicitudin justo id aliquet condimentum. Suspendisse vehicula, est ut accumsan efficitur, velit massa vulputate erat, sit amet bibendum libero nunc at sem. Aliquam in ligula vel est suscipit consequat. Aliquam sit amet lacus id est convallis sagittis.",
+        "Datacenter proxies are IP addresses from data centers that provide fast, cost-effective anonymity and allow access to georestricted content, but are easier to detect than residential proxies.",
     },
     {
       question:
-        "Are your Datacenter & IPv6 proxies truly unlimited in any way?",
+        "What's the difference between ISP proxies and datacenter proxies?",
       answer:
-        "Aenean turpis lectus, convallis vel laoreet quis, maximus sit amet purus. Nulla sollicitudin justo id aliquet condimentum. Suspendisse vehicula, est ut accumsan efficitur, velit massa vulputate erat, sit amet bibendum libero nunc at sem. Aliquam in ligula vel est suscipit consequat. Aliquam sit amet lacus id est convallis sagittis.",
+        "The key difference between ISP proxies and datacenter proxies lies in their source and reliability. ISP proxies are provided by internet service providers and route traffic through residential or commercial IP addresses, offering high trust and low detection rates. Datacenter proxies, on the other hand, originate from data centers and provide fast, cost-effective solutions but are easier to detect due to their non-residential nature.",
     },
     {
-      question: "What should I choose between Datacenter & IPv6?",
+      question: "Do you offer a Datacenter Proxies free trial?",
       answer:
-        "Aenean turpis lectus, convallis vel laoreet quis, maximus sit amet purus. Nulla sollicitudin justo id aliquet condimentum. Suspendisse vehicula, est ut accumsan efficitur, velit massa vulputate erat, sit amet bibendum libero nunc at sem. Aliquam in ligula vel est suscipit consequat. Aliquam sit amet lacus id est convallis sagittis.",
+        "Yes, we offer a free trial for Datacenter Proxies. Please contact our support team via live chat to request access.",
+    },
+    {
+      question:
+        "What is the main difference between shared and private proxies?",
+      answer:
+        "The main difference between shared and private proxies is exclusivity. Shared proxies are used by multiple users at the same time, making them more affordable but potentially slower and less secure. Private proxies, on the other hand, are dedicated to a single user, offering better performance, higher security, and exclusive access, ideal for sensitive tasks.",
+    },
+    {
+      question: "How do shared proxies work?",
+      answer:
+        "Shared proxies work by routing multiple users' internet traffic through the same IP address. This means the proxy IP is shared among several users simultaneously. While this makes shared proxies cost-effective, it also means that the bandwidth and resources are divided among users, which may impact speed and performance. Additionally, if one user engages in prohibited activities, the IP could be flagged, potentially affecting all users sharing the proxy. Shared proxies are suitable for less demanding tasks like light web browsing or accessing geo-restricted content.",
     },
   ];
 

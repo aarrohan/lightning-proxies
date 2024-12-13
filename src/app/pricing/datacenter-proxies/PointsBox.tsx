@@ -7,7 +7,7 @@ export default function PointsBox() {
         </h3>
 
         <p className="max-w-[424px] text-xs sm:text-base leading-[18px] sm:leading-[24px] tracking-[-0.12px] sm:tracking-[-0.16px] text-white/75">
-          * Valid for all residential proxy plans regular or enterprise
+          * Valid for all datacenter proxy plans regular or enterprise
         </p>
       </div>
 
