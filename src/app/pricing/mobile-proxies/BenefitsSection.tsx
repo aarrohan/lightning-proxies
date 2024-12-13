@@ -130,7 +130,7 @@ export default function BenefitsSection() {
       img: <Image src={benefit2Img} alt="" className="w-full" />,
       title: "Advanced geo-targeting",
       description:
-        "Efficiently filter mobile IPs by continent, country, state, city, coordinate, and ASN with no hidden or extra fees.",
+        "Efficiently filter mobile IPs by country and ASN with no hidden or extra fees.",
     },
     {
       icon: (

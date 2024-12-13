@@ -61,7 +61,7 @@ export default function PriceBox({
         <h4 className="text-lg sm:text-[24px] font-semibold tracking-[-0.54px] sm:tracking-[-0.84px] text-white">
           {price}{" "}
           <span className="text-xs sm:text-sm font-normal tracking-[-0.12px] sm:tracking-[-0.14px] text-white/75">
-            / monthly
+            / one-time
           </span>
         </h4>
 

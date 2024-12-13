@@ -6,25 +6,29 @@ import FAQ, { IProps as IFAQ } from "@/components/ui/FAQ";
 export default function FAQsSection() {
   const faqs: IFAQ[] = [
     {
-      question: "What is a mobile proxy?",
+      question: "What is a Mobile proxy?",
       answer:
-        "Aenean turpis lectus, convallis vel laoreet quis, maximus sit amet purus. Nulla sollicitudin justo id aliquet condimentum. Suspendisse vehicula, est ut accumsan efficitur, velit massa vulputate erat, sit amet bibendum libero nunc at sem. Aliquam in ligula vel est suscipit consequat. Aliquam sit amet lacus id est convallis sagittis.",
+        "A mobile proxy is a type of proxy server that routes internet traffic through real mobile devices connected to mobile networks. These proxies use IP addresses provided by mobile network carriers (e.g., 4G or 5G networks), making the traffic appear as if it's coming from a real mobile user.",
     },
     {
-      question: "What's the difference between a Datacenter and an IPv6 proxy?",
+      question: "What Mobile proxies are used for?",
       answer:
-        "Aenean turpis lectus, convallis vel laoreet quis, maximus sit amet purus. Nulla sollicitudin justo id aliquet condimentum. Suspendisse vehicula, est ut accumsan efficitur, velit massa vulputate erat, sit amet bibendum libero nunc at sem. Aliquam in ligula vel est suscipit consequat. Aliquam sit amet lacus id est convallis sagittis.",
+        "Mobile proxies are used for managing social media accounts, verifying ads, conducting market research, accessing geo-restricted content, and testing mobile apps, all while mimicking real mobile user activity to avoid detection and bans.",
     },
     {
-      question:
-        "Are your Datacenter & IPv6 proxies truly unlimited in any way?",
+      question: "Do you offer USA Mobile proxies?",
       answer:
-        "Aenean turpis lectus, convallis vel laoreet quis, maximus sit amet purus. Nulla sollicitudin justo id aliquet condimentum. Suspendisse vehicula, est ut accumsan efficitur, velit massa vulputate erat, sit amet bibendum libero nunc at sem. Aliquam in ligula vel est suscipit consequat. Aliquam sit amet lacus id est convallis sagittis.",
+        "Yes, we offer USA Mobile proxies. Please contact our support team for more details and to get started.",
     },
     {
-      question: "What should I choose between Datacenter & IPv6?",
+      question: "Do you offer a free trial for Mobile proxies?",
       answer:
-        "Aenean turpis lectus, convallis vel laoreet quis, maximus sit amet purus. Nulla sollicitudin justo id aliquet condimentum. Suspendisse vehicula, est ut accumsan efficitur, velit massa vulputate erat, sit amet bibendum libero nunc at sem. Aliquam in ligula vel est suscipit consequat. Aliquam sit amet lacus id est convallis sagittis.",
+        "Yes, we offer a free trial for Mobile proxies. Please contact our support team via live chat to request your trial.",
+    },
+    {
+      question: "What is the difference between mobile and residential proxy?",
+      answer:
+        "Mobile proxies use IPs from 4G/5G mobile networks, offering higher trust and dynamic rotation, ideal for social media and mobilespecific tasks, while residential proxies use IPs from home networks, better suited for general web scraping and anonymity.",
     },
   ];
 

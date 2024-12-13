@@ -78,65 +78,65 @@ export default function PricingPart() {
 
   const enterprisePriceBoxes: IPriceBox[] = [
     {
-      title: "Micro",
+      title: "Premium",
       options: [
         {
           title: "Included Bandwidth",
-          value: "1 GB",
+          value: "500 GB",
         },
         {
           title: "Price per GB",
-          value: "$ 10",
+          value: "$ 2.5",
         },
       ],
-      price: "$10",
+      price: "$1250",
       btn: "secondary",
     },
     {
-      title: "Starter",
+      title: "Master",
       options: [
         {
           title: "Included Bandwidth",
-          value: "5 GB",
+          value: "1000 GB",
         },
         {
           title: "Price per GB",
-          value: "$ 9",
+          value: "$ 2",
         },
       ],
-      price: "$45",
+      price: "$2000",
       btn: "secondary",
     },
     {
-      title: "Advanced",
+      title: "Elite",
       options: [
         {
           title: "Included Bandwidth",
-          value: "25 GB",
+          value: "3000 GB",
         },
         {
           title: "Price per GB",
-          value: "$ 8",
+          value: "$ 1.45",
         },
       ],
-      price: "$200",
+      price: "$4350",
       btn: "secondary",
     },
     {
       isHighlighted: true,
       isMostValue: true,
-      title: "Professional",
+      title: "Corporate",
       options: [
         {
           title: "Included Bandwidth",
-          value: "100 GB",
+          value: "5000 GB",
         },
         {
           title: "Price per GB",
-          value: "$ 7",
+          value: "$ 1.20",
         },
       ],
-      price: "$700",
+      price: "$6000",
       btn: "primary",
     },
   ];
