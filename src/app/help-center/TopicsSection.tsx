@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function TopicsSection() {
   return (
     <section className="pb-16 sm:pb-24">
@@ -7,7 +9,10 @@ export default function TopicsSection() {
         </h2>
 
         <div className="grid lg:grid-cols-2 gap-3.5">
-          <div className="py-5 px-7 sm:px-10 border border-dark-white rounded-xl flex items-start gap-3.5 sm:gap-5">
+          <Link
+            href={"/help-center/faqs"}
+            className="hover:-translate-y-1 py-5 px-7 sm:px-7 border border-dark-white rounded-xl flex items-start gap-3.5 sm:gap-5 duration-200"
+          >
             <svg
               width="32"
               height="32"
@@ -46,9 +51,12 @@ export default function TopicsSection() {
                 Find answers to most common questions products and setup
               </p>
             </div>
-          </div>
+          </Link>
 
-          <div className="py-5 px-7 sm:px-10 border border-dark-white rounded-xl flex items-start gap-3.5 sm:gap-5">
+          <Link
+            href={"/legal/terms-of-service"}
+            className="hover:-translate-y-1 py-5 px-7 sm:px-7 border border-dark-white rounded-xl flex items-start gap-3.5 sm:gap-5 duration-200"
+          >
             <svg
               width="24"
               height="24"
@@ -102,12 +110,19 @@ export default function TopicsSection() {
               </h3>
 
               <p className="text-sm sm:text-base tracking-[-0.14px] sm:tracking-[-0.16px] text-primary/75">
-                Find answers to most common questions products and setup{" "}
+                Find answers to most common questions refunds and terms of
+                service
               </p>
             </div>
-          </div>
+          </Link>
 
-          <div className="py-5 px-7 sm:px-10 border border-dark-white rounded-xl flex items-start gap-3.5 sm:gap-5">
+          <Link
+            href={
+              "https://app.lightningproxies.net/guide/lightningproxies-extension"
+            }
+            target="_blank"
+            className="hover:-translate-y-1 py-5 px-7 sm:px-7 border border-dark-white rounded-xl flex items-start gap-3.5 sm:gap-5 duration-200"
+          >
             <svg
               width="24"
               height="24"
@@ -151,9 +166,15 @@ export default function TopicsSection() {
                 Find answers to most common questions products and setup{" "}
               </p>
             </div>
-          </div>
+          </Link>
 
-          <div className="py-5 px-7 sm:px-10 border border-dark-white rounded-xl flex items-start gap-3.5 sm:gap-5">
+          <Link
+            href={
+              "https://app.lightningproxies.net/guide/lightningproxies-extension"
+            }
+            target="_blank"
+            className="hover:-translate-y-1 py-5 px-7 sm:px-7 border border-dark-white rounded-xl flex items-start gap-3.5 sm:gap-5 duration-200"
+          >
             <svg
               width="24"
               height="24"
@@ -240,7 +261,7 @@ export default function TopicsSection() {
                 Find answers to most common questions products and setup{" "}
               </p>
             </div>
-          </div>
+          </Link>
         </div>
       </div>
     </section>
