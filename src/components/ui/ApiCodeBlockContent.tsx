@@ -3,20 +3,24 @@ import { useEffect, useState } from "react";
 import SyntaxHighlighter from "react-syntax-highlighter";
 import atomOneDark from "react-syntax-highlighter/dist/esm/styles/hljs/atom-one-dark";
 
-const customStyle = {
-  background: "transparent",
-  fontSize: window.innerWidth < 768 ? "12px" : "14px",
-  lineHeight: window.innerWidth < 768 ? "22px" : "24px",
-  color: "#fff",
-};
-
 interface IProps {
   language: string;
   code: string;
 }
 
 export default function ApiCodeBlockContent({ language, code }: IProps) {
+  const [customStyle, setCustomStyle] = useState({});
   const [copied, setCopied] = useState<boolean>(false);
+
+  useEffect(() => {
+    const style = {
+      background: "transparent",
+      fontSize: window.innerWidth < 768 ? "12px" : "14px",
+      lineHeight: window.innerWidth < 768 ? "22px" : "24px",
+      color: "#fff",
+    };
+    setCustomStyle(style);
+  }, []);
 
   useEffect(() => {
     if (copied) {
