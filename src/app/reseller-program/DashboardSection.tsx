@@ -11,8 +11,9 @@ export default function DashboardSection() {
         </h2>
 
         <p className="mb-16 max-w-[580px] text-xs sm:text-base tracking-[-0.12px] sm:tracking-[-0.16px] text-center text-primary/75">
-          Perfectly tailored for partners looking to launch their proxy network
-          or expand it by offering a range of new products to their audience.
+          Dedicated dashboard for Resellers With our reseller-exclusive
+          dashboard, you can effortlessly track invoices, manage user plans, and
+          access a wide range of additional features.
         </p>
 
         <div className="w-full aspect-[3/2] sm:aspect-[2/1] border border-dark-white bg-white rounded-t-3xl"></div>

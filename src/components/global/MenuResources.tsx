@@ -253,7 +253,7 @@ export default function MenuResources() {
         </svg>
       ),
       title: "Reseller Program",
-      href: "/referral-program",
+      href: "/reseller-program",
     },
     {
       isComingSoon: true,

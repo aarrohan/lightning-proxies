@@ -12,12 +12,13 @@ export default function StepsSection() {
         </p>
 
         <h2 className="mb-6 max-w-[550px] text-[26px] sm:text-[42px] font-semibold leading-[30px] sm:leading-[46px] tracking-[-0.84px] text-center">
-          Start your proxy business with our referral program{" "}
+          First Steps to Enter Our Reseller Program
         </h2>
 
         <p className="mb-16 max-w-[580px] text-xs sm:text-base tracking-[-0.12px] sm:tracking-[-0.16px] text-center text-primary/75">
-          Perfectly tailored for partners looking to launch their proxy network
-          or expand it by offering a range of new products to their audience.
+          Following the steps below is crucial to successfully joining our
+          Reseller Program. It helps us build a connection and understand our
+          partners before embarking on a business journey together.
         </p>
 
         <div className="w-full grid sm:grid-cols-3 gap-y-10 gap-x-6">
