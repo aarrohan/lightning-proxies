@@ -56,9 +56,8 @@ export default function StepsSection() {
             </h3>
 
             <p className="text-xs sm:text-base tracking-[-0.12px] sm:tracking-[-0.16px] text-primary/75">
-              Perfectly tailored for partners looking to launch their proxy
-              network or expand it by offering a range of new products to their
-              audience.
+              Contact our support team via Live Chat, Telegram, Discord, or
+              Email to explore the reseller program offerings.
             </p>
           </div>
 
@@ -96,8 +95,8 @@ export default function StepsSection() {
             </h3>
 
             <p className="text-xs sm:text-base tracking-[-0.12px] sm:tracking-[-0.16px] text-primary/75">
-              Say goodbye to payment headaches with SecurePay! Our easy-to-use
-              payment platform makes it simple for businesses and individuals.
+              After consulting with our team, you will be required to select a
+              reseller rank and make the corresponding deposit to proceed.
             </p>
           </div>
 
@@ -135,8 +134,8 @@ export default function StepsSection() {
             </h3>
 
             <p className="text-xs sm:text-base tracking-[-0.12px] sm:tracking-[-0.16px] text-primary/75">
-              Say goodbye to payment headaches with SecurePay! Our easy-to-use
-              payment platform makes it simple for businesses and individuals.
+              You're now ready to start reselling with our API and enjoy access
+              to exclusive products and competitive pricing.
             </p>
           </div>
         </div>

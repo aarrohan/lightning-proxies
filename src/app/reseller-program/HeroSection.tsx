@@ -48,7 +48,7 @@ export default function HeroSection() {
                   className="stroke-primary"
                 />
               </svg>
-              25M+ Proxy Pool
+              10M+ Proxy Pool
             </p>
 
             <p className="flex items-center gap-2 sm:gap-3 text-xs sm:text-base font-medium tracking-[-0.12px] sm:tracking-[-0.16px]">
@@ -68,7 +68,7 @@ export default function HeroSection() {
                   className="stroke-primary"
                 />
               </svg>
-              7 Day Free Trial
+              30 Day Free Trial
             </p>
           </div>
 
