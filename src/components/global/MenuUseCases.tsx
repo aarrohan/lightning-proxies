@@ -130,7 +130,7 @@ export default function MenuUseCases() {
       title: "SERP Monitoring",
       href: "/use-cases/serp-monitoring",
       description:
-        "Sed varius justo ac sem luctus lobortis. Nunc porta leo nec pretium laoreet.",
+        "SERP data collection made easy with SERP Scraper API and SEO Proxies.",
     },
     {
       icon: <Image src={webScrapingIconImg} alt="" className="w-full" />,
@@ -138,7 +138,7 @@ export default function MenuUseCases() {
       title: "Web Scraping",
       href: "/use-cases/web-scraping",
       description:
-        "Sed varius justo ac sem luctus lobortis. Nunc porta leo nec pretium laoreet.",
+        "Initiate your web scraping projects with powerful proxy solutions.",
     },
     {
       icon: <Image src={marketResearchIconImg} alt="" className="w-full" />,
@@ -146,7 +146,7 @@ export default function MenuUseCases() {
       title: "Market Research",
       href: "/use-cases/market-research",
       description:
-        "Sed varius justo ac sem luctus lobortis. Nunc porta leo nec pretium laoreet.",
+        "Empower your large-scale market research and data collection with our high-performance proxies.",
     },
     {
       icon: <Image src={adVerificationIconImg} alt="" className="w-full" />,
@@ -154,7 +154,7 @@ export default function MenuUseCases() {
       title: "Ad Verification",
       href: "/use-cases/ad-verification",
       description:
-        "Sed varius justo ac sem luctus lobortis. Nunc porta leo nec pretium laoreet.",
+        "Improve your ad verification projects with our specialized proxy solutions.",
     },
     {
       icon: <Image src={brandProtectionIconImg} alt="" className="w-full" />,
@@ -162,15 +162,14 @@ export default function MenuUseCases() {
       title: "Brand Protection",
       href: "/use-cases/brand-protection",
       description:
-        "Sed varius justo ac sem luctus lobortis. Nunc porta leo nec pretium laoreet.",
+        "Leverage our advanced proxy technology to safeguard your brand from counterfeiters at all times.",
     },
     {
       icon: <Image src={useCasesIconImg} alt="" className="w-full" />,
       img: <Image src={useCase1Img} alt="" className="w-full rounded-xl" />,
       title: "View All Use Cases",
       href: "/use-cases",
-      description:
-        "Sed varius justo ac sem luctus lobortis. Nunc porta leo nec pretium laoreet.",
+      description: "Learn more about all LightningProxies use cases.",
     },
   ];
 

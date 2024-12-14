@@ -252,7 +252,7 @@ export default function MenuResources() {
           />
         </svg>
       ),
-      title: "Referral Program",
+      title: "Reseller Program",
       href: "/referral-program",
     },
     {

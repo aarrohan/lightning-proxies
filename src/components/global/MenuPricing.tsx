@@ -20,6 +20,8 @@ interface IProductCard {
   title: string;
   href: string;
   description: string;
+  price: string;
+  priceSuffix: string;
 }
 
 interface IProductsCardBgValues {
@@ -40,6 +42,8 @@ function ProductCard({
   title,
   href,
   description,
+  price,
+  priceSuffix,
 }: IProductCard) {
   useEffect(() => {
     if (firstItemRef) {
@@ -125,10 +129,10 @@ function ProductCard({
 
         <h4 className="mb-1">
           <span className="text-sm sm:text-lg font-semibold tracking-[-0.18px]">
-            $2.99
+            {price}
           </span>
-          <span className="text-[10px] sm:text-xs uppercase tracking-[-0.1px] sm:tracking-[-0.12px] text-primary/50">
-            /GB
+          <span className="text-[10px] sm:text-xs tracking-[-0.1px] sm:tracking-[-0.12px] text-primary/50">
+            {priceSuffix}
           </span>
         </h4>
 
@@ -157,6 +161,8 @@ export default function MenuPricing() {
       href: "/pricing/residential-proxies",
       description:
         "Sed varius justo ac sem luctus lobortis. Nunc porta leo nec pretium laoreet.",
+      price: "4.50$",
+      priceSuffix: "/GB",
     },
     {
       icon: <Image src={product2IconImg} alt="" className="w-[48px]" />,
@@ -164,6 +170,8 @@ export default function MenuPricing() {
       href: "/pricing/datacenter-proxies",
       description:
         "Sed varius justo ac sem luctus lobortis. Nunc porta leo nec pretium laoreet.",
+      price: "2$",
+      priceSuffix: "/day",
     },
     {
       icon: <Image src={product3IconImg} alt="" className="w-[48px]" />,
@@ -171,6 +179,8 @@ export default function MenuPricing() {
       href: "/pricing/isp-proxies",
       description:
         "Sed varius justo ac sem luctus lobortis. Nunc porta leo nec pretium laoreet.",
+      price: "4$",
+      priceSuffix: "/IP",
     },
     {
       icon: <Image src={product4IconImg} alt="" className="w-[48px]" />,
@@ -178,6 +188,8 @@ export default function MenuPricing() {
       href: "/pricing/ipv6-proxies",
       description:
         "Sed varius justo ac sem luctus lobortis. Nunc porta leo nec pretium laoreet.",
+      price: "10$",
+      priceSuffix: "/day",
     },
     {
       isNew: true,
@@ -186,6 +198,8 @@ export default function MenuPricing() {
       href: "/pricing/mobile-proxies",
       description:
         "Sed varius justo ac sem luctus lobortis. Nunc porta leo nec pretium laoreet.",
+      price: "5$",
+      priceSuffix: "/GB",
     },
     {
       isNew: true,
@@ -194,6 +208,8 @@ export default function MenuPricing() {
       href: "/pricing/unlimited-residential-proxies",
       description:
         "Sed varius justo ac sem luctus lobortis. Nunc porta leo nec pretium laoreet.",
+      price: "300$",
+      priceSuffix: "/day",
     },
   ];
 

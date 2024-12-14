@@ -148,7 +148,7 @@ export default function MenuLocations() {
       ),
       title: "United States",
       href: "/locations/usa",
-      description: "123,456,789 IPs",
+      description: "1.530.310 IPs",
     },
     {
       img: (
@@ -163,7 +163,7 @@ export default function MenuLocations() {
       ),
       title: "United Kingdom",
       href: "/locations/uk",
-      description: "123,456,789 IPs",
+      description: "720.545 IPs",
     },
     {
       img: (
@@ -178,7 +178,7 @@ export default function MenuLocations() {
       ),
       title: "Germany",
       href: "/locations/germany",
-      description: "123,456,789 IPs",
+      description: "485.913 IPs",
     },
     {
       img: (
@@ -193,7 +193,7 @@ export default function MenuLocations() {
       ),
       title: "France",
       href: "/locations/france",
-      description: "123,456,789 IPs",
+      description: "350.720 IPs",
     },
     {
       img: (
@@ -208,7 +208,7 @@ export default function MenuLocations() {
       ),
       title: "Canada",
       href: "/locations/canada",
-      description: "123,456,789 IPs",
+      description: "530.600 IPs",
     },
     {
       img: (
@@ -223,7 +223,7 @@ export default function MenuLocations() {
       ),
       title: "China",
       href: "/locations/china",
-      description: "123,456,789 IPs",
+      description: "1.130.344 IPs",
     },
     {
       img: (
@@ -238,7 +238,7 @@ export default function MenuLocations() {
       ),
       title: "Brazil",
       href: "/locations/brazil",
-      description: "123,456,789 IPs",
+      description: "1.350.429 IPs",
     },
     {
       isSmallImg: true,

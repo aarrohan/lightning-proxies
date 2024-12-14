@@ -145,28 +145,28 @@ export default function MenuProducts() {
       title: "Residential Proxies",
       href: "/products/residential-proxies",
       description:
-        "Sed varius justo ac sem luctus lobortis. Nunc porta leo nec pretium laoreet.",
+        "Reliable proxies with access to over 10M+ home IPs for privacy, web scraping, and geo-restricted content.",
     },
     {
       icon: <Image src={product2IconImg} alt="" className="w-[48px]" />,
       title: "Datacenter Proxies",
       href: "/products/datacenter-proxies",
       description:
-        "Sed varius justo ac sem luctus lobortis. Nunc porta leo nec pretium laoreet.",
+        "High-speed, affordable proxies for bulk scraping and automation.",
     },
     {
       icon: <Image src={product3IconImg} alt="" className="w-[48px]" />,
       title: "ISP Proxies",
       href: "/products/isp-proxies",
       description:
-        "Sed varius justo ac sem luctus lobortis. Nunc porta leo nec pretium laoreet.",
+        "Trusted IPs with datacenter speeds, ideal for social media and botting.",
     },
     {
       icon: <Image src={product4IconImg} alt="" className="w-[48px]" />,
       title: "IPv6 Proxies",
       href: "/products/ipv6-proxies",
       description:
-        "Sed varius justo ac sem luctus lobortis. Nunc porta leo nec pretium laoreet.",
+        "Affordable proxies with a massive IP pool for large-scale tasks.",
     },
     {
       isNew: true,
@@ -174,15 +174,14 @@ export default function MenuProducts() {
       title: "Mobile Proxies",
       href: "/products/mobile-proxies",
       description:
-        "Sed varius justo ac sem luctus lobortis. Nunc porta leo nec pretium laoreet.",
+        "Real 4G/LTE IPs for social media, app testing, and tough restrictions.",
     },
     {
       isNew: true,
       icon: <Image src={product9IconImg} alt="" className="w-[48px]" />,
       title: "Unlimited Residential Proxies",
       href: "/products/unlimited-residential-proxies",
-      description:
-        "Sed varius justo ac sem luctus lobortis. Nunc porta leo nec pretium laoreet.",
+      description: "No bandwidth limits; perfect for heavy data users.",
     },
   ];
 
@@ -192,24 +191,21 @@ export default function MenuProducts() {
       icon: <Image src={product6IconImg} alt="" className="w-[48px]" />,
       title: "Chrome Extension",
       href: "/",
-      description:
-        "Sed varius justo ac sem luctus lobortis. Nunc porta leo nec pretium laoreet.",
+      description: "Quickly manage proxies directly from your browser.",
     },
     {
       isComingSoon: true,
       icon: <Image src={product7IconImg} alt="" className="w-[48px]" />,
       title: "Web Scraper API",
       href: "/",
-      description:
-        "Sed varius justo ac sem luctus lobortis. Nunc porta leo nec pretium laoreet.",
+      description: "Easily automate large-scale data extraction.",
     },
     {
       isComingSoon: true,
       icon: <Image src={product8IconImg} alt="" className="w-[48px]" />,
       title: "SERP Scraper API",
       href: "/",
-      description:
-        "Sed varius justo ac sem luctus lobortis. Nunc porta leo nec pretium laoreet.",
+      description: "Scrape search engine results for SEO and analysis.",
     },
   ];
 
