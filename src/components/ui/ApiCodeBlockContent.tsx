@@ -15,8 +15,8 @@ export default function ApiCodeBlockContent({ language, code }: IProps) {
   useEffect(() => {
     const style = {
       background: "transparent",
-      fontSize: window.innerWidth < 768 ? "12px" : "14px",
-      lineHeight: window.innerWidth < 768 ? "22px" : "24px",
+      fontSize: window.innerWidth < 768 ? "10px" : "14px",
+      lineHeight: window.innerWidth < 768 ? "20px" : "24px",
       color: "#fff",
     };
     setCustomStyle(style);
