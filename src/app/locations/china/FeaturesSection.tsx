@@ -83,9 +83,9 @@ export default function FeaturesSection() {
           />
         </svg>
       ),
-      title: "Multiple gateways worldwide",
+      title: "Multiple Gateways Worldwide",
       description:
-        "Praesent fringilla, lectus ut efficitur iaculis, nisl ante tristique odio.",
+        "Experience low latency in every proxy country with our optimized gateways tailored for each continent.",
     },
     {
       icon: (
@@ -139,7 +139,7 @@ export default function FeaturesSection() {
       ),
       title: "ASN/ISP Targeting",
       description:
-        "Praesent fringilla, lectus ut efficitur iaculis, nisl ante tristique odio.",
+        "LightningProxies enables you to target ISPs in any country, ensuring you receive IPs exclusively from your preferred ISP.",
     },
     {
       icon: (
@@ -169,9 +169,9 @@ export default function FeaturesSection() {
           />
         </svg>
       ),
-      title: "Target over 40 US states",
+      title: "Target Over 50 Cities",
       description:
-        "Praesent fringilla, lectus ut efficitur iaculis, nisl ante tristique odio.",
+        "Get IPs from specific cities to maximize success rates for location-specific needs.",
     },
     {
       icon: (
@@ -221,9 +221,9 @@ export default function FeaturesSection() {
           />
         </svg>
       ),
-      title: "Five datacenters worldwide",
+      title: "Global Datacenters",
       description:
-        "Praesent fringilla, lectus ut efficitur iaculis, nisl ante tristique odio.",
+        "Connect globally with minimal latency through our extensive partnerships with datacenters in strategic worldwide locations.",
     },
     {
       icon: (
@@ -248,9 +248,9 @@ export default function FeaturesSection() {
           />
         </svg>
       ),
-      title: "Unlimited bandwidth",
+      title: "Unlimited Sessions",
       description:
-        "Praesent fringilla, lectus ut efficitur iaculis, nisl ante tristique odio.",
+        "Enjoy unrestricted session generation— create as many sessions as you need without limitations.",
     },
     {
       icon: (
@@ -283,9 +283,9 @@ export default function FeaturesSection() {
           />
         </svg>
       ),
-      title: "Cheap US proxy solution",
+      title: "Cost-Effective Proxy Solutions",
       description:
-        "Praesent fringilla, lectus ut efficitur iaculis, nisl ante tristique odio.",
+        "Access premium proxy services at highly competitive rates, delivering value without compromising quality.",
     },
   ];
 
@@ -297,7 +297,7 @@ export default function FeaturesSection() {
         </p>
 
         <h2 className="mb-8 sm:mb-20 text-[26px] sm:text-[42px] font-semibold leading-[30px] sm:leading-[46px] tracking-[-0.84px] text-center">
-          Why our customers choose <br /> our United States proxies
+          Why our customers choose <br /> our China proxies
         </h2>
 
         <div className="relative grid sm:grid-cols-3">
