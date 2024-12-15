@@ -11,16 +11,15 @@ export default function Info2Section() {
           </p>
 
           <h2 className="mb-5 sm:mb-8 text-[26px] sm:text-[42px] font-semibold leading-[30px] sm:leading-[46px] tracking-[-0.84px]">
-            Cost-effective and private Mobile proxies
+            Global reach with The Best Mobile Proxies
           </h2>
 
           <p className="mb-6 sm:mb-8 text-xs sm:text-base tracking-[-0.12px] sm:tracking-[-0.16px] text-primary/75">
-            Datacenter proxies are the most cost-effective and budget-friendly
-            proxy solution in major use cases. <br />
+            Get global access on your desired targets using our mobile proxy
+            network, spanning 50+ countries and 1000+ cities. <br />
             <br />
-            LightningProxies provides private datacenter proxies sourced from
-            reliable third-party datacenter partners. All IPs are dedicated to
-            our service ensuring the best quality in your scraping projects.
+            Perform data extraction operations without Captcha blocks or IP
+            bans, and achieve up to 99% success rate.
           </p>
 
           <div className="flex flex-wrap gap-3">

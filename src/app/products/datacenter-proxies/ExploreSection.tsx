@@ -37,16 +37,16 @@ export default function ExploreSection() {
               Residential Proxies
             </h3>
 
-            <p className="max-w-[420px] text-xs sm:text-base tracking-[-0.12px] sm:tracking-[-0.16px] text-center text-primary/50">
-              Sed tortor est, volutpat id bibendum eu, convallis non magna. Cras
-              accumsan lobortis odio in finibus.
+            <p className="text-xs sm:text-base tracking-[-0.12px] sm:tracking-[-0.16px] text-center text-primary/50">
+              Access 10M+ real home IPs for web scraping, market research, and
+              accessing georestricted content with high success rates.
             </p>
 
             <Link
               href={"/products/residential-proxies"}
               className="py-1 sm:py-1.5 px-2.5 sm:px-3.5 bg-accent/10 rounded-lg sm:rounded-xl flex items-center gap-1.5 text-[11px] sm:text-base font-medium tracking-[-0.11px] sm:tracking-[-0.16px] text-accent"
             >
-              From $2.99{" "}
+              Starting from $4.5/GB
               <svg
                 width="6"
                 height="10"
@@ -78,16 +78,17 @@ export default function ExploreSection() {
               ISP Proxies
             </h3>
 
-            <p className="max-w-[420px] text-xs sm:text-base tracking-[-0.12px] sm:tracking-[-0.16px] text-center text-primary/50">
-              Sed tortor est, volutpat id bibendum eu, convallis non magna. Cras
-              accumsan lobortis odio in finibus.
+            <p className="text-xs sm:text-base tracking-[-0.12px] sm:tracking-[-0.16px] text-center text-primary/50">
+              Blending datacenter speed with residential trust, these proxies
+              are perfect for ecommerce, social media management, and
+              competitive analysis.
             </p>
 
             <Link
               href={"/products/isp-proxies"}
               className="py-1 sm:py-1.5 px-2.5 sm:px-3.5 bg-orange/10 rounded-lg sm:rounded-xl flex items-center gap-1.5 text-[11px] sm:text-base font-medium tracking-[-0.11px] sm:tracking-[-0.16px] text-orange"
             >
-              From $2.99{" "}
+              Starting from $4/IP
               <svg
                 width="6"
                 height="10"
@@ -124,15 +125,15 @@ export default function ExploreSection() {
             </h3>
 
             <p className="max-w-[420px] text-xs sm:text-base tracking-[-0.12px] sm:tracking-[-0.16px] text-center text-primary/50">
-              Sed tortor est, volutpat id bibendum eu, convallis non magna. Cras
-              accumsan lobortis odio in finibus.
+              Scalable and affordable proxies with vast IP availability,
+              tailored for large-scale data tasks and web scraping.
             </p>
 
             <Link
               href={"/products/ipv6-proxies"}
               className="py-1 sm:py-1.5 px-2.5 sm:px-3.5 bg-purple/10 rounded-lg sm:rounded-xl flex items-center gap-1.5 text-[11px] sm:text-base font-medium tracking-[-0.11px] sm:tracking-[-0.16px] text-purple"
             >
-              From $2.99{" "}
+              Starting from $10/Day
               <svg
                 width="6"
                 height="10"
@@ -161,15 +162,15 @@ export default function ExploreSection() {
             </h3>
 
             <p className="max-w-[420px] text-xs sm:text-base tracking-[-0.12px] sm:tracking-[-0.16px] text-center text-primary/50">
-              Sed tortor est, volutpat id bibendum eu, convallis non magna. Cras
-              accumsan lobortis odio in finibus.
+              Real 4G/LTE mobile IPs designed for bypassing restrictions, social
+              media management, and app testing.
             </p>
 
             <Link
               href={"/products/mobile-proxies"}
               className="py-1 sm:py-1.5 px-2.5 sm:px-3.5 bg-blue/10 rounded-lg sm:rounded-xl flex items-center gap-1.5 text-[11px] sm:text-base font-medium tracking-[-0.11px] sm:tracking-[-0.16px] text-blue"
             >
-              From $2.99{" "}
+              Starting from $5/GB
               <svg
                 width="6"
                 height="10"

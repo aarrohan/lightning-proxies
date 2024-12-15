@@ -252,9 +252,9 @@ export default function FeaturesSection() {
               </h3>
 
               <p className="text-xs sm:text-base tracking-[-0.12px] sm:tracking-[-0.16px] text-primary/65">
-                Datacenter IPs hosted on an ISP infrastructure provide high
-                speeds compared to residential connections, successfully
-                avoiding captchas.
+                Datacenter IPs hosted on ISP infrastructure provide high speeds
+                compared to residential connections, successfully avoiding
+                captchas.
               </p>
             </div>
           </div>
@@ -287,9 +287,8 @@ export default function FeaturesSection() {
               </h3>
 
               <p className="text-xs sm:text-base tracking-[-0.12px] sm:tracking-[-0.16px] text-primary/65">
-                No limit on bandwidth or threads whatsoever; all IPs are
-                dedicated to you only, allowing you disruption-free proxy
-                activity.
+                No limits on bandwidth or threads; all IPs are exclusively
+                dedicated to you, ensuring seamless proxy activity.
               </p>
             </div>
           </div>

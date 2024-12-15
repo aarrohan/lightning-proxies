@@ -36,8 +36,8 @@ export default function HeroSection() {
           </h1>
 
           <p className="max-w-[580px] text-xs sm:text-base leading-[18px] sm:leading-[24px] tracking-[-0.12px] sm:tracking-[-0.16px] text-center xl:text-left text-white">
-            Avoid captcha blocks while scraping with the most reliable and fast
-            Residential Proxies.
+            Premium Mobile Proxies with authentic IPs sourced directly from Top
+            Mobile Carriers, providing reliable and consistent performance.
           </p>
 
           <div className="my-7 w-full sm:w-fit grid sm:flex gap-3">
@@ -102,7 +102,7 @@ export default function HeroSection() {
                   className="stroke-white"
                 />
               </svg>
-              Feature 01
+              High Trust IPs
             </p>
 
             <p className="flex items-center gap-2 sm:gap-3 text-xs sm:text-base font-medium tracking-[-0.12px] sm:tracking-[-0.16px] text-white">
@@ -129,7 +129,7 @@ export default function HeroSection() {
                   className="stroke-white"
                 />
               </svg>
-              Feature 02
+              Massive IP Pool
             </p>
 
             <p className="flex items-center gap-2 sm:gap-3 text-xs sm:text-base font-medium tracking-[-0.12px] sm:tracking-[-0.16px] text-white">
@@ -149,7 +149,7 @@ export default function HeroSection() {
                   className="stroke-white"
                 />
               </svg>
-              Feature 03
+              Free Trial Available
             </p>
           </div>
         </div>

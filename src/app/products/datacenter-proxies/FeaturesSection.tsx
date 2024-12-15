@@ -207,7 +207,7 @@ export default function FeaturesSection() {
               </h3>
 
               <p className="text-xs sm:text-base tracking-[-0.12px] sm:tracking-[-0.16px] text-primary/65">
-                Our offer includes 500 backconnect ports, where each port
+                Our offer includes backconnect ports, where each port
                 automatically rotates an IP with every request, thanks to our
                 in-house technology.
               </p>

@@ -16,7 +16,7 @@ export default function Info1Section() {
           </p>
 
           <h2 className="mb-8 sm:mb-10 text-[26px] sm:text-[42px] font-semibold leading-[30px] sm:leading-[46px] tracking-[-0.84px]">
-            Unique and reliable Mobile proxies to our proxy service
+            Real Mobile IPs, Real Mobile Devices
           </h2>
 
           <div className="mb-4 w-full space-y-3">
@@ -67,8 +67,9 @@ export default function Info1Section() {
               </svg>
 
               <p className="text-xs sm:text-sm tracking-[-0.12px] sm:tracking-[-0.14px] text-primary/75">
-                With a wide IP pool of 20,000 proxies dedicated exclusively to
-                our service.
+                Access the most extensive Mobile Proxy network, with over 100k
+                IPs active in real-time and enjoy country & ISP targeting in 50+
+                regions.
               </p>
             </div>
 
@@ -107,9 +108,8 @@ export default function Info1Section() {
               </svg>
 
               <p className="text-xs sm:text-sm tracking-[-0.12px] sm:tracking-[-0.14px] text-primary/75">
-                Establish connections with proxies from North America and
-                European countries without compromising on quality or
-                reliability.
+                Less captchas, less blocks using IPs sourced from mobile devices
+                all over the globe.
               </p>
             </div>
           </div>

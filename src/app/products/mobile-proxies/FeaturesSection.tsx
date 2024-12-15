@@ -54,8 +54,9 @@ export default function FeaturesSection() {
               </h3>
 
               <p className="text-xs sm:text-base tracking-[-0.12px] sm:tracking-[-0.16px] text-primary/65">
-                Lightning's Datacenter Proxies provide the flexibility to use IP
-                Whitelisted proxies, allowing you to target specific countries.
+                Lightning's Mobile Proxies provide the flexibility to use
+                IP-whitelisted proxies, enabling you to target specific
+                countries with ease and precision.
               </p>
             </div>
           </div>
@@ -86,13 +87,13 @@ export default function FeaturesSection() {
 
             <div className="space-y-2 sm:space-y-2.5">
               <h3 className="text-xs sm:text-xl font-medium tracking-[-0.12px] sm:tracking-[-0.2px]">
-                Unlimited Bandwidth
+                Unlimited Connections
               </h3>
 
               <p className="text-xs sm:text-base tracking-[-0.12px] sm:tracking-[-0.16px] text-primary/65">
-                We don't impose any limits on bandwidth or speed capacity. You
-                can download files or scrape with amazingly fast, uncapped
-                speeds.
+                No restrictions on the number of concurrent connections,
+                allowing you to scale your operations effortlessly and handle
+                even the most demanding tasks.
               </p>
             </div>
           </div>
@@ -129,12 +130,49 @@ export default function FeaturesSection() {
 
             <div className="space-y-2 sm:space-y-2.5">
               <h3 className="text-xs sm:text-xl font-medium tracking-[-0.12px] sm:tracking-[-0.2px]">
-                Forever Sticky Time
+                Up to 24Hrs Sticky Time
               </h3>
 
               <p className="text-xs sm:text-base tracking-[-0.12px] sm:tracking-[-0.16px] text-primary/65">
-                Keep the same outgoing IP for days or even weeks within the same
-                sessions. We have no restrictions on this matter.
+                Maintain the same outgoing IP for up to 24 hours within the same
+                session, ensuring consistent connections for uninterrupted
+                activities.
+              </p>
+            </div>
+          </div>
+
+          <div className="flex items-start gap-3 sm:gap-5">
+            <svg
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              className="w-[24px] sm:w-[32px] min-w-[24px] sm:min-w-[32px] h-auto"
+            >
+              <path
+                d="M6.01397 25.9822C9.36388 29.1726 13.3519 27.8965 14.9471 26.6043C15.7724 25.9358 16.1435 25.5037 16.4624 25.1846C17.5791 24.1477 17.5074 23.1109 16.7815 22.2814C16.4911 21.9494 14.628 20.1598 12.8414 18.3253C11.9162 17.3999 11.2781 16.7461 10.7326 16.2197C10.002 15.4914 9.36389 14.6563 8.40677 14.6802C7.52941 14.6802 6.89133 15.4539 6.09373 16.2515C5.1762 17.169 4.49854 18.3253 4.25926 19.3622C3.54142 22.393 4.65806 24.5465 6.01397 25.9822ZM6.01397 25.9822L2.66406 29.3321"
+                stroke="#7794FC"
+                strokeWidth="2"
+                strokeLinecap="round"
+              />
+              <path
+                d="M25.9827 6.01946C22.6319 2.82754 18.6576 4.12774 17.062 5.42048C16.2364 6.08933 15.8654 6.52168 15.5462 6.84088C14.4292 7.87825 14.5011 8.91561 15.2271 9.74552C15.3315 9.86492 15.6394 10.1728 16.0738 10.6036M25.9827 6.01946C27.3391 7.45582 28.4708 9.6338 27.7527 12.6661C27.5134 13.7034 26.8356 14.8602 25.9178 15.7782C25.12 16.5762 24.4818 17.3502 23.6042 17.3502C22.6467 17.3742 22.1499 16.6818 21.4191 15.9533M25.9827 6.01946L29.3336 2.66797M16.0738 10.6036C16.8478 11.3709 18.0238 12.528 19.1683 13.7034C20.0938 14.6293 20.8734 15.4266 21.4191 15.9533M16.0738 10.6036L14.0156 12.6746M21.4191 15.9533L19.337 17.986"
+                stroke="#7794FC"
+                strokeWidth="2"
+                strokeLinecap="round"
+              />
+            </svg>
+
+            <div className="space-y-2 sm:space-y-2.5">
+              <h3 className="text-xs sm:text-xl font-medium tracking-[-0.12px] sm:tracking-[-0.2px]">
+                Backconnect Proxies
+              </h3>
+
+              <p className="text-xs sm:text-base tracking-[-0.12px] sm:tracking-[-0.16px] text-primary/65">
+                Our offer includes rotating backconnect ports, where each port
+                automatically assigns a new IP with every request, powered by
+                our advanced in-house technology.
               </p>
             </div>
           </div>
@@ -172,44 +210,8 @@ export default function FeaturesSection() {
               </h3>
 
               <p className="text-xs sm:text-base tracking-[-0.12px] sm:tracking-[-0.16px] text-primary/65">
-                Choose from US, NL, UK, CA, DE datacenter proxies to make your
-                web scraping disruption-free and smooth all over the world.
-              </p>
-            </div>
-          </div>
-
-          <div className="flex items-start gap-3 sm:gap-5">
-            <svg
-              width="32"
-              height="32"
-              viewBox="0 0 32 32"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              className="w-[24px] sm:w-[32px] min-w-[24px] sm:min-w-[32px] h-auto"
-            >
-              <path
-                d="M6.01397 25.9822C9.36388 29.1726 13.3519 27.8965 14.9471 26.6043C15.7724 25.9358 16.1435 25.5037 16.4624 25.1846C17.5791 24.1477 17.5074 23.1109 16.7815 22.2814C16.4911 21.9494 14.628 20.1598 12.8414 18.3253C11.9162 17.3999 11.2781 16.7461 10.7326 16.2197C10.002 15.4914 9.36389 14.6563 8.40677 14.6802C7.52941 14.6802 6.89133 15.4539 6.09373 16.2515C5.1762 17.169 4.49854 18.3253 4.25926 19.3622C3.54142 22.393 4.65806 24.5465 6.01397 25.9822ZM6.01397 25.9822L2.66406 29.3321"
-                stroke="#7794FC"
-                strokeWidth="2"
-                strokeLinecap="round"
-              />
-              <path
-                d="M25.9827 6.01946C22.6319 2.82754 18.6576 4.12774 17.062 5.42048C16.2364 6.08933 15.8654 6.52168 15.5462 6.84088C14.4292 7.87825 14.5011 8.91561 15.2271 9.74552C15.3315 9.86492 15.6394 10.1728 16.0738 10.6036M25.9827 6.01946C27.3391 7.45582 28.4708 9.6338 27.7527 12.6661C27.5134 13.7034 26.8356 14.8602 25.9178 15.7782C25.12 16.5762 24.4818 17.3502 23.6042 17.3502C22.6467 17.3742 22.1499 16.6818 21.4191 15.9533M25.9827 6.01946L29.3336 2.66797M16.0738 10.6036C16.8478 11.3709 18.0238 12.528 19.1683 13.7034C20.0938 14.6293 20.8734 15.4266 21.4191 15.9533M16.0738 10.6036L14.0156 12.6746M21.4191 15.9533L19.337 17.986"
-                stroke="#7794FC"
-                strokeWidth="2"
-                strokeLinecap="round"
-              />
-            </svg>
-
-            <div className="space-y-2 sm:space-y-2.5">
-              <h3 className="text-xs sm:text-xl font-medium tracking-[-0.12px] sm:tracking-[-0.2px]">
-                Backconnect Proxies
-              </h3>
-
-              <p className="text-xs sm:text-base tracking-[-0.12px] sm:tracking-[-0.16px] text-primary/65">
-                Our offer includes 500 backconnect ports, where each port
-                automatically rotates an IP with every request, thanks to our
-                in-house technology.
+                Access proxies from over 40 countries worldwide, ensuring
+                seamless web scraping and global coverage for your needs.
               </p>
             </div>
           </div>

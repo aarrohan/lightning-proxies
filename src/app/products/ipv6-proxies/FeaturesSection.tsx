@@ -54,7 +54,7 @@ export default function FeaturesSection() {
               </h3>
 
               <p className="text-xs sm:text-base tracking-[-0.12px] sm:tracking-[-0.16px] text-primary/65">
-                Lightning's Datacenter Proxies provide the flexibility to use IP
+                Lightning's IPv6 Proxies provide the flexibility to use IP
                 Whitelisted proxies, allowing you to target specific countries.
               </p>
             </div>
@@ -172,8 +172,8 @@ export default function FeaturesSection() {
               </h3>
 
               <p className="text-xs sm:text-base tracking-[-0.12px] sm:tracking-[-0.16px] text-primary/65">
-                Choose from US, NL, UK, CA, DE datacenter proxies to make your
-                web scraping disruption-free and smooth all over the world.
+                Choose from US, NL, UK, CA, DE IPv6 proxies to make your web
+                scraping disruption-free and smooth all over the world.
               </p>
             </div>
           </div>
@@ -207,7 +207,7 @@ export default function FeaturesSection() {
               </h3>
 
               <p className="text-xs sm:text-base tracking-[-0.12px] sm:tracking-[-0.16px] text-primary/65">
-                Our offer includes 500 backconnect ports, where each port
+                Our offer includes backconnect ports, where each port
                 automatically rotates an IP with every request, thanks to our
                 in-house technology.
               </p>

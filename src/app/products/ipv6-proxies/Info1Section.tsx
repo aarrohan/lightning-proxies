@@ -16,7 +16,7 @@ export default function Info1Section() {
           </p>
 
           <h2 className="mb-8 sm:mb-10 text-[26px] sm:text-[42px] font-semibold leading-[30px] sm:leading-[46px] tracking-[-0.84px]">
-            Unique and reliable IPv6 proxies to our proxy service
+            Super-charged speeds by 10GB uplink network
           </h2>
 
           <div className="mb-4 w-full space-y-3">
@@ -67,8 +67,9 @@ export default function Info1Section() {
               </svg>
 
               <p className="text-xs sm:text-sm tracking-[-0.12px] sm:tracking-[-0.14px] text-primary/75">
-                With a wide IP pool of 20,000 proxies dedicated exclusively to
-                our service.
+                LightningProxies' IPv6 Proxies are backed by a powerful network
+                infrastructure, allowing you to scrape effortlessly with up to
+                10GB speeds.
               </p>
             </div>
 
@@ -107,9 +108,8 @@ export default function Info1Section() {
               </svg>
 
               <p className="text-xs sm:text-sm tracking-[-0.12px] sm:tracking-[-0.14px] text-primary/75">
-                Establish connections with proxies from North America and
-                European countries without compromising on quality or
-                reliability.
+                We are located in Ashburn, Virginia, in one of the best
+                datacenters, multi-home connected delivering 99% uptime.
               </p>
             </div>
           </div>

@@ -32,7 +32,7 @@ export default function HeroSection() {
           </p>
 
           <h1 className="mb-5 sm:mb-6 text-4xl sm:text-[64px] sm:leading-[72px] tracking-[-1.08px] sm:tracking-[-1.95px] font-semibold text-center xl:text-left text-white">
-            High Speed Residential Proxy
+            Residential Proxies
           </h1>
 
           <p className="max-w-[580px] text-xs sm:text-base leading-[18px] sm:leading-[24px] tracking-[-0.12px] sm:tracking-[-0.16px] text-center xl:text-left text-white">
@@ -102,7 +102,7 @@ export default function HeroSection() {
                   className="stroke-white"
                 />
               </svg>
-              Feature 01
+              Genuine home IPs
             </p>
 
             <p className="flex items-center gap-2 sm:gap-3 text-xs sm:text-base font-medium tracking-[-0.12px] sm:tracking-[-0.16px] text-white">
@@ -129,7 +129,7 @@ export default function HeroSection() {
                   className="stroke-white"
                 />
               </svg>
-              Feature 02
+              10M+ IP Pool
             </p>
 
             <p className="flex items-center gap-2 sm:gap-3 text-xs sm:text-base font-medium tracking-[-0.12px] sm:tracking-[-0.16px] text-white">
@@ -149,7 +149,7 @@ export default function HeroSection() {
                   className="stroke-white"
                 />
               </svg>
-              Feature 03
+              Free Trial Available
             </p>
           </div>
         </div>
