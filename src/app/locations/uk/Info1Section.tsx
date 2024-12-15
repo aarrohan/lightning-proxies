@@ -7,21 +7,22 @@ export default function Info1Section() {
       <div className="mx-auto container max-w-[1320px] px-5 grid lg:grid-cols-[auto_575px] items-center gap-6 sm:gap-14">
         <div>
           <p className="mb-3 text-[11px] sm:text-sm font-semibold tracking-[-0.11px] sm:tracking-[-0.14px] uppercase text-accent">
-            PROXIES FROM UNITED STATES
+            PROXIES FROM UNITED KINGDOM
           </p>
 
           <h2 className="mb-6 text-[26px] sm:text-[42px] font-semibold leading-[30px] sm:leading-[46px] tracking-[-0.84px]">
-            Genuine Residential proxies in United States
+            Genuine Residential proxies in United Kingdom
           </h2>
 
           <p className="mb-6 text-xs sm:text-base tracking-[-0.12px] sm:tracking-[-0.16px] text-primary/75">
-            Enhance your appreance on the web with the best US residential IPs.
-            Using LightningProxies residential US proxy servers will keep you
-            protected and anonymous on the entire proxy session.
+            I absolutely love their proxies, especially the Residential ones.
+            The global gateway performs exceptionally well on my targets. I’ve
+            noticed a high percentage of unique IPs for every request, which
+            significantly enhances my scraping performance.
           </p>
 
           <button className="active:scale-95 w-full sm:w-fit py-2.5 sm:py-2 px-5 border border-dark-white bg-white rounded-lg flex justify-center items-center gap-2.5 text-xs sm:text-base font-medium tracking-[-0.16px] text-accent duration-300">
-            View all locations in United States
+            View all locations in United Kingdom
             <svg
               width="13"
               height="11"
@@ -38,9 +39,10 @@ export default function Info1Section() {
           </button>
 
           <p className="mt-6 sm:mt-12 text-xs sm:text-base tracking-[-0.12px] sm:tracking-[-0.16px] text-primary/75">
-            “Review from customer here,Praesent ullamcorper, magna in dictum
-            dictum, ipsum tortor facilisis elit, sit amet consectetur turpis est
-            ut nulla.” <br />
+            “I absolutely love their proxies, especially the Residential ones.
+            The global gateway performs exceptionally well on my targets. I’ve
+            noticed a high percentage of unique IPs for every request, which
+            significantly enhances my scraping performance.” <br />
             <br />
             <span className="font-serif text-lg sm:text-2xl font-bold text-primary/65">
               Eric Stevens
