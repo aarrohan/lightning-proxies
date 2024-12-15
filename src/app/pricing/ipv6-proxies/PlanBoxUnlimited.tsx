@@ -8,6 +8,7 @@ export default function PlanBoxUnlimited() {
     numberOfProxiesSelectedOptionIndex,
     setNumberOfProxiesSelectedOptionIndex,
   ] = useState<number>(0);
+  const [selectedDurationIndex, setSelectedDurationIndex] = useState<number>(0);
 
   const numberofProxies: IOption[] = [
     {
@@ -17,6 +18,14 @@ export default function PlanBoxUnlimited() {
     {
       title: "50 MBps",
       value: "50",
+    },
+    {
+      title: "120 MBps",
+      value: "120",
+    },
+    {
+      title: "200 MBps",
+      value: "200",
     },
   ];
 
@@ -40,13 +49,56 @@ export default function PlanBoxUnlimited() {
             />
           </div>
 
-          <PlanBoxDuration />
+          <PlanBoxDuration
+            selectedDurationIndex={selectedDurationIndex}
+            setSelectedDurationIndex={setSelectedDurationIndex}
+          />
         </div>
       </div>
 
       <div className="mt-5 flex justify-between items-center">
         <h4 className="text-lg sm:text-[24px] font-semibold tracking-[-0.54px] sm:tracking-[-0.84px] text-white">
-          $35{" "}
+          {/* 30 MBps */}
+          {selectedDurationIndex === 0 &&
+            numberOfProxiesSelectedOptionIndex === 0 &&
+            "10$"}
+          {selectedDurationIndex === 1 &&
+            numberOfProxiesSelectedOptionIndex === 0 &&
+            "45$"}
+          {selectedDurationIndex === 2 &&
+            numberOfProxiesSelectedOptionIndex === 0 &&
+            "110$"}
+          {/* 50 MBps */}
+          {selectedDurationIndex === 0 &&
+            numberOfProxiesSelectedOptionIndex === 1 &&
+            "15$"}
+          {selectedDurationIndex === 1 &&
+            numberOfProxiesSelectedOptionIndex === 1 &&
+            "60$"}
+          {selectedDurationIndex === 2 &&
+            numberOfProxiesSelectedOptionIndex === 1 &&
+            "150$"}
+          {/* 120 MBps */}
+          {selectedDurationIndex === 0 &&
+            numberOfProxiesSelectedOptionIndex === 2 &&
+            "20$"}
+          {selectedDurationIndex === 1 &&
+            numberOfProxiesSelectedOptionIndex === 2 &&
+            "90$"}
+          {selectedDurationIndex === 2 &&
+            numberOfProxiesSelectedOptionIndex === 2 &&
+            "250$"}
+          {/* 200 MBps */}
+          {selectedDurationIndex === 0 &&
+            numberOfProxiesSelectedOptionIndex === 3 &&
+            "25$"}
+          {selectedDurationIndex === 1 &&
+            numberOfProxiesSelectedOptionIndex === 3 &&
+            "120$"}
+          {selectedDurationIndex === 2 &&
+            numberOfProxiesSelectedOptionIndex === 3 &&
+            "350$"}
+          &nbsp;
           <span className="text-xs sm:text-sm font-normal tracking-[-0.12px] sm:tracking-[-0.14px] text-white/75">
             / one-time
           </span>

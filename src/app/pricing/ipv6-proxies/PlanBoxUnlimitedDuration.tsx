@@ -1,9 +1,14 @@
 "use client";
-import { useState } from "react";
 
-export default function PlanBoxUnlimitedDuration() {
-  const [selectedDurationIndex, setSelectedDurationIndex] = useState<number>(0);
+interface IProps {
+  selectedDurationIndex: number;
+  setSelectedDurationIndex: (index: number) => void;
+}
 
+export default function PlanBoxUnlimitedDuration({
+  selectedDurationIndex,
+  setSelectedDurationIndex,
+}: IProps) {
   const durations: string[] = ["1 Day", "7 Days", "30 Days"];
 
   return (

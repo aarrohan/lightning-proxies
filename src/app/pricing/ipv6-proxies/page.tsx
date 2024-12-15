@@ -5,10 +5,10 @@ import FAQsSection from "./FAQsSection";
 import FollowUpSection from "@/app/(landing)/FollowUpSection";
 
 export const metadata: Metadata = {
-  title: "Datacenter Proxies Pricing - Lightning Proxies",
+  title: "IPv6 Proxies Pricing - Lightning Proxies",
 };
 
-export default function DatacenterProxiesPricing() {
+export default function IPv6ProxiesPricing() {
   return (
     <main>
       <HeroSection />
