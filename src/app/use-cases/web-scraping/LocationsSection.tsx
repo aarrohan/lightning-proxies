@@ -77,7 +77,7 @@ export default function LocationsSection() {
       ),
       title: "United States",
       href: "/locations/usa",
-      ips: "1,200,505 IPs",
+      ips: "1.530.310 IPs",
     },
     {
       img: (
@@ -96,7 +96,7 @@ export default function LocationsSection() {
       ),
       title: "United Kingdom",
       href: "/locations/usa",
-      ips: "1,200,505 IPs",
+      ips: "720.545 IPs",
     },
     {
       img: (
@@ -115,7 +115,7 @@ export default function LocationsSection() {
       ),
       title: "Germany",
       href: "/locations/usa",
-      ips: "1,200,505 IPs",
+      ips: "485.913 IPs",
     },
     {
       img: (
@@ -134,7 +134,7 @@ export default function LocationsSection() {
       ),
       title: "France",
       href: "/locations/usa",
-      ips: "1,200,505 IPs",
+      ips: "350.720 IPs",
     },
     {
       img: (
@@ -153,7 +153,7 @@ export default function LocationsSection() {
       ),
       title: "Canada",
       href: "/locations/usa",
-      ips: "1,200,505 IPs",
+      ips: "530.600 IPs",
     },
     {
       img: (
@@ -172,7 +172,7 @@ export default function LocationsSection() {
       ),
       title: "China",
       href: "/locations/usa",
-      ips: "1,200,505 IPs",
+      ips: "1.130.344 IPs",
     },
   ];
 

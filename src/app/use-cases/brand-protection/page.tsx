@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import HeroSection from "./HeroSection";
-import ProductsSection from "./ProductsSection";
+import ProductsSection from "../web-scraping/ProductsSection";
 import UseCasesSection2 from "./UseCasesSection";
 import UseCasesSection from "@/app/(landing)/UseCasesSection";
 import DetailsSection from "./DetailsSection";
-import LocationsSection from "./LocationsSection";
+import LocationsSection from "../web-scraping/LocationsSection";
 import FollowUpSection from "@/app/(landing)/FollowUpSection";
 
 export const metadata: Metadata = {

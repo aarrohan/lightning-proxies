@@ -8,7 +8,7 @@ import LocationsSection from "./LocationsSection";
 import FollowUpSection from "@/app/(landing)/FollowUpSection";
 
 export const metadata: Metadata = {
-  title: "Serp Monitoring Use Case - Lightning Proxies",
+  title: "Web Scraping Use Case - Lightning Proxies",
 };
 
 export default function WebScrapingUseCase() {

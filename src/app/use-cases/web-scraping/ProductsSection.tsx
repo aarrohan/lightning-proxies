@@ -5,9 +5,11 @@ import product3IconImg from "@/assets/images/product-3-icon.svg";
 import product4IconImg from "@/assets/images/product-4-icon.svg";
 import product5IconImg from "@/assets/images/product-5-icon.svg";
 import PrimaryBtn from "@/components/ui/PrimaryBtn";
+import Link from "next/link";
 
 interface IProductBigCardProps {
   isBigger?: boolean;
+  href: string;
   color: string;
   icon: JSX.Element;
   title: string;
@@ -28,6 +30,7 @@ interface IProductCardProps {
 
 function ProductBigCard({
   isBigger,
+  href,
   color,
   icon,
   title,
@@ -65,8 +68,9 @@ function ProductBigCard({
         </div>
       </div>
 
-      <button
-        className="active:scale-95 py-2 px-5 border border-dark-white bg-white rounded-lg text-base font-medium tracking-[-0.16px] flex items-center gap-2.5 duration-300"
+      <Link
+        href={href}
+        className="active:scale-95 w-fit py-2 px-5 border border-dark-white bg-white rounded-lg text-base font-medium tracking-[-0.16px] flex items-center gap-2.5 duration-300"
         style={{
           color,
         }}
@@ -84,7 +88,7 @@ function ProductBigCard({
             fill={color}
           />
         </svg>
-      </button>
+      </Link>
     </div>
   );
 }
@@ -201,47 +205,52 @@ function ProductCard({
 export default function ProductsSection() {
   const productBigCards: IProductBigCardProps[] = [
     {
+      href: "/pricing/residential-proxies",
       color: "#1675FF",
       icon: <Image src={product1IconImg} alt="" className="w-[50px]" />,
       title: "Residential Proxies",
       label: "25% off",
       description:
-        "Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam quis nibh non nisl sagittis malesuada eget nec velit.",
-      price: "$2.99/GB",
+        "Access 10M+ real home IPs for web scraping, market research, and accessing geo-restricted content with high success rates.",
+      price: "$4.5/GB",
     },
     {
+      href: "/pricing/datacenter-proxies",
       color: "#12A250",
       icon: <Image src={product2IconImg} alt="" className="w-[50px]" />,
       title: "Datacenter Proxies",
       description:
-        "Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam quis nibh non nisl sagittis malesuada eget nec velit.",
-      price: "$1.99/Day",
+        "High-speed, cost-effective proxies ideal for bulk data scraping, automation, and general browsing tasks.",
+      price: "$2/Day",
     },
     {
+      href: "/pricing/isp-proxies",
       color: "#EA7635",
       icon: <Image src={product3IconImg} alt="" className="w-[50px]" />,
       title: "ISP Proxies",
       description:
-        "Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam quis nibh non nisl sagittis malesuada eget nec velit.",
-      price: "$5.99/GB",
+        "Blending datacenter speed with residential trust, these proxies are perfect for ecommerce, social media management, and competitive analysis.",
+      price: " $4/IP",
     },
     {
+      href: "/pricing/ipv6-proxies",
       color: "#A400DD",
       icon: <Image src={product4IconImg} alt="" className="w-[50px]" />,
       title: "IPv6 Proxies",
       description:
-        "Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam quis nibh non nisl sagittis malesuada eget nec velit.",
-      price: "$9.99/GB",
+        "Scalable and affordable proxies with vast IP availability, tailored for large-scale data tasks and web scraping.",
+      price: "$10/Day",
     },
     {
       isBigger: true,
+      href: "/pricing/mobile-proxies",
       color: "#00C1D1",
       icon: <Image src={product5IconImg} alt="" className="w-[50px]" />,
       title: "Mobile Proxies",
       label: "Newly launched",
       description:
-        "Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam quis nibh non nisl sagittis malesuada eget nec velit.",
-      price: "$5.99/GB",
+        "Real 4G/LTE mobile IPs designed for bypassing restrictions, social media management, and app testing.",
+      price: "$5/GB",
     },
   ];
 
@@ -253,22 +262,22 @@ export default function ProductsSection() {
       ),
       title: "Residential Proxies",
       description:
-        "Sed varius justo ac sem luctus lobortis. Nunc porta leo nec pretium laoreet.",
+        "Access 10M+ real home IPs for web scraping, market research, and accessing geo-restricted content with high success rates.",
       statement1: "Statement 01 about the proxies features",
       statement2: "Statement 02 about the proxies features",
-      price: "$2/GB",
+      price: "$4.5/GB",
     },
     {
       color: "#12A250",
       icon: (
         <Image src={product2IconImg} alt="" className="w-[35px] sm:w-[45px]" />
       ),
-      title: "Residential Proxies",
+      title: "Datacenter Proxies",
       description:
-        "Sed varius justo ac sem luctus lobortis. Nunc porta leo nec pretium laoreet.",
+        "High-speed, cost-effective proxies ideal for bulk data scraping, automation, and general browsing tasks.",
       statement1: "Statement 01 about the proxies features",
       statement2: "Statement 02 about the proxies features",
-      price: "$9/Day",
+      price: "$2/Day",
     },
     {
       color: "#EA7635",
@@ -277,10 +286,10 @@ export default function ProductsSection() {
       ),
       title: "ISP Proxies",
       description:
-        "Sed varius justo ac sem luctus lobortis. Nunc porta leo nec pretium laoreet.",
+        "Blending datacenter speed with residential trust, these proxies are perfect for ecommerce, social media management, and competitive analysis.",
       statement1: "Statement 01 about the proxies features",
       statement2: "Statement 02 about the proxies features",
-      price: "$4.99",
+      price: "$4/IP",
     },
     {
       color: "#A400DD",
@@ -289,10 +298,10 @@ export default function ProductsSection() {
       ),
       title: "IPv6 Proxies",
       description:
-        "Sed varius justo ac sem luctus lobortis. Nunc porta leo nec pretium laoreet.",
+        "Scalable and affordable proxies with vast IP availability, tailored for large-scale data tasks and web scraping.",
       statement1: "Statement 01 about the proxies features",
       statement2: "Statement 02 about the proxies features",
-      price: "$4.99",
+      price: "$10/Day",
     },
     {
       color: "#00C1D1",
@@ -301,10 +310,10 @@ export default function ProductsSection() {
       ),
       title: "Mobile Proxies",
       description:
-        "Sed varius justo ac sem luctus lobortis. Nunc porta leo nec pretium laoreet.",
+        "Real 4G/LTE mobile IPs designed for bypassing restrictions, social media management, and app testing.",
       statement1: "Statement 01 about the proxies features",
       statement2: "Statement 02 about the proxies features",
-      price: "$2/GB",
+      price: "$5/GB",
     },
   ];
 
