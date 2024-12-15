@@ -38,9 +38,10 @@ export default function Info1Section() {
           </button>
 
           <p className="mt-6 sm:mt-12 text-xs sm:text-base tracking-[-0.12px] sm:tracking-[-0.16px] text-primary/75">
-            “Review from customer here,Praesent ullamcorper, magna in dictum
-            dictum, ipsum tortor facilisis elit, sit amet consectetur turpis est
-            ut nulla.” <br />
+            “I absolutely love their proxies, especially the Residential ones.
+            The global gateway performs exceptionally well on my targets. I’ve
+            noticed a high percentage of unique IPs for every request, which
+            significantly enhances my scraping performance.” <br />
             <br />
             <span className="font-serif text-lg sm:text-2xl font-bold text-primary/65">
               Eric Stevens
