@@ -70,9 +70,9 @@ export default function HeroSection() {
           />
         </svg>
       ),
-      title: "Feature name 01",
+      title: "Complete Anonymity",
       description:
-        "Sed varius justo ac sem luctus lobortis. Nunc porta leo nec pretium laoreet.  Quis laoreet ante sed eros auctor gravida.",
+        "Web scraping is now faster, safer, and easier with proxies, powered by a network of 10M+ real home IPs.",
     },
     {
       icon: (
@@ -134,9 +134,9 @@ export default function HeroSection() {
           />
         </svg>
       ),
-      title: "Feature name 02",
+      title: "Advanced Data Scraping",
       description:
-        "Sed varius justo ac sem luctus lobortis. Nunc porta leo nec pretium laoreet.  Quis laoreet ante sed eros auctor gravida.",
+        "Effortlessly scrape complex and dynamic websites with our robust proxies, designed to handle the most challenging data extraction tasks.",
     },
     {
       icon: (
@@ -186,11 +186,12 @@ export default function HeroSection() {
           />
         </svg>
       ),
-      title: "Feature name 03",
+      title: "Collected Data Simplified",
       description:
-        "Sed varius justo ac sem luctus lobortis. Nunc porta leo nec pretium laoreet.  Quis laoreet ante sed eros auctor gravida.",
+        "Get structured and reliable collected data for your projects. Our proxies ensure accurate and consistent results every time.",
     },
   ];
+
   return (
     <section className="relative pt-[70px] bg-[#121118] overflow-hidden">
       <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-[#785F00] to-transparent"></div>
@@ -205,13 +206,17 @@ export default function HeroSection() {
             Our online referral program is now available.{" "}
             <span className="font-medium">Earn Rewards</span>
           </p>
+
           <h1 className="mb-8 sm:mb-6 text-4xl sm:text-[64px] sm:leading-[72px] tracking-[-1.08px] sm:tracking-[-1.95px] font-semibold text-center xl:text-left text-white">
-            15,000,000+ IPs from Germany
+            485,913+ IPs from Germany
           </h1>
+
           <p className="max-w-[580px] text-xs sm:text-base leading-[18px] sm:leading-[24px] tracking-[-0.12px] sm:tracking-[-0.16px] text-center xl:text-left text-white">
-            Gather data efficiently with the industry-leading proxy network and
-            enjoy limitless web scraping solutions on the most intense tasks.
+            Scale your web scraping operations effortlessly with over 400,000
+            German proxies. Maximize productivity by leveraging high-quality
+            German IPs.
           </p>
+
           <div className="my-7 flex flex-wrap justify-center items-center gap-y-4 gap-x-6 sm:gap-x-8">
             <p className="flex items-center gap-2 sm:gap-3 text-xs sm:text-base font-medium tracking-[-0.12px] sm:tracking-[-0.16px] text-white">
               <svg
@@ -281,8 +286,9 @@ export default function HeroSection() {
                   className="stroke-white"
                 />
               </svg>
-              4.9 rating
+              4.5 rating
             </p>
+
             <p className="flex items-center gap-2 sm:gap-3 text-xs sm:text-base font-medium tracking-[-0.12px] sm:tracking-[-0.16px] text-white">
               <svg
                 width="19"
@@ -307,8 +313,9 @@ export default function HeroSection() {
                   className="stroke-white"
                 />
               </svg>
-              25M+ Proxy Pool
+              10M+ Proxy Pool
             </p>
+
             <p className="flex items-center gap-2 sm:gap-3 text-xs sm:text-base font-medium tracking-[-0.12px] sm:tracking-[-0.16px] text-white">
               <svg
                 width="19"
@@ -326,9 +333,10 @@ export default function HeroSection() {
                   className="stroke-white"
                 />
               </svg>
-              7 Day Free Trial
+              30 Day Free Trial
             </p>
           </div>
+
           <div className="w-full sm:w-fit grid sm:flex gap-3">
             <PrimaryBtn customClasses="!py-2.5 !px-12 sm:!text-base sm:!tracking-[-0.16px]">
               Get Started{" "}
