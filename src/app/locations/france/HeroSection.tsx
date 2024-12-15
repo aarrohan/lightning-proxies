@@ -75,9 +75,9 @@ export default function HeroSection() {
           />
         </svg>
       ),
-      title: "Feature name 01",
+      title: "Complete Anonymity",
       description:
-        "Sed varius justo ac sem luctus lobortis. Nunc porta leo nec pretium laoreet.  Quis laoreet ante sed eros auctor gravida.",
+        "Web scraping is now faster, safer, and easier with proxies, powered by a network of 10M+ real home IPs.",
     },
     {
       icon: (
@@ -139,9 +139,9 @@ export default function HeroSection() {
           />
         </svg>
       ),
-      title: "Feature name 02",
+      title: "Advanced Data Scraping",
       description:
-        "Sed varius justo ac sem luctus lobortis. Nunc porta leo nec pretium laoreet.  Quis laoreet ante sed eros auctor gravida.",
+        "Effortlessly scrape complex and dynamic websites with our robust proxies, designed to handle the most challenging data extraction tasks.",
     },
     {
       icon: (
@@ -191,9 +191,9 @@ export default function HeroSection() {
           />
         </svg>
       ),
-      title: "Feature name 03",
+      title: "Collected Data Simplified",
       description:
-        "Sed varius justo ac sem luctus lobortis. Nunc porta leo nec pretium laoreet.  Quis laoreet ante sed eros auctor gravida.",
+        "Get structured and reliable collected data for your projects. Our proxies ensure accurate and consistent results every time.",
     },
   ];
 
@@ -215,12 +215,13 @@ export default function HeroSection() {
           </p>
 
           <h1 className="mb-8 sm:mb-6 text-4xl sm:text-[64px] sm:leading-[72px] tracking-[-1.08px] sm:tracking-[-1.95px] font-semibold text-center xl:text-left text-white">
-            15,000,000+ IPs from Germany
+            350,720+ IPs from France
           </h1>
 
           <p className="max-w-[580px] text-xs sm:text-base leading-[18px] sm:leading-[24px] tracking-[-0.12px] sm:tracking-[-0.16px] text-center xl:text-left text-white">
-            Gather data efficiently with the industry-leading proxy network and
-            enjoy limitless web scraping solutions on the most intense tasks.
+            Boost your scraping activities with French proxy servers. With over
+            300,000 Residential and Datacenter IPs, you can count on exceptional
+            results.
           </p>
 
           <div className="my-7 flex flex-wrap justify-center items-center gap-y-4 gap-x-6 sm:gap-x-8">
@@ -292,7 +293,7 @@ export default function HeroSection() {
                   className="stroke-white"
                 />
               </svg>
-              4.9 rating
+              4.5 rating
             </p>
 
             <p className="flex items-center gap-2 sm:gap-3 text-xs sm:text-base font-medium tracking-[-0.12px] sm:tracking-[-0.16px] text-white">
@@ -319,7 +320,7 @@ export default function HeroSection() {
                   className="stroke-white"
                 />
               </svg>
-              25M+ Proxy Pool
+              10M+ Proxy Pool
             </p>
 
             <p className="flex items-center gap-2 sm:gap-3 text-xs sm:text-base font-medium tracking-[-0.12px] sm:tracking-[-0.16px] text-white">
@@ -339,7 +340,7 @@ export default function HeroSection() {
                   className="stroke-white"
                 />
               </svg>
-              7 Day Free Trial
+              30 Day Free Trial
             </p>
           </div>
 
