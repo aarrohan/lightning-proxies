@@ -443,10 +443,11 @@ export default function ProductsSection() {
       ),
       title: "Residential Proxies",
       description:
-        "Sed varius justo ac sem luctus lobortis. Nunc porta leo nec pretium laoreet.",
-      statement1: "Statement 01 about the proxies features",
-      statement2: "Statement 02 about the proxies features",
-      price: "$2/GB",
+        "Efficient, affordable, and built to deliver fast, secure connections.",
+      statement1: "Multiple global locations with guaranteed high performance.",
+      statement2:
+        "Flexible plans starting from just $4.5/GB, catering to various use cases.",
+      price: "4.5$/GB",
     },
     {
       color: "#12A250",
@@ -455,10 +456,12 @@ export default function ProductsSection() {
       ),
       title: "Residential Proxies",
       description:
-        "Sed varius justo ac sem luctus lobortis. Nunc porta leo nec pretium laoreet.",
-      statement1: "Statement 01 about the proxies features",
-      statement2: "Statement 02 about the proxies features",
-      price: "$9/Day",
+        "The most affordable proxy solution, perfect for public data scraping and a wide range of use cases.",
+      statement1:
+        "Five global datacenter locations with over 15.000 IPs available.",
+      statement2:
+        "Strong performance with speeds of up to 1 Gbps for both download and upload.",
+      price: "2$/Day",
     },
     {
       color: "#EA7635",
@@ -467,10 +470,11 @@ export default function ProductsSection() {
       ),
       title: "ISP Proxies",
       description:
-        "Sed varius justo ac sem luctus lobortis. Nunc porta leo nec pretium laoreet.",
-      statement1: "Statement 01 about the proxies features",
-      statement2: "Statement 02 about the proxies features",
-      price: "$4.99",
+        "Combined Datacenter Speeds with Residential IPs in One Package.",
+      statement1: "Worldwide ISP Locations with over 20 countries available.",
+      statement2:
+        "Customized IP quantities and durations to suit your specific needs.",
+      price: "4$/IP",
     },
     {
       color: "#A400DD",
@@ -479,10 +483,12 @@ export default function ProductsSection() {
       ),
       title: "IPv6 Proxies",
       description:
-        "Sed varius justo ac sem luctus lobortis. Nunc porta leo nec pretium laoreet.",
-      statement1: "Statement 01 about the proxies features",
-      statement2: "Statement 02 about the proxies features",
-      price: "$4.99",
+        "Optimized for high-speed scraping on IPv6-enabled targets with unmatched efficiency.",
+      statement1:
+        "Global coverage with availability in 20+ countries worldwide.",
+      statement2:
+        "Cost-effective solution with abundant IPv6 IPs and extensive subnet diversity, perfect for efficient scraping.",
+      price: "10$/Day",
     },
     {
       color: "#00C1D1",
@@ -491,10 +497,10 @@ export default function ProductsSection() {
       ),
       title: "Mobile Proxies",
       description:
-        "Sed varius justo ac sem luctus lobortis. Nunc porta leo nec pretium laoreet.",
-      statement1: "Statement 01 about the proxies features",
-      statement2: "Statement 02 about the proxies features",
-      price: "$2/GB",
+        "Access the largest pool of 500k+ Mobile IPs and easily bypass blocks. Filter by country and ASN - no extra costs.",
+      statement1: "3G/4G/5G/LTE cellular networks.",
+      statement2: "Accurate geo-location targeting.",
+      price: "5$/GB",
     },
   ];
 
