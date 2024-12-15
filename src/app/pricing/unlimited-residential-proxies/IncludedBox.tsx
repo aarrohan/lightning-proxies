@@ -73,7 +73,7 @@ export default function IncludedBox() {
           />
         </svg>
       ),
-      title: "10M+ Residential IPs",
+      title: "2M+ Residential IPs",
       subTitle: "IPs included",
     },
     {
@@ -149,7 +149,7 @@ export default function IncludedBox() {
           />
         </svg>
       ),
-      title: "State, city, provider",
+      title: "State, City, Provider",
       subTitle: "Targeting",
     },
     {

@@ -22,7 +22,7 @@ export default function HeroSection() {
           value: "1 Day",
         },
       ],
-      price: "$4.5",
+      price: "300$",
       btn: "secondary",
     },
     {
@@ -37,7 +37,7 @@ export default function HeroSection() {
           value: "7 Days",
         },
       ],
-      price: "$20",
+      price: "1100$",
       btn: "secondary",
     },
     {
@@ -52,7 +52,7 @@ export default function HeroSection() {
           value: "30 Days",
         },
       ],
-      price: "$87.5",
+      price: "2800$",
       btn: "secondary",
     },
     {
@@ -68,7 +68,7 @@ export default function HeroSection() {
           value: "60 Days",
         },
       ],
-      price: "$300",
+      price: "4600$",
       btn: "primary",
     },
   ];
@@ -95,8 +95,7 @@ export default function HeroSection() {
         </h1>
 
         <p className="mb-12 text-xs sm:text-base leading-[18px] sm:leading-[24px] tracking-[-0.12px] sm:tracking-[-0.16px] text-center text-white/75">
-          Sed imperdiet, velit non laoreet iaculis, sit amet rhoncus tortor quam
-          sit amet libero.
+          Learn more about LightningProxies' Unlimited Residential pricing.
         </p>
 
         <div className="w-full grid lg:grid-cols-[350px_auto] gap-3">

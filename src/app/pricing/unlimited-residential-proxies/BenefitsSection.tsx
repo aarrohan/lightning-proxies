@@ -284,7 +284,7 @@ export default function BenefitsSection() {
       img: <Image src={benefit6Img} alt="" className="mt-4 w-full" />,
       title: "Global coverage",
       description:
-        "Buy residential IPs that cover 195 locations and offer continent, country, city, state-level, and ZIP code geo-location targeting.",
+        "Get residential IPs with global coverage and unlimited data for the entire duration of your plan.",
     },
   ];
 
