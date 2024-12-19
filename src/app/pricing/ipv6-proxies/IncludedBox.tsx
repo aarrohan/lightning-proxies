@@ -293,7 +293,7 @@ export default function IncludedBox() {
   ];
 
   return (
-    <div className="p-5 border border-white/10 bg-white/5 rounded-xl flex flex-col justify-between">
+    <div className="h-full p-5 border border-white/10 bg-white/5 rounded-xl flex flex-col justify-between">
       <p className="mb-6 w-fit py-1.5 px-2.5 border border-white/25 bg-white/10 rounded-lg text-xs sm:text-sm tracking-[-0.12px] sm:tracking-[-0.14px] text-white">
         Included in all plans
       </p>
