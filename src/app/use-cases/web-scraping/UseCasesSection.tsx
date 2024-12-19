@@ -1,20 +1,28 @@
+import Image from "next/image";
+import useCase1Img from "@/assets/images/web-scraping-use-case-1.svg";
+import useCase2Img from "@/assets/images/web-scraping-use-case-2.svg";
+import useCase3Img from "@/assets/images/web-scraping-use-case-3.svg";
+
 interface IInfoCardProps {
+  img: JSX.Element;
   title: string;
   description: string;
 }
 
-function InfoCard({ title, description }: IInfoCardProps) {
+function InfoCard({ img, title, description }: IInfoCardProps) {
   return (
-    <div className="p-6 sm:p-7 border border-dark-white bg-off-white rounded-xl">
-      <h3 className="mb-2.5 text-sm sm:text-base font-medium tracking-[-0.14px] sm:tracking-[-0.16px] text-accent">
-        {title}
-      </h3>
+    <div className="p-6 sm:p-7 !pb-0 border border-dark-white bg-off-white rounded-xl flex flex-col">
+      <div className="w-full">
+        <h3 className="mb-2.5 text-sm sm:text-base font-medium tracking-[-0.14px] sm:tracking-[-0.16px] text-accent">
+          {title}
+        </h3>
 
-      <p className="mb-6 sm:mb-8 text-xs sm:text-base tracking-[-0.12px] sm:tracking-[-0.16px]">
-        {description}
-      </p>
+        <p className="mb-6 sm:mb-8 text-xs sm:text-base tracking-[-0.12px] sm:tracking-[-0.16px]">
+          {description}
+        </p>
+      </div>
 
-      <div className="w-full aspect-[2/1.25] rounded-xl bg-accent/5"></div>
+      <div className="flex-1 flex justify-center items-end">{img}</div>
     </div>
   );
 }
@@ -22,19 +30,22 @@ function InfoCard({ title, description }: IInfoCardProps) {
 export default function UseCasesSection() {
   const infoCards: IInfoCardProps[] = [
     {
-      title: "Feature 01 goes here",
+      img: <Image src={useCase1Img} alt="w-full" />,
+      title: "Scrape Data Smoothly and Reliably",
       description:
-        "In ultrices lorem leo, sed luctus ligula congue in. Morbi vel lectus in nunc faucibus lacinia vel ac nunc.",
+        "Easily gather all the data you need, no matter the volume, without worrying about getting blocked or interrupted.",
     },
     {
-      title: "Feature 02 goes here",
+      img: <Image src={useCase2Img} alt="w-full" />,
+      title: "See the Web Like a Local",
       description:
-        "In ultrices lorem leo, sed luctus ligula congue in. Morbi vel lectus in nunc faucibus lacinia vel ac nunc.",
+        "Access region-specific websites just like a local user to make sure you get the most accurate data from anywhere.",
     },
     {
-      title: "Feature 03 goes here",
+      img: <Image src={useCase3Img} alt="w-full" />,
+      title: "Dodge Scraping Roadblocks",
       description:
-        "In ultrices lorem leo, sed luctus ligula congue in. Morbi vel lectus in nunc faucibus lacinia vel ac nunc.",
+        "Forget CAPTCHAs and IP bans—our proxies keep your web scraping seamless and hassle-free.",
     },
   ];
 
