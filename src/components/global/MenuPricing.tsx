@@ -160,7 +160,7 @@ export default function MenuPricing() {
       title: "Residential Proxies",
       href: "/pricing/residential-proxies",
       description:
-        "Sed varius justo ac sem luctus lobortis. Nunc porta leo nec pretium laoreet.",
+        "Reliable proxies with access to over 10M+ home IPs for privacy, web scraping, and geo-restricted content.",
       price: "4.50$",
       priceSuffix: "/GB",
     },
@@ -169,7 +169,7 @@ export default function MenuPricing() {
       title: "Datacenter Proxies",
       href: "/pricing/datacenter-proxies",
       description:
-        "Sed varius justo ac sem luctus lobortis. Nunc porta leo nec pretium laoreet.",
+        "High-speed, affordable proxies for bulk scraping and automation.",
       price: "2$",
       priceSuffix: "/day",
     },
@@ -178,7 +178,7 @@ export default function MenuPricing() {
       title: "ISP Proxies",
       href: "/pricing/isp-proxies",
       description:
-        "Sed varius justo ac sem luctus lobortis. Nunc porta leo nec pretium laoreet.",
+        "Trusted IPs with datacenter speeds, ideal for social media and botting.",
       price: "4$",
       priceSuffix: "/IP",
     },
@@ -187,7 +187,7 @@ export default function MenuPricing() {
       title: "IPv6 Proxies",
       href: "/pricing/ipv6-proxies",
       description:
-        "Sed varius justo ac sem luctus lobortis. Nunc porta leo nec pretium laoreet.",
+        "Affordable proxies with a massive IP pool for large-scale tasks.",
       price: "10$",
       priceSuffix: "/day",
     },
@@ -197,7 +197,7 @@ export default function MenuPricing() {
       title: "Mobile Proxies",
       href: "/pricing/mobile-proxies",
       description:
-        "Sed varius justo ac sem luctus lobortis. Nunc porta leo nec pretium laoreet.",
+        "Real 4G/LTE IPs for social media, app testing, and tough restrictions.",
       price: "5$",
       priceSuffix: "/GB",
     },
@@ -206,8 +206,7 @@ export default function MenuPricing() {
       icon: <Image src={product9IconImg} alt="" className="w-[48px]" />,
       title: "Unlimited Residential Proxies",
       href: "/pricing/unlimited-residential-proxies",
-      description:
-        "Sed varius justo ac sem luctus lobortis. Nunc porta leo nec pretium laoreet.",
+      description: "No bandwidth limits; perfect for heavy data users.",
       price: "300$",
       priceSuffix: "/day",
     },
