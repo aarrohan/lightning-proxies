@@ -4,7 +4,26 @@ import Select, { IOption } from "@/components/ui/Select";
 import PlanBoxDuration from "./PlanBoxDuration";
 import usaFlagImg from "@/assets/images/flags/usa.svg";
 import ukFlagImg from "@/assets/images/flags/uk.svg";
+import germanyFlagImg from "@/assets/images/flags/germany.svg";
 import canadaFlagImg from "@/assets/images/flags/canada.svg";
+import netherlandsFlagImg from "@/assets/images/flags/netherlands.svg";
+import franceFlagImg from "@/assets/images/flags/france.svg";
+import thailandFlagImg from "@/assets/images/flags/thailand.svg";
+import indiaFlagImg from "@/assets/images/flags/india.svg";
+import japanFlagImg from "@/assets/images/flags/japan.svg";
+import italyFlagImg from "@/assets/images/flags/italy.svg";
+import spainFlagImg from "@/assets/images/flags/spain.svg";
+import brazilFlagImg from "@/assets/images/flags/brazil.svg";
+import romaniaFlagImg from "@/assets/images/flags/romania.svg";
+import austriaFlagImg from "@/assets/images/flags/austria.svg";
+import hongkongFlagImg from "@/assets/images/flags/hong-kong.svg";
+import polandFlagImg from "@/assets/images/flags/poland.svg";
+import singaporeFlagImg from "@/assets/images/flags/singapore.svg";
+import australiaFlagImg from "@/assets/images/flags/australia.svg";
+import norwayFlagImg from "@/assets/images/flags/norway.svg";
+import latviaFlagImg from "@/assets/images/flags/latvia.svg";
+import ukraineFlagImg from "@/assets/images/flags/ukraine.svg";
+import southkoreaFlagImg from "@/assets/images/flags/south-korea.svg";
 import Image from "next/image";
 
 export default function PlanBox() {
@@ -26,10 +45,151 @@ export default function PlanBox() {
     },
     {
       icon: (
+        <Image src={germanyFlagImg} alt="" className="w-[24px] sm:w-[27px]" />
+      ),
+      title: "Germany",
+      value: "germany",
+    },
+    {
+      icon: (
         <Image src={canadaFlagImg} alt="" className="w-[24px] sm:w-[27px]" />
       ),
       title: "Canada",
       value: "canada",
+    },
+    {
+      icon: (
+        <Image
+          src={netherlandsFlagImg}
+          alt=""
+          className="w-[24px] sm:w-[27px]"
+        />
+      ),
+      title: "Netherlands",
+      value: "netherlands",
+    },
+    {
+      icon: (
+        <Image src={franceFlagImg} alt="" className="w-[24px] sm:w-[27px]" />
+      ),
+      title: "France",
+      value: "france",
+    },
+    {
+      icon: (
+        <Image src={thailandFlagImg} alt="" className="w-[24px] sm:w-[27px]" />
+      ),
+      title: "Thailand",
+      value: "thailand",
+    },
+    {
+      icon: (
+        <Image src={indiaFlagImg} alt="" className="w-[24px] sm:w-[27px]" />
+      ),
+      title: "India",
+      value: "india",
+    },
+    {
+      icon: (
+        <Image src={japanFlagImg} alt="" className="w-[24px] sm:w-[27px]" />
+      ),
+      title: "Japan",
+      value: "japan",
+    },
+    {
+      icon: (
+        <Image src={italyFlagImg} alt="" className="w-[24px] sm:w-[27px]" />
+      ),
+      title: "Italy",
+      value: "italy",
+    },
+    {
+      icon: (
+        <Image src={spainFlagImg} alt="" className="w-[24px] sm:w-[27px]" />
+      ),
+      title: "Spain",
+      value: "spain",
+    },
+    {
+      icon: (
+        <Image src={brazilFlagImg} alt="" className="w-[24px] sm:w-[27px]" />
+      ),
+      title: "Brazil",
+      value: "brazil",
+    },
+    {
+      icon: (
+        <Image src={romaniaFlagImg} alt="" className="w-[24px] sm:w-[27px]" />
+      ),
+      title: "Romania",
+      value: "romania",
+    },
+    {
+      icon: (
+        <Image src={austriaFlagImg} alt="" className="w-[24px] sm:w-[27px]" />
+      ),
+      title: "Austria",
+      value: "austria",
+    },
+    {
+      icon: (
+        <Image src={hongkongFlagImg} alt="" className="w-[24px] sm:w-[27px]" />
+      ),
+      title: "Hong Kong",
+      value: "hong-kong",
+    },
+    {
+      icon: (
+        <Image src={polandFlagImg} alt="" className="w-[24px] sm:w-[27px]" />
+      ),
+      title: "Poland",
+      value: "poland",
+    },
+    {
+      icon: (
+        <Image src={singaporeFlagImg} alt="" className="w-[24px] sm:w-[27px]" />
+      ),
+      title: "Singapore",
+      value: "singapore",
+    },
+    {
+      icon: (
+        <Image src={australiaFlagImg} alt="" className="w-[24px] sm:w-[27px]" />
+      ),
+      title: "Australia",
+      value: "australia",
+    },
+    {
+      icon: (
+        <Image src={norwayFlagImg} alt="" className="w-[24px] sm:w-[27px]" />
+      ),
+      title: "Norway",
+      value: "norway",
+    },
+    {
+      icon: (
+        <Image src={latviaFlagImg} alt="" className="w-[24px] sm:w-[27px]" />
+      ),
+      title: "Latvia",
+      value: "latvia",
+    },
+    {
+      icon: (
+        <Image src={ukraineFlagImg} alt="" className="w-[24px] sm:w-[27px]" />
+      ),
+      title: "Ukraine",
+      value: "ukraine",
+    },
+    {
+      icon: (
+        <Image
+          src={southkoreaFlagImg}
+          alt=""
+          className="w-[24px] sm:w-[27px]"
+        />
+      ),
+      title: "South Korea",
+      value: "south-korea",
     },
   ];
 

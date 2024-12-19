@@ -70,9 +70,9 @@ export default function Select({
 
       <div
         ref={ref}
-        className={`${
+        className={`hide-scrollbar ${
           !isOpen ? "scale-75 opacity-0 pointer-events-none" : ""
-        } absolute z-20 top-[calc(100%+10px)] left-0 origin-center w-full border border-white/15 bg-white/5 backdrop-blur-3xl rounded-[9px] duration-200 overflow-hidden`}
+        } absolute z-20 top-[calc(100%+10px)] left-0 origin-center w-full max-h-[250px] border border-white/15 bg-white/5 backdrop-blur-3xl rounded-[9px] duration-200 overflow-auto`}
       >
         {options.map((option, index) => (
           <div
