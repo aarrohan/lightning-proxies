@@ -11,8 +11,7 @@ export default function HistorySection() {
         </h2>
 
         <p className="mb-12 sm:mb-16 max-w-[580px] text-xs sm:text-base tracking-[-0.12px] sm:tracking-[-0.16px] text-center text-primary/75">
-          Integer ac erat at mauris aliquet consectetur vel et ex. Donec vel
-          ante in urna molestie luctus id sed ipsum.
+          Discover the steps LightningProxies took to get where we are today.
         </p>
 
         <div className="w-full">
@@ -25,7 +24,7 @@ export default function HistorySection() {
               </div>
 
               <p className="text-xs sm:text-base font-semibold tracking-[-0.12px] sm:tracking-[-0.16px]">
-                June 2022
+                January 2023
               </p>
 
               <p className="text-xs sm:text-base tracking-[-0.12px] sm:tracking-[-0.16px] text-primary/50">
@@ -35,11 +34,9 @@ export default function HistorySection() {
 
             <div className="py-5 sm:py-6 px-5 sm:px-8 border border-dark-white bg-white rounded-lg space-y-4">
               <p className="text-xs sm:text-base tracking-[-0.12px] sm:tracking-[-0.16px] text-primary/50">
-                Suspendisse luctus, tellus in vulputate consequat, odio massa
-                auctor turpis, id consectetur est ante quis nisi. Nam commodo
-                dolor magna, ut molestie metus facilisis eu. Donec ac volutpat
-                orci. Fusce consectetur sem non justo dapibus, consectetur
-                aliquet leo interdum.
+                The LightningProxies website was launched with limited products
+                and features, but that didn’t stop us from achieving rapid
+                growth within the first 6–12 months.
               </p>
 
               <p className="flex items-center gap-3 text-xs sm:text-base tracking-[-0.12px] sm:tracking-[-0.16px]">
@@ -58,7 +55,8 @@ export default function HistorySection() {
                     strokeLinejoin="round"
                   />
                 </svg>
-                Morbi dignissim consequat justo.
+                Regular software and network updates to consistently improve
+                proxy speeds.
               </p>
 
               <p className="flex items-center gap-3 text-xs sm:text-base tracking-[-0.12px] sm:tracking-[-0.16px]">
@@ -99,8 +97,7 @@ export default function HistorySection() {
                     strokeLinejoin="round"
                   />
                 </svg>
-                Aenean metus felis, ullamcorper et lectus vel, venenatis
-                pellentesque tellus.
+                In just 6 months, our USA Residential pool has tripled in size.
               </p>
             </div>
           </div>
@@ -116,21 +113,19 @@ export default function HistorySection() {
               </div>
 
               <p className="text-xs sm:text-base font-semibold tracking-[-0.12px] sm:tracking-[-0.16px]">
-                Oct 2022
+                Sept 2023
               </p>
 
               <p className="text-xs sm:text-base tracking-[-0.12px] sm:tracking-[-0.16px] text-primary/50">
-                1000 Active Subscribers
+                5000 Active Subscribers
               </p>
             </div>
 
             <div className="py-5 sm:py-6 px-5 sm:px-8 border border-dark-white bg-white rounded-lg space-y-4">
               <p className="text-xs sm:text-base tracking-[-0.12px] sm:tracking-[-0.16px] text-primary/50">
-                Suspendisse luctus, tellus in vulputate consequat, odio massa
-                auctor turpis, id consectetur est ante quis nisi. Nam commodo
-                dolor magna, ut molestie metus facilisis eu. Donec ac volutpat
-                orci. Fusce consectetur sem non justo dapibus, consectetur
-                aliquet leo interdum.
+                After months of hard work, we proudly reached the milestone of
+                5,000 active customers—a significant and promising achievement
+                for LightningProxies at the time.
               </p>
 
               <p className="flex items-center gap-3 text-xs sm:text-base tracking-[-0.12px] sm:tracking-[-0.16px]">
@@ -149,7 +144,7 @@ export default function HistorySection() {
                     strokeLinejoin="round"
                   />
                 </svg>
-                Morbi dignissim consequat justo.
+                Proxy Usage Logs Release.
               </p>
 
               <p className="flex items-center gap-3 text-xs sm:text-base tracking-[-0.12px] sm:tracking-[-0.16px]">
@@ -190,8 +185,7 @@ export default function HistorySection() {
                     strokeLinejoin="round"
                   />
                 </svg>
-                Aenean metus felis, ullamcorper et lectus vel, venenatis
-                pellentesque tellus.
+                Sub-User Management Release.
               </p>
             </div>
           </div>
@@ -207,21 +201,20 @@ export default function HistorySection() {
               </div>
 
               <p className="text-xs sm:text-base font-semibold tracking-[-0.12px] sm:tracking-[-0.16px]">
-                Feb 2023
+                April 2024
               </p>
 
               <p className="text-xs sm:text-base tracking-[-0.12px] sm:tracking-[-0.16px] text-primary/50">
-                Revamping the brand
+                Revamping the brand with Static ISP and Unlimited Residential
+                Proxies Release
               </p>
             </div>
 
             <div className="py-5 sm:py-6 px-5 sm:px-8 border border-dark-white bg-white rounded-lg space-y-4">
               <p className="text-xs sm:text-base tracking-[-0.12px] sm:tracking-[-0.16px] text-primary/50">
-                Suspendisse luctus, tellus in vulputate consequat, odio massa
-                auctor turpis, id consectetur est ante quis nisi. Nam commodo
-                dolor magna, ut molestie metus facilisis eu. Donec ac volutpat
-                orci. Fusce consectetur sem non justo dapibus, consectetur
-                aliquet leo interdum.
+                April 2024 was a milestone month for LightningProxies, with the
+                release of two highly demanded products, packed with versatile
+                options and powerful features.
               </p>
 
               <p className="flex items-center gap-3 text-xs sm:text-base tracking-[-0.12px] sm:tracking-[-0.16px]">
@@ -240,7 +233,8 @@ export default function HistorySection() {
                     strokeLinejoin="round"
                   />
                 </svg>
-                Morbi dignissim consequat justo.
+                Static ISP Proxies Release with 15+ locations and 100ms average
+                speeds.
               </p>
 
               <p className="flex items-center gap-3 text-xs sm:text-base tracking-[-0.12px] sm:tracking-[-0.16px]">
@@ -281,8 +275,8 @@ export default function HistorySection() {
                     strokeLinejoin="round"
                   />
                 </svg>
-                Aenean metus felis, ullamcorper et lectus vel, venenatis
-                pellentesque tellus.
+                Unlimited Residential Proxies Release with over 800k active IPs
+                in realtime.
               </p>
             </div>
           </div>
@@ -298,21 +292,21 @@ export default function HistorySection() {
               </div>
 
               <p className="text-xs sm:text-base font-semibold tracking-[-0.12px] sm:tracking-[-0.16px]">
-                Oct 2024
+                Dec 2024
               </p>
 
               <p className="text-xs sm:text-base tracking-[-0.12px] sm:tracking-[-0.16px] text-primary/50">
-                Our biggest redesign ever
+                Our biggest redesign ever with Our biggest redesign ever and a
+                brand new product.
               </p>
             </div>
 
             <div className="py-5 sm:py-6 px-5 sm:px-8 border border-dark-white bg-white rounded-lg space-y-4">
               <p className="text-xs sm:text-base tracking-[-0.12px] sm:tracking-[-0.16px] text-primary/50">
-                Suspendisse luctus, tellus in vulputate consequat, odio massa
-                auctor turpis, id consectetur est ante quis nisi. Nam commodo
-                dolor magna, ut molestie metus facilisis eu. Donec ac volutpat
-                orci. Fusce consectetur sem non justo dapibus, consectetur
-                aliquet leo interdum.
+                LightningProxies undergoes its biggest redesign ever—a sleek,
+                modern update to enhance the user experience. Alongside this,
+                we’re excited to launch our new datacenter proxies, packed with
+                features and flexible options to suit every budget and need.
               </p>
 
               <p className="flex items-center gap-3 text-xs sm:text-base tracking-[-0.12px] sm:tracking-[-0.16px]">
@@ -331,7 +325,8 @@ export default function HistorySection() {
                     strokeLinejoin="round"
                   />
                 </svg>
-                Morbi dignissim consequat justo.
+                Residential Proxies reach 3Mil+ active IPs in real-time
+                globally.
               </p>
 
               <p className="flex items-center gap-3 text-xs sm:text-base tracking-[-0.12px] sm:tracking-[-0.16px]">
@@ -372,8 +367,7 @@ export default function HistorySection() {
                     strokeLinejoin="round"
                   />
                 </svg>
-                Aenean metus felis, ullamcorper et lectus vel, venenatis
-                pellentesque tellus.
+                New Datacenter Proxies Release.
               </p>
             </div>
           </div>

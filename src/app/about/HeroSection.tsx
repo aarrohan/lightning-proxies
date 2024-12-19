@@ -15,9 +15,13 @@ export default function HeroSection() {
           Global Proxy Network
         </h1>
 
-        <p className="mb-12 max-w-[580px] text-xs sm:text-base leading-[18px] sm:leading-[24px] tracking-[-0.12px] sm:tracking-[-0.16px] text-center text-white">
-          Morbi venenatis odio non dolor iaculis, bibendum ornare nisl luctus.
-          Phasellus eget laoreet elit. Sed quis accumsan quam.
+        <p className="mb-12 max-w-[750px] text-xs sm:text-base leading-[18px] sm:leading-[28px] tracking-[-0.12px] sm:tracking-[-0.16px] text-center text-white">
+          We provide a fast, secure, and reliable way to connect to the web from
+          anywhere in the world. With servers in multiple locations, our network
+          helps businesses, developers, and researchers access the information
+          they need without interruptions. Whether you're gathering data,
+          testing websites, or managing large-scale projects, we make it easy to
+          get the job done.
         </p>
 
         <Image
@@ -33,21 +37,22 @@ export default function HeroSection() {
             </p>
 
             <p className="mb-4 text-lg sm:text-3xl leading-[24px] sm:leading-[36px] font-semibold tracking-[-0.32px] sm:tracking-[-0.6px]">
-              Duis ac ligula ligula. Fusce ut varius est, nec vulputate odio.
-              Nam fringilla, justo non convallis convallis.
+              Real People, Real IPs – powering the world’s greatest global proxy
+              network to help you succeed.
             </p>
 
             <p className="mb-8 text-xs sm:text-base leading-[18px] sm:leading-[24px] tracking-[-0.12px] sm:tracking-[-0.16px] text-primary/50">
-              Fusce malesuada enim odio, nec condimentum urna viverra a. Integer
-              porttitor ultricies ligula, quis semper dui accumsan eu. Curabitur
-              at faucibus diam, vitae imperdiet nulla. Vestibulum maximus,
-              ligula eget eleifend fringilla, nibh ante tristique dolor, nec
-              tristique lectus nulla ultricies sem. <br />
+              Behind every great product is a team of dedicated individuals
+              striving for continuous improvement. At LightningProxies, we’re
+              committed to enhancing your experience every day— whether by
+              upgrading our products or providing the expert support you
+              deserve, any hour of the day. <br />
               <br />
-              Quisque vel fringilla augue. Mauris fringilla, libero sed iaculis
-              vehicula, lectus turpis egestas sapien, ac pretium lectus quam
-              eget risus. Mauris sed ipsum non arcu malesuada ultrices. Vivamus
-              ac mauris at lorem interdum consectetur.
+              As part of the LightningProxies team, I strive to push for
+              improvements in every aspect of our network. From faster
+              connections to better performance, we ensure our network meets
+              your needs. Every update is designed to deliver the best results,
+              every time.
             </p>
 
             <p className="mb-2 text-xs sm:text-base leading-[18px] sm:leading-[24px] tracking-[-0.12px] sm:tracking-[-0.16px] text-primary/75">

@@ -15,8 +15,8 @@ export default function TeamSection() {
         </h2>
 
         <p className="mb-12 sm:mb-16 max-w-[580px] text-xs sm:text-base tracking-[-0.12px] sm:tracking-[-0.16px] text-center text-primary/75">
-          Integer ac erat at mauris aliquet consectetur vel et ex. Donec vel
-          ante in urna molestie luctus id sed ipsum.
+          Meet the LightningProxies team – the people who work tirelessly to
+          improve your proxy experience every day.
         </p>
 
         <div className="w-full grid grid-cols-3 lg:grid-cols-5 gap-12">

@@ -16,8 +16,7 @@ export default function ValuesSection() {
         </h2>
 
         <p className="mb-12 sm:mb-16 max-w-[580px] text-xs sm:text-base tracking-[-0.12px] sm:tracking-[-0.16px] text-center text-primary/75">
-          Integer ac erat at mauris aliquet consectetur vel et ex. Donec vel
-          ante in urna molestie luctus id sed ipsum.
+          Ethics you can count on—anytime, at LightningProxies.
         </p>
 
         <div className="w-full grid sm:grid-cols-3 gap-12">
