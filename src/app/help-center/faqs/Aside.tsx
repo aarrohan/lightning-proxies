@@ -58,43 +58,88 @@ export default function Aside() {
             Troubleshooting
           </button>
 
-          <Link
-            href={"/help-center/faqs"}
+          <button
+            onClick={() => {
+              const element = document.getElementById("residentialProxies");
+
+              if (element) {
+                scrollTo({
+                  top: element.offsetTop,
+                  behavior: "smooth",
+                });
+              }
+            }}
             className="text-base tracking-[-0.16px] text-accent"
           >
             Residential Proxies
-          </Link>
+          </button>
 
-          <Link
-            href={"/help-center/faqs"}
+          <button
+            onClick={() => {
+              const element = document.getElementById("datacenterProxies");
+
+              if (element) {
+                scrollTo({
+                  top: element.offsetTop,
+                  behavior: "smooth",
+                });
+              }
+            }}
             className="text-base tracking-[-0.16px] text-accent"
           >
             Datacenter Proxies
-          </Link>
+          </button>
 
-          <Link
-            href={"/help-center/faqs"}
+          <button
+            onClick={() => {
+              const element = document.getElementById("mobileProxies");
+
+              if (element) {
+                scrollTo({
+                  top: element.offsetTop,
+                  behavior: "smooth",
+                });
+              }
+            }}
             className="text-base tracking-[-0.16px] text-accent"
           >
             Mobile Proxies
-          </Link>
+          </button>
 
-          <Link
-            href={"/help-center/faqs"}
+          <button
+            onClick={() => {
+              const element = document.getElementById("ispProxies");
+
+              if (element) {
+                scrollTo({
+                  top: element.offsetTop,
+                  behavior: "smooth",
+                });
+              }
+            }}
             className="text-base tracking-[-0.16px] text-accent"
           >
             ISP Proxies
-          </Link>
+          </button>
 
-          <Link
-            href={"/help-center/faqs"}
+          <button
+            onClick={() => {
+              const element = document.getElementById("ipv6Proxies");
+
+              if (element) {
+                scrollTo({
+                  top: element.offsetTop,
+                  behavior: "smooth",
+                });
+              }
+            }}
             className="text-base tracking-[-0.16px] text-accent"
           >
             IPv6 Proxies
-          </Link>
+          </button>
 
           <Link
-            href={"/help-center/faqs"}
+            href={"/blog"}
             className="text-base tracking-[-0.16px] text-accent"
           >
             Blogs
