@@ -1,20 +1,28 @@
+import Image from "next/image";
+import useCase1Img from "@/assets/images/market-research-use-case-1.svg";
+import useCase2Img from "@/assets/images/market-research-use-case-2.svg";
+import useCase3Img from "@/assets/images/market-research-use-case-3.svg";
+
 interface IInfoCardProps {
+  img: JSX.Element;
   title: string;
   description: string;
 }
 
-function InfoCard({ title, description }: IInfoCardProps) {
+function InfoCard({ img, title, description }: IInfoCardProps) {
   return (
-    <div className="p-6 sm:p-7 border border-dark-white bg-off-white rounded-xl">
-      <h3 className="mb-2.5 text-sm sm:text-base font-medium tracking-[-0.14px] sm:tracking-[-0.16px] text-[#FC721A]">
-        {title}
-      </h3>
+    <div className="p-6 sm:p-7 !pb-0 border border-dark-white bg-off-white rounded-xl flex flex-col">
+      <div className="w-full">
+        <h3 className="mb-2.5 text-sm sm:text-base font-medium tracking-[-0.14px] sm:tracking-[-0.16px] text-[#FC721A]">
+          {title}
+        </h3>
 
-      <p className="mb-6 sm:mb-8 text-xs sm:text-base tracking-[-0.12px] sm:tracking-[-0.16px]">
-        {description}
-      </p>
+        <p className="mb-6 sm:mb-8 text-xs sm:text-base tracking-[-0.12px] sm:tracking-[-0.16px]">
+          {description}
+        </p>
+      </div>
 
-      <div className="w-full aspect-[2/1.25] rounded-xl bg-[#FC721A]/5"></div>
+      <div className="flex-1 flex justify-center items-end">{img}</div>
     </div>
   );
 }
@@ -22,19 +30,22 @@ function InfoCard({ title, description }: IInfoCardProps) {
 export default function UseCasesSection() {
   const infoCards: IInfoCardProps[] = [
     {
-      title: "Feature 01 goes here",
+      img: <Image src={useCase1Img} alt="w-full" />,
+      title: "Get Fresh Market Insights Anytime",
       description:
-        "In ultrices lorem leo, sed luctus ligula congue in. Morbi vel lectus in nunc faucibus lacinia vel ac nunc.",
+        "Keep tabs on competitors, prices, and customer trends without hitting any online barriers.",
     },
     {
-      title: "Feature 02 goes here",
+      img: <Image src={useCase2Img} alt="w-full" />,
+      title: "Research Across Borders Effortlessly",
       description:
-        "In ultrices lorem leo, sed luctus ligula congue in. Morbi vel lectus in nunc faucibus lacinia vel ac nunc.",
+        "Dive into global markets with proxies that let you explore region-specific websites with ease.",
     },
     {
-      title: "Feature 03 goes here",
+      img: <Image src={useCase3Img} alt="w-full" />,
+      title: "Stay Private and Secure",
       description:
-        "In ultrices lorem leo, sed luctus ligula congue in. Morbi vel lectus in nunc faucibus lacinia vel ac nunc.",
+        "Do your research discreetly with proxies that keep your identity and data safe.",
     },
   ];
 

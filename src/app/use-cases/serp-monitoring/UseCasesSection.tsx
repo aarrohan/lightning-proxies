@@ -30,19 +30,19 @@ function InfoCard({ img, title, description }: IInfoCardProps) {
 export default function UseCasesSection() {
   const infoCards: IInfoCardProps[] = [
     {
-      img: <Image src={useCase1Img} alt="h-[269px" />,
+      img: <Image src={useCase1Img} alt="w-full" />,
       title: "Uninterrupted SERP Monitoring at Scale",
       description:
         "Retrieve search engine results efficiently without worrying about blocks, to power your SEO strategies with dependable data.",
     },
     {
-      img: <Image src={useCase2Img} alt="h-[269px" />,
+      img: <Image src={useCase2Img} alt="w-full" />,
       title: "Seamless Access to Geo-Targeted Results",
       description:
         "Monitor search rankings in any region worldwide by leveraging proxies that mimic local users, giving you an authentic view of localized SERPs.",
     },
     {
-      img: <Image src={useCase3Img} alt="h-[269px" />,
+      img: <Image src={useCase3Img} alt="w-full" />,
       title: "Bypass Search Engine Restrictions",
       description:
         "Overcome CAPTCHAs and rate limits with high-performing proxies designed to keep your monitoring operations smooth and uninterrupted.",
