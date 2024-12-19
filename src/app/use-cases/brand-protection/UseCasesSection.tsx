@@ -1,20 +1,28 @@
+import Image from "next/image";
+import useCase1Img from "@/assets/images/brand-protection-use-case-1.svg";
+import useCase2Img from "@/assets/images/brand-protection-use-case-2.svg";
+import useCase3Img from "@/assets/images/brand-protection-use-case-3.svg";
+
 interface IInfoCardProps {
+  img: JSX.Element;
   title: string;
   description: string;
 }
 
-function InfoCard({ title, description }: IInfoCardProps) {
+function InfoCard({ img, title, description }: IInfoCardProps) {
   return (
-    <div className="p-6 sm:p-7 border border-dark-white bg-off-white rounded-xl">
-      <h3 className="mb-2.5 text-sm sm:text-base font-medium tracking-[-0.14px] sm:tracking-[-0.16px] text-[#D10975]">
-        {title}
-      </h3>
+    <div className="p-6 sm:p-7 !pb-0 border border-dark-white bg-off-white rounded-xl flex flex-col">
+      <div className="w-full">
+        <h3 className="mb-2.5 text-sm sm:text-base font-medium tracking-[-0.14px] sm:tracking-[-0.16px] text-[#D10975]">
+          {title}
+        </h3>
 
-      <p className="mb-6 sm:mb-8 text-xs sm:text-base tracking-[-0.12px] sm:tracking-[-0.16px]">
-        {description}
-      </p>
+        <p className="mb-6 sm:mb-8 text-xs sm:text-base tracking-[-0.12px] sm:tracking-[-0.16px]">
+          {description}
+        </p>
+      </div>
 
-      <div className="w-full aspect-[2/1.25] rounded-xl bg-[#D10975]/5"></div>
+      <div className="flex-1 flex justify-center items-end">{img}</div>
     </div>
   );
 }
@@ -22,19 +30,22 @@ function InfoCard({ title, description }: IInfoCardProps) {
 export default function UseCasesSection() {
   const infoCards: IInfoCardProps[] = [
     {
-      title: "Feature 01 goes here",
+      img: <Image src={useCase1Img} alt="w-full" />,
+      title: "Keep an Eye on Your Brand Everywhere",
       description:
-        "In ultrices lorem leo, sed luctus ligula congue in. Morbi vel lectus in nunc faucibus lacinia vel ac nunc.",
+        "Monitor where and how your brand is being used online, and quickly spot counterfeits or bad PR.",
     },
     {
-      title: "Feature 02 goes here",
+      img: <Image src={useCase2Img} alt="w-full" />,
+      title: "Guard Your Intellectual Property",
       description:
-        "In ultrices lorem leo, sed luctus ligula congue in. Morbi vel lectus in nunc faucibus lacinia vel ac nunc.",
+        "Investigate potential theft or fraud safely and anonymously with our secure proxies.",
     },
     {
-      title: "Feature 03 goes here",
+      img: <Image src={useCase3Img} alt="w-full" />,
+      title: "Verify Your Brand Across Platforms",
       description:
-        "In ultrices lorem leo, sed luctus ligula congue in. Morbi vel lectus in nunc faucibus lacinia vel ac nunc.",
+        "Ensure your brand looks right and complies with regulations no matter where it’s being seen.",
     },
   ];
 
