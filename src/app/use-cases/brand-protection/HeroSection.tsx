@@ -1,6 +1,6 @@
 import Image from "next/image";
 import pricingPageHeroSectionGrainImg from "@/assets/images/pricing-page-hero-section-grain.png";
-import useCase5BigImg from "@/assets/images/use-case-5-big.png";
+import useCase5BigImg from "@/assets/images/use-case-big-5.png";
 import PrimaryBtn from "@/components/ui/PrimaryBtn";
 import SecondaryBtn from "@/components/ui/SecondaryBtn";
 
