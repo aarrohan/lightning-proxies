@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import HeroSection from "./HeroSection";
 import FollowUpSection from "@/app/(landing)/FollowUpSection";
-import ProductsSection from "./ad-verification/ProductsSection";
+import ProductsSection from "./web-scraping/ProductsSection";
 
 export const metadata: Metadata = {
   title: "Use Cases - Lightning Proxies",

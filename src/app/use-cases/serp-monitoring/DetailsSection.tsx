@@ -206,13 +206,16 @@ export default function DetailsSection() {
             </p>
 
             <h2 className="mb-6 text-[26px] sm:text-[42px] font-semibold leading-[30px] sm:leading-[46px] tracking-[-0.84px]">
-              Accurate Monitoring with reliable proxy solutions
+              Powerful Proxies for SEO Scraping and SERP Monitoring
             </h2>
 
             <p className="mb-6 text-xs sm:text-base tracking-[-0.12px] sm:tracking-[-0.16px] text-primary/75">
-              In ullamcorper diam neque, commodo eleifend nisl imperdiet sed.
-              Pellentesque sollicitudin malesuada lorem porta sagittis. Quisque
-              id tortor quis diam porttitor euismod. Phasellus et mauris nulla.
+              Easily gather search engine data without blocks or interruptions
+              using our high-performance Residential and Datacenter Proxies. Get
+              localized results, beat CAPTCHAs, and monitor search rankings
+              seamlessly across any device. Designed for speed, reliability, and
+              scalability, our proxies ensure you never miss the insights you
+              need.
             </p>
 
             <div className="mb-8 space-y-4">
@@ -240,7 +243,7 @@ export default function DetailsSection() {
                 </svg>
 
                 <p className="text-xs sm:text-base tracking-[-0.12px] sm:tracking-[-0.16px] text-primary/75">
-                  In diam neque, commodo eleifend nisl imperdiet sed.
+                  Monitor SERPs Across Any Region.
                 </p>
               </div>
 
@@ -268,7 +271,7 @@ export default function DetailsSection() {
                 </svg>
 
                 <p className="text-xs sm:text-base tracking-[-0.12px] sm:tracking-[-0.16px] text-primary/75">
-                  Pellentesque sollicitudin malesuada lorem porta sagittis.
+                  Avoid Blocks and CAPTCHAs..
                 </p>
               </div>
 
@@ -296,7 +299,7 @@ export default function DetailsSection() {
                 </svg>
 
                 <p className="text-xs sm:text-base tracking-[-0.12px] sm:tracking-[-0.16px] text-primary/75">
-                  Quisque id tortor quis diam porttitor euismod.
+                  Flexible and Scalable Solutions.
                 </p>
               </div>
             </div>

@@ -206,13 +206,15 @@ export default function DetailsSection() {
             </p>
 
             <h2 className="mb-6 text-[26px] sm:text-[42px] font-semibold leading-[30px] sm:leading-[46px] tracking-[-0.84px]">
-              Get your ads verified using our reliable proxy solutions
+              Proxy Solutions to Verify Ads and Stop Fraud
             </h2>
 
             <p className="mb-6 text-xs sm:text-base tracking-[-0.12px] sm:tracking-[-0.16px] text-primary/75">
-              In ullamcorper diam neque, commodo eleifend nisl imperdiet sed.
-              Pellentesque sollicitudin malesuada lorem porta sagittis. Quisque
-              id tortor quis diam porttitor euismod. Phasellus et mauris nulla.
+              Keep your ad campaigns running smoothly with Residential and
+              Datacenter Proxies. Verify ad placements, detect fraudulent
+              activities, and ensure accurate geo-targeting without worrying
+              about blocks or restrictions. Maintain full anonymity while
+              checking ads on a global scale.
             </p>
 
             <div className="mb-8 space-y-4">
@@ -240,7 +242,7 @@ export default function DetailsSection() {
                 </svg>
 
                 <p className="text-xs sm:text-base tracking-[-0.12px] sm:tracking-[-0.16px] text-primary/75">
-                  In diam neque, commodo eleifend nisl imperdiet sed.
+                  Verify Ads on a Large Scale.
                 </p>
               </div>
 
@@ -268,7 +270,7 @@ export default function DetailsSection() {
                 </svg>
 
                 <p className="text-xs sm:text-base tracking-[-0.12px] sm:tracking-[-0.16px] text-primary/75">
-                  Pellentesque sollicitudin malesuada lorem porta sagittis.
+                  Perform Accurate Geo-Targeting.
                 </p>
               </div>
 
@@ -296,7 +298,7 @@ export default function DetailsSection() {
                 </svg>
 
                 <p className="text-xs sm:text-base tracking-[-0.12px] sm:tracking-[-0.16px] text-primary/75">
-                  Quisque id tortor quis diam porttitor euismod.
+                  Prevent Ad Fraud and Maintain Anonymity.
                 </p>
               </div>
             </div>

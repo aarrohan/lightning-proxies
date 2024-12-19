@@ -202,17 +202,18 @@ export default function DetailsSection() {
 
           <div className="order-1 sm:order-2">
             <p className="mb-3 text-[11px] sm:text-sm font-semibold tracking-[-0.11px] sm:tracking-[-0.14px] uppercase text-[#D10975]">
-              AD VERIFICATION
+              BRAND PROTECTION
             </p>
 
             <h2 className="mb-6 text-[26px] sm:text-[42px] font-semibold leading-[30px] sm:leading-[46px] tracking-[-0.84px]">
-              Get your ads verified using our reliable proxy solutions
+              Secure Your Brand Online with Powerful Proxy Solutions
             </h2>
 
             <p className="mb-6 text-xs sm:text-base tracking-[-0.12px] sm:tracking-[-0.16px] text-primary/75">
-              In ullamcorper diam neque, commodo eleifend nisl imperdiet sed.
-              Pellentesque sollicitudin malesuada lorem porta sagittis. Quisque
-              id tortor quis diam porttitor euismod. Phasellus et mauris nulla.
+              Protect your brand from counterfeit websites, unauthorized ads,
+              and online fraud with Residential and Datacenter Proxies. Gather
+              real-time threat data, monitor global markets, and ensure your
+              brand’s reputation stays intact without IP blocks or CAPTCHAs.
             </p>
 
             <div className="mb-8 space-y-4">
@@ -240,7 +241,7 @@ export default function DetailsSection() {
                 </svg>
 
                 <p className="text-xs sm:text-base tracking-[-0.12px] sm:tracking-[-0.16px] text-primary/75">
-                  In diam neque, commodo eleifend nisl imperdiet sed.
+                  Access Real-Time Threat Data.
                 </p>
               </div>
 
@@ -268,7 +269,7 @@ export default function DetailsSection() {
                 </svg>
 
                 <p className="text-xs sm:text-base tracking-[-0.12px] sm:tracking-[-0.16px] text-primary/75">
-                  Pellentesque sollicitudin malesuada lorem porta sagittis.
+                  Monitor and Detect Fake Websites.
                 </p>
               </div>
 
@@ -296,7 +297,7 @@ export default function DetailsSection() {
                 </svg>
 
                 <p className="text-xs sm:text-base tracking-[-0.12px] sm:tracking-[-0.16px] text-primary/75">
-                  Quisque id tortor quis diam porttitor euismod.
+                  Bypass Blocks and CAPTCHAs.
                 </p>
               </div>
             </div>

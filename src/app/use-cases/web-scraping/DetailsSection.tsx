@@ -206,13 +206,15 @@ export default function DetailsSection() {
             </p>
 
             <h2 className="mb-6 text-[26px] sm:text-[42px] font-semibold leading-[30px] sm:leading-[46px] tracking-[-0.84px]">
-              Reliable Web Scraping proxy solutions for you
+              Effortless Data Gathering with HighPerformance Proxies
             </h2>
 
             <p className="mb-6 text-xs sm:text-base tracking-[-0.12px] sm:tracking-[-0.16px] text-primary/75">
-              In ullamcorper diam neque, commodo eleifend nisl imperdiet sed.
-              Pellentesque sollicitudin malesuada lorem porta sagittis. Quisque
-              id tortor quis diam porttitor euismod. Phasellus et mauris nulla.
+              Scrape web data efficiently and unlock valuable insights with
+              Residential and Datacenter Proxies. Overcome georestrictions,
+              avoid CAPTCHAs, and gather large-scale data for SEO, market
+              research, pricing, and competitor analysis with unmatched speed
+              and reliability.
             </p>
 
             <div className="mb-8 space-y-4">
@@ -240,7 +242,7 @@ export default function DetailsSection() {
                 </svg>
 
                 <p className="text-xs sm:text-base tracking-[-0.12px] sm:tracking-[-0.16px] text-primary/75">
-                  In diam neque, commodo eleifend nisl imperdiet sed.
+                  Unlimited Connections for Data Scraping.
                 </p>
               </div>
 
@@ -268,7 +270,7 @@ export default function DetailsSection() {
                 </svg>
 
                 <p className="text-xs sm:text-base tracking-[-0.12px] sm:tracking-[-0.16px] text-primary/75">
-                  Pellentesque sollicitudin malesuada lorem porta sagittis.
+                  Bypass Geo-Restrictions and Blocks.
                 </p>
               </div>
 
@@ -296,7 +298,7 @@ export default function DetailsSection() {
                 </svg>
 
                 <p className="text-xs sm:text-base tracking-[-0.12px] sm:tracking-[-0.16px] text-primary/75">
-                  Quisque id tortor quis diam porttitor euismod.
+                  Fast and Reliable Data Extraction.
                 </p>
               </div>
             </div>
