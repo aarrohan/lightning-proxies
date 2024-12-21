@@ -28,7 +28,7 @@ import Image from "next/image";
 
 export default function PlanBox() {
   const [numberOfIPs, setNumberOfIPs] = useState<number>(25);
-
+  const [selectedDurationIndex, setSelectedDurationIndex] = useState<number>(0);
   const [countrySelectedOptionIndex, setCountrySelectedOptionIndex] =
     useState<number>(0);
 
@@ -260,7 +260,10 @@ export default function PlanBox() {
             </div>
           </div>
 
-          <PlanBoxDuration />
+          <PlanBoxDuration
+            selectedDurationIndex={selectedDurationIndex}
+            setSelectedDurationIndex={setSelectedDurationIndex}
+          />
 
           <div className="py-3.5 border-t border-dashed border-white/15 flex justify-between items-center gap-4">
             <p className="text-xs sm:text-base tracking-[-0.12px] sm:tracking-[-0.16px] whitespace-nowrap text-white/75">
@@ -277,12 +280,355 @@ export default function PlanBox() {
       </div>
 
       <div className="mt-5 flex justify-between items-center">
-        <h4 className="text-lg sm:text-[24px] font-semibold tracking-[-0.54px] sm:tracking-[-0.84px] text-white">
-          $35{" "}
-          <span className="text-xs sm:text-sm font-normal tracking-[-0.12px] sm:tracking-[-0.14px] text-white/75">
-            / monthly
-          </span>
-        </h4>
+        {/* 30 days */}
+        {selectedDurationIndex === 0 && (
+          <>
+            {numberOfIPs === 1 ? (
+              <h4 className="text-lg sm:text-[24px] font-semibold tracking-[-0.54px] sm:tracking-[-0.84px] text-white">
+                $4.00{" "}
+                <span className="text-xs sm:text-sm font-normal tracking-[-0.12px] sm:tracking-[-0.14px] text-white/75">
+                  / one-time
+                </span>
+              </h4>
+            ) : numberOfIPs === 2 ? (
+              <h4 className="text-lg sm:text-[24px] font-semibold tracking-[-0.54px] sm:tracking-[-0.84px] text-white">
+                $3.80{" "}
+                <span className="text-xs sm:text-sm font-normal tracking-[-0.12px] sm:tracking-[-0.14px] text-white/75">
+                  / one-time
+                </span>
+              </h4>
+            ) : numberOfIPs === 3 ? (
+              <h4 className="text-lg sm:text-[24px] font-semibold tracking-[-0.54px] sm:tracking-[-0.84px] text-white">
+                $3.60{" "}
+                <span className="text-xs sm:text-sm font-normal tracking-[-0.12px] sm:tracking-[-0.14px] text-white/75">
+                  / one-time
+                </span>
+              </h4>
+            ) : numberOfIPs === 4 ? (
+              <h4 className="text-lg sm:text-[24px] font-semibold tracking-[-0.54px] sm:tracking-[-0.84px] text-white">
+                $3.40{" "}
+                <span className="text-xs sm:text-sm font-normal tracking-[-0.12px] sm:tracking-[-0.14px] text-white/75">
+                  / one-time
+                </span>
+              </h4>
+            ) : numberOfIPs === 5 ? (
+              <h4 className="text-lg sm:text-[24px] font-semibold tracking-[-0.54px] sm:tracking-[-0.84px] text-white">
+                $3.20{" "}
+                <span className="text-xs sm:text-sm font-normal tracking-[-0.12px] sm:tracking-[-0.14px] text-white/75">
+                  / one-time
+                </span>
+              </h4>
+            ) : numberOfIPs === 6 ? (
+              <h4 className="text-lg sm:text-[24px] font-semibold tracking-[-0.54px] sm:tracking-[-0.84px] text-white">
+                $3.00{" "}
+                <span className="text-xs sm:text-sm font-normal tracking-[-0.12px] sm:tracking-[-0.14px] text-white/75">
+                  / one-time
+                </span>
+              </h4>
+            ) : numberOfIPs === 7 ? (
+              <h4 className="text-lg sm:text-[24px] font-semibold tracking-[-0.54px] sm:tracking-[-0.84px] text-white">
+                $2.80{" "}
+                <span className="text-xs sm:text-sm font-normal tracking-[-0.12px] sm:tracking-[-0.14px] text-white/75">
+                  / one-time
+                </span>
+              </h4>
+            ) : numberOfIPs === 8 ? (
+              <h4 className="text-lg sm:text-[24px] font-semibold tracking-[-0.54px] sm:tracking-[-0.84px] text-white">
+                $2.60{" "}
+                <span className="text-xs sm:text-sm font-normal tracking-[-0.12px] sm:tracking-[-0.14px] text-white/75">
+                  / one-time
+                </span>
+              </h4>
+            ) : (
+              <h4 className="text-lg sm:text-[24px] font-semibold tracking-[-0.54px] sm:tracking-[-0.84px] text-white">
+                $2.50{" "}
+                <span className="text-xs sm:text-sm font-normal tracking-[-0.12px] sm:tracking-[-0.14px] text-white/75">
+                  / one-time
+                </span>
+              </h4>
+            )}
+          </>
+        )}
+
+        {/* 60 days */}
+        {selectedDurationIndex === 1 && (
+          <>
+            {numberOfIPs === 1 ? (
+              <h4 className="text-lg sm:text-[24px] font-semibold tracking-[-0.54px] sm:tracking-[-0.84px] text-white">
+                $7.60{" "}
+                <span className="text-xs sm:text-sm font-normal tracking-[-0.12px] sm:tracking-[-0.14px] text-white/75">
+                  / one-time
+                </span>
+              </h4>
+            ) : numberOfIPs === 2 ? (
+              <h4 className="text-lg sm:text-[24px] font-semibold tracking-[-0.54px] sm:tracking-[-0.84px] text-white">
+                $14.44{" "}
+                <span className="text-xs sm:text-sm font-normal tracking-[-0.12px] sm:tracking-[-0.14px] text-white/75">
+                  / one-time
+                </span>
+              </h4>
+            ) : numberOfIPs === 3 ? (
+              <h4 className="text-lg sm:text-[24px] font-semibold tracking-[-0.54px] sm:tracking-[-0.84px] text-white">
+                $20.52{" "}
+                <span className="text-xs sm:text-sm font-normal tracking-[-0.12px] sm:tracking-[-0.14px] text-white/75">
+                  / one-time
+                </span>
+              </h4>
+            ) : numberOfIPs === 4 ? (
+              <h4 className="text-lg sm:text-[24px] font-semibold tracking-[-0.54px] sm:tracking-[-0.84px] text-white">
+                $25.84{" "}
+                <span className="text-xs sm:text-sm font-normal tracking-[-0.12px] sm:tracking-[-0.14px] text-white/75">
+                  / one-time
+                </span>
+              </h4>
+            ) : numberOfIPs === 5 ? (
+              <h4 className="text-lg sm:text-[24px] font-semibold tracking-[-0.54px] sm:tracking-[-0.84px] text-white">
+                $30.40{" "}
+                <span className="text-xs sm:text-sm font-normal tracking-[-0.12px] sm:tracking-[-0.14px] text-white/75">
+                  / one-time
+                </span>
+              </h4>
+            ) : numberOfIPs === 6 ? (
+              <h4 className="text-lg sm:text-[24px] font-semibold tracking-[-0.54px] sm:tracking-[-0.84px] text-white">
+                $34.20{" "}
+                <span className="text-xs sm:text-sm font-normal tracking-[-0.12px] sm:tracking-[-0.14px] text-white/75">
+                  / one-time
+                </span>
+              </h4>
+            ) : numberOfIPs === 7 ? (
+              <h4 className="text-lg sm:text-[24px] font-semibold tracking-[-0.54px] sm:tracking-[-0.84px] text-white">
+                $37.24{" "}
+                <span className="text-xs sm:text-sm font-normal tracking-[-0.12px] sm:tracking-[-0.14px] text-white/75">
+                  / one-time
+                </span>
+              </h4>
+            ) : numberOfIPs === 8 ? (
+              <h4 className="text-lg sm:text-[24px] font-semibold tracking-[-0.54px] sm:tracking-[-0.84px] text-white">
+                $39.52{" "}
+                <span className="text-xs sm:text-sm font-normal tracking-[-0.12px] sm:tracking-[-0.14px] text-white/75">
+                  / one-time
+                </span>
+              </h4>
+            ) : (
+              <h4 className="text-lg sm:text-[24px] font-semibold tracking-[-0.54px] sm:tracking-[-0.84px] text-white">
+                $4.75{" "}
+                <span className="text-xs sm:text-sm font-normal tracking-[-0.12px] sm:tracking-[-0.14px] text-white/75">
+                  / one-time
+                </span>
+              </h4>
+            )}
+          </>
+        )}
+
+        {/* 90 days */}
+        {selectedDurationIndex === 2 && (
+          <>
+            {numberOfIPs === 1 ? (
+              <h4 className="text-lg sm:text-[24px] font-semibold tracking-[-0.54px] sm:tracking-[-0.84px] text-white">
+                $10.80{" "}
+                <span className="text-xs sm:text-sm font-normal tracking-[-0.12px] sm:tracking-[-0.14px] text-white/75">
+                  / one-time
+                </span>
+              </h4>
+            ) : numberOfIPs === 2 ? (
+              <h4 className="text-lg sm:text-[24px] font-semibold tracking-[-0.54px] sm:tracking-[-0.84px] text-white">
+                $20.52{" "}
+                <span className="text-xs sm:text-sm font-normal tracking-[-0.12px] sm:tracking-[-0.14px] text-white/75">
+                  / one-time
+                </span>
+              </h4>
+            ) : numberOfIPs === 3 ? (
+              <h4 className="text-lg sm:text-[24px] font-semibold tracking-[-0.54px] sm:tracking-[-0.84px] text-white">
+                $29.16{" "}
+                <span className="text-xs sm:text-sm font-normal tracking-[-0.12px] sm:tracking-[-0.14px] text-white/75">
+                  / one-time
+                </span>
+              </h4>
+            ) : numberOfIPs === 4 ? (
+              <h4 className="text-lg sm:text-[24px] font-semibold tracking-[-0.54px] sm:tracking-[-0.84px] text-white">
+                $36.72{" "}
+                <span className="text-xs sm:text-sm font-normal tracking-[-0.12px] sm:tracking-[-0.14px] text-white/75">
+                  / one-time
+                </span>
+              </h4>
+            ) : numberOfIPs === 5 ? (
+              <h4 className="text-lg sm:text-[24px] font-semibold tracking-[-0.54px] sm:tracking-[-0.84px] text-white">
+                $43.20{" "}
+                <span className="text-xs sm:text-sm font-normal tracking-[-0.12px] sm:tracking-[-0.14px] text-white/75">
+                  / one-time
+                </span>
+              </h4>
+            ) : numberOfIPs === 6 ? (
+              <h4 className="text-lg sm:text-[24px] font-semibold tracking-[-0.54px] sm:tracking-[-0.84px] text-white">
+                $48.60{" "}
+                <span className="text-xs sm:text-sm font-normal tracking-[-0.12px] sm:tracking-[-0.14px] text-white/75">
+                  / one-time
+                </span>
+              </h4>
+            ) : numberOfIPs === 7 ? (
+              <h4 className="text-lg sm:text-[24px] font-semibold tracking-[-0.54px] sm:tracking-[-0.84px] text-white">
+                $52.92{" "}
+                <span className="text-xs sm:text-sm font-normal tracking-[-0.12px] sm:tracking-[-0.14px] text-white/75">
+                  / one-time
+                </span>
+              </h4>
+            ) : numberOfIPs === 8 ? (
+              <h4 className="text-lg sm:text-[24px] font-semibold tracking-[-0.54px] sm:tracking-[-0.84px] text-white">
+                $56.16{" "}
+                <span className="text-xs sm:text-sm font-normal tracking-[-0.12px] sm:tracking-[-0.14px] text-white/75">
+                  / one-time
+                </span>
+              </h4>
+            ) : (
+              <h4 className="text-lg sm:text-[24px] font-semibold tracking-[-0.54px] sm:tracking-[-0.84px] text-white">
+                $6.75{" "}
+                <span className="text-xs sm:text-sm font-normal tracking-[-0.12px] sm:tracking-[-0.14px] text-white/75">
+                  / one-time
+                </span>
+              </h4>
+            )}
+          </>
+        )}
+
+        {/* 120 days */}
+        {selectedDurationIndex === 3 && (
+          <>
+            {numberOfIPs === 1 ? (
+              <h4 className="text-lg sm:text-[24px] font-semibold tracking-[-0.54px] sm:tracking-[-0.84px] text-white">
+                $13.60{" "}
+                <span className="text-xs sm:text-sm font-normal tracking-[-0.12px] sm:tracking-[-0.14px] text-white/75">
+                  / one-time
+                </span>
+              </h4>
+            ) : numberOfIPs === 2 ? (
+              <h4 className="text-lg sm:text-[24px] font-semibold tracking-[-0.54px] sm:tracking-[-0.84px] text-white">
+                $26.60{" "}
+                <span className="text-xs sm:text-sm font-normal tracking-[-0.12px] sm:tracking-[-0.14px] text-white/75">
+                  / one-time
+                </span>
+              </h4>
+            ) : numberOfIPs === 3 ? (
+              <h4 className="text-lg sm:text-[24px] font-semibold tracking-[-0.54px] sm:tracking-[-0.84px] text-white">
+                $34.68{" "}
+                <span className="text-xs sm:text-sm font-normal tracking-[-0.12px] sm:tracking-[-0.14px] text-white/75">
+                  / one-time
+                </span>
+              </h4>
+            ) : numberOfIPs === 4 ? (
+              <h4 className="text-lg sm:text-[24px] font-semibold tracking-[-0.54px] sm:tracking-[-0.84px] text-white">
+                $43.52{" "}
+                <span className="text-xs sm:text-sm font-normal tracking-[-0.12px] sm:tracking-[-0.14px] text-white/75">
+                  / one-time
+                </span>
+              </h4>
+            ) : numberOfIPs === 5 ? (
+              <h4 className="text-lg sm:text-[24px] font-semibold tracking-[-0.54px] sm:tracking-[-0.84px] text-white">
+                $54.40{" "}
+                <span className="text-xs sm:text-sm font-normal tracking-[-0.12px] sm:tracking-[-0.14px] text-white/75">
+                  / one-time
+                </span>
+              </h4>
+            ) : numberOfIPs === 6 ? (
+              <h4 className="text-lg sm:text-[24px] font-semibold tracking-[-0.54px] sm:tracking-[-0.84px] text-white">
+                $61.20{" "}
+                <span className="text-xs sm:text-sm font-normal tracking-[-0.12px] sm:tracking-[-0.14px] text-white/75">
+                  / one-time
+                </span>
+              </h4>
+            ) : numberOfIPs === 7 ? (
+              <h4 className="text-lg sm:text-[24px] font-semibold tracking-[-0.54px] sm:tracking-[-0.84px] text-white">
+                $66.64{" "}
+                <span className="text-xs sm:text-sm font-normal tracking-[-0.12px] sm:tracking-[-0.14px] text-white/75">
+                  / one-time
+                </span>
+              </h4>
+            ) : numberOfIPs === 8 ? (
+              <h4 className="text-lg sm:text-[24px] font-semibold tracking-[-0.54px] sm:tracking-[-0.84px] text-white">
+                $70.72{" "}
+                <span className="text-xs sm:text-sm font-normal tracking-[-0.12px] sm:tracking-[-0.14px] text-white/75">
+                  / one-time
+                </span>
+              </h4>
+            ) : (
+              <h4 className="text-lg sm:text-[24px] font-semibold tracking-[-0.54px] sm:tracking-[-0.84px] text-white">
+                $8.50{" "}
+                <span className="text-xs sm:text-sm font-normal tracking-[-0.12px] sm:tracking-[-0.14px] text-white/75">
+                  / one-time
+                </span>
+              </h4>
+            )}
+          </>
+        )}
+
+        {/* 180 days */}
+        {selectedDurationIndex === 4 && (
+          <>
+            {numberOfIPs === 1 ? (
+              <h4 className="text-lg sm:text-[24px] font-semibold tracking-[-0.54px] sm:tracking-[-0.84px] text-white">
+                $16.00{" "}
+                <span className="text-xs sm:text-sm font-normal tracking-[-0.12px] sm:tracking-[-0.14px] text-white/75">
+                  / one-time
+                </span>
+              </h4>
+            ) : numberOfIPs === 2 ? (
+              <h4 className="text-lg sm:text-[24px] font-semibold tracking-[-0.54px] sm:tracking-[-0.84px] text-white">
+                $36.48{" "}
+                <span className="text-xs sm:text-sm font-normal tracking-[-0.12px] sm:tracking-[-0.14px] text-white/75">
+                  / one-time
+                </span>
+              </h4>
+            ) : numberOfIPs === 3 ? (
+              <h4 className="text-lg sm:text-[24px] font-semibold tracking-[-0.54px] sm:tracking-[-0.84px] text-white">
+                $51.84{" "}
+                <span className="text-xs sm:text-sm font-normal tracking-[-0.12px] sm:tracking-[-0.14px] text-white/75">
+                  / one-time
+                </span>
+              </h4>
+            ) : numberOfIPs === 4 ? (
+              <h4 className="text-lg sm:text-[24px] font-semibold tracking-[-0.54px] sm:tracking-[-0.84px] text-white">
+                $65.28{" "}
+                <span className="text-xs sm:text-sm font-normal tracking-[-0.12px] sm:tracking-[-0.14px] text-white/75">
+                  / one-time
+                </span>
+              </h4>
+            ) : numberOfIPs === 5 ? (
+              <h4 className="text-lg sm:text-[24px] font-semibold tracking-[-0.54px] sm:tracking-[-0.84px] text-white">
+                $76.80{" "}
+                <span className="text-xs sm:text-sm font-normal tracking-[-0.12px] sm:tracking-[-0.14px] text-white/75">
+                  / one-time
+                </span>
+              </h4>
+            ) : numberOfIPs === 6 ? (
+              <h4 className="text-lg sm:text-[24px] font-semibold tracking-[-0.54px] sm:tracking-[-0.84px] text-white">
+                $86.40{" "}
+                <span className="text-xs sm:text-sm font-normal tracking-[-0.12px] sm:tracking-[-0.14px] text-white/75">
+                  / one-time
+                </span>
+              </h4>
+            ) : numberOfIPs === 7 ? (
+              <h4 className="text-lg sm:text-[24px] font-semibold tracking-[-0.54px] sm:tracking-[-0.84px] text-white">
+                $94.08{" "}
+                <span className="text-xs sm:text-sm font-normal tracking-[-0.12px] sm:tracking-[-0.14px] text-white/75">
+                  / one-time
+                </span>
+              </h4>
+            ) : numberOfIPs === 8 ? (
+              <h4 className="text-lg sm:text-[24px] font-semibold tracking-[-0.54px] sm:tracking-[-0.84px] text-white">
+                $99.84{" "}
+                <span className="text-xs sm:text-sm font-normal tracking-[-0.12px] sm:tracking-[-0.14px] text-white/75">
+                  / one-time
+                </span>
+              </h4>
+            ) : (
+              <h4 className="text-lg sm:text-[24px] font-semibold tracking-[-0.54px] sm:tracking-[-0.84px] text-white">
+                $12.00{" "}
+                <span className="text-xs sm:text-sm font-normal tracking-[-0.12px] sm:tracking-[-0.14px] text-white/75">
+                  / one-time
+                </span>
+              </h4>
+            )}
+          </>
+        )}
 
         <button className="group active:scale-95 py-[8px] px-6 sm:px-10 border border-white/15 bg-white/5 hover:bg-white rounded-[9px] flex justify-center items-center gap-3 text-sm font-medium tracking-[-0.14px] text-white hover:text-primary duration-200">
           Get Started{" "}
