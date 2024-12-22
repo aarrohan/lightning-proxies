@@ -161,7 +161,7 @@ export default function HeroSection() {
 
       <div className="relative z-10 mx-auto container max-w-[1320px] pt-24 lg:pt-32 px-5 flex flex-col items-center">
         <p className="mb-7 text-[11px] sm:text-sm font-medium tracking-[-0.11px] sm:tracking-[-0.14px] uppercase text-center text-white">
-          Trusted by World's Top Leading Web Scraping Companies
+          TRUSTED BY TOP PARTNERS IN THE INDUSTRY
         </p>
 
         <Marquee autoFill={true} speed={40}>
