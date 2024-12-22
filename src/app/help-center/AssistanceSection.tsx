@@ -1,7 +1,16 @@
+"use client";
+import { useEffect } from "react";
 import Image from "next/image";
 import helpCenterImg1 from "@/assets/images/help-center-1.png";
 
 export default function AssistanceSection() {
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.type = "text/javascript";
+    script.innerHTML = `window.$crisp=[];window.CRISP_WEBSITE_ID="f226ecbb-f148-41ab-b240-0b9c1016dba6";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();`;
+    document.head.appendChild(script);
+  }, []);
+
   return (
     <section className="pb-20 sm:pb-28">
       <div className="mx-auto container max-w-[1320px] px-5">
@@ -18,7 +27,14 @@ export default function AssistanceSection() {
               contact us for more details.{" "}
             </p>
 
-            <button className="active:scale-95 py-1.5 px-3.5 border border-dark-white rounded-full flex items-center gap-2 text-xs sm:text-sm tracking-[-0.12px] sm:tracking-[-0.14px] duration-200">
+            <button
+              onClick={() => {
+                if (window.$crisp) {
+                  window.$crisp.push(["do", "chat:open"]);
+                }
+              }}
+              className="active:scale-95 py-1.5 px-3.5 border border-dark-white rounded-full flex items-center gap-2 text-xs sm:text-sm tracking-[-0.12px] sm:tracking-[-0.14px] duration-200"
+            >
               <svg
                 width="16"
                 height="16"
