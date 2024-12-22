@@ -10,7 +10,17 @@ import LocationsSection from "./LocationsSection";
 import FollowUpSection from "@/app/(landing)/FollowUpSection";
 
 export const metadata: Metadata = {
-  title: "USA Location - Lightning Proxies",
+  title: "United States Proxies - Fast & Reliable US IPs",
+  description:
+    "Get US-based residential, datacenter, and mobile proxies for all your online needs. Enjoy unlimited bandwidth, high-speed connections, and geo-targeting.",
+  openGraph: {
+    type: "website",
+    url: `${process.env.NEXT_PUBLIC_APP_URL}/locations/usa`,
+    title: "United States Proxies - Fast & Reliable US IPs",
+    description:
+      "Get US-based residential, datacenter, and mobile proxies for all your online needs. Enjoy unlimited bandwidth, high-speed connections, and geo-targeting.",
+    images: `${process.env.NEXT_PUBLIC_APP_URL}/images/og-img.png`,
+  },
 };
 
 export default function USALocation() {

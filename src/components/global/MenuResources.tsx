@@ -280,7 +280,7 @@ export default function MenuResources() {
         </svg>
       ),
       title: "Affiliate Program",
-      href: "/affiliate-program",
+      href: "/coming-soon",
     },
     {
       isComingSoon: true,

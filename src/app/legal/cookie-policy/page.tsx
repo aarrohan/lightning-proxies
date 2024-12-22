@@ -3,20 +3,20 @@ import FollowUpSection from "@/app/(landing)/FollowUpSection";
 import Links from "./Links";
 
 export const metadata: Metadata = {
-  title: "Terms of Service - Legal Information",
+  title: "Cookie Policy - Understanding Cookies Usage",
   description:
-    "Review the terms and conditions for using our proxy services. Understand your rights, responsibilities, and the scope of our services.",
+    "Discover how we use cookies to improve your experience. Learn about the types of cookies we use and how you can manage them.",
   openGraph: {
     type: "website",
-    url: `${process.env.NEXT_PUBLIC_APP_URL}/legal/terms-of-service`,
-    title: "Terms of Service - Legal Information",
+    url: `${process.env.NEXT_PUBLIC_APP_URL}/legal/cookie-policy`,
+    title: "Cookie Policy - Understanding Cookies Usage",
     description:
-      "Review the terms and conditions for using our proxy services. Understand your rights, responsibilities, and the scope of our services.",
+      "Discover how we use cookies to improve your experience. Learn about the types of cookies we use and how you can manage them.",
     images: `${process.env.NEXT_PUBLIC_APP_URL}/images/og-img.png`,
   },
 };
 
-export default function TermsOfService() {
+export default function CookiePolicy() {
   return (
     <main>
       <section className="pt-[70px]">
@@ -25,7 +25,7 @@ export default function TermsOfService() {
 
           <div>
             <h1 className="mb-4 max-w-[500px] text-[26px] sm:text-[42px] font-semibold leading-[30px] sm:leading-[46px] tracking-[-0.84px]">
-              Terms of Service
+              Cookie Policy
             </h1>
 
             <p className="text-sm sm:text-base tracking-[-0.14px] sm:tracking-[-0.16px] text-primary/50">

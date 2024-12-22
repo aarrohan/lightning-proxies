@@ -10,7 +10,17 @@ import LocationsSection from "../usa/LocationsSection";
 import FollowUpSection from "@/app/(landing)/FollowUpSection";
 
 export const metadata: Metadata = {
-  title: "UK Location - Lightning Proxies",
+  title: "United Kingdom Proxies - High-Quality UK IPs",
+  description:
+    "Access UK-based proxies for seamless browsing, scraping, and monitoring. Achieve consistent performance with geo-targeted residential and datacenter IPs.",
+  openGraph: {
+    type: "website",
+    url: `${process.env.NEXT_PUBLIC_APP_URL}/locations/uk`,
+    title: "United Kingdom Proxies - High-Quality UK IPs",
+    description:
+      "Access UK-based proxies for seamless browsing, scraping, and monitoring. Achieve consistent performance with geo-targeted residential and datacenter IPs.",
+    images: `${process.env.NEXT_PUBLIC_APP_URL}/images/og-img.png`,
+  },
 };
 
 export default function UKLocation() {

@@ -10,7 +10,17 @@ import LocationsSection from "../usa/LocationsSection";
 import FollowUpSection from "@/app/(landing)/FollowUpSection";
 
 export const metadata: Metadata = {
-  title: "France Location - Lightning Proxies",
+  title: "France Proxies - Premium French IPs",
+  description:
+    "Connect with French IP addresses for accurate geo-restricted data. Explore high-speed residential and datacenter proxies for any use case.",
+  openGraph: {
+    type: "website",
+    url: `${process.env.NEXT_PUBLIC_APP_URL}/locations/france`,
+    title: "France Proxies - Premium French IPs",
+    description:
+      "Connect with French IP addresses for accurate geo-restricted data. Explore high-speed residential and datacenter proxies for any use case.",
+    images: `${process.env.NEXT_PUBLIC_APP_URL}/images/og-img.png`,
+  },
 };
 
 export default function FranceLocation() {

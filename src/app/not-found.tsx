@@ -6,7 +6,17 @@ import PrimaryBtn from "@/components/ui/PrimaryBtn";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "404 - Lightning Proxies",
+  title: "Page Not Found - 404 Error",
+  description:
+    "The page you are looking for doesn’t exist. Check the URL or return to the homepage to continue browsing our services.",
+  openGraph: {
+    type: "website",
+    url: `${process.env.NEXT_PUBLIC_APP_URL}/404`,
+    title: "Page Not Found - 404 Error",
+    description:
+      "The page you are looking for doesn’t exist. Check the URL or return to the homepage to continue browsing our services.",
+    images: `${process.env.NEXT_PUBLIC_APP_URL}/images/og-img.png`,
+  },
 };
 
 export default function NotFound() {

@@ -5,7 +5,17 @@ import Link from "next/link";
 import Aside from "./Aside";
 
 export const metadata: Metadata = {
-  title: "FAQs - Lightning Proxies",
+  title: "FAQs - Frequently Asked Questions",
+  description:
+    "Find answers to the most commonly asked questions about our proxy services, pricing, and setup. Explore our FAQ section to get the support you need.",
+  openGraph: {
+    type: "website",
+    url: `${process.env.NEXT_PUBLIC_APP_URL}/help-center/faqs`,
+    title: "FAQs - Frequently Asked Questions",
+    description:
+      "Find answers to the most commonly asked questions about our proxy services, pricing, and setup. Explore our FAQ section to get the support you need.",
+    images: `${process.env.NEXT_PUBLIC_APP_URL}/images/og-img.png`,
+  },
 };
 
 export default function FAQs() {

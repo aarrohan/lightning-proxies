@@ -10,7 +10,17 @@ import LocationsSection from "../usa/LocationsSection";
 import FollowUpSection from "@/app/(landing)/FollowUpSection";
 
 export const metadata: Metadata = {
-  title: "China Location - Lightning Proxies",
+  title: "China Proxies - Optimized CN IPs",
+  description:
+    "Connect to China-based proxies for seamless access to regional content. Enjoy high-speed residential and datacenter proxies with targeted features.",
+  openGraph: {
+    type: "website",
+    url: `${process.env.NEXT_PUBLIC_APP_URL}/locations/china`,
+    title: "China Proxies - Optimized CN IPs",
+    description:
+      "Connect to China-based proxies for seamless access to regional content. Enjoy high-speed residential and datacenter proxies with targeted features.",
+    images: `${process.env.NEXT_PUBLIC_APP_URL}/images/og-img.png`,
+  },
 };
 
 export default function ChinaLocation() {

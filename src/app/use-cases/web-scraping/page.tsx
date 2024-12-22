@@ -8,7 +8,17 @@ import LocationsSection from "./LocationsSection";
 import FollowUpSection from "@/app/(landing)/FollowUpSection";
 
 export const metadata: Metadata = {
-  title: "Web Scraping Use Case - Lightning Proxies",
+  title: "Web Scraping Proxies - Seamless Data Collection",
+  description:
+    "Enhance your web scraping tasks with secure and anonymous proxies. Residential and datacenter proxies tailored for large-scale, high-speed data gathering.",
+  openGraph: {
+    type: "website",
+    url: `${process.env.NEXT_PUBLIC_APP_URL}/use-cases/web-scraping`,
+    title: "Web Scraping Proxies - Seamless Data Collection",
+    description:
+      "Enhance your web scraping tasks with secure and anonymous proxies. Residential and datacenter proxies tailored for large-scale, high-speed data gathering.",
+    images: `${process.env.NEXT_PUBLIC_APP_URL}/images/og-img.png`,
+  },
 };
 
 export default function WebScrapingUseCase() {
