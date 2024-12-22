@@ -26,7 +26,7 @@ export const metadata: Metadata = {
       "LightningProxies - Simplified Proxy Solutions for Web Data Extraction",
     description:
       "Access 20M+ premium Residential, Datacenter, and IPv6 Proxies. Designed for seamless web data extraction, scraping, and monitoring, we provide reliable proxy solutions tailored to your business needs.",
-    images: "https://i.imgur.com/s2kQsiw.png",
+    images: `${process.env.NEXT_PUBLIC_APP_URL}/images/og-img.png`,
   },
 };
 
