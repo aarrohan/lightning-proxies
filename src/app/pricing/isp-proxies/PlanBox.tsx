@@ -341,7 +341,7 @@ export default function PlanBox() {
               </h4>
             ) : (
               <h4 className="text-lg sm:text-[24px] font-semibold tracking-[-0.54px] sm:tracking-[-0.84px] text-white">
-                $2.50{" "}
+                ${(numberOfIPs * 2.5).toFixed(2)}{" "}
                 <span className="text-xs sm:text-sm font-normal tracking-[-0.12px] sm:tracking-[-0.14px] text-white/75">
                   / one-time
                 </span>
@@ -411,7 +411,7 @@ export default function PlanBox() {
               </h4>
             ) : (
               <h4 className="text-lg sm:text-[24px] font-semibold tracking-[-0.54px] sm:tracking-[-0.84px] text-white">
-                $4.75{" "}
+                ${(numberOfIPs * 4.75).toFixed(2)}{" "}
                 <span className="text-xs sm:text-sm font-normal tracking-[-0.12px] sm:tracking-[-0.14px] text-white/75">
                   / one-time
                 </span>
@@ -481,7 +481,7 @@ export default function PlanBox() {
               </h4>
             ) : (
               <h4 className="text-lg sm:text-[24px] font-semibold tracking-[-0.54px] sm:tracking-[-0.84px] text-white">
-                $6.75{" "}
+                ${(numberOfIPs * 6.75).toFixed(2)}{" "}
                 <span className="text-xs sm:text-sm font-normal tracking-[-0.12px] sm:tracking-[-0.14px] text-white/75">
                   / one-time
                 </span>
@@ -551,7 +551,7 @@ export default function PlanBox() {
               </h4>
             ) : (
               <h4 className="text-lg sm:text-[24px] font-semibold tracking-[-0.54px] sm:tracking-[-0.84px] text-white">
-                $8.50{" "}
+                ${(numberOfIPs * 8.5).toFixed(2)}{" "}
                 <span className="text-xs sm:text-sm font-normal tracking-[-0.12px] sm:tracking-[-0.14px] text-white/75">
                   / one-time
                 </span>
@@ -621,7 +621,7 @@ export default function PlanBox() {
               </h4>
             ) : (
               <h4 className="text-lg sm:text-[24px] font-semibold tracking-[-0.54px] sm:tracking-[-0.84px] text-white">
-                $12.00{" "}
+                ${(numberOfIPs * 12).toFixed(2)}{" "}
                 <span className="text-xs sm:text-sm font-normal tracking-[-0.12px] sm:tracking-[-0.14px] text-white/75">
                   / one-time
                 </span>

@@ -9,8 +9,15 @@ interface IProps {
 }
 
 export default function ApiCodeBlockContent({ language, code }: IProps) {
+  const [show, setShow] = useState<boolean>(false);
   const [customStyle, setCustomStyle] = useState({});
   const [copied, setCopied] = useState<boolean>(false);
+
+  useEffect(() => {
+    setInterval(() => {
+      setShow(true);
+    }, 100);
+  }, []);
 
   useEffect(() => {
     const style = {
@@ -39,14 +46,16 @@ export default function ApiCodeBlockContent({ language, code }: IProps) {
   return (
     <div className="relative">
       <div className="hide-scrollbar min-h-[248px] max-h-[248px] p-3 sm:p-6 overflow-y-auto">
-        <SyntaxHighlighter
-          language={language}
-          style={atomOneDark}
-          customStyle={customStyle}
-          wrapLongLines={true}
-        >
-          {code}
-        </SyntaxHighlighter>
+        <div className={`${!show ? "opacity-0" : ""} duration-200`}>
+          <SyntaxHighlighter
+            language={language}
+            style={atomOneDark}
+            customStyle={customStyle}
+            wrapLongLines={true}
+          >
+            {code}
+          </SyntaxHighlighter>
+        </div>
       </div>
 
       <button
