@@ -13,7 +13,17 @@ import ExploreSection from "./ExploreSection";
 import FollowUpSection from "@/app/(landing)/FollowUpSection";
 
 export const metadata: Metadata = {
-  title: "IPv6 Proxies - Lightning Proxies",
+  title: "IPv6 Proxies - Huge IP Network",
+  description:
+    "Optimize web scraping with billions of IPv6 addresses. IPv6 Proxies ensure low-cost, high-speed connections with flexible targeting and robust performance.",
+  openGraph: {
+    type: "website",
+    url: `${process.env.NEXT_PUBLIC_APP_URL}/products/ipv6-proxies`,
+    title: "IPv6 Proxies - Huge IP Network",
+    description:
+      "Optimize web scraping with billions of IPv6 addresses. IPv6 Proxies ensure low-cost, high-speed connections with flexible targeting and robust performance.",
+    images: `${process.env.NEXT_PUBLIC_APP_URL}/images/og-img.png`,
+  },
 };
 
 export default function IPv6ProxiesProduct() {

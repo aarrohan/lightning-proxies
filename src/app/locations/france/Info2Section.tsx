@@ -15,17 +15,17 @@ export default function Info2Section() {
           </p>
 
           <h2 className="mb-6 text-[26px] sm:text-[42px] font-semibold leading-[30px] sm:leading-[46px] tracking-[-0.84px]">
-            Fastest French Residential proxy servers for cost-effective scraping
+            Fastest French Datacenter proxy servers for cost-effective scraping
           </h2>
 
           <p className="mb-6 text-xs sm:text-base tracking-[-0.12px] sm:tracking-[-0.16px] text-primary/75">
             Scraping low or medium security websites can be done easily with
-            Rotating Residential proxy servers from France. <br />
+            Shared Datacenter proxy servers from France. <br />
             <br />
             We know that having limitations on your proxies can be difficult,
-            that's why at LightningProxies Residential proxy servers come
-            equipped with Unlimited concurrent sessions to help you scale your
-            web scraping projects.
+            that's why at LightningProxies DC proxy servers come equipped with
+            Unlimited bandwidth and Unlimited concurrent sessions to help you
+            scale your web scraping projects.
           </p>
 
           <button className="active:scale-95 w-full sm:w-fit py-2.5 sm:py-2 px-5 border border-dark-white bg-white rounded-lg flex justify-center items-center gap-2.5 text-xs sm:text-base font-medium tracking-[-0.16px] text-[#12A250] duration-300">

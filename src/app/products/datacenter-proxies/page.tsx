@@ -13,7 +13,17 @@ import ExploreSection from "./ExploreSection";
 import FollowUpSection from "@/app/(landing)/FollowUpSection";
 
 export const metadata: Metadata = {
-  title: "Datacenter Proxies - Lightning Proxies",
+  title: "Buy Datacenter Proxies - Unlimited Bandwidth",
+  description:
+    "Achieve top-tier performance with 15,000+ datacenter proxies in 5 global locations. Enjoy unlimited bandwidth, high concurrency, and rotating or sticky sessions for seamless operations.",
+  openGraph: {
+    type: "website",
+    url: `${process.env.NEXT_PUBLIC_APP_URL}/products/datacenter-proxies`,
+    title: "Buy Datacenter Proxies - Unlimited Bandwidth",
+    description:
+      "Achieve top-tier performance with 15,000+ datacenter proxies in 5 global locations. Enjoy unlimited bandwidth, high concurrency, and rotating or sticky sessions for seamless operations.",
+    images: `${process.env.NEXT_PUBLIC_APP_URL}/images/og-img.png`,
+  },
 };
 
 export default function DatacenterProxiesProduct() {

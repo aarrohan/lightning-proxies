@@ -16,8 +16,8 @@ export default function PlanBoxUnlimited() {
       value: "30",
     },
     {
-      title: "50 MBps",
-      value: "50",
+      title: "60 MBps",
+      value: "60",
     },
     {
       title: "120 MBps",

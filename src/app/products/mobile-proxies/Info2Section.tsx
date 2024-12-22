@@ -84,7 +84,7 @@ export default function Info2Section() {
               </svg>
 
               <p className="text-xs sm:text-sm tracking-[-0.12px] sm:tracking-[-0.14px] text-primary/75">
-                Unlimited Bandwidth
+                Unlimited Sessions
               </p>
             </div>
 

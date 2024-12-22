@@ -36,7 +36,7 @@ export default function HeroSection() {
           </h1>
 
           <p className="max-w-[580px] text-xs sm:text-base leading-[18px] sm:leading-[24px] tracking-[-0.12px] sm:tracking-[-0.16px] text-center xl:text-left text-white">
-            The fastest, most costeffective proxy solution for high-volume data
+            The fastest, most cost-effective proxy solution for high-volume data
             scraping.
           </p>
 

@@ -13,7 +13,17 @@ import ExploreSection from "./ExploreSection";
 import FollowUpSection from "@/app/(landing)/FollowUpSection";
 
 export const metadata: Metadata = {
-  title: "Residential Proxies - Lightning Proxies",
+  title: "Buy Residential Proxies - 10M+ Active Home IPs",
+  description:
+    "Leverage 10M+ real residential IPs with country, city, and ISP targeting. Our Residential Proxies offer high-speed, anonymous, and reliable connections for data scraping, SERP monitoring, and more.",
+  openGraph: {
+    type: "website",
+    url: `${process.env.NEXT_PUBLIC_APP_URL}/products/residential-proxies`,
+    title: "Buy Residential Proxies - 10M+ Active Home IPs",
+    description:
+      "Leverage 10M+ real residential IPs with country, city, and ISP targeting. Our Residential Proxies offer high-speed, anonymous, and reliable connections for data scraping, SERP monitoring, and more.",
+    images: `${process.env.NEXT_PUBLIC_APP_URL}/images/og-img.png`,
+  },
 };
 
 export default function ResidentialProxiesProduct() {

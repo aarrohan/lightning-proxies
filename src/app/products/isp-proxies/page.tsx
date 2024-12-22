@@ -13,7 +13,17 @@ import ExploreSection from "./ExploreSection";
 import FollowUpSection from "@/app/(landing)/FollowUpSection";
 
 export const metadata: Metadata = {
-  title: "ISP Proxies - Lightning Proxies",
+  title: "ISP Proxies - Premium Static Residential IPs",
+  description:
+    "Benefit from tier-1 ISP proxies with unmatched quality and speed. ISP Proxies provide static IPs, unlimited bandwidth, and global ISP coverage.",
+  openGraph: {
+    type: "website",
+    url: `${process.env.NEXT_PUBLIC_APP_URL}/products/isp-proxies`,
+    title: "ISP Proxies - Premium Static Residential IPs",
+    description:
+      "Benefit from tier-1 ISP proxies with unmatched quality and speed. ISP Proxies provide static IPs, unlimited bandwidth, and global ISP coverage.",
+    images: `${process.env.NEXT_PUBLIC_APP_URL}/images/og-img.png`,
+  },
 };
 
 export default function ISPProxiesProduct() {

@@ -20,7 +20,7 @@ export default function Info2Section() {
 
           <p className="mb-6 text-xs sm:text-base tracking-[-0.12px] sm:tracking-[-0.16px] text-primary/75">
             Scraping low or medium security websites can be done easily with
-            Shared Datacenter proxy servers from Chinese. <br />
+            Shared Datacenter proxy servers from China. <br />
             <br />
             We know that having limitations on your proxies can be difficult,
             that's why at LightningProxies DC proxy servers come equipped with

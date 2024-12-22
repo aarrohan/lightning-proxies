@@ -15,10 +15,9 @@ export default function Info1Section() {
           </h2>
 
           <p className="mb-6 text-xs sm:text-base tracking-[-0.12px] sm:tracking-[-0.16px] text-primary/75">
-            I absolutely love their proxies, especially the Residential ones.
-            The global gateway performs exceptionally well on my targets. I’ve
-            noticed a high percentage of unique IPs for every request, which
-            significantly enhances my scraping performance.
+            Enhance your appreance on the web with the best British residential
+            IPs. Using LightningProxies residential UK proxy servers will keep
+            you protected and anonymous on the entire proxy session.
           </p>
 
           <button className="active:scale-95 w-full sm:w-fit py-2.5 sm:py-2 px-5 border border-dark-white bg-white rounded-lg flex justify-center items-center gap-2.5 text-xs sm:text-base font-medium tracking-[-0.16px] text-accent duration-300">

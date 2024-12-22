@@ -38,7 +38,7 @@ export default function ExploreSection() {
             </h3>
 
             <p className="max-w-[420px] text-xs sm:text-base tracking-[-0.12px] sm:tracking-[-0.16px] text-center text-primary/50">
-              High-speed, costeffective proxies ideal for bulk data scraping,
+              High-speed, cost-effective proxies ideal for bulk data scraping,
               automation, and general browsing tasks.
             </p>
 

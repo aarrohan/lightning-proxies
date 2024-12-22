@@ -1,8 +1,7 @@
 import usaFlagImg from "@/assets/images/flags/usa.svg";
 import ukFlagImg from "@/assets/images/flags/uk.svg";
 import canadaFlagImg from "@/assets/images/flags/canada.svg";
-import chinaFlagImg from "@/assets/images/flags/china.svg";
-import franceFlagImg from "@/assets/images/flags/france.svg";
+import netherlandsFlagImg from "@/assets/images/flags/netherlands.svg";
 import germanyFlagImg from "@/assets/images/flags/germany.svg";
 import Image from "next/image";
 
@@ -52,25 +51,13 @@ export default function CountryBox() {
 
         <div className="flex items-center gap-2 5">
           <Image
-            src={chinaFlagImg}
+            src={netherlandsFlagImg}
             alt=""
             className="w-[28px] sm:w-[32px] h-auto"
           />
 
           <p className="text-xs sm:text-base font-medium tracking-[-0.14px] sm:tracking-[-0.16px] text-white">
-            China
-          </p>
-        </div>
-
-        <div className="flex items-center gap-2 5">
-          <Image
-            src={franceFlagImg}
-            alt=""
-            className="w-[28px] sm:w-[32px] h-auto"
-          />
-
-          <p className="text-xs sm:text-base font-medium tracking-[-0.14px] sm:tracking-[-0.16px] text-white">
-            France
+            Netherlands
           </p>
         </div>
 

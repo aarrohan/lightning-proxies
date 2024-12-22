@@ -329,7 +329,7 @@ export default function BenefitsSection() {
       img: <Image src={benefit6Img} alt="" className="-mb-px w-full" />,
       title: "Customized Conncurrency",
       description:
-        "Zero boundaries, send an unlimited amount of concurrent sessions.",
+        " Every subscription has the ability to customize threads upon your needs.",
     },
   ];
 

@@ -13,7 +13,17 @@ import ExploreSection from "./ExploreSection";
 import FollowUpSection from "@/app/(landing)/FollowUpSection";
 
 export const metadata: Metadata = {
-  title: "Mobile Proxies - Lightning Proxies",
+  title: "Mobile Proxies - Real 4G/5G Proxy Network",
+  description:
+    "Access 500K+ mobile IPs across 50+ countries for unmatched reliability. Perfect for ad verification, social media, and sneaker copping with secure and flexible solutions.",
+  openGraph: {
+    type: "website",
+    url: `${process.env.NEXT_PUBLIC_APP_URL}/products/mobile-proxies`,
+    title: "Mobile Proxies - Real 4G/5G Proxy Network",
+    description:
+      "Access 500K+ mobile IPs across 50+ countries for unmatched reliability. Perfect for ad verification, social media, and sneaker copping with secure and flexible solutions.",
+    images: `${process.env.NEXT_PUBLIC_APP_URL}/images/og-img.png`,
+  },
 };
 
 export default function MobileProxiesProduct() {

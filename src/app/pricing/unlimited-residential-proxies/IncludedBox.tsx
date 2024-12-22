@@ -149,7 +149,7 @@ export default function IncludedBox() {
           />
         </svg>
       ),
-      title: "State, City, Provider",
+      title: "Continent",
       subTitle: "Targeting",
     },
     {

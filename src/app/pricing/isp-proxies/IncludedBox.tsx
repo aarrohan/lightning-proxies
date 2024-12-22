@@ -172,8 +172,8 @@ export default function IncludedBox() {
           />
         </svg>
       ),
-      title: "Protocol",
-      subTitle: "HTTP & SOCKS5",
+      title: "HTTP & SOCKS5",
+      subTitle: "Protocol",
     },
   ];
 
