@@ -118,3 +118,7 @@ img {
   opacity: 0;
   cursor: pointer;
 }
+
+.language-armasm span span:last-child {
+  color: rgb(152, 195, 121) !important;
+}

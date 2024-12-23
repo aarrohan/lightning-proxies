@@ -452,7 +452,7 @@ export default function ApiCodeBlock() {
         {selectedServiceIndex === 0 &&
           languages[selectedLanguageIndex].name === "Curl" && (
             <ApiCodeBlockContent
-              language="bash"
+              language="armasm"
               code={apiCodes.curl.residentialProxies}
             />
           )}
@@ -460,7 +460,7 @@ export default function ApiCodeBlock() {
         {selectedServiceIndex === 1 &&
           languages[selectedLanguageIndex].name === "Curl" && (
             <ApiCodeBlockContent
-              language="bash"
+              language="armasm"
               code={apiCodes.curl.datacenterProxies}
             />
           )}
@@ -468,7 +468,7 @@ export default function ApiCodeBlock() {
         {selectedServiceIndex === 2 &&
           languages[selectedLanguageIndex].name === "Curl" && (
             <ApiCodeBlockContent
-              language="bash"
+              language="armasm"
               code={apiCodes.curl.ispProxies}
             />
           )}
@@ -476,7 +476,7 @@ export default function ApiCodeBlock() {
         {selectedServiceIndex === 3 &&
           languages[selectedLanguageIndex].name === "Curl" && (
             <ApiCodeBlockContent
-              language="bash"
+              language="armasm"
               code={apiCodes.curl.ipv6Proxies}
             />
           )}
@@ -484,7 +484,7 @@ export default function ApiCodeBlock() {
         {selectedServiceIndex === 4 &&
           languages[selectedLanguageIndex].name === "Curl" && (
             <ApiCodeBlockContent
-              language="bash"
+              language="armasm"
               code={apiCodes.curl.mobileProxies}
             />
           )}
