@@ -2,7 +2,12 @@
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import article1Img from "@/assets/images/article-1.png";
+import article1Img from "@/assets/images/articles/1.png";
+import article2Img from "@/assets/images/articles/2.png";
+import article3Img from "@/assets/images/articles/3.png";
+import article4Img from "@/assets/images/articles/4.png";
+import article5Img from "@/assets/images/articles/5.png";
+import article6Img from "@/assets/images/articles/6.png";
 
 interface IArticleCardProps {
   img: JSX.Element;
@@ -126,7 +131,7 @@ export default function BlogSection() {
     {
       img: (
         <Image
-          src={article1Img}
+          src={article2Img}
           alt=""
           className="w-full border border-dark-white rounded-md sm:rounded-lg"
         />
@@ -140,7 +145,7 @@ export default function BlogSection() {
     {
       img: (
         <Image
-          src={article1Img}
+          src={article3Img}
           alt=""
           className="w-full border border-dark-white rounded-md sm:rounded-lg"
         />
@@ -154,7 +159,7 @@ export default function BlogSection() {
     {
       img: (
         <Image
-          src={article1Img}
+          src={article4Img}
           alt=""
           className="w-full border border-dark-white rounded-md sm:rounded-lg"
         />
@@ -168,7 +173,7 @@ export default function BlogSection() {
     {
       img: (
         <Image
-          src={article1Img}
+          src={article5Img}
           alt=""
           className="w-full border border-dark-white rounded-md sm:rounded-lg"
         />
@@ -182,7 +187,7 @@ export default function BlogSection() {
     {
       img: (
         <Image
-          src={article1Img}
+          src={article6Img}
           alt=""
           className="w-full border border-dark-white rounded-md sm:rounded-lg"
         />
