@@ -274,6 +274,7 @@ export default function PlanBox() {
               options={countryOptions}
               selectedOptionIndex={countrySelectedOptionIndex}
               setSelectedOptionIndex={setCountrySelectedOptionIndex}
+              dropdownBgColor="#413331"
             />
           </div>
         </div>

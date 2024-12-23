@@ -12,6 +12,7 @@ interface IProps {
   options: IOption[];
   selectedOptionIndex: number;
   setSelectedOptionIndex: (value: number) => void;
+  dropdownBgColor?: string;
 }
 
 export default function Select({
@@ -19,6 +20,7 @@ export default function Select({
   options,
   selectedOptionIndex,
   setSelectedOptionIndex,
+  dropdownBgColor,
 }: IProps) {
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
@@ -42,7 +44,7 @@ export default function Select({
     <div className="relative z-10">
       <div
         onClick={() => setIsOpen(true)}
-        className={`active:scale-95 py-[8px] px-4 sm:px-5 border border-white/15 bg-white/5 rounded-[9px] flex justify-between items-center gap-6 sm:gap-16 duration-200 cursor-pointer ${customClasses}`}
+        className={`active:scale-95 min-w-[272px] py-[8px] px-4 sm:px-5 border border-white/15 bg-white/5 rounded-[9px] flex justify-between items-center gap-6 sm:gap-16 duration-200 cursor-pointer ${customClasses}`}
       >
         <div className="flex items-center gap-2.5">
           {options[selectedOptionIndex].icon &&
@@ -72,7 +74,10 @@ export default function Select({
         ref={ref}
         className={`hide-scrollbar ${
           !isOpen ? "scale-75 opacity-0 pointer-events-none" : ""
-        } absolute z-20 top-[calc(100%+10px)] left-0 origin-center w-full max-h-[250px] border border-white/15 bg-white/5 backdrop-blur-3xl rounded-[9px] duration-200 overflow-auto`}
+        } absolute z-20 top-[calc(100%+10px)] left-0 origin-center w-full max-h-[250px] border border-white/15 ${
+          dropdownBgColor ? "" : "bg-white/5 backdrop-blur-3xl"
+        } rounded-[9px] duration-200 overflow-auto`}
+        style={{ backgroundColor: dropdownBgColor }}
       >
         {options.map((option, index) => (
           <div
@@ -84,7 +89,7 @@ export default function Select({
             }}
             className={`py-2 sm:py-3 px-3 sm:px-4 ${
               options.length - 1 !== index ? "border-b border-white/10" : ""
-            } hover:bg-primary/5 duration-200 cursor-pointer`}
+            } hover:bg-primary/15 duration-200 cursor-pointer`}
           >
             <div className="flex items-center gap-2.5">
               {option.icon}

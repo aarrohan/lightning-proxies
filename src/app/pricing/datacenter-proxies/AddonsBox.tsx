@@ -1,11 +1,28 @@
+interface IProps {
+  totalPrice: number;
+  selectedAddonsIndexes: number[];
+  setSelectedAddonsIndexes: (value: number[]) => void;
+}
+
 interface IAddonBox {
+  index: number;
+  totalPrice?: number;
+  selectedAddonsIndexes?: number[];
+  setSelectedAddonsIndexes?: (value: number[]) => void;
   icon: JSX.Element;
   title: string;
   description: string;
-  price: string;
 }
 
-function AddonBox({ icon, title, description, price }: IAddonBox) {
+function AddonBox({
+  index,
+  totalPrice,
+  selectedAddonsIndexes,
+  setSelectedAddonsIndexes,
+  icon,
+  title,
+  description,
+}: IAddonBox) {
   return (
     <div className="addon-box">
       <div className="mb-4 flex justify-between items-center">
@@ -14,7 +31,9 @@ function AddonBox({ icon, title, description, price }: IAddonBox) {
         </div>
 
         <p className="py-[2px] px-3 border border-[#16D857] rounded-full text-xs sm:text-sm font-medium tracking-[-0.14px] text-[#16D857]">
-          {price}
+          {totalPrice && totalPrice > 0
+            ? `$${(totalPrice * 0.25).toFixed(2)}`
+            : "Not available"}
         </p>
       </div>
 
@@ -23,8 +42,47 @@ function AddonBox({ icon, title, description, price }: IAddonBox) {
           {title}
         </h3>
 
-        <button className="active:scale-95 py-[2px] px-3 bg-gradient-to-b from-white/10 to-[#999]/10 rounded-full text-xs sm:text-sm font-medium tracking-[-0.12px] sm:tracking-[-0.14px] text-[#16D857] duration-200">
-          +Add
+        <button
+          onClick={() => {
+            if (selectedAddonsIndexes && setSelectedAddonsIndexes) {
+              if (selectedAddonsIndexes.includes(index)) {
+                setSelectedAddonsIndexes(
+                  selectedAddonsIndexes.filter((i) => i !== index)
+                );
+              } else {
+                setSelectedAddonsIndexes([...selectedAddonsIndexes, index]);
+              }
+            }
+          }}
+          className={`active:scale-95 py-[2px] px-2 border ${
+            selectedAddonsIndexes && selectedAddonsIndexes.includes(index)
+              ? "border-[#16D857]"
+              : "border-transparent"
+          } bg-gradient-to-b from-white/10 to-[#999]/10 rounded-full flex items-center gap-1 text-xs sm:text-sm font-medium tracking-[-0.12px] sm:tracking-[-0.14px] text-[#16D857] duration-200`}
+        >
+          {selectedAddonsIndexes && selectedAddonsIndexes.includes(index) ? (
+            <>
+              <svg
+                width="100%"
+                height="100%"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                className="w-[14px] h-auto"
+              >
+                <path
+                  d="M20 6L9 17L4 12"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+              Added
+            </>
+          ) : (
+            "+Add"
+          )}
         </button>
       </div>
 
@@ -35,9 +93,14 @@ function AddonBox({ icon, title, description, price }: IAddonBox) {
   );
 }
 
-export default function AddonsBox() {
+export default function AddonsBox({
+  totalPrice,
+  selectedAddonsIndexes,
+  setSelectedAddonsIndexes,
+}: IProps) {
   const addons: IAddonBox[] = [
     {
+      index: 0,
       icon: (
         <svg
           width="26"
@@ -69,9 +132,9 @@ export default function AddonsBox() {
       title: "High Concurrency",
       description:
         "By default, concurrency is capped at 1000. This increases it to 2500.",
-      price: "$9.99",
     },
     {
+      index: 1,
       icon: (
         <svg
           width="25"
@@ -100,9 +163,9 @@ export default function AddonsBox() {
       title: "High Priority Network",
       description:
         "Perfect for latency - sensitive applications, sets high priority.",
-      price: "$9.99",
     },
     {
+      index: 2,
       icon: (
         <svg
           width="26"
@@ -157,14 +220,19 @@ export default function AddonsBox() {
       ),
       title: "3 IP Connections",
       description: "Enable up to 3 IP addresses to connect simulataneously.",
-      price: "$9.99",
     },
   ];
 
   return (
     <div className="addon-boxes-wrapper p-5 border border-white/10 bg-white/5 rounded-xl grid sm:grid-cols-3">
       {addons.map((addon, index) => (
-        <AddonBox key={index} {...addon} />
+        <AddonBox
+          key={index}
+          totalPrice={totalPrice}
+          selectedAddonsIndexes={selectedAddonsIndexes}
+          setSelectedAddonsIndexes={setSelectedAddonsIndexes}
+          {...addon}
+        />
       ))}
     </div>
   );

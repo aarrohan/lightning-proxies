@@ -5,19 +5,17 @@ import ExtraDataBox from "./ExtraDataBox";
 import PointsBox from "./PointsBox";
 import CountryBox from "./CountryBox";
 import PlanBox from "./PlanBox";
-import AddonsBox from "./AddonsBox";
 
 export default function PricingPart() {
   return (
     <>
-      <div className="w-full grid lg:grid-cols-[350px_auto] gap-3">
+      <div className="w-full grid lg:grid-cols-[320px_auto] gap-3">
         <div className="order-2 lg:order-1">
           <IncludedBox />
         </div>
 
         <div className="order-1 lg:order-2 flex flex-col gap-3">
           <PlanBox />
-          <AddonsBox />
         </div>
       </div>
 
