@@ -10,13 +10,14 @@ export default function PlanBox() {
   ] = useState<number>(0);
   const [selectedBandwidthIndex, setSelectedBandwidthIndex] =
     useState<number>(0);
-  const [selectedDurationIndex, setSelectedDurationIndex] = useState<number>(0);
+  const [selectedDurationIndex, setSelectedDurationIndex] = useState<number>(2);
 
   const [selectedAddonsIndexes, setSelectedAddonsIndexes] = useState<number[]>(
     []
   );
 
-  const [totalPrice, setTotalPrice] = useState<number>(1.14);
+  const [totalPrice, setTotalPrice] = useState<number>(2);
+  const [totalPriceWithAddons, setTotalPriceWithAddons] = useState<number>(0);
 
   const dailyNumberofProxies: IOption[] = [
     {
@@ -182,7 +183,7 @@ export default function PlanBox() {
     // Addons
     if (selectedAddonsIndexes.length > 0) {
       const addonsPrice = selectedAddonsIndexes.length * 0.25 * totalPrice;
-      setTotalPrice(totalPrice + addonsPrice);
+      setTotalPriceWithAddons(totalPrice + addonsPrice);
     }
   }, [
     numberOfProxiesSelectedOptionIndex,
@@ -200,6 +201,33 @@ export default function PlanBox() {
           </h3>
 
           <div className="border-b border-dashed border-white/15">
+            <div className="py-3.5 border-t border-dashed border-white/15 flex flex-col sm:flex-row justify-between sm:items-center gap-3.5">
+              <p className="text-xs sm:text-base tracking-[-0.12px] sm:tracking-[-0.16px] text-white/75">
+                Duration
+              </p>
+
+              <div className="flex flex-wrap gap-1.5 sm:gap-3">
+                {durations.map((duration, index) => {
+                  return (
+                    <button
+                      key={index}
+                      onClick={() => {
+                        setNumberOfProxiesSelectedOptionIndex(0);
+                        setSelectedDurationIndex(index);
+                      }}
+                      className={`py-1 px-3 sm:px-4 border ${
+                        selectedDurationIndex === index
+                          ? "border-[#16D857]"
+                          : "border-transparent"
+                      } bg-gradient-to-b from-white/10 to-[#999]/10 rounded-lg text-xs sm:text-base font-medium tracking-[-0.12px] sm:tracking-[-0.16px] text-white duration-200`}
+                    >
+                      {duration}
+                    </button>
+                  );
+                })}
+              </div>
+            </div>
+
             <div className="py-3.5 border-t border-dashed border-white/15 flex justify-between items-center gap-3.5">
               <p className="text-xs sm:text-base tracking-[-0.12px] sm:tracking-[-0.16px] text-white/75">
                 Select Proxy Number
@@ -252,33 +280,6 @@ export default function PlanBox() {
                 })}
               </div>
             </div>
-
-            <div className="py-3.5 border-t border-dashed border-white/15 flex flex-col sm:flex-row justify-between sm:items-center gap-3.5">
-              <p className="text-xs sm:text-base tracking-[-0.12px] sm:tracking-[-0.16px] text-white/75">
-                Duration
-              </p>
-
-              <div className="flex flex-wrap gap-1.5 sm:gap-3">
-                {durations.map((duration, index) => {
-                  return (
-                    <button
-                      key={index}
-                      onClick={() => {
-                        setNumberOfProxiesSelectedOptionIndex(0);
-                        setSelectedDurationIndex(index);
-                      }}
-                      className={`py-1 px-3 sm:px-4 border ${
-                        selectedDurationIndex === index
-                          ? "border-[#16D857]"
-                          : "border-transparent"
-                      } bg-gradient-to-b from-white/10 to-[#999]/10 rounded-lg text-xs sm:text-base font-medium tracking-[-0.12px] sm:tracking-[-0.16px] text-white duration-200`}
-                    >
-                      {duration}
-                    </button>
-                  );
-                })}
-              </div>
-            </div>
           </div>
         </div>
 
@@ -287,10 +288,15 @@ export default function PlanBox() {
             {totalPrice > 0 ? (
               <>
                 $
-                {totalPrice.toLocaleString(undefined, {
-                  minimumFractionDigits: 2,
-                  maximumFractionDigits: 2,
-                })}{" "}
+                {selectedAddonsIndexes.length > 0
+                  ? totalPriceWithAddons.toLocaleString(undefined, {
+                      minimumFractionDigits: 2,
+                      maximumFractionDigits: 2,
+                    })
+                  : totalPrice.toLocaleString(undefined, {
+                      minimumFractionDigits: 2,
+                      maximumFractionDigits: 2,
+                    })}{" "}
                 <span className="text-xs sm:text-sm font-normal tracking-[-0.12px] sm:tracking-[-0.14px] text-white/75">
                   /{" "}
                   {selectedDurationIndex === 0
