@@ -276,7 +276,7 @@ export default function HistorySection() {
                   />
                 </svg>
                 Unlimited Residential Proxies Release with over 800k active IPs
-                in realtime.
+                in real-time.
               </p>
             </div>
           </div>
@@ -296,8 +296,7 @@ export default function HistorySection() {
               </p>
 
               <p className="text-xs sm:text-base tracking-[-0.12px] sm:tracking-[-0.16px] text-primary/50">
-                Our biggest redesign ever with Our biggest redesign ever and a
-                brand new product.
+                Our biggest redesign ever and a brand new product.
               </p>
             </div>
 
