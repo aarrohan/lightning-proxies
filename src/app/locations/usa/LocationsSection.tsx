@@ -95,7 +95,7 @@ export default function LocationsSection() {
         />
       ),
       title: "United Kingdom",
-      href: "/locations/usa",
+      href: "/locations/uk",
       ips: "720.545 IPs",
     },
     {
@@ -114,7 +114,7 @@ export default function LocationsSection() {
         />
       ),
       title: "Germany",
-      href: "/locations/usa",
+      href: "/locations/germany",
       ips: "485.913 IPs",
     },
     {
@@ -133,7 +133,7 @@ export default function LocationsSection() {
         />
       ),
       title: "France",
-      href: "/locations/usa",
+      href: "/locations/france",
       ips: "350.720 IPs",
     },
     {
@@ -152,7 +152,7 @@ export default function LocationsSection() {
         />
       ),
       title: "Canada",
-      href: "/locations/usa",
+      href: "/locations/canada",
       ips: "530.600 IPs",
     },
     {
@@ -171,7 +171,7 @@ export default function LocationsSection() {
         />
       ),
       title: "China",
-      href: "/locations/usa",
+      href: "/locations/china",
       ips: "1.130.344 IPs",
     },
   ];
@@ -195,7 +195,7 @@ export default function LocationsSection() {
 
         <div className="mt-10 mx-auto container max-w-[1320px] px-5 flex flex-col items-center">
           <Link
-            href={"/"}
+            href={"/locations"}
             className="py-1.5 px-3.5 border border-dark-white rounded-full text-[11px] sm:text-sm tracking-[-0.14px] text-center"
           >
             LightningProxies offers 250+ Locations worldwide.{" "}

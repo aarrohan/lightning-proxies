@@ -1,5 +1,6 @@
 import Image from "next/image";
 import detailsImg from "@/assets/images/market-research-details.svg";
+import Link from "next/link";
 
 interface IInfoCardProps {
   icon: JSX.Element;
@@ -303,22 +304,24 @@ export default function DetailsSection() {
               </div>
             </div>
 
-            <button className="active:scale-95 w-full sm:w-fit py-2.5 sm:py-2 px-5 border border-dark-white bg-white rounded-lg flex justify-center items-center gap-2.5 text-xs sm:text-base font-medium tracking-[-0.16px] text-[#FC721A] duration-300">
-              View all use cases
-              <svg
-                width="13"
-                height="11"
-                viewBox="0 0 13 11"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                className="w-[10px] sm:w-[13px] h-auto"
-              >
-                <path
-                  d="M7.71967 2.03033C7.42678 1.73744 7.42678 1.26256 7.71967 0.96967C8.01256 0.676777 8.48744 0.676777 8.78033 0.96967L12.7803 4.96967C13.0732 5.26256 13.0732 5.73744 12.7803 6.03033L8.78033 10.0303C8.48744 10.3232 8.01256 10.3232 7.71967 10.0303C7.42678 9.73744 7.42678 9.26256 7.71967 8.96967L10.4393 6.25H0.75C0.335787 6.25 0 5.91421 0 5.5C0 5.08579 0.335787 4.75 0.75 4.75H10.4393L7.71967 2.03033Z"
-                  fill="#FC721A"
-                />
-              </svg>
-            </button>
+            <Link href={"/use-cases"}>
+              <button className="active:scale-95 w-full sm:w-fit py-2.5 sm:py-2 px-5 border border-dark-white bg-white rounded-lg flex justify-center items-center gap-2.5 text-xs sm:text-base font-medium tracking-[-0.16px] text-[#FC721A] duration-300">
+                View all use cases
+                <svg
+                  width="13"
+                  height="11"
+                  viewBox="0 0 13 11"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="w-[10px] sm:w-[13px] h-auto"
+                >
+                  <path
+                    d="M7.71967 2.03033C7.42678 1.73744 7.42678 1.26256 7.71967 0.96967C8.01256 0.676777 8.48744 0.676777 8.78033 0.96967L12.7803 4.96967C13.0732 5.26256 13.0732 5.73744 12.7803 6.03033L8.78033 10.0303C8.48744 10.3232 8.01256 10.3232 7.71967 10.0303C7.42678 9.73744 7.42678 9.26256 7.71967 8.96967L10.4393 6.25H0.75C0.335787 6.25 0 5.91421 0 5.5C0 5.08579 0.335787 4.75 0.75 4.75H10.4393L7.71967 2.03033Z"
+                    fill="#FC721A"
+                  />
+                </svg>
+              </button>
+            </Link>
           </div>
         </div>
 
