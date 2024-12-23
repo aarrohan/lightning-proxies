@@ -42,48 +42,50 @@ function AddonBox({
           {title}
         </h3>
 
-        <button
-          onClick={() => {
-            if (selectedAddonsIndexes && setSelectedAddonsIndexes) {
-              if (selectedAddonsIndexes.includes(index)) {
-                setSelectedAddonsIndexes(
-                  selectedAddonsIndexes.filter((i) => i !== index)
-                );
-              } else {
-                setSelectedAddonsIndexes([...selectedAddonsIndexes, index]);
+        {totalPrice && totalPrice > 0 ? (
+          <button
+            onClick={() => {
+              if (selectedAddonsIndexes && setSelectedAddonsIndexes) {
+                if (selectedAddonsIndexes.includes(index)) {
+                  setSelectedAddonsIndexes(
+                    selectedAddonsIndexes.filter((i) => i !== index)
+                  );
+                } else {
+                  setSelectedAddonsIndexes([...selectedAddonsIndexes, index]);
+                }
               }
-            }
-          }}
-          className={`active:scale-95 py-[2px] px-2 border ${
-            selectedAddonsIndexes && selectedAddonsIndexes.includes(index)
-              ? "border-[#16D857]"
-              : "border-transparent"
-          } bg-gradient-to-b from-white/10 to-[#999]/10 rounded-full flex items-center gap-1 text-xs sm:text-sm font-medium tracking-[-0.12px] sm:tracking-[-0.14px] text-[#16D857] duration-200`}
-        >
-          {selectedAddonsIndexes && selectedAddonsIndexes.includes(index) ? (
-            <>
-              <svg
-                width="100%"
-                height="100%"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                className="w-[14px] h-auto"
-              >
-                <path
-                  d="M20 6L9 17L4 12"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
-              Added
-            </>
-          ) : (
-            "+Add"
-          )}
-        </button>
+            }}
+            className={`active:scale-95 py-[2px] px-2 border ${
+              selectedAddonsIndexes && selectedAddonsIndexes.includes(index)
+                ? "border-[#16D857]"
+                : "border-transparent"
+            } bg-gradient-to-b from-white/10 to-[#999]/10 rounded-full flex items-center gap-1 text-xs sm:text-sm font-medium tracking-[-0.12px] sm:tracking-[-0.14px] text-[#16D857] duration-200`}
+          >
+            {selectedAddonsIndexes && selectedAddonsIndexes.includes(index) ? (
+              <>
+                <svg
+                  width="100%"
+                  height="100%"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="w-[14px] h-auto"
+                >
+                  <path
+                    d="M20 6L9 17L4 12"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+                Added
+              </>
+            ) : (
+              "+Add"
+            )}
+          </button>
+        ) : null}
       </div>
 
       <p className="text-xs sm:text-sm leading-[20px] sm:leading-[24px] tracking-[-0.12px] sm:tracking-[-0.14px] text-white/75">
