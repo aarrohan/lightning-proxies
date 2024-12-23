@@ -292,49 +292,49 @@ export default function PlanBox() {
               </h4>
             ) : numberOfIPs === 2 ? (
               <h4 className="text-lg sm:text-[24px] font-semibold tracking-[-0.54px] sm:tracking-[-0.84px] text-white">
-                $3.80{" "}
+                $7.60{" "}
                 <span className="text-xs sm:text-sm font-normal tracking-[-0.12px] sm:tracking-[-0.14px] text-white/75">
                   / one-time
                 </span>
               </h4>
             ) : numberOfIPs === 3 ? (
               <h4 className="text-lg sm:text-[24px] font-semibold tracking-[-0.54px] sm:tracking-[-0.84px] text-white">
-                $3.60{" "}
+                $10.80{" "}
                 <span className="text-xs sm:text-sm font-normal tracking-[-0.12px] sm:tracking-[-0.14px] text-white/75">
                   / one-time
                 </span>
               </h4>
             ) : numberOfIPs === 4 ? (
               <h4 className="text-lg sm:text-[24px] font-semibold tracking-[-0.54px] sm:tracking-[-0.84px] text-white">
-                $3.40{" "}
+                $13.60{" "}
                 <span className="text-xs sm:text-sm font-normal tracking-[-0.12px] sm:tracking-[-0.14px] text-white/75">
                   / one-time
                 </span>
               </h4>
             ) : numberOfIPs === 5 ? (
               <h4 className="text-lg sm:text-[24px] font-semibold tracking-[-0.54px] sm:tracking-[-0.84px] text-white">
-                $3.20{" "}
+                $16.00{" "}
                 <span className="text-xs sm:text-sm font-normal tracking-[-0.12px] sm:tracking-[-0.14px] text-white/75">
                   / one-time
                 </span>
               </h4>
             ) : numberOfIPs === 6 ? (
               <h4 className="text-lg sm:text-[24px] font-semibold tracking-[-0.54px] sm:tracking-[-0.84px] text-white">
-                $3.00{" "}
+                $18.00{" "}
                 <span className="text-xs sm:text-sm font-normal tracking-[-0.12px] sm:tracking-[-0.14px] text-white/75">
                   / one-time
                 </span>
               </h4>
             ) : numberOfIPs === 7 ? (
               <h4 className="text-lg sm:text-[24px] font-semibold tracking-[-0.54px] sm:tracking-[-0.84px] text-white">
-                $2.80{" "}
+                $19.60{" "}
                 <span className="text-xs sm:text-sm font-normal tracking-[-0.12px] sm:tracking-[-0.14px] text-white/75">
                   / one-time
                 </span>
               </h4>
             ) : numberOfIPs === 8 ? (
               <h4 className="text-lg sm:text-[24px] font-semibold tracking-[-0.54px] sm:tracking-[-0.84px] text-white">
-                $2.60{" "}
+                $20.80{" "}
                 <span className="text-xs sm:text-sm font-normal tracking-[-0.12px] sm:tracking-[-0.14px] text-white/75">
                   / one-time
                 </span>
