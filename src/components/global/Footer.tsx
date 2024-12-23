@@ -84,7 +84,7 @@ export default function Footer() {
 
               <div className="flex gap-2.5 sm:gap-3">
                 <Link
-                  href={"/"}
+                  href={"https://x.com/lightningproxi"}
                   aria-label="twitter"
                   target="_blank"
                   className="w-[32px] sm:w-[38px] h-[32px] sm:h-[38px] bg-white/10 hover:bg-white/15 rounded-md flex justify-center items-center duration-200"
@@ -117,7 +117,7 @@ export default function Footer() {
                 </Link>
 
                 <Link
-                  href={"/"}
+                  href={"https://www.instagram.com/lightningproxy"}
                   aria-label="instagram"
                   target="_blank"
                   className="w-[32px] sm:w-[38px] h-[32px] sm:h-[38px] bg-white/10 hover:bg-white/15 rounded-md flex justify-center items-center duration-200"
@@ -162,7 +162,7 @@ export default function Footer() {
                 </Link>
 
                 <Link
-                  href={"/"}
+                  href={"https://discord.gg/Pt5Es5xWSS"}
                   aria-label="discord"
                   target="_blank"
                   className="w-[32px] sm:w-[38px] h-[32px] sm:h-[38px] bg-white/10 hover:bg-white/15 rounded-md flex justify-center items-center duration-200"
@@ -195,7 +195,7 @@ export default function Footer() {
                 </Link>
 
                 <Link
-                  href={"/"}
+                  href={"https://t.me/lightningproxies"}
                   aria-label="telegram"
                   target="_blank"
                   className="w-[32px] sm:w-[38px] h-[32px] sm:h-[38px] bg-white/10 hover:bg-white/15 rounded-md flex justify-center items-center duration-200"
@@ -239,35 +239,35 @@ export default function Footer() {
 
             <div className="flex flex-col gap-y-5">
               <Link
-                href={"/"}
+                href={"/about"}
                 className="text-xs sm:text-sm tracking-[-0.12px] sm:tracking-[-0.14px] text-white/75 hover:text-white duration-200"
               >
                 About Us
               </Link>
 
               <Link
-                href={"/"}
+                href={"/blog"}
                 className="text-xs sm:text-sm tracking-[-0.12px] sm:tracking-[-0.14px] text-white/75 hover:text-white duration-200"
               >
                 Blogs
               </Link>
 
               <Link
-                href={"/"}
+                href={"/coming-soon"}
                 className="text-xs sm:text-sm tracking-[-0.12px] sm:tracking-[-0.14px] text-white/75 hover:text-white duration-200"
               >
                 API
               </Link>
 
               <Link
-                href={"/"}
+                href={"/reseller-program"}
                 className="text-xs sm:text-sm tracking-[-0.12px] sm:tracking-[-0.14px] text-white/75 hover:text-white duration-200"
               >
                 Reseller Program
               </Link>
 
               <Link
-                href={"/"}
+                href={"/coming-soon"}
                 className="text-xs sm:text-sm tracking-[-0.12px] sm:tracking-[-0.14px] text-white/75 hover:text-white duration-200"
               >
                 Affiliate Program
@@ -282,35 +282,35 @@ export default function Footer() {
 
             <div className="flex flex-col gap-y-5">
               <Link
-                href={"/"}
+                href={"/products/residential-proxies"}
                 className="text-xs sm:text-sm tracking-[-0.12px] sm:tracking-[-0.14px] text-white/75 hover:text-white duration-200"
               >
                 Residential Proxies
               </Link>
 
               <Link
-                href={"/"}
+                href={"/products/datacenter-proxies"}
                 className="text-xs sm:text-sm tracking-[-0.12px] sm:tracking-[-0.14px] text-white/75 hover:text-white duration-200"
               >
                 Datacenter Proxies
               </Link>
 
               <Link
-                href={"/"}
+                href={"/products/isp-proxies"}
                 className="text-xs sm:text-sm tracking-[-0.12px] sm:tracking-[-0.14px] text-white/75 hover:text-white duration-200"
               >
                 ISP Proxies
               </Link>
 
               <Link
-                href={"/"}
+                href={"/products/ipv6-proxies"}
                 className="text-xs sm:text-sm tracking-[-0.12px] sm:tracking-[-0.14px] text-white/75 hover:text-white duration-200"
               >
                 IPv6 Proxies
               </Link>
 
               <Link
-                href={"/"}
+                href={"/products/mobile-proxies"}
                 className="text-xs sm:text-sm tracking-[-0.12px] sm:tracking-[-0.14px] text-white/75 hover:text-white duration-200"
               >
                 Mobile Proxies
@@ -325,21 +325,21 @@ export default function Footer() {
 
             <div className="flex flex-col gap-y-5">
               <Link
-                href={"/"}
+                href={"/help-center"}
                 className="text-xs sm:text-sm tracking-[-0.12px] sm:tracking-[-0.14px] text-white/75 hover:text-white duration-200"
               >
                 Help Center
               </Link>
 
               <Link
-                href={"/"}
+                href={"/coming-soon"}
                 className="text-xs sm:text-sm tracking-[-0.12px] sm:tracking-[-0.14px] text-white/75 hover:text-white duration-200"
               >
                 Proxy Checker
               </Link>
 
               <Link
-                href={"/"}
+                href={"/coming-soon"}
                 className="text-xs sm:text-sm tracking-[-0.12px] sm:tracking-[-0.14px] text-white/75 hover:text-white duration-200"
               >
                 Free Proxy List
@@ -354,35 +354,35 @@ export default function Footer() {
 
             <div className="flex flex-col gap-y-5">
               <Link
-                href={"/"}
+                href={"/use-cases/ad-verification"}
                 className="text-xs sm:text-sm tracking-[-0.12px] sm:tracking-[-0.14px] text-white/75 hover:text-white duration-200"
               >
                 Ad Verification
               </Link>
 
               <Link
-                href={"/"}
+                href={"/use-cases/brand-protection"}
                 className="text-xs sm:text-sm tracking-[-0.12px] sm:tracking-[-0.14px] text-white/75 hover:text-white duration-200"
               >
                 Brand Protection
               </Link>
 
               <Link
-                href={"/"}
+                href={"/use-cases/market-research"}
                 className="text-xs sm:text-sm tracking-[-0.12px] sm:tracking-[-0.14px] text-white/75 hover:text-white duration-200"
               >
                 Market Research
               </Link>
 
               <Link
-                href={"/"}
+                href={"/use-cases/serp-monitoring"}
                 className="text-xs sm:text-sm tracking-[-0.12px] sm:tracking-[-0.14px] text-white/75 hover:text-white duration-200"
               >
                 SERP Monitoring
               </Link>
 
               <Link
-                href={"/"}
+                href={"/use-cases"}
                 className="group flex items-center gap-2 sm:gap-2.5 text-xs sm:text-sm tracking-[-0.12px] sm:tracking-[-0.14px] text-white/75 hover:text-white duration-200"
               >
                 View All{" "}
@@ -430,35 +430,35 @@ export default function Footer() {
 
             <div className="flex flex-col gap-y-5">
               <Link
-                href={"/"}
+                href={"/locations/usa"}
                 className="text-xs sm:text-sm tracking-[-0.12px] sm:tracking-[-0.14px] text-white/75 hover:text-white duration-200"
               >
                 United States
               </Link>
 
               <Link
-                href={"/"}
+                href={"/locations/uk"}
                 className="text-xs sm:text-sm tracking-[-0.12px] sm:tracking-[-0.14px] text-white/75 hover:text-white duration-200"
               >
                 United Kingdom
               </Link>
 
               <Link
-                href={"/"}
+                href={"/locations/germany"}
                 className="text-xs sm:text-sm tracking-[-0.12px] sm:tracking-[-0.14px] text-white/75 hover:text-white duration-200"
               >
                 Germany
               </Link>
 
               <Link
-                href={"/"}
+                href={"/locations/canada"}
                 className="text-xs sm:text-sm tracking-[-0.12px] sm:tracking-[-0.14px] text-white/75 hover:text-white duration-200"
               >
-                Spain
+                Canada
               </Link>
 
               <Link
-                href={"/"}
+                href={"/locations"}
                 className="group flex items-center gap-2 sm:gap-2.5 text-xs sm:text-sm tracking-[-0.12px] sm:tracking-[-0.14px] text-white/75 hover:text-white duration-200"
               >
                 View All{" "}
@@ -525,7 +525,7 @@ export default function Footer() {
             </svg>
 
             <Link
-              href={"/"}
+              href={`/legal/terms-of-service`}
               className="text-xs sm:text-sm tracking-[-0.12px] sm:tracking-[-0.14px] text-white/75 hover:text-white duration-200"
             >
               Terms
@@ -543,7 +543,7 @@ export default function Footer() {
             </svg>
 
             <Link
-              href={"/"}
+              href={"/legal/privacy-policy"}
               className="text-xs sm:text-sm tracking-[-0.12px] sm:tracking-[-0.14px] text-white/75 hover:text-white duration-200"
             >
               Privacy
@@ -561,7 +561,7 @@ export default function Footer() {
             </svg>
 
             <Link
-              href={"/"}
+              href={"/legal/cookie-policy"}
               className="text-xs sm:text-sm tracking-[-0.12px] sm:tracking-[-0.14px] text-white/75 hover:text-white duration-200"
             >
               Cookies
