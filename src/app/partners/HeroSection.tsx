@@ -14,8 +14,8 @@ export default function HeroSection() {
         </h1>
 
         <p className="mb-6 sm:mb-10 max-w-[580px] text-xs sm:text-base leading-[18px] sm:leading-[24px] tracking-[-0.12px] sm:tracking-[-0.16px] text-primary/65">
-          Proin vel purus quis eros rhoncus convallis vel ac metus. Phasellus
-          malesuada pharetra leo, nec blandit enim gravida quis.
+          Partnered with the best to offer you the best experience with other
+          tools for online privacy.
         </p>
 
         <div className="relative w-full max-w-[528px]">

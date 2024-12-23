@@ -268,7 +268,7 @@ export default function MenuLocations() {
             </p>
 
             <Link
-              href={"/"}
+              href={"/locations"}
               className="hidden lg:flex items-center gap-1.5 text-sm tracking-[-0.14px] opacity-50 hover:opacity-100 duration-200"
             >
               View all

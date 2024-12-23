@@ -180,7 +180,7 @@ export default function MenuProducts() {
       isNew: true,
       icon: <Image src={product9IconImg} alt="" className="w-[48px]" />,
       title: "Unlimited Residential Proxies",
-      href: "/products/unlimited-residential-proxies",
+      href: "/pricing/unlimited-residential-proxies",
       description: "No bandwidth limits; perfect for heavy data users.",
     },
   ];
@@ -190,21 +190,21 @@ export default function MenuProducts() {
       isNew: true,
       icon: <Image src={product6IconImg} alt="" className="w-[48px]" />,
       title: "Chrome Extension",
-      href: "/",
+      href: "https://chromewebstore.google.com/detail/lightningproxies-extensio/bgejnhbjikhldeggjhdojncghbfgopjn",
       description: "Quickly manage proxies directly from your browser.",
     },
     {
       isComingSoon: true,
       icon: <Image src={product7IconImg} alt="" className="w-[48px]" />,
       title: "Web Scraper API",
-      href: "/",
+      href: "/coming-soon",
       description: "Easily automate large-scale data extraction.",
     },
     {
       isComingSoon: true,
       icon: <Image src={product8IconImg} alt="" className="w-[48px]" />,
       title: "SERP Scraper API",
-      href: "/",
+      href: "/coming-soon",
       description: "Scrape search engine results for SEO and analysis.",
     },
   ];
