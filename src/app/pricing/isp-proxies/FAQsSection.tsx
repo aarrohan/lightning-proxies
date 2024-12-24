@@ -57,7 +57,7 @@ scraping.
           </p>
 
           <Link
-            href={"/"}
+            href={"/help-center/faqs"}
             className="py-1.5 px-3.5 border border-dark-white rounded-full text-[11px] sm:text-sm tracking-[-0.14px] text-center"
           >
             Read all FAQs{" "}

@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export interface IProps {
   isHighlighted?: boolean;
   isMostValue?: boolean;
@@ -68,43 +70,47 @@ export default function PriceBox({
         {btn === "primary" ? (
           <div className="group active:scale-95 p-[5px] bg-[#00C1D1]/15 rounded-[16px] duration-200">
             <div className="p-[2px] bg-[#00C1D1] rounded-[11px]">
-              <button className="relative w-full py-[7px] px-6 sm:px-10 bg-[#00C1D1] rounded-[9px] text-sm font-medium tracking-[-0.14px] text-white overflow-hidden">
-                <span className="relative z-10 flex justify-center items-center gap-3">
-                  Get Started{" "}
-                  <svg
-                    width="6"
-                    height="11"
-                    viewBox="0 0 6 11"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M0.46967 2.03033C0.176777 1.73744 0.176777 1.26256 0.46967 0.96967C0.762563 0.676777 1.23744 0.676777 1.53033 0.96967L5.53033 4.96967C5.82322 5.26256 5.82322 5.73744 5.53033 6.03033L1.53033 10.0303C1.23744 10.3232 0.762563 10.3232 0.46967 10.0303C0.176777 9.73744 0.176777 9.26256 0.46967 8.96967L3.18934 6.25L3.75 5.5L3.18934 4.75L0.46967 2.03033Z"
-                      className="fill-white"
-                    />
-                  </svg>
-                </span>
+              <Link href={`${process.env.NEXT_PUBLIC_AUTH_URL}/signup`}>
+                <button className="relative w-full py-[7px] px-6 sm:px-10 bg-[#00C1D1] rounded-[9px] text-sm font-medium tracking-[-0.14px] text-white overflow-hidden">
+                  <span className="relative z-10 flex justify-center items-center gap-3">
+                    Get Started{" "}
+                    <svg
+                      width="6"
+                      height="11"
+                      viewBox="0 0 6 11"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0.46967 2.03033C0.176777 1.73744 0.176777 1.26256 0.46967 0.96967C0.762563 0.676777 1.23744 0.676777 1.53033 0.96967L5.53033 4.96967C5.82322 5.26256 5.82322 5.73744 5.53033 6.03033L1.53033 10.0303C1.23744 10.3232 0.762563 10.3232 0.46967 10.0303C0.176777 9.73744 0.176777 9.26256 0.46967 8.96967L3.18934 6.25L3.75 5.5L3.18934 4.75L0.46967 2.03033Z"
+                        className="fill-white"
+                      />
+                    </svg>
+                  </span>
 
-                <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-white/25 to-white/5 opacity-0 group-hover:opacity-100 duration-200"></div>
-              </button>
+                  <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-white/25 to-white/5 opacity-0 group-hover:opacity-100 duration-200"></div>
+                </button>
+              </Link>
             </div>
           </div>
         ) : (
-          <button className="group active:scale-95 py-[8px] px-6 sm:px-10 border border-white/15 bg-white/5 hover:bg-white rounded-[9px] flex justify-center items-center gap-3 text-sm font-medium tracking-[-0.14px] text-white hover:text-primary duration-200">
-            Get Started{" "}
-            <svg
-              width="6"
-              height="11"
-              viewBox="0 0 6 11"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M0.46967 2.03033C0.176777 1.73744 0.176777 1.26256 0.46967 0.96967C0.762563 0.676777 1.23744 0.676777 1.53033 0.96967L5.53033 4.96967C5.82322 5.26256 5.82322 5.73744 5.53033 6.03033L1.53033 10.0303C1.23744 10.3232 0.762563 10.3232 0.46967 10.0303C0.176777 9.73744 0.176777 9.26256 0.46967 8.96967L3.18934 6.25L3.75 5.5L3.18934 4.75L0.46967 2.03033Z"
-                className="fill-white group-hover:fill-primary duration-200"
-              />
-            </svg>
-          </button>
+          <Link href={`${process.env.NEXT_PUBLIC_AUTH_URL}/signup`}>
+            <button className="group active:scale-95 py-[8px] px-6 sm:px-10 border border-white/15 bg-white/5 hover:bg-white rounded-[9px] flex justify-center items-center gap-3 text-sm font-medium tracking-[-0.14px] text-white hover:text-primary duration-200">
+              Get Started{" "}
+              <svg
+                width="6"
+                height="11"
+                viewBox="0 0 6 11"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0.46967 2.03033C0.176777 1.73744 0.176777 1.26256 0.46967 0.96967C0.762563 0.676777 1.23744 0.676777 1.53033 0.96967L5.53033 4.96967C5.82322 5.26256 5.82322 5.73744 5.53033 6.03033L1.53033 10.0303C1.23744 10.3232 0.762563 10.3232 0.46967 10.0303C0.176777 9.73744 0.176777 9.26256 0.46967 8.96967L3.18934 6.25L3.75 5.5L3.18934 4.75L0.46967 2.03033Z"
+                  className="fill-white group-hover:fill-primary duration-200"
+                />
+              </svg>
+            </button>
+          </Link>
         )}
       </div>
     </div>

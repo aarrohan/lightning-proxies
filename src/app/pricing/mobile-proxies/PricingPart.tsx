@@ -178,7 +178,7 @@ export default function PricingPart() {
       <PointsBox />
 
       <Link
-        href={"/"}
+        href={`${process.env.NEXT_PUBLIC_AUTH_URL}/signup`}
         className="py-1.5 px-3.5 border border-white/25 rounded-full text-[11px] sm:text-sm tracking-[-0.14px] text-center text-white"
       >
         Are you looking to resell residential proxies?{" "}
