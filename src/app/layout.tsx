@@ -5,6 +5,7 @@ import NavigationBar from "@/components/global/NavigationBar";
 import Footer from "@/components/global/Footer";
 import CookiePopup from "@/components/global/CookiePopup";
 import { GeistMono } from "geist/font/mono";
+import FloatingItems from "@/components/global/FloatingItems";
 
 const inter = Inter({ subsets: ["latin"] });
 const caveat = Caveat({ subsets: ["latin"], variable: "--font-caveat" });
@@ -30,6 +31,7 @@ export default function RootLayout({
         {children}
 
         <CookiePopup />
+        <FloatingItems />
         <Footer />
       </body>
     </html>
