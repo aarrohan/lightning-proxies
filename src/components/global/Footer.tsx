@@ -525,7 +525,7 @@ export default function Footer() {
             </svg>
 
             <Link
-              href={`/legal/terms-of-service`}
+              href={`https://lightningproxies.net/terms-of-service`}
               className="text-xs sm:text-sm tracking-[-0.12px] sm:tracking-[-0.14px] text-white/75 hover:text-white duration-200"
             >
               Terms
@@ -543,7 +543,7 @@ export default function Footer() {
             </svg>
 
             <Link
-              href={"/legal/privacy-policy"}
+              href={"https://lightningproxies.net/privacy-policy"}
               className="text-xs sm:text-sm tracking-[-0.12px] sm:tracking-[-0.14px] text-white/75 hover:text-white duration-200"
             >
               Privacy
@@ -561,7 +561,7 @@ export default function Footer() {
             </svg>
 
             <Link
-              href={"/legal/cookie-policy"}
+              href={"https://lightningproxies.net/cookie-policy"}
               className="text-xs sm:text-sm tracking-[-0.12px] sm:tracking-[-0.14px] text-white/75 hover:text-white duration-200"
             >
               Cookies

@@ -32,7 +32,7 @@ export default function UpcomingSection() {
             </p>
 
             <p className="py-1 sm:py-1.5 px-2.5 sm:px-3.5 bg-green/10 rounded-lg sm:rounded-xl text-[11px] sm:text-base font-medium tracking-[-0.11px] sm:tracking-[-0.16px] text-green">
-              Launching Winter 2024.
+              Launching soon
             </p>
           </div>
 

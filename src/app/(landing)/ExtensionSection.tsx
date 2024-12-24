@@ -2,6 +2,7 @@ import Image from "next/image";
 import extensionImg from "@/assets/images/extension.svg";
 import SecondaryBtn from "@/components/ui/SecondaryBtn";
 import chromeImg from "@/assets/images/chrome.svg";
+import Link from "next/link";
 
 export default function ExtensionSection() {
   return (
@@ -27,17 +28,24 @@ export default function ExtensionSection() {
               without getting bogged down by complicated settings.
             </p>
 
-            <SecondaryBtn
-              customClasses="sm:!py-2.5 !px-10 sm:!text-base sm:!tracking-[-0.16px]"
-              containerClasses="!bg-white"
+            <Link
+              href={
+                "https://chromewebstore.google.com/detail/lightningproxies-extensio/bgejnhbjikhldeggjhdojncghbfgopjn"
+              }
+              target="_blank"
             >
-              <Image
-                src={chromeImg}
-                alt=""
-                className="w-[16px] sm:w-[24px] h-auto"
-              />
-              Get Chrome Extension
-            </SecondaryBtn>
+              <SecondaryBtn
+                customClasses="sm:!py-2.5 !px-10 sm:!text-base sm:!tracking-[-0.16px]"
+                containerClasses="!bg-white"
+              >
+                <Image
+                  src={chromeImg}
+                  alt=""
+                  className="w-[16px] sm:w-[24px] h-auto"
+                />
+                Get Chrome Extension
+              </SecondaryBtn>
+            </Link>
           </div>
 
           <div className="relative z-10 pt-4 flex justify-end">

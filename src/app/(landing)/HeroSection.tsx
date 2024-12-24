@@ -146,42 +146,44 @@ export default function HeroSection() {
           </p>
         </div>
 
-        <PrimaryBtn customClasses="!py-2.5 !px-12 sm:!text-base sm:!tracking-[-0.16px]">
-          Get Started{" "}
-          <span className="relative">
-            <svg
-              width="9"
-              height="10"
-              viewBox="0 0 9 10"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              className="relative -left-[4px] group-hover:-left-0 duration-200"
-            >
-              <path
-                fillRule="evenodd"
-                clipRule="evenodd"
-                d="M3.21967 0.21967C3.51256 -0.0732232 3.98744 -0.0732232 4.28033 0.21967L8.28033 4.21967C8.57322 4.51256 8.57322 4.98744 8.28033 5.28033L4.28033 9.2803C3.98744 9.5732 3.51256 9.5732 3.21967 9.2803C2.92678 8.98744 2.92678 8.51256 3.21967 8.21967L6.68934 4.75L3.21967 1.28033C2.92678 0.98744 2.92678 0.51256 3.21967 0.21967Z"
-                className="fill-white/75 group-hover:fill-white duration-200"
-              />
-            </svg>
+        <Link href={`${process.env.NEXT_PUBLIC_AUTH_URL}/signup`}>
+          <PrimaryBtn customClasses="!py-2.5 !px-12 sm:!text-base sm:!tracking-[-0.16px]">
+            Get Started{" "}
+            <span className="relative">
+              <svg
+                width="9"
+                height="10"
+                viewBox="0 0 9 10"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                className="relative -left-[4px] group-hover:-left-0 duration-200"
+              >
+                <path
+                  fillRule="evenodd"
+                  clipRule="evenodd"
+                  d="M3.21967 0.21967C3.51256 -0.0732232 3.98744 -0.0732232 4.28033 0.21967L8.28033 4.21967C8.57322 4.51256 8.57322 4.98744 8.28033 5.28033L4.28033 9.2803C3.98744 9.5732 3.51256 9.5732 3.21967 9.2803C2.92678 8.98744 2.92678 8.51256 3.21967 8.21967L6.68934 4.75L3.21967 1.28033C2.92678 0.98744 2.92678 0.51256 3.21967 0.21967Z"
+                  className="fill-white/75 group-hover:fill-white duration-200"
+                />
+              </svg>
 
-            <svg
-              width="9"
-              height="10"
-              viewBox="0 0 9 10"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              className="absolute top-0 left-0"
-            >
-              <rect
-                y="4"
-                height="1.5"
-                rx="0.75"
-                className="w-[7px] fill-white opacity-0 group-hover:opacity-100 duration-200"
-              />
-            </svg>
-          </span>
-        </PrimaryBtn>
+              <svg
+                width="9"
+                height="10"
+                viewBox="0 0 9 10"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                className="absolute top-0 left-0"
+              >
+                <rect
+                  y="4"
+                  height="1.5"
+                  rx="0.75"
+                  className="w-[7px] fill-white opacity-0 group-hover:opacity-100 duration-200"
+                />
+              </svg>
+            </span>
+          </PrimaryBtn>
+        </Link>
       </div>
 
       <div className="flex items-center gap-5">

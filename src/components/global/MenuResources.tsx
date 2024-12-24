@@ -122,8 +122,7 @@ function ArticleCard() {
       </h3>
 
       <p className="text-[10px] lg:text-sm tracking-[-0.1px] lg:tracking-[-0.14px] text-primary/75">
-        Sed varius justo ac sem luctus lobortis. Nunc porta leo nec pretium
-        laoreet.
+        Learn the difference between a Proxy and a VPN.
       </p>
     </Link>
   );

@@ -12,7 +12,7 @@ export default function HeroSection() {
           </p>
 
           <Link
-            href={"/"}
+            href={"mailto:support@lightningproxies.net"}
             className="flex items-center gap-2.5 text-xs sm:text-sm font-semibold text-accent tracking-[-0.12px] sm:tracking-[-0.14px]"
           >
             Write to Us{" "}
@@ -33,7 +33,10 @@ export default function HeroSection() {
           </Link>
         </div>
 
-        <div className="hover:-translate-y-1 p-5 sm:p-8 border border-dark-white bg-white shadow-[0px_10px_10px_0px_rgba(0,0,0,0.02),_0px_1px_0px_0px_rgba(0,0,0,0.02)] rounded-2xl grid lg:grid-cols-2 items-center gap-y-8 gap-x-14 cursor-pointer duration-200">
+        <Link
+          href={"/blog/1"}
+          className="hover:-translate-y-1 p-5 sm:p-8 border border-dark-white bg-white shadow-[0px_10px_10px_0px_rgba(0,0,0,0.02),_0px_1px_0px_0px_rgba(0,0,0,0.02)] rounded-2xl grid lg:grid-cols-2 items-center gap-y-8 gap-x-14 cursor-pointer duration-200"
+        >
           <div>
             <p className="mb-3 text-xs sm:text-sm font-semibold tracking-[-0.12px] sm:tracking-[-0.14px] text-accent">
               RECENT UPDATE
@@ -56,7 +59,13 @@ export default function HeroSection() {
             </div>
 
             <div className="mb-5 sm:mb-7 flex items-center gap-3 sm:gap-3.5">
-              <span className="w-[38px] sm:w-[48px] aspect-square bg-dark-white rounded-full"></span>
+              <div className="relative w-[38px] sm:w-[48px] aspect-square bg-dark-white rounded-full">
+                <Image
+                  src={`https://lightningproxies.net/assets/images/team-02.svg`}
+                  alt=""
+                  fill
+                />
+              </div>
 
               <div>
                 <h3 className="text-sm sm:text-lg font-medium tracking-[-0.14px] sm:tracking-[-0.18px]">
@@ -75,10 +84,7 @@ export default function HeroSection() {
               accounts effortlessly.
             </p>
 
-            <Link
-              href={"/"}
-              className="flex items-center gap-2.5 text-xs sm:text-sm font-semibold text-accent tracking-[-0.12px] sm:tracking-[-0.14px]"
-            >
+            <button className="flex items-center gap-2.5 text-xs sm:text-sm font-semibold text-accent tracking-[-0.12px] sm:tracking-[-0.14px]">
               Read More{" "}
               <svg
                 width="6"
@@ -94,7 +100,7 @@ export default function HeroSection() {
                   fill="#1675FF"
                 />
               </svg>
-            </Link>
+            </button>
           </div>
 
           <div className="flex justify-center">
@@ -104,7 +110,7 @@ export default function HeroSection() {
               className="w-full max-w-[624px] border border-dark-white rounded-lg"
             />
           </div>
-        </div>
+        </Link>
       </div>
     </section>
   );

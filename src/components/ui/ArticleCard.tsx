@@ -17,7 +17,7 @@ export default function ArticleCard({
 }: IProps) {
   return (
     <Link
-      href={"/blog/1"}
+      href={"/coming-soon"}
       className="hover:-translate-y-1 p-3 pb-6 border border-dark-white bg-white shadow-[0px_10px_10px_0px_rgba(0,0,0,0.02),0px_1px_0px_0px_rgba(0,0,0,0.02)] rounded-2xl duration-200"
     >
       {img}

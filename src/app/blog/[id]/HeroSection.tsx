@@ -344,7 +344,13 @@ export default function HeroSection() {
 
             <div className="mt-10 pt-5 sm:pt-8 border-t border-dark-white flex justify-between items-center">
               <div className="flex items-center gap-3 sm:gap-3.5">
-                <span className="w-[38px] sm:w-[48px] aspect-square bg-dark-white rounded-full"></span>
+                <span className="relative w-[38px] sm:w-[48px] aspect-square bg-dark-white rounded-full">
+                  <Image
+                    src={`https://lightningproxies.net/assets/images/team-02.svg`}
+                    alt=""
+                    fill
+                  />
+                </span>
 
                 <div>
                   <h3 className="text-sm sm:text-lg font-medium tracking-[-0.14px] sm:tracking-[-0.18px]">
@@ -359,7 +365,7 @@ export default function HeroSection() {
 
               <div className="hidden sm:flex gap-2.5 sm:gap-3">
                 <Link
-                  href={"/"}
+                  href={"https://x.com/lightningproxi"}
                   aria-label="twitter"
                   target="_blank"
                   className="w-[32px] sm:w-[38px] h-[32px] sm:h-[38px] border border-dark-white bg-white rounded-md flex justify-center items-center duration-200"
@@ -392,7 +398,7 @@ export default function HeroSection() {
                 </Link>
 
                 <Link
-                  href={"/"}
+                  href={"https://www.instagram.com/lightningproxy/"}
                   aria-label="instagram"
                   target="_blank"
                   className="w-[32px] sm:w-[38px] h-[32px] sm:h-[38px] border border-dark-white bg-white rounded-md flex justify-center items-center duration-200"
@@ -437,7 +443,7 @@ export default function HeroSection() {
                 </Link>
 
                 <Link
-                  href={"/"}
+                  href={"https://discord.gg/Pt5Es5xWSS"}
                   aria-label="discord"
                   target="_blank"
                   className="w-[32px] sm:w-[38px] h-[32px] sm:h-[38px] border border-dark-white bg-white rounded-md flex justify-center items-center duration-200"
@@ -470,7 +476,7 @@ export default function HeroSection() {
                 </Link>
 
                 <Link
-                  href={"/"}
+                  href={"https://t.me/lightningproxies"}
                   aria-label="telegram"
                   target="_blank"
                   className="w-[32px] sm:w-[38px] h-[32px] sm:h-[38px] border border-dark-white bg-white rounded-md flex justify-center items-center duration-200"

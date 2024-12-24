@@ -100,7 +100,8 @@ export default function ReviewsSection() {
           </div>
 
           <Link
-            href={"/"}
+            href={"https://www.trustpilot.com/review/lightningproxies.net"}
+            target="_blank"
             className="py-[2px] sm:py-1 px-3 sm:px-5 border border-dark-white bg-gradient-to-b from-white to-off-white rounded-md sm:rounded-lg flex items-center gap-4"
           >
             <p className="text-xs sm:text-sm font-medium tracking-[-0.12px] sm:tracking-[-0.14px]">
@@ -136,7 +137,8 @@ export default function ReviewsSection() {
 
       <div className="mt-8 mx-auto container max-w-[1320px] px-5 flex flex-col items-center">
         <Link
-          href={"/"}
+          href={"https://www.trustpilot.com/review/lightningproxies.net"}
+          target="_blank"
           className="py-1.5 px-3.5 border border-dark-white rounded-full text-[11px] sm:text-sm tracking-[-0.14px] text-center"
         >
           View all reviews on Trustpilot.{" "}

@@ -101,7 +101,7 @@ export default function ClientsSection() {
         </div>
 
         <Link
-          href={"/"}
+          href={`${process.env.NEXT_PUBLIC_AUTH_URL}/signup`}
           className="mt-8 py-1.5 px-3.5 border border-primary/25 rounded-full text-[11px] sm:text-sm tracking-[-0.14px] text-center"
         >
           Learn how Lightning Proxies is transforming the proxy landscape
