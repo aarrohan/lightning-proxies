@@ -1,5 +1,6 @@
 import Image from "next/image";
 import locationInfo1Img from "@/assets/images/germany-location-info-1.png";
+import Link from "next/link";
 export default function Info1Section() {
   return (
     <section className="pt-20 sm:pt-44">
@@ -19,7 +20,10 @@ export default function Info1Section() {
             keep you protected and anonymous on the entire proxy session.
           </p>
 
-          <button className="active:scale-95 w-full sm:w-fit py-2.5 sm:py-2 px-5 border border-dark-white bg-white rounded-lg flex justify-center items-center gap-2.5 text-xs sm:text-base font-medium tracking-[-0.16px] text-accent duration-300">
+          <Link
+            href={"#cities"}
+            className="active:scale-95 w-full sm:w-fit py-2.5 sm:py-2 px-5 border border-dark-white bg-white rounded-lg flex justify-center items-center gap-2.5 text-xs sm:text-base font-medium tracking-[-0.16px] text-accent duration-300"
+          >
             View all locations in Germany
             <svg
               width="13"
@@ -34,7 +38,8 @@ export default function Info1Section() {
                 fill="#1675FF"
               />
             </svg>
-          </button>
+          </Link>
+
           <p className="mt-6 sm:mt-12 text-xs sm:text-base tracking-[-0.12px] sm:tracking-[-0.16px] text-primary/75">
             “I absolutely love their proxies, especially the Residential ones.
             The global gateway performs exceptionally well on my targets. I’ve

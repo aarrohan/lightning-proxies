@@ -1,5 +1,6 @@
 import Image from "next/image";
 import usaLocationInfo2Img from "@/assets/images/usa-location-info-2.png";
+import Link from "next/link";
 
 export default function Info2Section() {
   return (
@@ -32,7 +33,10 @@ export default function Info2Section() {
             scale your web scraping projects.
           </p>
 
-          <button className="active:scale-95 w-full sm:w-fit py-2.5 sm:py-2 px-5 border border-dark-white bg-white rounded-lg flex justify-center items-center gap-2.5 text-xs sm:text-base font-medium tracking-[-0.16px] text-[#12A250] duration-300">
+          <Link
+            href="/products/datacenter-proxies"
+            className="active:scale-95 w-full sm:w-fit py-2.5 sm:py-2 px-5 border border-dark-white bg-white rounded-lg flex justify-center items-center gap-2.5 text-xs sm:text-base font-medium tracking-[-0.16px] text-[#12A250] duration-300"
+          >
             Explore Datacenter Proxies
             <svg
               width="13"
@@ -47,7 +51,7 @@ export default function Info2Section() {
                 fill="#12A250"
               />
             </svg>
-          </button>
+          </Link>
         </div>
       </div>
     </section>

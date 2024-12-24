@@ -3,6 +3,7 @@ import pricingPageHeroSectionGrainImg from "@/assets/images/pricing-page-hero-se
 import PrimaryBtn from "@/components/ui/PrimaryBtn";
 import SecondaryBtn from "@/components/ui/SecondaryBtn";
 import locationImg from "@/assets/images/location-4.svg";
+import Link from "next/link";
 
 interface IInfoBoxProps {
   icon: JSX.Element;
@@ -345,49 +346,53 @@ export default function HeroSection() {
           </div>
 
           <div className="w-full sm:w-fit grid sm:flex gap-3">
-            <PrimaryBtn customClasses="!py-2.5 !px-12 sm:!text-base sm:!tracking-[-0.16px]">
-              Get Started{" "}
-              <svg
-                width="14"
-                height="11"
-                viewBox="0 0 14 11"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M8.21967 2.03033C7.92678 1.73744 7.92678 1.26256 8.21967 0.96967C8.51256 0.676777 8.98744 0.676777 9.28033 0.96967L13.2803 4.96967C13.5732 5.26256 13.5732 5.73744 13.2803 6.03033L9.28033 10.0303C8.98744 10.3232 8.51256 10.3232 8.21967 10.0303C7.92678 9.73744 7.92678 9.26256 8.21967 8.96967L10.9393 6.25H1.25C0.835787 6.25 0.5 5.91421 0.5 5.5C0.5 5.08579 0.835787 4.75 1.25 4.75H10.9393L8.21967 2.03033Z"
-                  className="fill-white"
-                />
-              </svg>
-            </PrimaryBtn>
+            <Link href={`${process.env.NEXT_PUBLIC_AUTH_URL}/signup`}>
+              <PrimaryBtn customClasses="!py-2.5 !px-12 sm:!text-base sm:!tracking-[-0.16px]">
+                Get Started{" "}
+                <svg
+                  width="14"
+                  height="11"
+                  viewBox="0 0 14 11"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.21967 2.03033C7.92678 1.73744 7.92678 1.26256 8.21967 0.96967C8.51256 0.676777 8.98744 0.676777 9.28033 0.96967L13.2803 4.96967C13.5732 5.26256 13.5732 5.73744 13.2803 6.03033L9.28033 10.0303C8.98744 10.3232 8.51256 10.3232 8.21967 10.0303C7.92678 9.73744 7.92678 9.26256 8.21967 8.96967L10.9393 6.25H1.25C0.835787 6.25 0.5 5.91421 0.5 5.5C0.5 5.08579 0.835787 4.75 1.25 4.75H10.9393L8.21967 2.03033Z"
+                    className="fill-white"
+                  />
+                </svg>
+              </PrimaryBtn>
+            </Link>
 
-            <SecondaryBtn customClasses="!py-2.5 !px-8 sm:!text-base sm:!tracking-[-0.16px] text-primary">
-              <svg
-                width="24"
-                height="25"
-                viewBox="0 0 24 25"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M22.56 12.75C22.56 11.97 22.49 11.22 22.36 10.5H12V14.76H17.92C17.66 16.13 16.88 17.29 15.71 18.07V20.84H19.28C21.36 18.92 22.56 16.1 22.56 12.75Z"
-                  fill="#4285F4"
-                />
-                <path
-                  d="M11.9997 23.4996C14.9697 23.4996 17.4597 22.5196 19.2797 20.8396L15.7097 18.0696C14.7297 18.7296 13.4797 19.1296 11.9997 19.1296C9.13969 19.1296 6.70969 17.1996 5.83969 14.5996H2.17969V17.4396C3.98969 21.0296 7.69969 23.4996 11.9997 23.4996Z"
-                  fill="#34A853"
-                />
-                <path
-                  d="M5.84 14.5903C5.62 13.9303 5.49 13.2303 5.49 12.5003C5.49 11.7703 5.62 11.0703 5.84 10.4103V7.57031H2.18C1.43 9.05031 1 10.7203 1 12.5003C1 14.2803 1.43 15.9503 2.18 17.4303L5.03 15.2103L5.84 14.5903Z"
-                  fill="#FBBC05"
-                />
-                <path
-                  d="M11.9997 5.88C13.6197 5.88 15.0597 6.44 16.2097 7.52L19.3597 4.37C17.4497 2.59 14.9697 1.5 11.9997 1.5C7.69969 1.5 3.98969 3.97 2.17969 7.57L5.83969 10.41C6.70969 7.81 9.13969 5.88 11.9997 5.88Z"
-                  fill="#EA4335"
-                />
-              </svg>
-              Continue with Google
-            </SecondaryBtn>
+            <Link href={`${process.env.NEXT_PUBLIC_AUTH_URL}/signup`}>
+              <SecondaryBtn customClasses="!py-2.5 !px-8 sm:!text-base sm:!tracking-[-0.16px] text-primary">
+                <svg
+                  width="24"
+                  height="25"
+                  viewBox="0 0 24 25"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M22.56 12.75C22.56 11.97 22.49 11.22 22.36 10.5H12V14.76H17.92C17.66 16.13 16.88 17.29 15.71 18.07V20.84H19.28C21.36 18.92 22.56 16.1 22.56 12.75Z"
+                    fill="#4285F4"
+                  />
+                  <path
+                    d="M11.9997 23.4996C14.9697 23.4996 17.4597 22.5196 19.2797 20.8396L15.7097 18.0696C14.7297 18.7296 13.4797 19.1296 11.9997 19.1296C9.13969 19.1296 6.70969 17.1996 5.83969 14.5996H2.17969V17.4396C3.98969 21.0296 7.69969 23.4996 11.9997 23.4996Z"
+                    fill="#34A853"
+                  />
+                  <path
+                    d="M5.84 14.5903C5.62 13.9303 5.49 13.2303 5.49 12.5003C5.49 11.7703 5.62 11.0703 5.84 10.4103V7.57031H2.18C1.43 9.05031 1 10.7203 1 12.5003C1 14.2803 1.43 15.9503 2.18 17.4303L5.03 15.2103L5.84 14.5903Z"
+                    fill="#FBBC05"
+                  />
+                  <path
+                    d="M11.9997 5.88C13.6197 5.88 15.0597 6.44 16.2097 7.52L19.3597 4.37C17.4497 2.59 14.9697 1.5 11.9997 1.5C7.69969 1.5 3.98969 3.97 2.17969 7.57L5.83969 10.41C6.70969 7.81 9.13969 5.88 11.9997 5.88Z"
+                    fill="#EA4335"
+                  />
+                </svg>
+                Continue with Google
+              </SecondaryBtn>
+            </Link>
           </div>
         </div>
 

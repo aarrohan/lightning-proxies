@@ -194,9 +194,11 @@ function ProductCard({
           </p>
         </div>
 
-        <PrimaryBtn extraSmall customClasses="!px-8 !text-xs sm:!text-base">
-          Get Started
-        </PrimaryBtn>
+        <Link href={`${process.env.NEXT_PUBLIC_AUTH_URL}/signup`}>
+          <PrimaryBtn extraSmall customClasses="!px-8 !text-xs sm:!text-base">
+            Get Started
+          </PrimaryBtn>
+        </Link>
       </div>
     </div>
   );
@@ -262,22 +264,25 @@ export default function ProductsSection() {
       ),
       title: "Residential Proxies",
       description:
-        "Access 10M+ real home IPs for web scraping, market research, and accessing geo-restricted content with high success rates.",
-      statement1: "Statement 01 about the proxies features",
-      statement2: "Statement 02 about the proxies features",
-      price: "$4.5/GB",
+        "Efficient, affordable, and built to deliver fast, secure connections.",
+      statement1: "Multiple global locations with guaranteed high performance.",
+      statement2:
+        "Flexible plans starting from just $4.5/GB, catering to various use cases.",
+      price: "4.5$/GB",
     },
     {
       color: "#12A250",
       icon: (
         <Image src={product2IconImg} alt="" className="w-[35px] sm:w-[45px]" />
       ),
-      title: "Datacenter Proxies",
+      title: "Residential Proxies",
       description:
-        "High-speed, cost-effective proxies ideal for bulk data scraping, automation, and general browsing tasks.",
-      statement1: "Statement 01 about the proxies features",
-      statement2: "Statement 02 about the proxies features",
-      price: "$2/Day",
+        "The most affordable proxy solution, perfect for public data scraping and a wide range of use cases.",
+      statement1:
+        "Five global datacenter locations with over 15.000 IPs available.",
+      statement2:
+        "Strong performance with speeds of up to 1 Gbps for both download and upload.",
+      price: "2$/Day",
     },
     {
       color: "#EA7635",
@@ -286,10 +291,11 @@ export default function ProductsSection() {
       ),
       title: "ISP Proxies",
       description:
-        "Blending datacenter speed with residential trust, these proxies are perfect for ecommerce, social media management, and competitive analysis.",
-      statement1: "Statement 01 about the proxies features",
-      statement2: "Statement 02 about the proxies features",
-      price: "$4/IP",
+        "Combined Datacenter Speeds with Residential IPs in One Package.",
+      statement1: "Worldwide ISP Locations with over 20 countries available.",
+      statement2:
+        "Customized IP quantities and durations to suit your specific needs.",
+      price: "4$/IP",
     },
     {
       color: "#A400DD",
@@ -298,10 +304,12 @@ export default function ProductsSection() {
       ),
       title: "IPv6 Proxies",
       description:
-        "Scalable and affordable proxies with vast IP availability, tailored for large-scale data tasks and web scraping.",
-      statement1: "Statement 01 about the proxies features",
-      statement2: "Statement 02 about the proxies features",
-      price: "$10/Day",
+        "Optimized for high-speed scraping on IPv6-enabled targets with unmatched efficiency.",
+      statement1:
+        "Global coverage with availability in 20+ countries worldwide.",
+      statement2:
+        "Cost-effective solution with abundant IPv6 IPs and extensive subnet diversity, perfect for efficient scraping.",
+      price: "10$/Day",
     },
     {
       color: "#00C1D1",
@@ -310,10 +318,10 @@ export default function ProductsSection() {
       ),
       title: "Mobile Proxies",
       description:
-        "Real 4G/LTE mobile IPs designed for bypassing restrictions, social media management, and app testing.",
-      statement1: "Statement 01 about the proxies features",
-      statement2: "Statement 02 about the proxies features",
-      price: "$5/GB",
+        "Access the largest pool of 500k+ Mobile IPs and easily bypass blocks. Filter by country and ASN - no extra costs.",
+      statement1: "3G/4G/5G/LTE cellular networks.",
+      statement2: "Accurate geo-location targeting.",
+      price: "5$/GB",
     },
   ];
 
