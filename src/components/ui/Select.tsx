@@ -44,7 +44,7 @@ export default function Select({
     <div className="relative z-10">
       <div
         onClick={() => setIsOpen(true)}
-        className={`active:scale-95 min-w-[272px] py-[8px] px-4 sm:px-5 border border-white/15 bg-white/5 rounded-[9px] flex justify-between items-center gap-6 sm:gap-16 duration-200 cursor-pointer ${customClasses}`}
+        className={`active:scale-95 min-w-[175px] sm:min-w-[272px] py-[8px] px-2.5 sm:px-5 border border-white/15 bg-white/5 rounded-[9px] flex justify-between items-center gap-6 sm:gap-16 duration-200 cursor-pointer ${customClasses}`}
       >
         <div className="flex items-center gap-2.5">
           {options[selectedOptionIndex].icon &&
