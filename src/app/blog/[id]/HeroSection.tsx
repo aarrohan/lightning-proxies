@@ -145,42 +145,37 @@ export default function HeroSection() {
       gsap.to(scrollProgress, {
         height: () => {
           const startingPointTop = point1.getBoundingClientRect().top;
-          const endingPointTop = point2.getBoundingClientRect().top;
+          const endingPointTop = point5.getBoundingClientRect().top;
 
           return endingPointTop - startingPointTop;
         },
         scrollTrigger: {
           trigger: step1,
           start: "top center",
-          end: `+=${step2.getBoundingClientRect().height}`,
+          end: `+=${step5.offsetTop} bottom`,
           scrub: 1,
         },
       });
 
-      gsap.to(scrollProgress, {
-        scrollTrigger: {
-          trigger: step2,
-          start: "top center",
-          end: `+=${step3.getBoundingClientRect().height}`,
-          scrub: 1,
-          onUpdate: (self) => {
-            const progress = self.progress;
+      // gsap.to(scrollProgress, {
+      //   height: () => {
+      //     const point1Top = point1.getBoundingClientRect().top;
+      //     const point2Top = point2.getBoundingClientRect().top;
+      //     const point3Top = point3.getBoundingClientRect().top;
 
-            const startingPointTop = point2.getBoundingClientRect().top;
-            const endingPointTop = point3.getBoundingClientRect().top;
+      //     const newPointTops = point3Top - point2Top;
+      //     const oldPointTops = point2Top - point1Top;
 
-            const currentHeight = parseFloat(
-              window.getComputedStyle(scrollProgress).height
-            );
-            const additionalHeight = endingPointTop - startingPointTop;
-            const finalHeight = currentHeight + additionalHeight;
-
-            console.log(progress, finalHeight);
-
-            scrollProgress.style.height = `${finalHeight * progress}px`;
-          },
-        },
-      });
+      //     return newPointTops + oldPointTops;
+      //   },
+      //   scrollTrigger: {
+      //     trigger: step2,
+      //     start: "top center",
+      //     end: `+=${step3.getBoundingClientRect().top}`,
+      //     scrub: 1,
+      //     markers: true,
+      //   },
+      // });
     }
   }, []);
 
