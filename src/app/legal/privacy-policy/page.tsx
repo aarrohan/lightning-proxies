@@ -36,99 +36,267 @@ export default function PrivacyPolicy() {
 
             <div className="space-y-8">
               <p className="text-sm sm:text-base tracking-[-0.14px] sm:tracking-[-0.16px] text-primary/80">
-                This website is operated by LightningProxies. Throughout the
-                site, the terms “we”, “us” and “our” refer to LightningProxies.
-                LightningProxies offers this website, including all information,
-                tools and Services available from this site to you, the user,
-                conditioned upon your acceptance of all terms, conditions,
-                policies and notices stated here.
+                Your privacy is important to us. It is LightningProxies’s policy
+                to respect your privacy and comply with any applicable law and
+                regulation regarding any personal information. We may collect
+                about you, including across our website,
+                https://lightningproxies.net/, and other sites we own and
+                operate.
               </p>
 
               <h3 className="text-lg sm:text-2xl font-medium tracking-[-0.18px] sm:tracking-[-0.24px]">
-                Overview
+                Information We Collect
               </h3>
 
               <p className="text-sm sm:text-base tracking-[-0.14px] sm:tracking-[-0.16px] text-primary/80">
-                By visiting our site and/ or purchasing something from us, you
-                engage in our “Service” and agree to be bound by the following
-                terms and conditions (“Terms of Service”, “Terms”), including
-                those additional terms and conditions and policies referenced
-                herein and/or available by hyperlink. These Terms of Service
-                apply to all users of the site, including without limitation
-                users who are browsers, vendors, customers, merchants, and/ or
-                contributors of content.
-              </p>
-
-              <p className="text-sm sm:text-base tracking-[-0.14px] sm:tracking-[-0.16px] text-primary/80">
-                Please read these Terms of Service carefully before accessing or
-                using our website. By accessing or using any part of the site,
-                you agree to be bound by these Terms of Service. If you do not
-                agree to all the terms and conditions of this agreement, then
-                you may not access the website or use any Services. If these
-                Terms of Service are considered an offer, acceptance is
-                expressly limited to these Terms of Service.
-              </p>
-
-              <p className="text-sm sm:text-base tracking-[-0.14px] sm:tracking-[-0.16px] text-primary/80">
-                Any new features or tools which are added to the current store
-                shall also be subject to the Terms of Service. You can review
-                the most current version of the Terms of Service at any time on
-                this page. We reserve the right to update, change or replace any
-                part of these Terms of Service by posting updates and/or changes
-                to our website. It is your responsibility to check this page
-                periodically for changes. Your continued use of or access to the
-                website following the posting of any changes constitutes
-                acceptance of those changes.
+                Information we collect includes both information you knowingly
+                and actively provide us when using or participating in any of
+                our services and promotions, and any information automatically
+                sent by your devices in the course of accessing our products and
+                services.
               </p>
 
               <h3 className="text-lg sm:text-2xl font-medium tracking-[-0.18px] sm:tracking-[-0.24px]">
-                01 - Online Store Terms
+                Log Data
               </h3>
 
               <p className="text-sm sm:text-base tracking-[-0.14px] sm:tracking-[-0.16px] text-primary/80">
-                By agreeing to these Terms of Service, you represent that you
-                are at least the age of majority in your state or province of
-                residence, or that you are the age of majority in your state or
-                province of residence and you have given us your consent to
-                allow any of your minor dependents to use this site.
+                When you visit our website, our servers may automatically log
+                the standard data provided by your web browser. It may include
+                your device’s Internet Protocol (IP) address, your browser type
+                and version, the pages you visit, the time and date of your
+                visit, the time spent on each page, other details about your
+                visit, and technical details that occur in conjunction with any
+                errors you may encounter. <br />
+                Please be aware that while this information may not be
+                personally identifying by itself, it may be possible to combine
+                it with other data to personally identify individual persons.
               </p>
+
+              <h3 className="text-lg sm:text-2xl font-medium tracking-[-0.18px] sm:tracking-[-0.24px]">
+                Personal Information
+              </h3>
 
               <p className="text-sm sm:text-base tracking-[-0.14px] sm:tracking-[-0.16px] text-primary/80">
-                You may not use our products for any illegal or unauthorized
-                purpose nor may you, in the use of the Service, violate any laws
-                in your jurisdiction (including but not limited to copyright
-                laws).
+                We may ask for personal information which may include one or
+                more of the following: <br />
+                Name <br /> Email
               </p>
+
+              <h3 className="text-lg sm:text-2xl font-medium tracking-[-0.18px] sm:tracking-[-0.24px]">
+                Legitimate Reasons for Processing Your Personal Information
+              </h3>
 
               <p className="text-sm sm:text-base tracking-[-0.14px] sm:tracking-[-0.16px] text-primary/80">
-                You must not transmit any worms or viruses or any code of a
-                destructive nature.
+                We only collect and use your personal information when we have a
+                legitimate reason for doing so. In which instance, we only
+                collect personal information that is reasonably necessary to
+                provide our services to you.
               </p>
+
+              <h3 className="text-lg sm:text-2xl font-medium tracking-[-0.18px] sm:tracking-[-0.24px]">
+                Collection and Use of Information
+              </h3>
 
               <p className="text-sm sm:text-base tracking-[-0.14px] sm:tracking-[-0.16px] text-primary/80">
-                A breach or violation of any of the Terms will result in an
-                immediate termination of your Services.
-              </p>
-
-              <h4 className="text-base sm:text-xl font-medium tracking-[-0.16px] sm:tracking-[-0.2px]">
-                Our contact information is posted below - H2
-              </h4>
-
-              <p className="text-sm sm:text-base tracking-[-0.14px] sm:tracking-[-0.16px] text-primary/80">
-                BOLD TEXT EXAMPLE
-              </p>
-
-              <p className="text-sm sm:text-base font-medium tracking-[-0.14px] sm:tracking-[-0.16px] text-primary/80">
-                Email:{" "}
-                <span className="text-accent">
-                  support@lightningproxies.net
-                </span>{" "}
+                We may collect personal information from you when you do any of
+                the following on our website: <br />· Use a mobile device or web
+                browser to access our content <br />
+                · Contact us via email, social media, or on any similar
+                technologies <br />
+                · When you mention us on social media <br />
+                We may collect, hold, use, and disclose information for the
+                following purposes, and personal information will not be further
+                processed in a manner that is incompatible with these purposes:{" "}
                 <br />
-                Telegram: <span className="text-accent">@lightningproxies</span>
+                · to contact and communicate with you <br />
+                · for internal record keeping and administrative purposes <br />
+                · for security and fraud prevention, and to ensure that our
+                sites and apps are safe, secure, and used in line with our terms
+                of use <br />
+                Please be aware that we may combine information we collect about
+                you with general information or research data we receive from
+                other trusted sources.
               </p>
 
+              <h3 className="text-lg sm:text-2xl font-medium tracking-[-0.18px] sm:tracking-[-0.24px]">
+                Security of Your Personal Information
+              </h3>
+
               <p className="text-sm sm:text-base tracking-[-0.14px] sm:tracking-[-0.16px] text-primary/80">
-                Thank you and welcome to Lightning Proxies!
+                When we collect and process personal information, and while we
+                retain this information, we will protect it within commercially
+                acceptable means to prevent loss and theft, as well as
+                unauthorized access, disclosure, copying, use, or modification.{" "}
+                <br />
+                Although we will do our best to protect the personal information
+                you provide to us, we advise that no method of electronic
+                transmission or storage is 100% secure, and no one can guarantee
+                absolute data security. We will comply with laws applicable to
+                us in respect of any data breach. <br />
+                You are responsible for selecting any password (preferably not
+                common to other services of which you may be a part of) and its
+                overall security strength, ensuring the security of your own
+                information within the bounds of our services.
+              </p>
+
+              <h3 className="text-lg sm:text-2xl font-medium tracking-[-0.18px] sm:tracking-[-0.24px]">
+                How Long We Keep Your Personal Information
+              </h3>
+
+              <p className="text-sm sm:text-base tracking-[-0.14px] sm:tracking-[-0.16px] text-primary/80">
+                We keep your personal information only for as long as we need
+                to. This period may depend on what we are using your information
+                for, in accordance with this privacy policy. If your personal
+                information is no longer required, we will delete it or make it
+                anonymous by removing all details that identify you. <br />
+                However, if necessary, we may retain your personal information
+                for our compliance with a legal, accounting, or reporting
+                obligation or for archiving purposes in the public interest,
+                scientific, or historical research purposes or statistical
+                purposes.
+              </p>
+
+              <h3 className="text-lg sm:text-2xl font-medium tracking-[-0.18px] sm:tracking-[-0.24px]">
+                Minor’s Privacy
+              </h3>
+
+              <p className="text-sm sm:text-base tracking-[-0.14px] sm:tracking-[-0.16px] text-primary/80">
+                We do not aim any of our products or services directly at minors
+                under the age of 18, and we do not knowingly collect personal
+                information about minors under 18.
+              </p>
+
+              <h3 className="text-lg sm:text-2xl font-medium tracking-[-0.18px] sm:tracking-[-0.24px]">
+                Disclosure of Personal Information to Third Parties
+              </h3>
+
+              <p className="text-sm sm:text-base tracking-[-0.14px] sm:tracking-[-0.16px] text-primary/80">
+                To collect and process data, we may disclose personal
+                information to: <br />
+                · a parent, subsidiary, or affiliate of our company <br />
+                · third party service providers for the purpose of enabling them
+                to provide their services, for example, IT service providers,
+                data storage, hosting and server providers, advertisers, or
+                analytics platforms <br />
+                · our employees, contractors, and/or related entities <br />
+                · our existing or potential agents or business partners <br />
+                · sponsors or promoters of any competition, sweepstakes, or
+                promotion we run <br />
+                · courts, tribunals, regulatory authorities, and law enforcement
+                officers, as required by law, in connection with any actual or
+                prospective legal proceedings, or in order to establish,
+                exercise, or defend our legal rights <br />· third parties,
+                including agents or sub-contractors, who assist us in providing
+                information, products, services, or direct marketing to you.
+              </p>
+
+              <h3 className="text-lg sm:text-2xl font-medium tracking-[-0.18px] sm:tracking-[-0.24px]">
+                International Transfers of Personal Information
+              </h3>
+
+              <p className="text-sm sm:text-base tracking-[-0.14px] sm:tracking-[-0.16px] text-primary/80">
+                The personal information we collect is stored and/or processed
+                where we or our partners, affiliates, and third-party providers
+                maintain facilities. Please be aware that the locations to which
+                we store, process, or transfer your personal information may not
+                have the same data protection laws as the country in which you
+                initially provided the information. If we transfer your personal
+                information to third parties in other countries: (i) we will
+                perform those transfers in accordance with the requirements of
+                applicable law and (ii) we will protect the transferred personal
+                information in accordance with this privacy policy.
+              </p>
+
+              <h3 className="text-lg sm:text-2xl font-medium tracking-[-0.18px] sm:tracking-[-0.24px]">
+                Your Rights and Controlling Your Personal Information
+              </h3>
+
+              <p className="text-sm sm:text-base tracking-[-0.14px] sm:tracking-[-0.16px] text-primary/80">
+                You always retain the right to withhold personal information
+                from us, with the understanding that your experience of our
+                website may be affected. We will not discriminate against you
+                for exercising any of your rights over your personal
+                information. If you do provide us with personal information you
+                understand that we will collect, hold, use and disclose it in
+                accordance with this privacy policy. You retain the right to
+                request details of any personal information we hold about you.{" "}
+                <br />
+                If we receive personal information about you from a third party,
+                we will protect it as set out in this privacy policy. If you are
+                a third party providing personal information about somebody
+                else, you represent and warrant that you have such person’s
+                consent to provide the personal information to us. <br />
+                If you have previously agreed to us using your personal
+                information for direct marketing purposes, you may change your
+                mind at any time. We will provide you with the ability to
+                unsubscribe from our email-database or opt out of
+                communications. Please be aware we may need to request specific
+                information from you to help us confirm your identity. <br />
+                If you believe that any information, we hold about you is
+                inaccurate, out of date, incomplete, irrelevant, or misleading,
+                please contact us using the details provided in this privacy
+                policy. We will take reasonable steps to correct any information
+                found to be inaccurate, incomplete, misleading, or out of date.{" "}
+                <br />
+                If you believe that we have breached a relevant data protection
+                law and wish to make a complaint, please contact us using the
+                details below and provide us with full details of the alleged
+                breach. We will promptly investigate your complaint and respond
+                to you, in writing, setting out the outcome of our investigation
+                and the steps we will take to deal with your complaint. You also
+                have the right to contact a regulatory body or data protection
+                authority in relation to your complaint.
+              </p>
+
+              <h3 className="text-lg sm:text-2xl font-medium tracking-[-0.18px] sm:tracking-[-0.24px]">
+                Use of Cookies
+              </h3>
+
+              <p className="text-sm sm:text-base tracking-[-0.14px] sm:tracking-[-0.16px] text-primary/80">
+                We use “cookies” to collect information about you and your
+                activity across our site. A cookie is a small piece of data that
+                our website stores on your computer, and accesses each time you
+                visit, so we can understand how you use our site. This helps us
+                serve you content based on preferences you have specified.
+              </p>
+
+              <h3 className="text-lg sm:text-2xl font-medium tracking-[-0.18px] sm:tracking-[-0.24px]">
+                Limits of Our Policy
+              </h3>
+
+              <p className="text-sm sm:text-base tracking-[-0.14px] sm:tracking-[-0.16px] text-primary/80">
+                Our website may link to external sites that are not operated by
+                us. Please be aware that we have no control over the content and
+                policies of those sites and cannot accept responsibility or
+                liability for their respective privacy practices.
+              </p>
+
+              <h3 className="text-lg sm:text-2xl font-medium tracking-[-0.18px] sm:tracking-[-0.24px]">
+                Changes to This Policy
+              </h3>
+
+              <p className="text-sm sm:text-base tracking-[-0.14px] sm:tracking-[-0.16px] text-primary/80">
+                At our discretion, we may change our privacy policy to reflect
+                updates to our business processes, current acceptable practices,
+                or legislative or regulatory changes. If we decide to change
+                this privacy policy, we will post the changes here at the same
+                link by which you are accessing this privacy policy. <br />
+                If required by law, we will get your permission or give you the
+                opportunity to opt in to or opt out of, as applicable, any new
+                uses of your personal information.
+              </p>
+
+              <h3 className="text-lg sm:text-2xl font-medium tracking-[-0.18px] sm:tracking-[-0.24px]">
+                Contact Us
+              </h3>
+
+              <p className="text-sm sm:text-base tracking-[-0.14px] sm:tracking-[-0.16px] text-primary/80">
+                For any questions or concerns regarding your privacy, you may
+                contact us using the following details: <br />
+                By email at support@lightningproxies.net
+                <br />
+                By telegram at @lightningproxies
               </p>
             </div>
           </div>
