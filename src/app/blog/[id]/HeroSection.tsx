@@ -7,13 +7,52 @@ import Image from "next/image";
 import article3Img from "@/assets/images/article-3.png";
 import article7Img from "@/assets/images/article-7.png";
 
+interface IFAQ {
+  initialState?: boolean;
+  question: string;
+  answer: string;
+}
+
+function FAQ({ initialState = false, question, answer }: IFAQ) {
+  const [isActive, setIsActive] = useState<boolean>(initialState);
+
+  return (
+    <div className="p-6 border border-dark-white bg-white shadow-[0px_10px_10px_0px_rgba(0,0,0,0.02),0px_1px_0px_0px_rgba(0,0,0,0.02)] rounded-2xl space-y-3.5">
+      <p
+        onClick={() => setIsActive(!isActive)}
+        className="flex items-center gap-2.5 text-lg sm:text-xl font-medium tracking-[-0.18px] sm:tracking-[-0.2px] text-primary/80 cursor-pointer"
+      >
+        <span
+          className={`w-[3px] h-[20px] ${
+            isActive ? "bg-accent" : "bg-primary/50"
+          } block`}
+        ></span>
+        {question}
+      </p>
+
+      {isActive && (
+        <p className="text-sm sm:text-lg tracking-[-0.14px] sm:tracking-[-0.18px] text-primary/75">
+          {answer}
+        </p>
+      )}
+    </div>
+  );
+}
+
 export default function HeroSection() {
   const [currentInfoStep, setCurrentInfoStep] = useState<number>(1);
 
+  const scrollProgressRef = useRef<HTMLSpanElement | null>(null);
+  const step1Ref = useRef<HTMLDivElement | null>(null);
   const step2Ref = useRef<HTMLHeadingElement | null>(null);
   const step3Ref = useRef<HTMLHeadingElement | null>(null);
   const step4Ref = useRef<HTMLHeadingElement | null>(null);
   const step5Ref = useRef<HTMLHeadingElement | null>(null);
+  const point1Ref = useRef<HTMLDivElement | null>(null);
+  const point2Ref = useRef<HTMLDivElement | null>(null);
+  const point3Ref = useRef<HTMLDivElement | null>(null);
+  const point4Ref = useRef<HTMLDivElement | null>(null);
+  const point5Ref = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
@@ -77,6 +116,89 @@ export default function HeroSection() {
     }
   }, []);
 
+  useEffect(() => {
+    const scrollProgress = scrollProgressRef.current;
+    const step1 = step1Ref.current;
+    const step2 = step2Ref.current;
+    const step3 = step3Ref.current;
+    const step4 = step4Ref.current;
+    const step5 = step5Ref.current;
+    const point1 = point1Ref.current;
+    const point2 = point2Ref.current;
+    const point3 = point3Ref.current;
+    const point4 = point4Ref.current;
+    const point5 = point5Ref.current;
+
+    if (
+      scrollProgress &&
+      step1 &&
+      step2 &&
+      step3 &&
+      step4 &&
+      step5 &&
+      point1 &&
+      point2 &&
+      point3 &&
+      point4 &&
+      point5
+    ) {
+      gsap.to(scrollProgress, {
+        height: () => {
+          const startingPointTop = point1.getBoundingClientRect().top;
+          const endingPointTop = point2.getBoundingClientRect().top;
+
+          return endingPointTop - startingPointTop;
+        },
+        scrollTrigger: {
+          trigger: step1,
+          start: "top center",
+          end: `+=${step2.getBoundingClientRect().height}`,
+          scrub: 1,
+        },
+      });
+
+      gsap.to(scrollProgress, {
+        scrollTrigger: {
+          trigger: step2,
+          start: "top center",
+          end: `+=${step3.getBoundingClientRect().height}`,
+          scrub: 1,
+          onUpdate: (self) => {
+            const progress = self.progress;
+
+            const startingPointTop = point2.getBoundingClientRect().top;
+            const endingPointTop = point3.getBoundingClientRect().top;
+
+            const currentHeight = parseFloat(
+              window.getComputedStyle(scrollProgress).height
+            );
+            const additionalHeight = endingPointTop - startingPointTop;
+            const finalHeight = currentHeight + additionalHeight;
+
+            console.log(progress, finalHeight);
+
+            scrollProgress.style.height = `${finalHeight * progress}px`;
+          },
+        },
+      });
+    }
+  }, []);
+
+  const faqs: IFAQ[] = [
+    {
+      initialState: true,
+      question: "How do I use Octo app?",
+      answer:
+        "Using OctoBrowser app is quite simple. After downloading their app from the official website, you will have to create a profile with a certain name, after that simply check the instructions above and complete with your proxy credential. Once it's all done, press RUN and you are now using OctoBrowser with proxies.",
+    },
+    {
+      initialState: false,
+      question: "What is an anti-detect browser?",
+      answer:
+        "An anti-detect browser is a tool that pretends to be your web browser, changing how it looks and acts online to make you more anonymous.",
+    },
+  ];
+
   return (
     <section className="pt-[70px]">
       <div className="relative mx-auto container max-w-[1320px] pt-10 sm:pt-14 px-5">
@@ -114,15 +236,32 @@ export default function HeroSection() {
             </p>
 
             <div className="relative space-y-5">
-              <span className="absolute top-5 -left-[25px] w-[2px] h-[calc(100%-30px)] bg-[#C1D8FB] block"></span>
+              <span className="absolute top-5 -left-[25px] w-[2px] h-[calc(100%-30px)] bg-[#C1D8FB] block overflow-hidden">
+                <span
+                  ref={scrollProgressRef}
+                  className="absolute top-0 left-0 w-full bg-accent block"
+                ></span>
+              </span>
 
               <p
+                onClick={() => {
+                  const el = document.querySelector("#part1");
+
+                  if (el) {
+                    window.scrollTo({
+                      top:
+                        el.getBoundingClientRect().top + window.scrollY - 100,
+                      behavior: "smooth",
+                    });
+                  }
+                }}
                 className={`relative z-10 text-base font-medium tracking-[-0.16px] ${
                   currentInfoStep > 0 ? "text-primary/75" : "text-primary/40"
-                } duration-200`}
+                } duration-200 cursor-pointer`}
               >
                 ​​Setting Up a Proxy in the OctoBrowser
                 <span
+                  ref={point1Ref}
                   className={`absolute top-1/2 -left-7 -translate-y-1/2 w-[8px] aspect-square ${
                     currentInfoStep > 0 ? "bg-accent" : "bg-[#C1D8FB]"
                   } rounded-full block duration-200`}
@@ -130,12 +269,24 @@ export default function HeroSection() {
               </p>
 
               <p
+                onClick={() => {
+                  const el = document.querySelector("#part2");
+
+                  if (el) {
+                    window.scrollTo({
+                      top:
+                        el.getBoundingClientRect().top + window.scrollY - 100,
+                      behavior: "smooth",
+                    });
+                  }
+                }}
                 className={`relative z-10 text-base font-medium tracking-[-0.16px] ${
                   currentInfoStep > 1 ? "text-primary/75" : "text-primary/40"
-                } duration-200`}
+                } duration-200 cursor-pointer`}
               >
                 How to Integrate Proxies with OctoBrowser?
                 <span
+                  ref={point2Ref}
                   className={`absolute top-1/2 -left-7 -translate-y-1/2 w-[8px] aspect-square ${
                     currentInfoStep > 1 ? "bg-accent" : "bg-[#C1D8FB]"
                   } rounded-full block duration-200`}
@@ -143,12 +294,24 @@ export default function HeroSection() {
               </p>
 
               <p
+                onClick={() => {
+                  const el = document.querySelector("#part3");
+
+                  if (el) {
+                    window.scrollTo({
+                      top:
+                        el.getBoundingClientRect().top + window.scrollY - 100,
+                      behavior: "smooth",
+                    });
+                  }
+                }}
                 className={`relative z-10 text-base font-medium tracking-[-0.16px] ${
                   currentInfoStep > 2 ? "text-primary/75" : "text-primary/40"
-                } duration-200`}
+                } duration-200 cursor-pointer`}
               >
                 Residential Proxies
                 <span
+                  ref={point3Ref}
                   className={`absolute top-1/2 -left-7 -translate-y-1/2 w-[8px] aspect-square ${
                     currentInfoStep > 2 ? "bg-accent" : "bg-[#C1D8FB]"
                   } rounded-full block duration-200`}
@@ -156,12 +319,24 @@ export default function HeroSection() {
               </p>
 
               <p
+                onClick={() => {
+                  const el = document.querySelector("#part4");
+
+                  if (el) {
+                    window.scrollTo({
+                      top:
+                        el.getBoundingClientRect().top + window.scrollY - 100,
+                      behavior: "smooth",
+                    });
+                  }
+                }}
                 className={`relative z-10 text-base font-medium tracking-[-0.16px] ${
                   currentInfoStep > 3 ? "text-primary/75" : "text-primary/40"
-                } duration-200`}
+                } duration-200 cursor-pointer`}
               >
                 Rotating Datacenter Proxies
                 <span
+                  ref={point4Ref}
                   className={`absolute top-1/2 -left-7 -translate-y-1/2 w-[8px] aspect-square ${
                     currentInfoStep > 3 ? "bg-accent" : "bg-[#C1D8FB]"
                   } rounded-full block duration-200`}
@@ -169,12 +344,24 @@ export default function HeroSection() {
               </p>
 
               <p
+                onClick={() => {
+                  const el = document.querySelector("#part5");
+
+                  if (el) {
+                    window.scrollTo({
+                      top:
+                        el.getBoundingClientRect().top + window.scrollY - 100,
+                      behavior: "smooth",
+                    });
+                  }
+                }}
                 className={`relative z-10 text-base font-medium tracking-[-0.16px] ${
                   currentInfoStep > 4 ? "text-primary/75" : "text-primary/40"
-                } duration-200`}
+                } duration-200 cursor-pointer`}
               >
                 Discount Code
                 <span
+                  ref={point5Ref}
                   className={`absolute top-1/2 -left-7 -translate-y-1/2 w-[8px] aspect-square ${
                     currentInfoStep > 4 ? "bg-accent" : "bg-[#C1D8FB]"
                   } rounded-full block duration-200`}
@@ -206,8 +393,11 @@ export default function HeroSection() {
               className="my-12 w-full border border-dark-white rounded-2xl"
             />
 
-            <div className="space-y-8">
-              <p className="text-lg sm:text-2xl font-medium tracking-[-0.18px] sm:tracking-[-0.24px]">
+            <div ref={step1Ref} className="space-y-8">
+              <p
+                id="part1"
+                className="text-lg sm:text-2xl font-medium tracking-[-0.18px] sm:tracking-[-0.24px]"
+              >
                 Setting Up a Proxy in the OctoBrowser
               </p>
 
@@ -222,6 +412,7 @@ export default function HeroSection() {
 
               <p
                 ref={step2Ref}
+                id="part2"
                 className="text-lg sm:text-2xl font-medium tracking-[-0.18px] sm:tracking-[-0.24px]"
               >
                 How to Integrate LightningProxies' Proxies with OctoBrowser?
@@ -240,6 +431,7 @@ export default function HeroSection() {
 
               <p
                 ref={step3Ref}
+                id="part3"
                 className="text-lg sm:text-xl font-medium tracking-[-0.18px] sm:tracking-[-0.2px]"
               >
                 Residential Proxies
@@ -266,6 +458,7 @@ export default function HeroSection() {
 
               <p
                 ref={step4Ref}
+                id="part4"
                 className="text-lg sm:text-xl font-medium tracking-[-0.18px] sm:tracking-[-0.2px]"
               >
                 Rotating Datacenter Proxies
@@ -299,6 +492,7 @@ export default function HeroSection() {
 
               <p
                 ref={step5Ref}
+                id="part5"
                 className="py-4 sm:py-6 px-7 sm:px-10 bg-accent/10 rounded-md sm:rounded-lg text-sm sm:text-lg tracking-[-0.14px] sm:tracking-[-0.18px]"
               >
                 Use code{" "}
@@ -311,34 +505,9 @@ export default function HeroSection() {
               </p>
 
               <div className="space-y-4">
-                <div className="p-6 border border-dark-white bg-white shadow-[0px_10px_10px_0px_rgba(0,0,0,0.02),0px_1px_0px_0px_rgba(0,0,0,0.02)] rounded-2xl space-y-3.5">
-                  <p className="flex items-center gap-2.5 text-lg sm:text-xl font-medium tracking-[-0.18px] sm:tracking-[-0.2px] text-primary/80">
-                    <span className="w-[3px] h-[20px] bg-accent block"></span>
-                    How do I use Octo app?
-                  </p>
-
-                  <p className="text-sm sm:text-lg tracking-[-0.14px] sm:tracking-[-0.18px] text-primary/75">
-                    Using OctoBrowser app is quite simple. After downloading
-                    their app from the official website, you will have to create
-                    a profile with a certain name, after that simply check the
-                    instructions above and complete with your proxy credential.
-                    Once it's all done, press RUN and you are now using
-                    OctoBrowser with proxies.
-                  </p>
-                </div>
-
-                <div className="p-6 border border-dark-white bg-white shadow-[0px_10px_10px_0px_rgba(0,0,0,0.02),0px_1px_0px_0px_rgba(0,0,0,0.02)] rounded-2xl space-y-3.5">
-                  <p className="flex items-center gap-2.5 text-lg sm:text-xl font-medium tracking-[-0.18px] sm:tracking-[-0.2px] text-primary/80">
-                    <span className="w-[3px] h-[20px] bg-accent block"></span>
-                    What is an anti-detect browser?
-                  </p>
-
-                  <p className="text-sm sm:text-lg tracking-[-0.14px] sm:tracking-[-0.18px] text-primary/75">
-                    An anti-detect browser is a tool that pretends to be your
-                    web browser, changing how it looks and acts online to make
-                    you more anonymous.
-                  </p>
-                </div>
+                {faqs.map((faq, index) => (
+                  <FAQ key={index} {...faq} />
+                ))}
               </div>
             </div>
 
