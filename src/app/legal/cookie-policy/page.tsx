@@ -141,6 +141,48 @@ export default function CookiePolicy() {
                 exercise these rights, please contact us at
                 support@lightningproxies.net.
               </p>
+
+              <h3 className="text-lg sm:text-2xl font-medium tracking-[-0.18px] sm:tracking-[-0.24px]">
+                Security Measures
+              </h3>
+
+              <p className="text-sm sm:text-base tracking-[-0.14px] sm:tracking-[-0.16px] text-primary/80">
+                We take appropriate security measures to protect data collected
+                via cookies, including safeguarding stored data in our systems
+                and limiting access to authorized personnel only.
+              </p>
+
+              <h3 className="text-lg sm:text-2xl font-medium tracking-[-0.18px] sm:tracking-[-0.24px]">
+                Updates to This Policy
+              </h3>
+
+              <p className="text-sm sm:text-base tracking-[-0.14px] sm:tracking-[-0.16px] text-primary/80">
+                We may update this cookie policy at any time. While we will not
+                notify users directly of changes, the policy’s latest revision
+                date will be updated at the top of this document. We encourage
+                you to review this policy periodically.
+              </p>
+
+              <h3 className="text-lg sm:text-2xl font-medium tracking-[-0.18px] sm:tracking-[-0.24px]">
+                Contact Us
+              </h3>
+
+              <p className="text-sm sm:text-base tracking-[-0.14px] sm:tracking-[-0.16px] text-primary/80">
+                If you have any questions or concerns regarding this cookie
+                policy, please contact us at support@lightningproxies.net.
+              </p>
+
+              <h3 className="text-lg sm:text-2xl font-medium tracking-[-0.18px] sm:tracking-[-0.24px]">
+                Compliance
+              </h3>
+
+              <p className="text-sm sm:text-base tracking-[-0.14px] sm:tracking-[-0.16px] text-primary/80">
+                This cookie policy has been drafted to comply with relevant laws
+                and regulations applicable to our operations, including but not
+                limited to the GDPR and Romanian data protection laws. <br />
+                By using our website, you agree to the terms outlined in this
+                cookie policy.
+              </p>
             </div>
           </div>
         </div>

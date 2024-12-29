@@ -1,3 +1,4 @@
+"use client";
 import Link from "next/link";
 import Image from "next/image";
 import article3Img from "@/assets/images/article-3.png";
