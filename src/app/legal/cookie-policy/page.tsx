@@ -35,100 +35,111 @@ export default function CookiePolicy() {
             <span className="my-7 sm:my-10 w-[45px] h-px bg-accent block"></span>
 
             <div className="space-y-8">
-              <p className="text-sm sm:text-base tracking-[-0.14px] sm:tracking-[-0.16px] text-primary/80">
-                This website is operated by LightningProxies. Throughout the
-                site, the terms “we”, “us” and “our” refer to LightningProxies.
-                LightningProxies offers this website, including all information,
-                tools and Services available from this site to you, the user,
-                conditioned upon your acceptance of all terms, conditions,
-                policies and notices stated here.
-              </p>
-
               <h3 className="text-lg sm:text-2xl font-medium tracking-[-0.18px] sm:tracking-[-0.24px]">
-                Overview
+                Introduction
               </h3>
 
               <p className="text-sm sm:text-base tracking-[-0.14px] sm:tracking-[-0.16px] text-primary/80">
-                By visiting our site and/ or purchasing something from us, you
-                engage in our “Service” and agree to be bound by the following
-                terms and conditions (“Terms of Service”, “Terms”), including
-                those additional terms and conditions and policies referenced
-                herein and/or available by hyperlink. These Terms of Service
-                apply to all users of the site, including without limitation
-                users who are browsers, vendors, customers, merchants, and/ or
-                contributors of content.
-              </p>
-
-              <p className="text-sm sm:text-base tracking-[-0.14px] sm:tracking-[-0.16px] text-primary/80">
-                Please read these Terms of Service carefully before accessing or
-                using our website. By accessing or using any part of the site,
-                you agree to be bound by these Terms of Service. If you do not
-                agree to all the terms and conditions of this agreement, then
-                you may not access the website or use any Services. If these
-                Terms of Service are considered an offer, acceptance is
-                expressly limited to these Terms of Service.
-              </p>
-
-              <p className="text-sm sm:text-base tracking-[-0.14px] sm:tracking-[-0.16px] text-primary/80">
-                Any new features or tools which are added to the current store
-                shall also be subject to the Terms of Service. You can review
-                the most current version of the Terms of Service at any time on
-                this page. We reserve the right to update, change or replace any
-                part of these Terms of Service by posting updates and/or changes
-                to our website. It is your responsibility to check this page
-                periodically for changes. Your continued use of or access to the
-                website following the posting of any changes constitutes
-                acceptance of those changes.
+                Lightning Hosting Solutions SRL, located in Romania, operates
+                the website lightningproxies.net. This cookie policy informs you
+                about our use of cookies and similar technologies on our
+                website. By using our website, you consent to the use of cookies
+                in accordance with this policy.
               </p>
 
               <h3 className="text-lg sm:text-2xl font-medium tracking-[-0.18px] sm:tracking-[-0.24px]">
-                01 - Online Store Terms
+                What Are Cookies?
               </h3>
 
               <p className="text-sm sm:text-base tracking-[-0.14px] sm:tracking-[-0.16px] text-primary/80">
-                By agreeing to these Terms of Service, you represent that you
-                are at least the age of majority in your state or province of
-                residence, or that you are the age of majority in your state or
-                province of residence and you have given us your consent to
-                allow any of your minor dependents to use this site.
+                Cookies are small text files stored on your device when you
+                visit a website. They help enhance your experience, enable us to
+                understand how our site is being used, and make our
+                communication with you more relevant.{" "}
               </p>
 
-              <p className="text-sm sm:text-base tracking-[-0.14px] sm:tracking-[-0.16px] text-primary/80">
-                You may not use our products for any illegal or unauthorized
-                purpose nor may you, in the use of the Service, violate any laws
-                in your jurisdiction (including but not limited to copyright
-                laws).
-              </p>
-
-              <p className="text-sm sm:text-base tracking-[-0.14px] sm:tracking-[-0.16px] text-primary/80">
-                You must not transmit any worms or viruses or any code of a
-                destructive nature.
-              </p>
-
-              <p className="text-sm sm:text-base tracking-[-0.14px] sm:tracking-[-0.16px] text-primary/80">
-                A breach or violation of any of the Terms will result in an
-                immediate termination of your Services.
-              </p>
+              <h3 className="text-lg sm:text-2xl font-medium tracking-[-0.18px] sm:tracking-[-0.24px]">
+                Types of Cookies We Use
+              </h3>
 
               <h4 className="text-base sm:text-xl font-medium tracking-[-0.16px] sm:tracking-[-0.2px]">
-                Our contact information is posted below - H2
+                Necessary Cookies
               </h4>
 
               <p className="text-sm sm:text-base tracking-[-0.14px] sm:tracking-[-0.16px] text-primary/80">
-                BOLD TEXT EXAMPLE
+                These cookies are essential for the operation of our website,
+                enabling you to navigate the site and access its features, such
+                as secure areas. <br />
+                Examples: Authentication cookies for logged-in users.
               </p>
 
-              <p className="text-sm sm:text-base font-medium tracking-[-0.14px] sm:tracking-[-0.16px] text-primary/80">
-                Email:{" "}
-                <span className="text-accent">
-                  support@lightningproxies.net
-                </span>{" "}
-                <br />
-                Telegram: <span className="text-accent">@lightningproxies</span>
-              </p>
+              <h4 className="text-base sm:text-xl font-medium tracking-[-0.16px] sm:tracking-[-0.2px]">
+                Performance Cookies
+              </h4>
 
               <p className="text-sm sm:text-base tracking-[-0.14px] sm:tracking-[-0.16px] text-primary/80">
-                Thank you and welcome to Lightning Proxies!
+                These cookies collect information about how you use our website,
+                such as which pages you visit most frequently, helping us to
+                improve the site’s functionality.
+                <br />
+                Examples: Google Tag Manager for tracking website performance.
+              </p>
+
+              <h4 className="text-base sm:text-xl font-medium tracking-[-0.16px] sm:tracking-[-0.2px]">
+                Functionality Cookies
+              </h4>
+
+              <p className="text-sm sm:text-base tracking-[-0.14px] sm:tracking-[-0.16px] text-primary/80">
+                These cookies remember choices you make to provide enhanced,
+                personalized features.
+                <br />
+                Examples: Crisp for customer support interactions.
+              </p>
+
+              <h4 className="text-base sm:text-xl font-medium tracking-[-0.16px] sm:tracking-[-0.2px]">
+                Security Cookies
+              </h4>
+
+              <p className="text-sm sm:text-base tracking-[-0.14px] sm:tracking-[-0.16px] text-primary/80">
+                These cookies help us identify and prevent security risks.
+                <br />
+                Examples: Cloudflare for security protection.
+              </p>
+
+              <h3 className="text-lg sm:text-2xl font-medium tracking-[-0.18px] sm:tracking-[-0.24px]">
+                Managing Cookies
+              </h3>
+
+              <p className="text-sm sm:text-base tracking-[-0.14px] sm:tracking-[-0.16px] text-primary/80">
+                You can manage your cookie preferences through our cookie banner
+                or by visiting the cookie settings in the footer of our website.
+                You may also configure your browser settings to refuse cookies,
+                although this may affect your ability to use certain features of
+                our site.
+              </p>
+
+              <h3 className="text-lg sm:text-2xl font-medium tracking-[-0.18px] sm:tracking-[-0.24px]">
+                Data Sharing and Third-Party Cookies
+              </h3>
+
+              <p className="text-sm sm:text-base tracking-[-0.14px] sm:tracking-[-0.16px] text-primary/80">
+                We use third-party services that may set cookies for performance
+                and analytical purposes. These third parties include, but are
+                not limited to: <br />- Google Tag Manager <br /> - Crisp <br />{" "}
+                - Cloudflare <br /> - Facebook <br /> These third parties may
+                collect and use information in accordance with their respective
+                privacy policies.
+              </p>
+
+              <h3 className="text-lg sm:text-2xl font-medium tracking-[-0.18px] sm:tracking-[-0.24px]">
+                User Rights
+              </h3>
+
+              <p className="text-sm sm:text-base tracking-[-0.14px] sm:tracking-[-0.16px] text-primary/80">
+                You have the right to access, rectify, delete, and object to the
+                processing of your personal data collected via cookies. To
+                exercise these rights, please contact us at
+                support@lightningproxies.net.
               </p>
             </div>
           </div>
