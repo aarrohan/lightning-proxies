@@ -1,5 +1,5 @@
 import Image from "next/image";
-import pricingPageHeroSectionGrainImg from "@/assets/images/pricing-page-hero-section-grain.png";
+import pricingPageHeroSectionGrainImg from "@/assets/images/product-page-hero-section-grain.png";
 import PrimaryBtn from "@/components/ui/PrimaryBtn";
 import SecondaryBtn from "@/components/ui/SecondaryBtn";
 import productBigImg from "@/assets/images/product-2-big.png";
