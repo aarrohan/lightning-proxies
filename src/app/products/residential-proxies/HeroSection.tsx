@@ -260,7 +260,7 @@ export default function HeroSection() {
 
           <p className="mb-5 text-xs sm:text-base leading-[18px] sm:leading-[24px] tracking-[-0.12px] sm:tracking-[-0.16px] text-center text-white/75">
             10M+ rotating residential IPs in 195 Countries with State, City and
-            ISP geotargeting <span className="font-semibold">free!</span>
+            ISP geo-targeting <span className="font-semibold">free!</span>
           </p>
 
           <PricingPart />

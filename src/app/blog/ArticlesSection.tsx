@@ -19,6 +19,20 @@ export default function ArticlesSection() {
     {
       img: (
         <Image
+          src={article1Img}
+          alt=""
+          className="w-full border border-dark-white rounded-md sm:rounded-lg"
+        />
+      ),
+      title: "Amplifying YouTube Access",
+      description:
+        "Explore how YouTube proxies can enhance access and performance.",
+      category: "Announcements",
+      timestamp: "August 27, 2024",
+    },
+    {
+      img: (
+        <Image
           src={article2Img}
           alt=""
           className="w-full border border-dark-white rounded-md sm:rounded-lg"
@@ -83,62 +97,6 @@ export default function ArticlesSection() {
       title: "Curl with a Proxy and Its 4 Unique Benefits",
       description:
         "Discover the advantages of using cURL with a proxy for your tasks.",
-      category: "Announcements",
-      timestamp: "August 27, 2024",
-    },
-    {
-      img: (
-        <Image
-          src={article4Img}
-          alt=""
-          className="w-full border border-dark-white rounded-xl"
-        />
-      ),
-      category: "Announcements",
-      title: "Proxy vs VPN: The Differences",
-      description:
-        "Sed varius justo ac sem luctus lobortis. Nunc porta leo nec pretium laoreet.",
-      timestamp: "August 27, 2024",
-    },
-    {
-      img: (
-        <Image
-          src={article5Img}
-          alt=""
-          className="w-full border border-dark-white rounded-xl"
-        />
-      ),
-      category: "Announcements",
-      title: "Differences Between Various Proxy Types",
-      description:
-        "Sed varius justo ac sem luctus lobortis. Nunc porta leo nec pretium laoreet.",
-      timestamp: "August 27, 2024",
-    },
-    {
-      img: (
-        <Image
-          src={article6Img}
-          alt=""
-          className="w-full border border-dark-white rounded-xl"
-        />
-      ),
-      category: "Announcements",
-      title: "Buy Residential Rotating IPv6 Proxies",
-      description:
-        "Sed varius justo ac sem luctus lobortis. Nunc porta leo nec pretium laoreet.",
-      timestamp: "August 27, 2024",
-    },
-    {
-      img: (
-        <Image
-          src={article1Img}
-          alt=""
-          className="w-full border border-dark-white rounded-md sm:rounded-lg"
-        />
-      ),
-      title: "Amplifying YouTube Access",
-      description:
-        "Explore how YouTube proxies can enhance access and performance.",
       category: "Announcements",
       timestamp: "August 27, 2024",
     },

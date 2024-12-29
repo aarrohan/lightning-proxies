@@ -292,7 +292,7 @@ export default function HistorySection() {
               </div>
 
               <p className="text-xs sm:text-base font-semibold tracking-[-0.12px] sm:tracking-[-0.16px]">
-                Dec 2024
+                Jan 2025
               </p>
 
               <p className="text-xs sm:text-base tracking-[-0.12px] sm:tracking-[-0.16px] text-primary/50">
