@@ -44,6 +44,7 @@ export default function PlanBoxUnlimited() {
             </p>
 
             <Select
+              dropdownBgColor="#3f274e"
               options={numberofProxies}
               selectedOptionIndex={numberOfProxiesSelectedOptionIndex}
               setSelectedOptionIndex={setNumberOfProxiesSelectedOptionIndex}
