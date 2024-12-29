@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import FollowUpSection from "@/app/(landing)/FollowUpSection";
 import Links from "./Links";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Privacy Policy - Data Protection and Usage",
@@ -39,9 +40,11 @@ export default function PrivacyPolicy() {
                 Your privacy is important to us. It is LightningProxies’s policy
                 to respect your privacy and comply with any applicable law and
                 regulation regarding any personal information. We may collect
-                about you, including across our website,
-                https://lightningproxies.net/, and other sites we own and
-                operate.
+                about you, including across our website,{" "}
+                <Link href={"/"} className="font-medium text-accent">
+                  https://lightningproxies.net/
+                </Link>
+                , and other sites we own and operate.
               </p>
 
               <h3 className="text-lg sm:text-2xl font-medium tracking-[-0.18px] sm:tracking-[-0.24px]">
@@ -294,9 +297,22 @@ export default function PrivacyPolicy() {
               <p className="text-sm sm:text-base tracking-[-0.14px] sm:tracking-[-0.16px] text-primary/80">
                 For any questions or concerns regarding your privacy, you may
                 contact us using the following details: <br />
-                By email at support@lightningproxies.net
+                By email at{" "}
+                <Link
+                  href="mailto:support@lightningproxies.net"
+                  className="font-medium text-accent"
+                >
+                  support@lightningproxies.net
+                </Link>
                 <br />
-                By telegram at @lightningproxies
+                By telegram at{" "}
+                <Link
+                  href="https://t.me/lightningproxies"
+                  target="_blank"
+                  className="font-medium text-accent"
+                >
+                  @lightningproxies
+                </Link>
               </p>
             </div>
           </div>

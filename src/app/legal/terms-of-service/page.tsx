@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import FollowUpSection from "@/app/(landing)/FollowUpSection";
 import Links from "./Links";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Terms of Service - Legal Information",
@@ -297,7 +298,13 @@ export default function TermsOfService() {
               <p className="text-sm sm:text-base tracking-[-0.14px] sm:tracking-[-0.16px] text-primary/80">
                 Your submission of personal information through the store is
                 governed by our Privacy Policy. To view our Privacy Policy,
-                please see https://lightningproxies.net/privacy-policy
+                please see{" "}
+                <Link
+                  href={"/legal/privacy-policy"}
+                  className="font-medium text-accent"
+                >
+                  https://lightningproxies.net/privacy-policy
+                </Link>
               </p>
 
               <h3 className="text-lg sm:text-2xl font-medium tracking-[-0.18px] sm:tracking-[-0.24px]">
@@ -575,8 +582,13 @@ export default function TermsOfService() {
               </h3>
 
               <p className="text-sm sm:text-base tracking-[-0.14px] sm:tracking-[-0.16px] text-primary/80">
-                Questions about the Terms of Service should be sent to us at
-                support@lightningproxies.net
+                Questions about the Terms of Service should be sent to us at{" "}
+                <Link
+                  href="mailto:support@lightningproxies.net"
+                  className="font-medium text-accent"
+                >
+                  support@lightningproxies.net
+                </Link>
               </p>
 
               <h4 className="text-base sm:text-xl font-medium tracking-[-0.16px] sm:tracking-[-0.2px]">
@@ -584,8 +596,22 @@ export default function TermsOfService() {
               </h4>
 
               <p className="text-sm sm:text-base tracking-[-0.14px] sm:tracking-[-0.16px] text-primary/80">
-                Email: support@lightningproxies.net <br />
-                Telegram: @lightningproxies
+                Email:{" "}
+                <Link
+                  href="mailto:support@lightningproxies.net"
+                  className="font-medium text-accent"
+                >
+                  support@lightningproxies.net
+                </Link>{" "}
+                <br />
+                Telegram:{" "}
+                <Link
+                  href="https://t.me/lightningproxies"
+                  target="_blank"
+                  className="font-medium text-accent"
+                >
+                  @lightningproxies
+                </Link>
               </p>
             </div>
           </div>

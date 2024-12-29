@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import FollowUpSection from "@/app/(landing)/FollowUpSection";
 import Links from "./Links";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Cookie Policy - Understanding Cookies Usage",
@@ -138,8 +139,13 @@ export default function CookiePolicy() {
               <p className="text-sm sm:text-base tracking-[-0.14px] sm:tracking-[-0.16px] text-primary/80">
                 You have the right to access, rectify, delete, and object to the
                 processing of your personal data collected via cookies. To
-                exercise these rights, please contact us at
-                support@lightningproxies.net.
+                exercise these rights, please contact us at{" "}
+                <Link
+                  href="mailto:support@lightningproxies.net"
+                  className="font-medium text-accent"
+                >
+                  support@lightningproxies.net
+                </Link>
               </p>
 
               <h3 className="text-lg sm:text-2xl font-medium tracking-[-0.18px] sm:tracking-[-0.24px]">
@@ -169,7 +175,13 @@ export default function CookiePolicy() {
 
               <p className="text-sm sm:text-base tracking-[-0.14px] sm:tracking-[-0.16px] text-primary/80">
                 If you have any questions or concerns regarding this cookie
-                policy, please contact us at support@lightningproxies.net.
+                policy, please contact us at{" "}
+                <Link
+                  href="mailto:support@lightningproxies.net"
+                  className="font-medium text-accent"
+                >
+                  support@lightningproxies.net
+                </Link>
               </p>
 
               <h3 className="text-lg sm:text-2xl font-medium tracking-[-0.18px] sm:tracking-[-0.24px]">
