@@ -110,7 +110,7 @@ function LinkCard({
 
 function ArticleCard() {
   return (
-    <Link href={"/"} className="group/article-card group">
+    <Link href={"/coming-soon"} className="group/article-card group">
       <Image
         src={article2Img}
         alt=""
@@ -542,7 +542,7 @@ export default function MenuResources() {
             </p>
 
             <Link
-              href={"/blog/octobrowser-proxy-configuration"}
+              href={"/blog"}
               className="hidden lg:flex items-center gap-1.5 text-sm tracking-[-0.14px] opacity-50 hover:opacity-100 duration-200"
             >
               View all
