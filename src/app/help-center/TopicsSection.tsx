@@ -118,7 +118,7 @@ export default function TopicsSection() {
 
           <Link
             href={
-              "https://app.lightningproxies.net/guide/lightningproxies-extension"
+              "https://lightningproxies.net/guide/lightningproxies-extension"
             }
             target="_blank"
             className="hover:-translate-y-1 py-5 px-7 sm:px-7 border border-dark-white rounded-xl flex items-start gap-3.5 sm:gap-5 duration-200"
@@ -170,7 +170,7 @@ export default function TopicsSection() {
 
           <Link
             href={
-              "https://app.lightningproxies.net/guide/lightningproxies-extension"
+              "https://lightningproxies.net/guide/lightningproxies-extension"
             }
             target="_blank"
             className="hover:-translate-y-1 py-5 px-7 sm:px-7 border border-dark-white rounded-xl flex items-start gap-3.5 sm:gap-5 duration-200"

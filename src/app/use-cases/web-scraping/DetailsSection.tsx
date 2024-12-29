@@ -207,7 +207,7 @@ export default function DetailsSection() {
             </p>
 
             <h2 className="mb-6 text-[26px] sm:text-[42px] font-semibold leading-[30px] sm:leading-[46px] tracking-[-0.84px]">
-              Effortless Data Gathering with HighPerformance Proxies
+              Effortless Data Gathering with High Performance Proxies
             </h2>
 
             <p className="mb-6 text-xs sm:text-base tracking-[-0.12px] sm:tracking-[-0.16px] text-primary/75">

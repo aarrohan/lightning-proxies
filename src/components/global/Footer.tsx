@@ -1,4 +1,5 @@
 "use client";
+import { useState } from "react";
 import Image from "next/image";
 import paymentMethodsImg from "@/assets/images/payment-methods.svg";
 import Link from "next/link";
@@ -7,6 +8,8 @@ import footerIconImg from "@/assets/images/branding/footer-icon.svg";
 import { usePathname } from "next/navigation";
 
 export default function Footer() {
+  const [isSubmited, setIsSubmited] = useState<boolean>(false);
+
   const pathname = usePathname();
 
   return (
@@ -46,7 +49,11 @@ export default function Footer() {
 
           <div>
             <form
-              onSubmit={(e) => e.preventDefault()}
+              onSubmit={(e) => {
+                e.preventDefault();
+
+                setIsSubmited(true);
+              }}
               className="mb-4 sm:mb-5 p-1.5 sm:p-2.5 pl-4 sm:pl-6 bg-white rounded-lg sm:rounded-xl flex items-center gap-5"
             >
               <input
@@ -66,6 +73,36 @@ export default function Footer() {
               <br className="hidden sm:block" />
               We promise not to spam.
             </p>
+
+            {isSubmited && (
+              <p
+                className={`mt-5 sm:mt-8 sm:mb-6 w-fit py-3 px-4 bg-[#16D857]/25 rounded-xl flex items-center gap-2.5 text-[11px] sm:text-sm tracking-[-0.11px] sm:tracking-[-0.14px] text-[#16D857] ${
+                  !isSubmited ? "opacity-0 pointer-events-none" : ""
+                } duration-200`}
+              >
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 18 18"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M16.5 9C16.5 4.85786 13.1421 1.5 9 1.5C4.85786 1.5 1.5 4.85786 1.5 9C1.5 13.1421 4.85786 16.5 9 16.5C13.1421 16.5 16.5 13.1421 16.5 9Z"
+                    stroke="#16D857"
+                    strokeWidth="1.125"
+                  />
+                  <path
+                    d="M6 9.375L7.875 11.25L12 6.75"
+                    stroke="#16D857"
+                    strokeWidth="1.125"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+                Thank you for your interest
+              </p>
+            )}
           </div>
         </div>
 
@@ -525,7 +562,7 @@ export default function Footer() {
             </svg>
 
             <Link
-              href={`https://lightningproxies.net/terms-of-service`}
+              href={`/legal/terms-of-service`}
               className="text-xs sm:text-sm tracking-[-0.12px] sm:tracking-[-0.14px] text-white/75 hover:text-white duration-200"
             >
               Terms
@@ -543,7 +580,7 @@ export default function Footer() {
             </svg>
 
             <Link
-              href={"https://lightningproxies.net/privacy-policy"}
+              href={"/legal/privacy-policy"}
               className="text-xs sm:text-sm tracking-[-0.12px] sm:tracking-[-0.14px] text-white/75 hover:text-white duration-200"
             >
               Privacy
@@ -561,7 +598,7 @@ export default function Footer() {
             </svg>
 
             <Link
-              href={"https://lightningproxies.net/cookie-policy"}
+              href={"/legal/cookie-policy"}
               className="text-xs sm:text-sm tracking-[-0.12px] sm:tracking-[-0.14px] text-white/75 hover:text-white duration-200"
             >
               Cookies

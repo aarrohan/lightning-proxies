@@ -74,8 +74,10 @@ export default function BenefitsSection() {
         </svg>
       ),
       img: <Image src={benefit1Img} alt="" className="-mb-px w-full" />,
-      title: "100M+ residential IPs for sale",
-      description: "We provide the most stable residential proxy IP pool.",
+      title: "10M+ Residential IP Pool",
+      description: "We provide one of the most extensive
+residential proxy networks, featuring
+millions of IP addresses.",
     },
     {
       icon: (

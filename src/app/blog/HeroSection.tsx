@@ -11,8 +11,12 @@ export default function HeroSection() {
             Blog
           </p>
 
-          <Link
-            href={"mailto:support@lightningproxies.net"}
+          <button
+            onClick={() => {
+              if (window.$crisp) {
+                window.$crisp.push(["do", "chat:open"]);
+              }
+            }}
             className="flex items-center gap-2.5 text-xs sm:text-sm font-semibold text-accent tracking-[-0.12px] sm:tracking-[-0.14px]"
           >
             Write to Us{" "}
@@ -30,11 +34,11 @@ export default function HeroSection() {
                 fill="#1675FF"
               />
             </svg>
-          </Link>
+          </button>
         </div>
 
         <Link
-          href={"/blog/1"}
+          href={"/blog/octobrowser-proxy-configuration"}
           className="hover:-translate-y-1 p-5 sm:p-8 border border-dark-white bg-white shadow-[0px_10px_10px_0px_rgba(0,0,0,0.02),_0px_1px_0px_0px_rgba(0,0,0,0.02)] rounded-2xl grid lg:grid-cols-2 items-center gap-y-8 gap-x-14 cursor-pointer duration-200"
         >
           <div>

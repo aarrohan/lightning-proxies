@@ -1,6 +1,9 @@
 "use client";
 import { useState } from "react";
 import Image from "next/image";
+import article1Img from "@/assets/images/articles/1.png";
+import article2Img from "@/assets/images/articles/2.png";
+import article3Img from "@/assets/images/articles/3.png";
 import article4Img from "@/assets/images/article-4.png";
 import article5Img from "@/assets/images/article-5.png";
 import article6Img from "@/assets/images/article-6.png";
@@ -53,6 +56,90 @@ export default function ArticlesSection() {
       title: "Buy Residential Rotating IPv6 Proxies",
       description:
         "Sed varius justo ac sem luctus lobortis. Nunc porta leo nec pretium laoreet.",
+      timestamp: "August 27, 2024",
+    },
+    {
+      img: (
+        <Image
+          src={article1Img}
+          alt=""
+          className="w-full border border-dark-white rounded-md sm:rounded-lg"
+        />
+      ),
+      title: "Amplifying YouTube Access",
+      description:
+        "Explore how YouTube proxies can enhance access and performance.",
+      category: "Announcements",
+      timestamp: "August 27, 2024",
+    },
+    {
+      img: (
+        <Image
+          src={article2Img}
+          alt=""
+          className="w-full border border-dark-white rounded-md sm:rounded-lg"
+        />
+      ),
+      title: "Residential vs Datacenter",
+      description:
+        "Understand the key differences between residential and datacenter proxies.",
+      category: "Announcements",
+      timestamp: "August 27, 2024",
+    },
+    {
+      img: (
+        <Image
+          src={article3Img}
+          alt=""
+          className="w-full border border-dark-white rounded-md sm:rounded-lg"
+        />
+      ),
+      title: "Proxy vs VPN: The Main Differences",
+      description:
+        "Learn how proxies and VPNs differ to make the best choice for your needs.",
+      category: "Announcements",
+      timestamp: "August 27, 2024",
+    },
+    {
+      img: (
+        <Image
+          src={article4Img}
+          alt=""
+          className="w-full border border-dark-white rounded-md sm:rounded-lg"
+        />
+      ),
+      title: "Effective Ad Verification Using Residential Proxies",
+      description:
+        "Use residential proxies to ensure ad campaigns are running as intended.",
+      category: "Announcements",
+      timestamp: "August 27, 2024",
+    },
+    {
+      img: (
+        <Image
+          src={article5Img}
+          alt=""
+          className="w-full border border-dark-white rounded-md sm:rounded-lg"
+        />
+      ),
+      title: "The Ultimate Guide to Proxy IP Types",
+      description:
+        "A complete guide to understanding the different types of proxy IPs.",
+      category: "Announcements",
+      timestamp: "August 27, 2024",
+    },
+    {
+      img: (
+        <Image
+          src={article6Img}
+          alt=""
+          className="w-full border border-dark-white rounded-md sm:rounded-lg"
+        />
+      ),
+      title: "Curl with a Proxy and Its 4 Unique Benefits",
+      description:
+        "Discover the advantages of using cURL with a proxy for your tasks.",
+      category: "Announcements",
       timestamp: "August 27, 2024",
     },
   ];

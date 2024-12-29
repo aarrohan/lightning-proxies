@@ -29,28 +29,28 @@ export default function Links() {
       </Link>
 
       <Link
-        href={"/legal/extension-policy"}
+        href={"/coming-soon"}
         className="text-base font-medium tracking-[-0.16px] text-primary/50 hover:text-primary duration-200"
       >
         Extension Policy
       </Link>
 
       <Link
-        href={"/legal/vulnerability-policy"}
+        href={"/coming-soon"}
         className="text-base font-medium tracking-[-0.16px] text-primary/50 hover:text-primary duration-200"
       >
         Vulnerability Policy
       </Link>
 
       <Link
-        href={"/legal/gdpr-policy"}
+        href={"/coming-soon"}
         className="text-base font-medium tracking-[-0.16px] text-primary/50 hover:text-primary duration-200"
       >
         GDPR Policy
       </Link>
 
       <Link
-        href={"/legal/information-policy"}
+        href={"/coming-soon"}
         className="text-base font-medium tracking-[-0.16px] text-primary/50 hover:text-primary duration-200"
       >
         Information Policy

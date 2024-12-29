@@ -85,7 +85,10 @@ export default function CookiePopup() {
           We use cookies to enhance your browsing experience, analyze site
           traffic and deliver personalized content. For more information, please
           read our{" "}
-          <Link href={"/"} className="font-medium text-accent">
+          <Link
+            href={"/legal/cookie-policy"}
+            className="font-medium text-accent"
+          >
             Cookie Policy.
           </Link>
         </p>

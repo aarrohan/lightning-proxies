@@ -152,8 +152,12 @@ export default function Aside() {
           Require Assistance
         </p>
 
-        <Link
-          href={"/"}
+        <button
+          onClick={() => {
+            if (window.$crisp) {
+              window.$crisp.push(["do", "chat:open"]);
+            }
+          }}
           className="group flex items-center gap-2.5 text-base tracking-[-0.16px] text-primary/75"
         >
           Contact our live chat support
@@ -191,7 +195,7 @@ export default function Aside() {
               />
             </svg>
           </span>
-        </Link>
+        </button>
       </div>
     </div>
   );

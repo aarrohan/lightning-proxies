@@ -1,16 +1,21 @@
 interface IProps {
   customClasses?: string;
   containerClasses?: string;
+  handleClick?: () => void;
   children: React.ReactNode;
 }
 
 export default function SecondaryBtn({
   customClasses,
   containerClasses,
+  handleClick,
   children,
 }: IProps) {
   return (
-    <div className="group active:scale-95 p-[5px] bg-white/15 rounded-[16px] duration-200">
+    <div
+      onClick={handleClick}
+      className="group active:scale-95 p-[5px] bg-white/15 rounded-[16px] duration-200"
+    >
       <div className={`p-[2px] bg-white rounded-[11px] ${containerClasses}`}>
         <button
           className={`relative w-full py-[7px] px-4 bg-white rounded-[9px] text-sm font-semibold tracking-[-0.14px] text-accent overflow-hidden ${customClasses}`}
