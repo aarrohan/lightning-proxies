@@ -192,9 +192,9 @@ export default function BlogSection() {
           className="w-full border border-dark-white rounded-md sm:rounded-lg"
         />
       ),
-      title: "Curl with a Proxy and Its 4 Unique Benefits",
+      title: "10 Things to Consider Selecting a Proxy Provider",
       description:
-        "Discover the advantages of using cURL with a proxy for your tasks.",
+        "Things you should know before choosing your proxy supplier.",
       category: "Announcements",
       date: "August 27, 2024",
     },
