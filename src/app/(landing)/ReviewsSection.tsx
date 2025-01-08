@@ -23,9 +23,9 @@ function ReviewCard({ title, description, username }: IReviewCardProps) {
           className="mb-5 w-auto h-[16px] sm:h-[25px]"
         />
 
-        <h4 className="text-xs sm:text-xl font-medium tracking-[-0.12px] sm:tracking-[-0.2px]">
+        <p className="text-xs sm:text-xl font-medium tracking-[-0.12px] sm:tracking-[-0.2px]">
           {title}
-        </h4>
+        </p>
 
         <p className="mt-3 mb-4 text-xs sm:text-base leading-[18px] sm:leading-[24px] tracking-[-0.16px] text-primary/50">
           {description}

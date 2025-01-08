@@ -26,7 +26,10 @@ function UseCaseCard({
   img,
 }: IUseCaseCardProps) {
   return (
-    <div className="w-full min-w-[280px] sm:min-w-[468px] sm:py-6 sm:px-8 sm:border border-dark-white sm:bg-off-white sm:rounded-xl flex flex-col gap-5 sm:gap-0">
+    <Link
+      href={href}
+      className="w-full min-w-[280px] sm:min-w-[468px] sm:py-6 sm:px-8 sm:border border-dark-white sm:bg-off-white sm:rounded-xl flex flex-col gap-5 sm:gap-0"
+    >
       <div className="order-2 sm:order-1">
         <p
           className="mb-3 sm:mb-4 w-fit py-1 sm:py-2 px-2 sm:px-3.5 rounded-md sm:rounded-lg flex items-center gap-1.5 sm:gap-2.5 text-[10px] sm:text-base tracking-[-0.1px] sm:tracking-[-0.16px] font-medium"
@@ -43,12 +46,7 @@ function UseCaseCard({
           {description}
         </p>
 
-        <Link
-          href={href}
-          title="Learn more about use case"
-          aria-label="Learn more about use case"
-          className="sm:mb-6 flex items-center gap-2 sm:gap-2.5 text-xs sm:text-base font-medium tracking-[-0.12px] sm:tracking-[-0.16px] opacity-80 hover:opacity-100 duration-200"
-        >
+        <p className="sm:mb-6 flex items-center gap-2 sm:gap-2.5 text-xs sm:text-base font-medium tracking-[-0.12px] sm:tracking-[-0.16px] opacity-80 hover:opacity-100 duration-200">
           Learn More{" "}
           <svg
             width="6"
@@ -64,11 +62,11 @@ function UseCaseCard({
               strokeWidth="1.25"
             />
           </svg>
-        </Link>
+        </p>
       </div>
 
       <div className="order-1 sm:order-2">{img}</div>
-    </div>
+    </Link>
   );
 }
 

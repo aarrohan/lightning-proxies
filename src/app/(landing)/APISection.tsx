@@ -23,9 +23,9 @@ function ApiCard({ img, bgImg, title, description }: IAPICardProps) {
       <div className="relative z-10">
         <div className="flex justify-center">{img}</div>
 
-        <h4 className="mt-2 mb-2 text-sm sm:text-base font-medium tracking-[-0.14px] sm:tracking-[-0.16px] text-white">
+        <p className="mt-2 mb-2 text-sm sm:text-base font-medium tracking-[-0.14px] sm:tracking-[-0.16px] text-white">
           {title}
-        </h4>
+        </p>
 
         <p className="text-xs sm:text-base leading-[18px] sm:leading-[24px] tracking-[-0.12px] sm:tracking-[-0.16px] text-white/75">
           {description}

@@ -27,9 +27,9 @@ function LocationCard({ href, img, title, description }: ILocationCardProps) {
       {img}
 
       <div>
-        <h4 className="text-[10px] sm:text-base font-medium tracking-[-0.1px] sm:tracking-[-0.16px]">
+        <p className="text-[10px] sm:text-base font-medium tracking-[-0.1px] sm:tracking-[-0.16px]">
           {title}
-        </h4>
+        </p>
         <p className="text-[9px] sm:text-sm font-medium tracking-[-0.18px] sm:tracking-[-0.28px] text-primary/50">
           {description}
         </p>

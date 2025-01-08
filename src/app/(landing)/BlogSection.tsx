@@ -43,9 +43,9 @@ function ArticleCard({
         </p>
       </div>
 
-      <h4 className="mb-1.5 sm:mb-2 text-[11px] sm:text-lg font-medium tracking-[-0.11px] sm:tracking-[-0.18px]">
+      <p className="mb-1.5 sm:mb-2 text-[11px] sm:text-lg font-medium tracking-[-0.11px] sm:tracking-[-0.18px]">
         {title}
-      </h4>
+      </p>
 
       <p className="text-[9px] sm:text-base tracking-[-0.09px] sm:tracking-[-0.16px] text-primary/75">
         {description}

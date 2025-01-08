@@ -23,9 +23,9 @@ function SubHeading({ icon, title }: ISubHeadingProps) {
       <div className="relative -top-[3px] group-hover:-top-0 py-1.5 sm:py-2 px-2.5 sm:px-3 border border-dark-white bg-white rounded-lg flex items-center gap-2 duration-200">
         {icon}
 
-        <h5 className="text-xs sm:text-sm font-medium tracking-[-0.12px] sm:tracking-[-0.14px]">
+        <p className="text-xs sm:text-sm font-medium tracking-[-0.12px] sm:tracking-[-0.14px]">
           {title}
-        </h5>
+        </p>
       </div>
     </div>
   );
