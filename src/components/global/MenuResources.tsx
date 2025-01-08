@@ -464,18 +464,18 @@ export default function MenuResources() {
           </p>
 
           <div
-            onMouseLeave={() => {
-              if (resourcesFirstItemRef.current) {
-                const { top, left, width, height } =
-                  resourcesFirstItemRef.current.getBoundingClientRect();
-                setResourcesCardBgValues({
-                  top: top - 70,
-                  left: left + 10,
-                  width,
-                  height,
-                });
-              }
-            }}
+            // onMouseLeave={() => {
+            //   if (resourcesFirstItemRef.current) {
+            //     const { top, left, width, height } =
+            //       resourcesFirstItemRef.current.getBoundingClientRect();
+            //     setResourcesCardBgValues({
+            //       top: top - 70,
+            //       left: left + 10,
+            //       width,
+            //       height,
+            //     });
+            //   }
+            // }}
             className="grid"
           >
             {resourcesLinks.map((link, index) => (
@@ -509,18 +509,18 @@ export default function MenuResources() {
           </p>
 
           <div
-            onMouseLeave={() => {
-              if (resourcesFirstItemRef.current) {
-                const { top, left, width, height } =
-                  resourcesFirstItemRef.current.getBoundingClientRect();
-                setResourcesCardBgValues({
-                  top: top - 70,
-                  left: left + 10,
-                  width,
-                  height,
-                });
-              }
-            }}
+            // onMouseLeave={() => {
+            //   if (resourcesFirstItemRef.current) {
+            //     const { top, left, width, height } =
+            //       resourcesFirstItemRef.current.getBoundingClientRect();
+            //     setResourcesCardBgValues({
+            //       top: top - 70,
+            //       left: left + 10,
+            //       width,
+            //       height,
+            //     });
+            //   }
+            // }}
             className="grid"
           >
             {companyLinks.map((link, index) => (
