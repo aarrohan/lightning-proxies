@@ -19,18 +19,25 @@ export default function ClientsSection() {
         </p>
 
         <Marquee autoFill={true} speed={40}>
-          <Link href={"https://gologin.com/"} target="_blank">
+          <Link
+            href={"https://gologin.com/"}
+            aria-label="Client logo"
+            target="_blank"
+          >
             <Image
               src={clientImg1}
               alt=""
               className="mx-auto w-auto h-[24px]"
             />
           </Link>
+
           <span className="mx-8 sm:mx-12 w-px h-[15px] bg-primary/25 block"></span>
+
           <Link
             href={
               "https://dolphin-anty.com/?utm_source=media&utm_medium=partners&utm_campaign=lightningproxies&utm_content=partners-page"
             }
+            aria-label="Client logo"
             target="_blank"
           >
             <Image
@@ -39,43 +46,71 @@ export default function ClientsSection() {
               className="mx-auto w-auto h-[24px]"
             />
           </Link>
+
           <span className="mx-8 sm:mx-12 w-px h-[15px] bg-primary/25 block"></span>
-          <Link href={"https://www.geelark.com/"} target="_blank">
+
+          <Link
+            href={"https://www.geelark.com/"}
+            aria-label="Client logo"
+            target="_blank"
+          >
             <Image
               src={clientImg3}
               alt=""
               className="mx-auto w-auto h-[24px]"
             />
           </Link>
+
           <span className="mx-8 sm:mx-12 w-px h-[15px] bg-primary/25 block"></span>
-          <Link href={"https://octobrowser.net/"} target="_blank">
+
+          <Link
+            href={"https://octobrowser.net/"}
+            aria-label="Client logo"
+            target="_blank"
+          >
             <Image
               src={clientImg4}
               alt=""
               className="mx-auto w-auto h-[24px]"
             />
           </Link>
+
           <span className="mx-8 sm:mx-12 w-px h-[15px] bg-primary/25 block"></span>
-          <Link href={"https://incogniton.com/"}>
+
+          <Link
+            href={"https://incogniton.com/"}
+            aria-label="Client logo"
+            target="_blank"
+          >
             <Image
               src={clientImg5}
               alt=""
               className="mx-auto w-auto h-[24px]"
             />
           </Link>
+
           <span className="mx-8 sm:mx-12 w-px h-[15px] bg-primary/25 block"></span>
-          <Link href={"https://multilogin.com/"}>
+
+          <Link
+            href={"https://multilogin.com/"}
+            aria-label="Client logo"
+            target="_blank"
+          >
             <Image
               src={clientImg6}
               alt=""
               className="mx-auto w-auto h-[24px]"
             />
           </Link>
+
           <span className="mx-8 sm:mx-12 w-px h-[15px] bg-primary/25 block"></span>
+
           <Link
             href={
               "https://undetectable.io/?r=ToJma&utm_source=lightningproxies&utm_medium=affiliate"
             }
+            aria-label="Client logo"
+            target="_blank"
           >
             <Image
               src={clientImg7}
@@ -83,8 +118,14 @@ export default function ClientsSection() {
               className="mx-auto w-auto h-[24px]"
             />
           </Link>
+
           <span className="mx-8 sm:mx-12 w-px h-[15px] bg-primary/25 block"></span>
-          <Link href={"https://www.capsolver.com/"}>
+
+          <Link
+            href={"https://www.capsolver.com/"}
+            aria-label="Client logo"
+            target="_blank"
+          >
             <Image
               src={clientImg8}
               alt=""

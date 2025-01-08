@@ -15,6 +15,7 @@ export default function FloatingItems() {
     <Link
       href={"https://t.me/lightningproxies"}
       target="_blank"
+      aria-label="Telegram"
       className="fixed z-[999] bottom-20 sm:bottom-24 right-3 sm:right-6 w-[54px] sm:w-[60px] aspect-square flex"
     >
       <Image
