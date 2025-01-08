@@ -240,7 +240,7 @@ function ProductCard({
             viewBox="0 0 38 38"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            className="w-[24px] sm:w-[32px] h-auto"
+            className="w-[24px] sm:w-[32px] min-w-[24px] sm:min-w-[32px] h-auto"
           >
             <rect
               width="38"
@@ -270,7 +270,7 @@ function ProductCard({
             viewBox="0 0 38 38"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            className="w-[24px] sm:w-[32px] h-auto"
+            className="w-[24px] sm:w-[32px] min-w-[24px] sm:min-w-[32px] h-auto"
           >
             <rect
               width="38"
