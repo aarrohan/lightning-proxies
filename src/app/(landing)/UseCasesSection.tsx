@@ -45,6 +45,7 @@ function UseCaseCard({
 
         <Link
           href={href}
+          title="Learn more about use case"
           aria-label="Learn more about use case"
           className="sm:mb-6 flex items-center gap-2 sm:gap-2.5 text-xs sm:text-base font-medium tracking-[-0.12px] sm:tracking-[-0.16px] opacity-80 hover:opacity-100 duration-200"
         >
