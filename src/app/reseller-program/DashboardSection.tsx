@@ -1,3 +1,6 @@
+import Image from "next/image";
+import resellerProgramPanelImg from "@/assets/images/reseller-program-panel.png";
+
 export default function DashboardSection() {
   return (
     <section className="bg-gradient-to-b from-transparent to-[#F0F0F0]">
@@ -16,7 +19,11 @@ export default function DashboardSection() {
           features.
         </p>
 
-        <div className="w-full aspect-[3/2] sm:aspect-[2/1] border border-dark-white bg-white rounded-t-3xl"></div>
+        <Image
+          src={resellerProgramPanelImg}
+          alt=""
+          className="w-full border border-dark-white bg-white rounded-t-3xl"
+        />
       </div>
     </section>
   );
