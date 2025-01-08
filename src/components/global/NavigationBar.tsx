@@ -161,6 +161,8 @@ export default function NavigationBar() {
     });
   };
 
+  if (pathname === "/email-subscription/cancel") return null;
+
   return (
     <nav
       onMouseEnter={() => {

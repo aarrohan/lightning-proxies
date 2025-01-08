@@ -12,6 +12,8 @@ export default function Footer() {
 
   const pathname = usePathname();
 
+  if (pathname === "/email-subscription/cancel") return null;
+
   return (
     <footer
       className="relative pt-20 sm:pt-14 pb-10 sm:pb-14"
