@@ -289,19 +289,19 @@ export default function MenuLocations() {
 
           <div className="grid lg:grid-cols-[auto_425px] gap-4">
             <div
-              onMouseLeave={() => {
-                if (locationsFirstItemRef.current) {
-                  const { top, left, width, height } =
-                    locationsFirstItemRef.current.getBoundingClientRect();
-                  setLocationsCardBgValues({
-                    index: 0,
-                    top: top - 70,
-                    left: left + 10,
-                    width,
-                    height,
-                  });
-                }
-              }}
+              // onMouseLeave={() => {
+              //   if (locationsFirstItemRef.current) {
+              //     const { top, left, width, height } =
+              //       locationsFirstItemRef.current.getBoundingClientRect();
+              //     setLocationsCardBgValues({
+              //       index: 0,
+              //       top: top - 70,
+              //       left: left + 10,
+              //       width,
+              //       height,
+              //     });
+              //   }
+              // }}
               className="grid grid-cols-2 lg:grid-cols-3"
             >
               {locations.map((location, index) => (

@@ -218,18 +218,18 @@ export default function MenuProducts() {
           </p>
 
           <div
-            onMouseLeave={() => {
-              if (productsFirstItemRef.current) {
-                const { top, left, width, height } =
-                  productsFirstItemRef.current.getBoundingClientRect();
-                setProductsCardBgValues({
-                  top: top - 70,
-                  left: left + 10,
-                  width,
-                  height,
-                });
-              }
-            }}
+            // onMouseLeave={() => {
+            //   if (productsFirstItemRef.current) {
+            //     const { top, left, width, height } =
+            //       productsFirstItemRef.current.getBoundingClientRect();
+            //     setProductsCardBgValues({
+            //       top: top - 70,
+            //       left: left + 10,
+            //       width,
+            //       height,
+            //     });
+            //   }
+            // }}
             className="grid lg:grid-cols-2"
           >
             {products.map((product, index) => (
@@ -263,18 +263,18 @@ export default function MenuProducts() {
           </p>
 
           <div
-            onMouseLeave={() => {
-              if (productsFirstItemRef.current) {
-                const { top, left, width, height } =
-                  productsFirstItemRef.current.getBoundingClientRect();
-                setProductsCardBgValues({
-                  top: top - 70,
-                  left: left + 10,
-                  width,
-                  height,
-                });
-              }
-            }}
+            // onMouseLeave={() => {
+            //   if (productsFirstItemRef.current) {
+            //     const { top, left, width, height } =
+            //       productsFirstItemRef.current.getBoundingClientRect();
+            //     setProductsCardBgValues({
+            //       top: top - 70,
+            //       left: left + 10,
+            //       width,
+            //       height,
+            //     });
+            //   }
+            // }}
             className="grid"
           >
             {toolsAndAddons.map((product, index) => (

@@ -221,18 +221,18 @@ export default function MenuPricing() {
           </p>
 
           <div
-            onMouseLeave={() => {
-              if (productsFirstItemRef.current) {
-                const { top, left, width, height } =
-                  productsFirstItemRef.current.getBoundingClientRect();
-                setProductsCardBgValues({
-                  top: top - 70,
-                  left: left + 10,
-                  width,
-                  height,
-                });
-              }
-            }}
+            // onMouseLeave={() => {
+            //   if (productsFirstItemRef.current) {
+            //     const { top, left, width, height } =
+            //       productsFirstItemRef.current.getBoundingClientRect();
+            //     setProductsCardBgValues({
+            //       top: top - 70,
+            //       left: left + 10,
+            //       width,
+            //       height,
+            //     });
+            //   }
+            // }}
             className="grid lg:grid-cols-2 gap-2.5 lg:gap-0"
           >
             {products.map((product, index) => (

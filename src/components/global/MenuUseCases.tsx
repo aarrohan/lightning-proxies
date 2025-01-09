@@ -204,20 +204,20 @@ export default function MenuUseCases() {
 
           <div className="grid lg:grid-cols-3 gap-4">
             <div
-              onMouseLeave={() => {
-                if (useCasesFirstItemRef.current) {
-                  const { top, left, width, height } =
-                    useCasesFirstItemRef.current.getBoundingClientRect();
+              // onMouseLeave={() => {
+              //   if (useCasesFirstItemRef.current) {
+              //     const { top, left, width, height } =
+              //       useCasesFirstItemRef.current.getBoundingClientRect();
 
-                  setUseCasesCardBgValues({
-                    index: 0,
-                    top: top - 70,
-                    left: left + 10,
-                    width,
-                    height,
-                  });
-                }
-              }}
+              //     setUseCasesCardBgValues({
+              //       index: 0,
+              //       top: top - 70,
+              //       left: left + 10,
+              //       width,
+              //       height,
+              //     });
+              //   }
+              // }}
               className="col-span-2 grid lg:grid-cols-2"
             >
               {useCases.map((useCase, index) => (
