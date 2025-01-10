@@ -192,7 +192,7 @@ export default function BlogSection() {
           className="w-full border border-dark-white rounded-md sm:rounded-lg"
         />
       ),
-      title: "10 Things to Consider Selecting a Proxy Provider",
+      title: "10 Things to Consider when Selecting a Proxy Provider",
       description:
         "Things you should know before choosing your proxy supplier.",
       category: "Announcements",

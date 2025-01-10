@@ -4,9 +4,9 @@ import Image from "next/image";
 import article1Img from "@/assets/images/articles/1.png";
 import article2Img from "@/assets/images/articles/2.png";
 import article3Img from "@/assets/images/articles/3.png";
-import article4Img from "@/assets/images/article-4.png";
-import article5Img from "@/assets/images/article-5.png";
-import article6Img from "@/assets/images/article-6.png";
+import article4Img from "@/assets/images/articles/4.png";
+import article5Img from "@/assets/images/articles/5.png";
+import article6Img from "@/assets/images/articles/6.png";
 import ArticleCard, {
   IProps as IArticleCard,
 } from "@/components/ui/ArticleCard";
@@ -94,9 +94,9 @@ export default function ArticlesSection() {
           className="w-full border border-dark-white rounded-md sm:rounded-lg"
         />
       ),
-      title: "Curl with a Proxy and Its 4 Unique Benefits",
+      title: "10 Things to Consider when Selecting a Proxy Provider",
       description:
-        "Discover the advantages of using cURL with a proxy for your tasks.",
+        "Things you should know before choosing your proxy supplier.",
       category: "Announcements",
       timestamp: "August 27, 2024",
     },
