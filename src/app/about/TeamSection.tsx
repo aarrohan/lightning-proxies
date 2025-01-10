@@ -79,9 +79,33 @@ export default function TeamSection() {
                 href={"/"}
                 target="_blank"
                 aria-label="LinkedIn"
-                className="flex"
+                className="flex opacity-50 hover:opacity-100 duration-200"
               >
-                <Image src={linkedinIconImg} alt="" className="w-[24px]" />
+                <svg
+                  className="w-[16px] sm:w-[21px] h-auto"
+                  width="21"
+                  height="20"
+                  viewBox="0 0 21 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clipPath="url(#clip0_2253_54795)">
+                    <path
+                      d="M19.0195 0H1.97656C1.16016 0 0.5 0.644531 0.5 1.44141V18.5547C0.5 19.3516 1.16016 20 1.97656 20H19.0195C19.8359 20 20.5 19.3516 20.5 18.5586V1.44141C20.5 0.644531 19.8359 0 19.0195 0ZM6.43359 17.043H3.46484V7.49609H6.43359V17.043ZM4.94922 6.19531C3.99609 6.19531 3.22656 5.42578 3.22656 4.47656C3.22656 3.52734 3.99609 2.75781 4.94922 2.75781C5.89844 2.75781 6.66797 3.52734 6.66797 4.47656C6.66797 5.42188 5.89844 6.19531 4.94922 6.19531ZM17.543 17.043H14.5781V12.4023C14.5781 11.2969 14.5586 9.87109 13.0352 9.87109C11.4922 9.87109 11.2578 11.0781 11.2578 12.3242V17.043H8.29688V7.49609H11.1406V8.80078H11.1797C11.5742 8.05078 12.543 7.25781 13.9844 7.25781C16.9883 7.25781 17.543 9.23438 17.543 11.8047V17.043Z"
+                      fill="#1D2026"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_2253_54795">
+                      <rect
+                        width="20"
+                        height="20"
+                        fill="white"
+                        transform="translate(0.5)"
+                      />
+                    </clipPath>
+                  </defs>
+                </svg>
               </Link>
             </div>
           </div>
@@ -138,15 +162,39 @@ export default function TeamSection() {
                 href={"/"}
                 target="_blank"
                 aria-label="LinkedIn"
-                className="flex"
+                className="flex opacity-50 hover:opacity-100 duration-200"
               >
-                <Image src={linkedinIconImg} alt="" className="w-[24px]" />
+                <svg
+                  className="w-[16px] sm:w-[21px] h-auto"
+                  width="21"
+                  height="20"
+                  viewBox="0 0 21 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clipPath="url(#clip0_2253_54795)">
+                    <path
+                      d="M19.0195 0H1.97656C1.16016 0 0.5 0.644531 0.5 1.44141V18.5547C0.5 19.3516 1.16016 20 1.97656 20H19.0195C19.8359 20 20.5 19.3516 20.5 18.5586V1.44141C20.5 0.644531 19.8359 0 19.0195 0ZM6.43359 17.043H3.46484V7.49609H6.43359V17.043ZM4.94922 6.19531C3.99609 6.19531 3.22656 5.42578 3.22656 4.47656C3.22656 3.52734 3.99609 2.75781 4.94922 2.75781C5.89844 2.75781 6.66797 3.52734 6.66797 4.47656C6.66797 5.42188 5.89844 6.19531 4.94922 6.19531ZM17.543 17.043H14.5781V12.4023C14.5781 11.2969 14.5586 9.87109 13.0352 9.87109C11.4922 9.87109 11.2578 11.0781 11.2578 12.3242V17.043H8.29688V7.49609H11.1406V8.80078H11.1797C11.5742 8.05078 12.543 7.25781 13.9844 7.25781C16.9883 7.25781 17.543 9.23438 17.543 11.8047V17.043Z"
+                      fill="#1D2026"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_2253_54795">
+                      <rect
+                        width="20"
+                        height="20"
+                        fill="white"
+                        transform="translate(0.5)"
+                      />
+                    </clipPath>
+                  </defs>
+                </svg>
               </Link>
             </div>
           </div>
         </div>
 
-        <div className="w-full grid grid-cols-3 lg:grid-cols-5 gap-12">
+        <div className="w-full grid grid-cols-3 lg:grid-cols-6 gap-12">
           <div className="flex flex-col items-center">
             <Image
               src={sahilKumarImg}
@@ -199,9 +247,33 @@ export default function TeamSection() {
                 href={"/"}
                 target="_blank"
                 aria-label="LinkedIn"
-                className="flex"
+                className="flex opacity-50 hover:opacity-100 duration-200"
               >
-                <Image src={linkedinIconImg} alt="" className="w-[24px]" />
+                <svg
+                  className="w-[16px] sm:w-[21px] h-auto"
+                  width="21"
+                  height="20"
+                  viewBox="0 0 21 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clipPath="url(#clip0_2253_54795)">
+                    <path
+                      d="M19.0195 0H1.97656C1.16016 0 0.5 0.644531 0.5 1.44141V18.5547C0.5 19.3516 1.16016 20 1.97656 20H19.0195C19.8359 20 20.5 19.3516 20.5 18.5586V1.44141C20.5 0.644531 19.8359 0 19.0195 0ZM6.43359 17.043H3.46484V7.49609H6.43359V17.043ZM4.94922 6.19531C3.99609 6.19531 3.22656 5.42578 3.22656 4.47656C3.22656 3.52734 3.99609 2.75781 4.94922 2.75781C5.89844 2.75781 6.66797 3.52734 6.66797 4.47656C6.66797 5.42188 5.89844 6.19531 4.94922 6.19531ZM17.543 17.043H14.5781V12.4023C14.5781 11.2969 14.5586 9.87109 13.0352 9.87109C11.4922 9.87109 11.2578 11.0781 11.2578 12.3242V17.043H8.29688V7.49609H11.1406V8.80078H11.1797C11.5742 8.05078 12.543 7.25781 13.9844 7.25781C16.9883 7.25781 17.543 9.23438 17.543 11.8047V17.043Z"
+                      fill="#1D2026"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_2253_54795">
+                      <rect
+                        width="20"
+                        height="20"
+                        fill="white"
+                        transform="translate(0.5)"
+                      />
+                    </clipPath>
+                  </defs>
+                </svg>
               </Link>
             </div>
           </div>
@@ -258,9 +330,33 @@ export default function TeamSection() {
                 href={"/"}
                 target="_blank"
                 aria-label="LinkedIn"
-                className="flex"
+                className="flex opacity-50 hover:opacity-100 duration-200"
               >
-                <Image src={linkedinIconImg} alt="" className="w-[24px]" />
+                <svg
+                  className="w-[16px] sm:w-[21px] h-auto"
+                  width="21"
+                  height="20"
+                  viewBox="0 0 21 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clipPath="url(#clip0_2253_54795)">
+                    <path
+                      d="M19.0195 0H1.97656C1.16016 0 0.5 0.644531 0.5 1.44141V18.5547C0.5 19.3516 1.16016 20 1.97656 20H19.0195C19.8359 20 20.5 19.3516 20.5 18.5586V1.44141C20.5 0.644531 19.8359 0 19.0195 0ZM6.43359 17.043H3.46484V7.49609H6.43359V17.043ZM4.94922 6.19531C3.99609 6.19531 3.22656 5.42578 3.22656 4.47656C3.22656 3.52734 3.99609 2.75781 4.94922 2.75781C5.89844 2.75781 6.66797 3.52734 6.66797 4.47656C6.66797 5.42188 5.89844 6.19531 4.94922 6.19531ZM17.543 17.043H14.5781V12.4023C14.5781 11.2969 14.5586 9.87109 13.0352 9.87109C11.4922 9.87109 11.2578 11.0781 11.2578 12.3242V17.043H8.29688V7.49609H11.1406V8.80078H11.1797C11.5742 8.05078 12.543 7.25781 13.9844 7.25781C16.9883 7.25781 17.543 9.23438 17.543 11.8047V17.043Z"
+                      fill="#1D2026"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_2253_54795">
+                      <rect
+                        width="20"
+                        height="20"
+                        fill="white"
+                        transform="translate(0.5)"
+                      />
+                    </clipPath>
+                  </defs>
+                </svg>
               </Link>
             </div>
           </div>
@@ -317,9 +413,33 @@ export default function TeamSection() {
                 href={"/"}
                 target="_blank"
                 aria-label="LinkedIn"
-                className="flex"
+                className="flex opacity-50 hover:opacity-100 duration-200"
               >
-                <Image src={linkedinIconImg} alt="" className="w-[24px]" />
+                <svg
+                  className="w-[16px] sm:w-[21px] h-auto"
+                  width="21"
+                  height="20"
+                  viewBox="0 0 21 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clipPath="url(#clip0_2253_54795)">
+                    <path
+                      d="M19.0195 0H1.97656C1.16016 0 0.5 0.644531 0.5 1.44141V18.5547C0.5 19.3516 1.16016 20 1.97656 20H19.0195C19.8359 20 20.5 19.3516 20.5 18.5586V1.44141C20.5 0.644531 19.8359 0 19.0195 0ZM6.43359 17.043H3.46484V7.49609H6.43359V17.043ZM4.94922 6.19531C3.99609 6.19531 3.22656 5.42578 3.22656 4.47656C3.22656 3.52734 3.99609 2.75781 4.94922 2.75781C5.89844 2.75781 6.66797 3.52734 6.66797 4.47656C6.66797 5.42188 5.89844 6.19531 4.94922 6.19531ZM17.543 17.043H14.5781V12.4023C14.5781 11.2969 14.5586 9.87109 13.0352 9.87109C11.4922 9.87109 11.2578 11.0781 11.2578 12.3242V17.043H8.29688V7.49609H11.1406V8.80078H11.1797C11.5742 8.05078 12.543 7.25781 13.9844 7.25781C16.9883 7.25781 17.543 9.23438 17.543 11.8047V17.043Z"
+                      fill="#1D2026"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_2253_54795">
+                      <rect
+                        width="20"
+                        height="20"
+                        fill="white"
+                        transform="translate(0.5)"
+                      />
+                    </clipPath>
+                  </defs>
+                </svg>
               </Link>
             </div>
           </div>
@@ -376,9 +496,33 @@ export default function TeamSection() {
                 href={"/"}
                 target="_blank"
                 aria-label="LinkedIn"
-                className="flex"
+                className="flex opacity-50 hover:opacity-100 duration-200"
               >
-                <Image src={linkedinIconImg} alt="" className="w-[24px]" />
+                <svg
+                  className="w-[16px] sm:w-[21px] h-auto"
+                  width="21"
+                  height="20"
+                  viewBox="0 0 21 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clipPath="url(#clip0_2253_54795)">
+                    <path
+                      d="M19.0195 0H1.97656C1.16016 0 0.5 0.644531 0.5 1.44141V18.5547C0.5 19.3516 1.16016 20 1.97656 20H19.0195C19.8359 20 20.5 19.3516 20.5 18.5586V1.44141C20.5 0.644531 19.8359 0 19.0195 0ZM6.43359 17.043H3.46484V7.49609H6.43359V17.043ZM4.94922 6.19531C3.99609 6.19531 3.22656 5.42578 3.22656 4.47656C3.22656 3.52734 3.99609 2.75781 4.94922 2.75781C5.89844 2.75781 6.66797 3.52734 6.66797 4.47656C6.66797 5.42188 5.89844 6.19531 4.94922 6.19531ZM17.543 17.043H14.5781V12.4023C14.5781 11.2969 14.5586 9.87109 13.0352 9.87109C11.4922 9.87109 11.2578 11.0781 11.2578 12.3242V17.043H8.29688V7.49609H11.1406V8.80078H11.1797C11.5742 8.05078 12.543 7.25781 13.9844 7.25781C16.9883 7.25781 17.543 9.23438 17.543 11.8047V17.043Z"
+                      fill="#1D2026"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_2253_54795">
+                      <rect
+                        width="20"
+                        height="20"
+                        fill="white"
+                        transform="translate(0.5)"
+                      />
+                    </clipPath>
+                  </defs>
+                </svg>
               </Link>
             </div>
           </div>
@@ -435,12 +579,52 @@ export default function TeamSection() {
                 href={"/"}
                 target="_blank"
                 aria-label="LinkedIn"
-                className="flex"
+                className="flex opacity-50 hover:opacity-100 duration-200"
               >
-                <Image src={linkedinIconImg} alt="" className="w-[24px]" />
+                <svg
+                  className="w-[16px] sm:w-[21px] h-auto"
+                  width="21"
+                  height="20"
+                  viewBox="0 0 21 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clipPath="url(#clip0_2253_54795)">
+                    <path
+                      d="M19.0195 0H1.97656C1.16016 0 0.5 0.644531 0.5 1.44141V18.5547C0.5 19.3516 1.16016 20 1.97656 20H19.0195C19.8359 20 20.5 19.3516 20.5 18.5586V1.44141C20.5 0.644531 19.8359 0 19.0195 0ZM6.43359 17.043H3.46484V7.49609H6.43359V17.043ZM4.94922 6.19531C3.99609 6.19531 3.22656 5.42578 3.22656 4.47656C3.22656 3.52734 3.99609 2.75781 4.94922 2.75781C5.89844 2.75781 6.66797 3.52734 6.66797 4.47656C6.66797 5.42188 5.89844 6.19531 4.94922 6.19531ZM17.543 17.043H14.5781V12.4023C14.5781 11.2969 14.5586 9.87109 13.0352 9.87109C11.4922 9.87109 11.2578 11.0781 11.2578 12.3242V17.043H8.29688V7.49609H11.1406V8.80078H11.1797C11.5742 8.05078 12.543 7.25781 13.9844 7.25781C16.9883 7.25781 17.543 9.23438 17.543 11.8047V17.043Z"
+                      fill="#1D2026"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_2253_54795">
+                      <rect
+                        width="20"
+                        height="20"
+                        fill="white"
+                        transform="translate(0.5)"
+                      />
+                    </clipPath>
+                  </defs>
+                </svg>
               </Link>
             </div>
           </div>
+
+          <Link
+            href={"https://linkedin.com"}
+            target="_blank"
+            className="flex flex-col items-center"
+          >
+            <Image
+              src={linkedinIconImg}
+              alt=""
+              className="mt-2.5 sm:mt-4 w-[58px] sm:w-[96px] h-auto"
+            />
+
+            <p className="mt-4 sm:mt-6  text-xs sm:text-base tracking-[-0.12px] sm:tracking-[-0.16px] text-center text-primary/50">
+              View our entire <br /> team on LinkedIn
+            </p>
+          </Link>
         </div>
       </div>
     </section>
