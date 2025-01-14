@@ -175,7 +175,7 @@ export default function NavigationBar() {
           setIsHovered(false);
         }
       }}
-      className={`fixed z-[1000] top-0 left-0 w-full border-b ${
+      className={`fixed z-[1000] -top-[1px] left-0 w-full border-b ${
         isTransparent && !isHovered
           ? "border-transparent bg-transparent"
           : "border-dark-white bg-white"
